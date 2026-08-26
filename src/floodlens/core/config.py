@@ -27,6 +27,7 @@ class SimulationConfig:
     CFL: float = 0.9
     dt_initial: float = 0.01
     T_end: float = 1.0
+    boundary_condition: str = "reflective"
     name: str = "FloodLens_Simulation"
 
     def __post_init__(self):

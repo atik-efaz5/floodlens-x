@@ -1,5 +1,6 @@
 """Validated numerical kernel (notebook cells 343, 146, 301)."""
 
+from floodlens.numerical.boundary import apply_ghost_cells
 from floodlens.numerical.flux import F, G, max_wave_speed_x, max_wave_speed_y
 from floodlens.numerical.reconstruction import hydrostatic_reconstruction
 from floodlens.numerical.riemann import rusanov_flux
@@ -11,6 +12,7 @@ from floodlens.numerical.timestep import DEFAULT_DT_FALLBACK, calculate_dt_cfl, 
 from floodlens.numerical.timestepper import run_shallow_water_simulation
 
 __all__ = [
+    "apply_ghost_cells",
     "F",
     "G",
     "max_wave_speed_x",

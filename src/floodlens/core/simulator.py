@@ -18,6 +18,11 @@ from floodlens.numerical.timestep import calculate_dt_cfl
 from floodlens.numerical.timestepper import run_shallow_water_simulation
 
 
+def _resolve_bc_type(config: SimulationConfig) -> str:
+    bc = config.boundary_condition
+    return bc.value if hasattr(bc, "value") else str(bc)
+
+
 class ShallowWaterSimulator:
     """High-level API for the FloodLens-X solver."""
 
@@ -81,6 +86,7 @@ class ShallowWaterSimulator:
             g=self.config.g,
             h_dry_threshold=self.config.h_dry_threshold,
             cfl_sim=self.config.CFL,
+            bc_type=_resolve_bc_type(self.config),
             store_frames=False,
         )
 
@@ -198,6 +204,7 @@ class ShallowWaterSimulatorWithDiagnostics(ShallowWaterSimulator):
             self.config.g,
             self.config.h_dry_threshold,
             cfl_sim=self.config.CFL,
+            bc_type=_resolve_bc_type(self.config),
             store_frames=False,
         )
 
