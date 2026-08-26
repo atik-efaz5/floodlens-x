@@ -1,12 +1,20 @@
 """Digital Elevation Model ingestion and resampling (notebook cell 554)."""
 
 from dataclasses import dataclass
-from typing import Any, Dict, Tuple, Union
+from pathlib import Path
+from typing import Any, Dict, Optional, Tuple, Union
 
 import numpy as np
 from scipy.interpolate import RegularGridInterpolator
 
 from floodlens.core.config import SimulationConfig
+
+try:
+    import rasterio
+    from rasterio.transform import Affine
+    HAS_RASTERIO = True
+except ImportError:
+    HAS_RASTERIO = False
 
 
 @dataclass(frozen=True)
@@ -15,6 +23,18 @@ class ValidatedDEM:
 
     data: np.ndarray
     report: Dict[str, Any]
+
+
+@dataclass(frozen=True)
+class GeoTIFFMetadata:
+    """Spatial metadata for a georeferenced elevation grid."""
+
+    bounds_west: float  # min X / left edge (m or degrees)
+    bounds_south: float  # min Y / bottom edge (m or degrees)
+    bounds_east: float  # max X / right edge (m or degrees)
+    bounds_north: float  # max Y / top edge (m or degrees)
+    crs: str = "EPSG:4326"  # Coordinate Reference System
+    nodata_value: Optional[float] = None
 
 
 class DEMManager:
@@ -94,3 +114,81 @@ class DEMManager:
         z_resampled = interp(pts).reshape(target_config.Ny, target_config.Nx)
 
         return z_resampled.astype(np.float64)
+
+    @staticmethod
+    def load_geotiff(filepath: Union[str, Path]) -> Tuple[np.ndarray, GeoTIFFMetadata]:
+        """
+        Load DEM elevation grid from a GeoTIFF file.
+
+        Returns:
+            Tuple of (elevation_array, metadata)
+        """
+        if not HAS_RASTERIO:
+            raise ImportError(
+                "rasterio is required for GeoTIFF support. "
+                "Install with: pip install rasterio"
+            )
+
+        filepath = Path(filepath)
+        if not filepath.exists():
+            raise FileNotFoundError(f"GeoTIFF file not found: {filepath}")
+
+        with rasterio.open(filepath) as src:
+            z = src.read(1)  # Read first band as elevation
+            bounds = src.bounds
+            crs = src.crs.to_string() if src.crs else "EPSG:4326"
+            nodata = src.nodata
+
+        metadata = GeoTIFFMetadata(
+            bounds_west=bounds.left,
+            bounds_south=bounds.bottom,
+            bounds_east=bounds.right,
+            bounds_north=bounds.top,
+            crs=crs,
+            nodata_value=nodata,
+        )
+
+        return z.astype(np.float64), metadata
+
+    @staticmethod
+    def save_geotiff(
+        data: np.ndarray,
+        metadata: GeoTIFFMetadata,
+        output_path: Union[str, Path],
+    ) -> None:
+        """
+        Save elevation or flood depth grid as a georeferenced GeoTIFF.
+
+        Args:
+            data: 2D elevation or depth array
+            metadata: Spatial metadata (bounds, CRS)
+            output_path: Output file path
+        """
+        if not HAS_RASTERIO:
+            raise ImportError(
+                "rasterio is required for GeoTIFF export. "
+                "Install with: pip install rasterio"
+            )
+
+        output_path = Path(output_path)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+
+        height, width = data.shape
+        dy = (metadata.bounds_north - metadata.bounds_south) / height
+        dx = (metadata.bounds_east - metadata.bounds_west) / width
+
+        transform = Affine.translation(metadata.bounds_west, metadata.bounds_north) * Affine.scale(dx, -dy)
+
+        with rasterio.open(
+            output_path,
+            "w",
+            driver="GTiff",
+            height=height,
+            width=width,
+            count=1,
+            dtype=data.dtype,
+            crs=metadata.crs,
+            transform=transform,
+            nodata=metadata.nodata_value,
+        ) as dst:
+            dst.write(data, 1)

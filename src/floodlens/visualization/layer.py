@@ -2,7 +2,8 @@
 
 from __future__ import annotations
 
-from typing import Any, Dict, Optional, TYPE_CHECKING
+from pathlib import Path
+from typing import Any, Dict, List, Optional, TYPE_CHECKING, Union
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -12,7 +13,14 @@ from floodlens.core.diagnostics import DiagnosticsReport
 from floodlens.core.state import SimulationState
 
 if TYPE_CHECKING:
+    from floodlens.application.dem_manager import GeoTIFFMetadata
     from floodlens.core.simulator import ShallowWaterSimulator
+
+try:
+    import netCDF4
+    HAS_NETCDF = True
+except ImportError:
+    HAS_NETCDF = False
 
 
 class VisualizationLayer:
@@ -138,3 +146,92 @@ class VisualizationLayer:
 
         plt.tight_layout()
         return self._finalize_figure(fig, save_path)
+
+    def export_geotiff(
+        self,
+        state: SimulationState,
+        metadata: GeoTIFFMetadata,
+        output_path: Union[str, Path],
+    ) -> None:
+        """
+        Export flood depth field as a georeferenced GeoTIFF.
+
+        Args:
+            state: SimulationState with water depth (h)
+            metadata: GeoTIFFMetadata containing spatial bounds and CRS
+            output_path: Path to output GeoTIFF file
+        """
+        from floodlens.application.dem_manager import DEMManager
+
+        output_path = Path(output_path)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+
+        DEMManager.save_geotiff(state.h, metadata, output_path)
+
+    def export_netcdf(
+        self,
+        frames: List[SimulationState],
+        config: SimulationConfig,
+        output_path: Union[str, Path],
+    ) -> None:
+        """
+        Export time-series hydrodynamic simulation states to NetCDF4.
+
+        Args:
+            frames: List of SimulationState snapshots
+            config: SimulationConfig defining the grid
+            output_path: Path to output NetCDF file
+        """
+        if not HAS_NETCDF:
+            raise ImportError(
+                "netCDF4 is required for NetCDF export. "
+                "Install with: pip install netCDF4"
+            )
+
+        output_path = Path(output_path)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+
+        with netCDF4.Dataset(output_path, "w", format="NETCDF4") as ds:
+            # Dimensions
+            ds.createDimension("time", len(frames))
+            ds.createDimension("x", config.Nx)
+            ds.createDimension("y", config.Ny)
+
+            # Coordinate variables
+            time_var = ds.createVariable("time", "f8", ("time",))
+            time_var.units = "seconds"
+            time_var.standard_name = "time"
+            time_var[:] = [f.time for f in frames]
+
+            x_var = ds.createVariable("x", "f8", ("x",))
+            x_var.units = "meters"
+            x_var[:] = np.linspace(0, config.Lx, config.Nx)
+
+            y_var = ds.createVariable("y", "f8", ("y",))
+            y_var.units = "meters"
+            y_var[:] = np.linspace(0, config.Ly, config.Ny)
+
+            # State variables
+            h_var = ds.createVariable("h", "f4", ("time", "y", "x"), zlib=True)
+            h_var.long_name = "Water depth"
+            h_var.units = "meters"
+
+            hu_var = ds.createVariable("hu", "f4", ("time", "y", "x"), zlib=True)
+            hu_var.long_name = "X-momentum"
+            hu_var.units = "m²/s"
+
+            hv_var = ds.createVariable("hv", "f4", ("time", "y", "x"), zlib=True)
+            hv_var.long_name = "Y-momentum"
+            hv_var.units = "m²/s"
+
+            # Write data
+            for t, frame in enumerate(frames):
+                h_var[t, :, :] = frame.h
+                hu_var[t, :, :] = frame.U[:, :, 1]
+                hv_var[t, :, :] = frame.U[:, :, 2]
+
+            # Global attributes
+            ds.title = f"FloodLens-X Simulation: {config.name}"
+            ds.cfl = config.CFL
+            ds.manning_n = config.manning_n
+            ds.boundary_condition = config.boundary_condition
