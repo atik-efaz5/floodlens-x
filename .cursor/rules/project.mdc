@@ -1,0 +1,52 @@
+---
+description: Low-cost development rules for FloodLens-X
+alwaysApply: true
+---
+
+# FloodLens-X Development Rules
+
+## Scope
+Work only on the task explicitly requested.
+Do not perform speculative refactors or unrelated cleanup.
+
+## Token efficiency
+Use the smallest sufficient solution.
+Read only files relevant to the task.
+Reuse existing code before creating new code.
+Do not duplicate existing functionality.
+
+## Dependencies
+Do not install new dependencies unless necessary.
+Prefer the existing project stack.
+
+## Architecture
+Respect existing module boundaries.
+Do not rewrite working architecture without explicit approval.
+
+## Numerical core
+Treat validated numerical components as protected.
+Do not change numerical equations, algorithms, solver behavior,
+or validated numerical constants unless explicitly requested.
+
+## File scope
+Modify only files necessary for the current task.
+Avoid large rewrites when a targeted change is sufficient.
+
+## Testing
+Run the smallest relevant test suite after changes.
+Never claim success without verification.
+
+## Safety
+Do not delete or overwrite unrelated work.
+Do not modify files outside the requested scope.
+
+## Completion
+Stop when the requested task is complete.
+Do not add optional features unless requested.
+
+## Final response
+Report:
+- files changed
+- what was implemented
+- tests run
+- remaining issues

@@ -1,0 +1,37 @@
+---
+description: Protect the validated FloodLens-X numerical engine
+globs:
+  - "src/core/**"
+  - "src/numerical/**"
+---
+
+# Protected Numerical Core
+
+The validated numerical engine is protected.
+
+Do not modify without explicit approval:
+
+- governing shallow-water equations
+- finite-volume discretization
+- Rusanov flux
+- hydrostatic reconstruction
+- bed-slope source formulation
+- Manning source mathematics
+- CFL/timestep logic
+- boundary-condition mathematics
+- validated numerical constants
+
+Do not introduce:
+
+- artificial damping
+- unexplained stability floors
+- clipping
+- epsilon hacks
+- empirical masks
+- arbitrary CFL reductions
+
+If a requested change appears to require modifying the numerical core,
+stop and explain the conflict before editing it.
+
+Prefer implementing new functionality around the numerical engine through
+the public API/application layer.
