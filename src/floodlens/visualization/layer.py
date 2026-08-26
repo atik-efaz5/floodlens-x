@@ -42,10 +42,13 @@ class VisualizationLayer:
     def plot_instantaneous_depth(
         self,
         state: SimulationState,
+        z: Optional[np.ndarray] = None,
         title: str = "Water Depth",
         save_path: Optional[str] = None,
     ) -> plt.Figure:
         """Displays instantaneous water depth with dry/wet distinction."""
+        if z is not None and z.shape != state.z.shape:
+            raise ValueError("Optional bed elevation z must match state.z shape.")
         fig, ax = plt.subplots(figsize=(8, 6))
         h = state.h
         # Create a masked array to hide dry cells or use a specific color
@@ -95,6 +98,8 @@ class VisualizationLayer:
         return {
             "flooded_cells": int(flooded_cells),
             "flooded_area_m2": float(flooded_area),
+            "inundated_area": float(flooded_area),
+            "max_depth": float(np.max(h)),
             "flood_mask": flood_mask,
         }
 

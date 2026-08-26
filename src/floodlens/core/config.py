@@ -28,6 +28,7 @@ class SimulationConfig:
     dt_initial: float = 0.01
     T_end: float = 1.0
     boundary_condition: str = "reflective"
+    manning_n: float = 0.0
     name: str = "FloodLens_Simulation"
 
     def __post_init__(self):
@@ -41,3 +42,5 @@ class SimulationConfig:
             raise ValueError(f"CFL must be in range (0, 1.5), got {self.CFL}")
         if self.dt_initial <= 0:
             raise ValueError(f"dt_initial must be positive, got {self.dt_initial}")
+        if self.manning_n < 0:
+            raise ValueError(f"manning_n must be non-negative, got {self.manning_n}")
