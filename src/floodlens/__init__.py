@@ -1,5 +1,11 @@
 """FloodLens-X hydrodynamic flood simulation package."""
 
+from floodlens.application import (
+    DEMManager,
+    InputManager,
+    ProgressManager,
+    SimulationService,
+)
 from floodlens.core import (
     BoundaryCondition,
     DiagnosticsReport,
@@ -10,6 +16,7 @@ from floodlens.core import (
     SimulationResult,
     SimulationState,
 )
+from floodlens.visualization import VisualizationLayer
 
 __all__ = [
     "BoundaryCondition",
@@ -20,4 +27,9 @@ __all__ = [
     "DiagnosticsReport",
     "ShallowWaterSimulator",
     "ShallowWaterSimulatorWithDiagnostics",
+    "InputManager",
+    "ProgressManager",
+    "SimulationService",
+    "DEMManager",
+    "VisualizationLayer",
 ]
