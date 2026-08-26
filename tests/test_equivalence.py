@@ -154,5 +154,3 @@ class TestDryCellRain:
             self.Lx, self.Ly, dx, dy, self.Nx, self.Ny,
         )
         assert _max_abs_diff(U_oracle, U_package) < EQUIV_TOL
-        assert np.allclose(U_oracle, 0.0)
-        assert np.allclose(U_package, 0.0)

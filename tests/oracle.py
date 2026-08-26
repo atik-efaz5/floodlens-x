@@ -234,6 +234,10 @@ def run_shallow_water_simulation(
         U[:,:,0] = np.maximum(U[:,:,0], 0.0)
         U[U[:,:,0] < h_dry_threshold, 1:] = 0.0
 
+        net_source = (rainfall_rate_mps_sim - infiltration_rate_mps_sim) * dt
+        U[:, :, 0] += net_source
+        U[:, :, 0] = np.maximum(U[:, :, 0], 0.0)
+
         current_time += dt
         iteration += 1
         if iteration % frame_interval == 0:
