@@ -25,6 +25,7 @@ class SimulationConfig:
     g: float = 9.81
     h_dry_threshold: float = 1e-4
     CFL: float = 0.9
+    dt_initial: float = 0.01
     T_end: float = 1.0
     name: str = "FloodLens_Simulation"
 
@@ -37,3 +38,5 @@ class SimulationConfig:
             raise ValueError("Domain dimensions Lx and Ly must be positive.")
         if not (0 < self.CFL < 1.5):
             raise ValueError(f"CFL must be in range (0, 1.5), got {self.CFL}")
+        if self.dt_initial <= 0:
+            raise ValueError(f"dt_initial must be positive, got {self.dt_initial}")

@@ -71,7 +71,7 @@ class ShallowWaterSimulator:
             infiltration_rate_mps_sim=infiltration_rate,
             inflow_boundary_params={"location": "none"},
             T_end_sim=self.config.T_end,
-            dt_initial_sim=0.01,
+            dt_initial_sim=self.config.dt_initial,
             Lx_sim=self.config.Lx,
             Ly_sim=self.config.Ly,
             dx_sim=self._grid.dx,
@@ -80,6 +80,7 @@ class ShallowWaterSimulator:
             Ny_sim=self.config.Ny,
             g=self.config.g,
             h_dry_threshold=self.config.h_dry_threshold,
+            cfl_sim=self.config.CFL,
             store_frames=False,
         )
 
@@ -187,7 +188,7 @@ class ShallowWaterSimulatorWithDiagnostics(ShallowWaterSimulator):
             infiltration_rate,
             {"location": "none"},
             self.config.T_end,
-            0.01,
+            self.config.dt_initial,
             self.config.Lx,
             self.config.Ly,
             self._grid.dx,
@@ -196,6 +197,7 @@ class ShallowWaterSimulatorWithDiagnostics(ShallowWaterSimulator):
             self.config.Ny,
             self.config.g,
             self.config.h_dry_threshold,
+            cfl_sim=self.config.CFL,
             store_frames=False,
         )
 
@@ -232,5 +234,7 @@ class ShallowWaterSimulatorWithDiagnostics(ShallowWaterSimulator):
             self._grid.dy,
             self.config.g,
             self.config.h_dry_threshold,
+            C=self.config.CFL,
+            dt_fallback=self.config.dt_initial,
         )
         self.diagnostics.max_cfl.append(float(max_cfl))

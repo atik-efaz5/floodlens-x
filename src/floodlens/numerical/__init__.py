@@ -7,7 +7,7 @@ from floodlens.numerical.sources import (
     calculate_bed_slope_source_terms,
     calculate_manning_source_terms,
 )
-from floodlens.numerical.timestep import calculate_dt_cfl, dt_initial
+from floodlens.numerical.timestep import DEFAULT_DT_FALLBACK, calculate_dt_cfl, dt_initial
 from floodlens.numerical.timestepper import run_shallow_water_simulation
 
 __all__ = [
@@ -20,6 +20,7 @@ __all__ = [
     "calculate_bed_slope_source_terms",
     "calculate_manning_source_terms",
     "calculate_dt_cfl",
+    "DEFAULT_DT_FALLBACK",
     "dt_initial",
     "run_shallow_water_simulation",
 ]

@@ -2,11 +2,14 @@
 
 import numpy as np
 
-# Notebook cell 140: dt_initial = 0.01 (global fallback used by cell 146)
-dt_initial = 0.01
+# Default fallback preserved from notebook cell 140 (now passed explicitly).
+DEFAULT_DT_FALLBACK = 0.01
+dt_initial = DEFAULT_DT_FALLBACK
 
 
-def calculate_dt_cfl(U_state, dx, dy, g, h_dry_threshold, C=0.9):
+def calculate_dt_cfl(
+    U_state, dx, dy, g, h_dry_threshold, C=0.9, dt_fallback=DEFAULT_DT_FALLBACK
+):
     h_vals = U_state[:,:,0]
     hu_vals = U_state[:,:,1]
     hv_vals = U_state[:,:,2]
@@ -27,7 +30,7 @@ def calculate_dt_cfl(U_state, dx, dy, g, h_dry_threshold, C=0.9):
     max_speed_y = np.max(np.abs(v_vals) + sqrt_gh)
 
     # Calculate dt based on CFL condition
-    dt_cfl = dt_initial # Fallback if no motion (dt_initial needs to be a global or passed parameter)
+    dt_cfl = dt_fallback
     if max_speed_x > 1e-12 and max_speed_y > 1e-12:
         dt_cfl = C * min(dx / max_speed_x, dy / max_speed_y)
     elif max_speed_x > 1e-12: # Only x-direction speed is significant

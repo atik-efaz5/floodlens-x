@@ -12,7 +12,7 @@ from floodlens.numerical.sources import (
 from floodlens.numerical.timestep import calculate_dt_cfl
 
 
-def run_shallow_water_simulation(U_initial, z_field, manning_n_field, rainfall_rate_mps_sim, infiltration_rate_mps_sim, inflow_boundary_params, T_end_sim, dt_initial_sim, Lx_sim, Ly_sim, dx_sim, dy_sim, Nx_sim, Ny_sim, g, h_dry_threshold, store_frames=True, frame_interval=10):
+def run_shallow_water_simulation(U_initial, z_field, manning_n_field, rainfall_rate_mps_sim, infiltration_rate_mps_sim, inflow_boundary_params, T_end_sim, dt_initial_sim, Lx_sim, Ly_sim, dx_sim, dy_sim, Nx_sim, Ny_sim, g, h_dry_threshold, store_frames=True, frame_interval=10, cfl_sim=0.9):
     U = U_initial.copy()
     current_time = 0.0
     iteration = 0
@@ -20,7 +20,15 @@ def run_shallow_water_simulation(U_initial, z_field, manning_n_field, rainfall_r
     initial_volume = np.sum(U[:,:,0]) * dx_sim * dy_sim
 
     while current_time < T_end_sim:
-        dt, _, _ = calculate_dt_cfl(U, dx_sim, dy_sim, g, h_dry_threshold)
+        dt, _, _ = calculate_dt_cfl(
+            U,
+            dx_sim,
+            dy_sim,
+            g,
+            h_dry_threshold,
+            C=cfl_sim,
+            dt_fallback=dt_initial_sim,
+        )
         if current_time + dt > T_end_sim: dt = T_end_sim - current_time
 
         # 1. COMPUTE FLUXES WITH WELL-BALANCED DISSIPATION
