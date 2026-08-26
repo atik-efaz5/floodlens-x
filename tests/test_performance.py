@@ -2,6 +2,8 @@ import time
 
 import numpy as np
 
+from floodlens.core.config import SimulationConfig
+from floodlens.core.simulator import ShallowWaterSimulator
 from floodlens.numerical.timestepper import run_shallow_water_simulation
 
 
@@ -42,3 +44,27 @@ def test_vectorized_runtime_scaling():
     assert elapsed < 1.5, f"Vectorized solver took {elapsed:.2f}s, exceeding 1.5s threshold"
     assert np.all(np.isfinite(u_out))
     assert len(frames) >= 1
+
+
+def test_multigrid_vectorized_throughput():
+    """Verify solver scales efficiently from small to medium grids."""
+    for size in [20, 60]:
+        config = SimulationConfig(
+            Nx=size,
+            Ny=size,
+            Lx=500.0,
+            Ly=500.0,
+            T_end=0.5,
+            CFL=0.8,
+            manning_n=0.03,
+        )
+        z = np.zeros((size, size))
+        sim = ShallowWaterSimulator(config)
+        sim.set_initial_conditions(h_init=0.5, z=z)
+
+        start_time = time.perf_counter()
+        sim.run()
+        elapsed = time.perf_counter() - start_time
+
+        assert elapsed < 1.0, f"Grid {size}x{size} exceeded 1.0s runtime budget ({elapsed:.3f}s)"
+        assert sim.get_state() is not None
