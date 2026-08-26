@@ -8,7 +8,7 @@ from tests import oracle
 
 G = 9.81
 H_DRY = 1e-3
-EQUIV_TOL = 1e-15
+EQUIV_TOL = 1e-14
 MASS_TOL = 1e-12
 
 

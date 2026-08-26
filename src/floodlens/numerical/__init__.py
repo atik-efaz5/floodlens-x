@@ -10,9 +10,19 @@ from floodlens.numerical.sources import (
 )
 from floodlens.numerical.timestep import DEFAULT_DT_FALLBACK, calculate_dt_cfl, dt_initial
 from floodlens.numerical.timestepper import run_shallow_water_simulation
+from floodlens.numerical.vectorized import (
+    vectorized_hydrostatic_reconstruction_x,
+    vectorized_hydrostatic_reconstruction_y,
+    vectorized_rusanov_flux_x,
+    vectorized_rusanov_flux_y,
+)
 
 __all__ = [
     "apply_ghost_cells",
+    "vectorized_hydrostatic_reconstruction_x",
+    "vectorized_hydrostatic_reconstruction_y",
+    "vectorized_rusanov_flux_x",
+    "vectorized_rusanov_flux_y",
     "F",
     "G",
     "max_wave_speed_x",

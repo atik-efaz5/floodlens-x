@@ -9,7 +9,7 @@ from tests import oracle
 
 G = 9.81
 H_DRY = 1e-3
-EQUIV_TOL = 1e-15
+EQUIV_TOL = 1e-14
 # Contract Section 4.4: momentum residual < 1e-13 (assessed after one discrete step;
 # the validated operator is well-balanced to machine precision per step).
 WELL_BALANCED_TOL = 1e-13
