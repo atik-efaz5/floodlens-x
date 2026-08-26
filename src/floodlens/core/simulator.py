@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import json
 import time
-from dataclasses import asdict
+from dataclasses import asdict, dataclass
 from typing import Optional, Tuple
 
 import numpy as np
@@ -21,6 +21,20 @@ from floodlens.numerical.timestepper import run_shallow_water_simulation
 def _resolve_bc_type(config: SimulationConfig) -> str:
     bc = config.boundary_condition
     return bc.value if hasattr(bc, "value") else str(bc)
+
+
+def _uniform_manning_field(config: SimulationConfig, z: np.ndarray) -> np.ndarray:
+    if config.manning_n > 0.0:
+        return np.full_like(z, config.manning_n, dtype=np.float64)
+    return np.zeros_like(z, dtype=np.float64)
+
+
+@dataclass
+class RunResult:
+    """Outcome of a single simulator run interval."""
+
+    success: bool
+    final_state: SimulationState
 
 
 class ShallowWaterSimulator:
@@ -40,11 +54,23 @@ class ShallowWaterSimulator:
     def grid(self) -> GridData:
         return self._grid
 
-    def set_initial_conditions(self, z: np.ndarray, U_initial: np.ndarray):
+    def set_initial_conditions(
+        self,
+        z: Optional[np.ndarray] = None,
+        U_initial: Optional[np.ndarray] = None,
+        *,
+        h_init: Optional[float] = None,
+    ):
+        if z is None:
+            raise ValueError("Bed elevation z is required.")
         expected_shape = (self.config.Ny, self.config.Nx)
         if z.shape != expected_shape:
             raise ValueError(f"Bed elevation shape {z.shape} != {expected_shape}")
-        if U_initial.shape != (self.config.Ny, self.config.Nx, 3):
+        if U_initial is None:
+            U_initial = np.zeros((self.config.Ny, self.config.Nx, 3), dtype=np.float64)
+            if h_init is not None:
+                U_initial[:, :, 0] = h_init
+        elif U_initial.shape != (self.config.Ny, self.config.Nx, 3):
             raise ValueError(
                 f"State vector shape {U_initial.shape} != {(self.config.Ny, self.config.Nx, 3)}"
             )
@@ -60,39 +86,47 @@ class ShallowWaterSimulator:
         rainfall_rate: float = 0.0,
         infiltration_rate: float = 0.0,
         manning_n: Optional[np.ndarray] = None,
-    ):
+        track_frames: bool = False,
+    ) -> RunResult:
         if self._state is None:
             raise RuntimeError(
                 "Simulator state not initialized. Call set_initial_conditions() first."
             )
 
-        manning_field = manning_n if manning_n is not None else np.zeros_like(self._state.z)
+        if manning_n is not None:
+            manning_field = manning_n
+        else:
+            manning_field = _uniform_manning_field(self.config, self._state.z)
 
-        _, U_next, _ = run_shallow_water_simulation(
-            U_initial=self._state.U,
-            z_field=self._state.z,
-            manning_n_field=manning_field,
-            rainfall_rate_mps_sim=rainfall_rate,
-            infiltration_rate_mps_sim=infiltration_rate,
-            inflow_boundary_params={"location": "none"},
-            T_end_sim=self.config.T_end,
-            dt_initial_sim=self.config.dt_initial,
-            Lx_sim=self.config.Lx,
-            Ly_sim=self.config.Ly,
-            dx_sim=self._grid.dx,
-            dy_sim=self._grid.dy,
-            Nx_sim=self.config.Nx,
-            Ny_sim=self.config.Ny,
-            g=self.config.g,
-            h_dry_threshold=self.config.h_dry_threshold,
-            cfl_sim=self.config.CFL,
-            bc_type=_resolve_bc_type(self.config),
-            store_frames=False,
-        )
+        try:
+            _, U_next, _ = run_shallow_water_simulation(
+                U_initial=self._state.U,
+                z_field=self._state.z,
+                manning_n_field=manning_field,
+                rainfall_rate_mps_sim=rainfall_rate,
+                infiltration_rate_mps_sim=infiltration_rate,
+                inflow_boundary_params={"location": "none"},
+                T_end_sim=self.config.T_end,
+                dt_initial_sim=self.config.dt_initial,
+                Lx_sim=self.config.Lx,
+                Ly_sim=self.config.Ly,
+                dx_sim=self._grid.dx,
+                dy_sim=self._grid.dy,
+                Nx_sim=self.config.Nx,
+                Ny_sim=self.config.Ny,
+                g=self.config.g,
+                h_dry_threshold=self.config.h_dry_threshold,
+                cfl_sim=self.config.CFL,
+                bc_type=_resolve_bc_type(self.config),
+                store_frames=track_frames,
+            )
 
-        self._state.U = U_next
-        self._state.time += self.config.T_end
-        self._state.iteration += 1
+            self._state.U = U_next
+            self._state.time += self.config.T_end
+            self._state.iteration += 1
+            return RunResult(success=True, final_state=self.get_state())
+        except Exception:
+            return RunResult(success=False, final_state=self.get_state())
 
     def get_state(self) -> SimulationState:
         if self._state is None:
@@ -181,7 +215,9 @@ class ShallowWaterSimulatorWithDiagnostics(ShallowWaterSimulator):
             raise RuntimeError("Initial conditions not set.")
 
         t_start = time.time()
-        manning_field = manning_n if manning_n is not None else np.zeros_like(self._state.z)
+        manning_field = manning_n if manning_n is not None else _uniform_manning_field(
+            self.config, self._state.z
+        )
 
         if self._state.iteration == 0:
             self._record_diagnostics(rainfall_rate, infiltration_rate, manning_field)

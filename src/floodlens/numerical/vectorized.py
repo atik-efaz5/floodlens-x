@@ -1,6 +1,47 @@
 import numpy as np
 
 
+def desingularize_momentum(U_state: np.ndarray, h_dry_threshold: float) -> np.ndarray:
+    """Zero momentum where depth is at or below the dry threshold."""
+    U_out = U_state.copy()
+    dry = U_out[:, :, 0] <= h_dry_threshold
+    U_out[:, :, 1] = np.where(dry, 0.0, U_out[:, :, 1])
+    U_out[:, :, 2] = np.where(dry, 0.0, U_out[:, :, 2])
+    return U_out
+
+
+def apply_semi_implicit_manning(
+    U_state: np.ndarray,
+    manning_n_field: np.ndarray,
+    g: float,
+    h_dry_threshold: float,
+    dt: float,
+) -> np.ndarray:
+    """Stabilized semi-implicit Manning friction limiting."""
+    U_out = U_state.copy()
+    if not np.any(manning_n_field > 0.0):
+        return U_out
+
+    h = U_out[:, :, 0]
+    hu = U_out[:, :, 1]
+    hv = U_out[:, :, 2]
+    wet = h > h_dry_threshold
+
+    u = np.zeros_like(h)
+    v = np.zeros_like(h)
+    np.divide(hu, h, out=u, where=wet)
+    np.divide(hv, h, out=v, where=wet)
+    speed = np.sqrt(u**2 + v**2)
+
+    h_floor = np.maximum(h, h_dry_threshold)
+    friction = g * manning_n_field**2 * speed / h_floor ** (4.0 / 3.0)
+    damping = 1.0 + dt * friction
+
+    U_out[:, :, 1] = np.where(wet, hu / damping, 0.0)
+    U_out[:, :, 2] = np.where(wet, hv / damping, 0.0)
+    return U_out
+
+
 def vectorized_hydrostatic_reconstruction_x(
     U_pad: np.ndarray, z_pad: np.ndarray, h_dry_threshold: float = 1e-4
 ):
@@ -11,6 +52,14 @@ def vectorized_hydrostatic_reconstruction_x(
     """
     UL = U_pad[:-1, 1:-1, :].copy()
     UR = U_pad[1:, 1:-1, :].copy()
+    UL[:, :, 0] = np.maximum(UL[:, :, 0], 0.0)
+    UR[:, :, 0] = np.maximum(UR[:, :, 0], 0.0)
+    dry_l = UL[:, :, 0] <= h_dry_threshold
+    dry_r = UR[:, :, 0] <= h_dry_threshold
+    UL[:, :, 1] = np.where(dry_l, 0.0, UL[:, :, 1])
+    UL[:, :, 2] = np.where(dry_l, 0.0, UL[:, :, 2])
+    UR[:, :, 1] = np.where(dry_r, 0.0, UR[:, :, 1])
+    UR[:, :, 2] = np.where(dry_r, 0.0, UR[:, :, 2])
     zL = z_pad[:-1, 1:-1]
     zR = z_pad[1:, 1:-1]
 
@@ -54,6 +103,14 @@ def vectorized_hydrostatic_reconstruction_y(
     """
     UL = U_pad[1:-1, :-1, :].copy()
     UR = U_pad[1:-1, 1:, :].copy()
+    UL[:, :, 0] = np.maximum(UL[:, :, 0], 0.0)
+    UR[:, :, 0] = np.maximum(UR[:, :, 0], 0.0)
+    dry_l = UL[:, :, 0] <= h_dry_threshold
+    dry_r = UR[:, :, 0] <= h_dry_threshold
+    UL[:, :, 1] = np.where(dry_l, 0.0, UL[:, :, 1])
+    UL[:, :, 2] = np.where(dry_l, 0.0, UL[:, :, 2])
+    UR[:, :, 1] = np.where(dry_r, 0.0, UR[:, :, 1])
+    UR[:, :, 2] = np.where(dry_r, 0.0, UR[:, :, 2])
     zL = z_pad[1:-1, :-1]
     zR = z_pad[1:-1, 1:]
 
@@ -98,14 +155,14 @@ def vectorized_rusanov_flux_x(
     maskL = hL > h_dry_threshold
     uL = np.zeros_like(hL)
     vL = np.zeros_like(hL)
-    uL[maskL] = huL[maskL] / hL[maskL]
-    vL[maskL] = hvL[maskL] / hL[maskL]
+    np.divide(huL, hL, out=uL, where=maskL)
+    np.divide(hvL, hL, out=vL, where=maskL)
 
     maskR = hR > h_dry_threshold
     uR = np.zeros_like(hR)
     vR = np.zeros_like(hR)
-    uR[maskR] = huR[maskR] / hR[maskR]
-    vR[maskR] = hvR[maskR] / hR[maskR]
+    np.divide(huR, hR, out=uR, where=maskR)
+    np.divide(hvR, hR, out=vR, where=maskR)
 
     FL = np.zeros_like(UL)
     FL[:, :, 0] = huL
@@ -117,8 +174,8 @@ def vectorized_rusanov_flux_x(
     FR[:, :, 1] = huR * uR + 0.5 * g * (hR**2)
     FR[:, :, 2] = huR * vR
 
-    sL = np.where(maskL, np.abs(uL) + np.sqrt(g * np.maximum(hL, 0.0)), 0.0)
-    sR = np.where(maskR, np.abs(uR) + np.sqrt(g * np.maximum(hR, 0.0)), 0.0)
+    sL = np.where(maskL, np.abs(uL) + np.sqrt(g * hL), 0.0)
+    sR = np.where(maskR, np.abs(uR) + np.sqrt(g * hR), 0.0)
     s_max = np.maximum(sL, sR)[:, :, np.newaxis]
 
     return 0.5 * (FL + FR) - 0.5 * s_max * (UR - UL)
@@ -134,14 +191,14 @@ def vectorized_rusanov_flux_y(
     maskL = hL > h_dry_threshold
     uL = np.zeros_like(hL)
     vL = np.zeros_like(hL)
-    uL[maskL] = huL[maskL] / hL[maskL]
-    vL[maskL] = hvL[maskL] / hL[maskL]
+    np.divide(huL, hL, out=uL, where=maskL)
+    np.divide(hvL, hL, out=vL, where=maskL)
 
     maskR = hR > h_dry_threshold
     uR = np.zeros_like(hR)
     vR = np.zeros_like(hR)
-    uR[maskR] = huR[maskR] / hR[maskR]
-    vR[maskR] = hvR[maskR] / hR[maskR]
+    np.divide(huR, hR, out=uR, where=maskR)
+    np.divide(hvR, hR, out=vR, where=maskR)
 
     GL = np.zeros_like(UL)
     GL[:, :, 0] = hvL
@@ -153,8 +210,8 @@ def vectorized_rusanov_flux_y(
     GR[:, :, 1] = hvR * uR
     GR[:, :, 2] = hvR * vR + 0.5 * g * (hR**2)
 
-    sL = np.where(maskL, np.abs(vL) + np.sqrt(g * np.maximum(hL, 0.0)), 0.0)
-    sR = np.where(maskR, np.abs(vR) + np.sqrt(g * np.maximum(hR, 0.0)), 0.0)
+    sL = np.where(maskL, np.abs(vL) + np.sqrt(g * hL), 0.0)
+    sR = np.where(maskR, np.abs(vR) + np.sqrt(g * hR), 0.0)
     s_max = np.maximum(sL, sR)[:, :, np.newaxis]
 
     return 0.5 * (GL + GR) - 0.5 * s_max * (UR - UL)
