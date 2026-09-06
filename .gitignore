@@ -12,6 +12,7 @@ build/
 frontend/node_modules/
 frontend/dist/
 outputs/
+.railway/
 data/ml/experiments/
 src/floodlens/application/data/ml/spatial/gfm/raw/
 src/floodlens/application/data/ml/spatial/gfm/processed_v2/

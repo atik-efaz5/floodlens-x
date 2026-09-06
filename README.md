@@ -35,6 +35,8 @@ pytest tests --deselect tests/test_phase4_baselines.py::test_xgboost_beats_persi
 
 The product UI is a Vite/React/Leaflet Command Center talking to FastAPI `/api/v1`. This is **LOCAL-DEMO**, not cloud-production.
 
+**Live demo:** [https://floodlens-x.vercel.app](https://floodlens-x.vercel.app) — Vercel hosts the UI and rewrites `/api` to a Render FastAPI service (`FLOODLENS_DEMO_FIXTURES=1`). Render’s free instance sleeps after idle; the first request after sleep can take ~30s.
+
 ```bash
 # API (from repo root)
 export PYTHONPATH=src MPLCONFIGDIR=/tmp/mpl-floodlens
