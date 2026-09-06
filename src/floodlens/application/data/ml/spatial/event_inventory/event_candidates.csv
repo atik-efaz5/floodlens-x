@@ -1,0 +1,3 @@
+event_id,year,region,candidate_source,candidate_start,candidate_peak,candidate_end,gfm_available,rain_available,dem_available,river_available,quality,independent_from_existing,accepted,rejection_reason,provenance,season,mechanism,deduplication_key
+evt:2018-06-06,2018,sunamganj,copernicus-gfm-ensemble-flood-extent,2018-06-06,2018-06-06,2018-06-06,True,True,True,True,ok,True,True,,gfm_index:1_scenes,monsoon,haor_monsoon_inundation,bangladesh_monsoon:2018-06-06:2018-06-06
+cand:2017-04,2017,bangladesh_aois_v2,copernicus-gfm-ensemble-flood-extent,2017-04-12,,2017-05-20,False,True,True,True,candidate,True,False,stac_empty_or_rate_limited,stac_features=0;attempts=0,premonsoon,haor_premonsoon_flash,bangladesh_monsoon:2017-04-12:2017-05-20

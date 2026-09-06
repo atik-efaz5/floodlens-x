@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: floodlens-x-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements-web.txt
+    startCommand: MPLCONFIGDIR=/tmp/mpl-floodlens PYTHONPATH=src FLOODLENS_DEMO_FIXTURES=1 uvicorn floodlens.application.web_server:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+      - key: FLOODLENS_DEMO_FIXTURES
+        value: "1"
+      - key: FLOODLENS_CORS_ORIGINS
+        value: "https://floodlens-x.vercel.app"

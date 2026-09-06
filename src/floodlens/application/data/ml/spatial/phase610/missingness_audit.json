@@ -1,0 +1,901 @@
+{
+  "evaluated_at": "2026-09-03T02:05:06Z",
+  "experiment_id": "phase6.10-partial-causal-design-v1",
+  "parent_cube": "phase6.5-gfm-spatial-v2.1",
+  "catalog_status": "NOT_VALIDATED",
+  "public_spatial_status": "NOT_TRAINED",
+  "promoted_to_validated": false,
+  "spatial_api": "UNAVAILABLE",
+  "model_training": "NOT AUTHORIZED",
+  "cnn_trained": false,
+  "solver_modified": false,
+  "counts": {
+    "n_pairs": 183,
+    "n_independent_events": 15,
+    "n_full_causal": 12,
+    "n_partial_causal": 138,
+    "n_state_only": 33,
+    "n_pairs_with_forecast": 150,
+    "pair_vintage_presence_pct": 82.0,
+    "mean_hourly_coverage": 0.6123511293481985,
+    "full_pair_share_pct": 6.6,
+    "n_events_full": 2,
+    "n_events_causal": 12,
+    "n_observed_events_with_pairs": 14
+  },
+  "forecast_set": {
+    "n_pairs": 150,
+    "n_events": 12,
+    "eligibility": [
+      "FULL_CAUSAL",
+      "PARTIAL_CAUSAL"
+    ]
+  },
+  "complete_case": {
+    "train": {
+      "n_events": 0,
+      "n_pairs": 0,
+      "event_ids": []
+    },
+    "val": {
+      "n_events": 1,
+      "n_pairs": 2,
+      "event_ids": [
+        "evt:2019-06-15"
+      ]
+    },
+    "test": {
+      "n_events": 1,
+      "n_pairs": 10,
+      "event_ids": [
+        "evt:2024-06-22"
+      ]
+    }
+  },
+  "policies": {
+    "policy2_forecast": {
+      "train": {
+        "n_events": 5,
+        "n_pairs": 42,
+        "event_ids": [
+          "evt:2016-06-30",
+          "evt:2017-04-12",
+          "evt:2017-07-31",
+          "evt:2018-01-13",
+          "evt:2018-06-06"
+        ]
+      },
+      "val": {
+        "n_events": 5,
+        "n_pairs": 76,
+        "event_ids": [
+          "evt:2019-01-10",
+          "evt:2019-06-15",
+          "evt:2020-01-15",
+          "evt:2020-06-07",
+          "evt:2021-06-02"
+        ]
+      },
+      "test": {
+        "n_events": 2,
+        "n_pairs": 32,
+        "event_ids": [
+          "evt:2022-05-16",
+          "evt:2024-06-22"
+        ]
+      }
+    },
+    "policy5_complete_case": {
+      "train": {
+        "n_events": 0,
+        "n_pairs": 0,
+        "event_ids": []
+      },
+      "val": {
+        "n_events": 1,
+        "n_pairs": 2,
+        "event_ids": [
+          "evt:2019-06-15"
+        ]
+      },
+      "test": {
+        "n_events": 1,
+        "n_pairs": 10,
+        "event_ids": [
+          "evt:2024-06-22"
+        ]
+      }
+    },
+    "state_only_diagnostic": {
+      "train": {
+        "n_events": 6,
+        "n_pairs": 50,
+        "event_ids": [
+          "evt:2015-07-11",
+          "evt:2016-06-30",
+          "evt:2017-04-12",
+          "evt:2017-07-31",
+          "evt:2018-01-13",
+          "evt:2018-06-06"
+        ]
+      },
+      "val": {
+        "n_events": 5,
+        "n_pairs": 76,
+        "event_ids": [
+          "evt:2019-01-10",
+          "evt:2019-06-15",
+          "evt:2020-01-15",
+          "evt:2020-06-07",
+          "evt:2021-06-02"
+        ]
+      },
+      "test": {
+        "n_events": 3,
+        "n_pairs": 57,
+        "event_ids": [
+          "evt:2022-05-16",
+          "evt:2023-06-16",
+          "evt:2024-06-22"
+        ]
+      }
+    }
+  },
+  "by_event": [
+    {
+      "event_id": "evt:2015-07-11",
+      "year": 2015,
+      "split": "train",
+      "n_pairs": 8,
+      "n_full_causal": 0,
+      "n_partial_causal": 0,
+      "n_state_only": 8,
+      "mean_forecast_coverage": 0.0,
+      "min_forecast_coverage": 0.0,
+      "max_forecast_coverage": 0.0,
+      "median_lead_hours": null,
+      "median_delta_t_hours": 576.0002777777778
+    },
+    {
+      "event_id": "evt:2016-06-30",
+      "year": 2016,
+      "split": "train",
+      "n_pairs": 2,
+      "n_full_causal": 0,
+      "n_partial_causal": 2,
+      "n_state_only": 0,
+      "mean_forecast_coverage": 0.3968804159445407,
+      "min_forecast_coverage": 0.3968804159445407,
+      "max_forecast_coverage": 0.3968804159445407,
+      "median_lead_hours": 240.0,
+      "median_delta_t_hours": 576.0004166666668
+    },
+    {
+      "event_id": "evt:2017-04-12",
+      "year": 2017,
+      "split": "train",
+      "n_pairs": 21,
+      "n_full_causal": 0,
+      "n_partial_causal": 21,
+      "n_state_only": 0,
+      "mean_forecast_coverage": 0.7908302209772797,
+      "min_forecast_coverage": 0.7889273356401384,
+      "max_forecast_coverage": 0.7951388888888888,
+      "median_lead_hours": 240.0,
+      "median_delta_t_hours": 288.0002777777778
+    },
+    {
+      "event_id": "evt:2017-07-31",
+      "year": 2017,
+      "split": "train",
+      "n_pairs": 9,
+      "n_full_causal": 0,
+      "n_partial_causal": 9,
+      "n_state_only": 0,
+      "mean_forecast_coverage": 0.7925984664018112,
+      "min_forecast_coverage": 0.7916666666666666,
+      "max_forecast_coverage": 0.7951388888888888,
+      "median_lead_hours": 240.0,
+      "median_delta_t_hours": 288.0
+    },
+    {
+      "event_id": "evt:2018-01-13",
+      "year": 2018,
+      "split": "train",
+      "n_pairs": 5,
+      "n_full_causal": 0,
+      "n_partial_causal": 5,
+      "n_state_only": 0,
+      "mean_forecast_coverage": 0.7916666666666666,
+      "min_forecast_coverage": 0.7916666666666666,
+      "max_forecast_coverage": 0.7916666666666666,
+      "median_lead_hours": 240.0,
+      "median_delta_t_hours": 288.0
+    },
+    {
+      "event_id": "evt:2018-06-06",
+      "year": 2018,
+      "split": "train",
+      "n_pairs": 5,
+      "n_full_causal": 0,
+      "n_partial_causal": 5,
+      "n_state_only": 0,
+      "mean_forecast_coverage": 0.7889273356401384,
+      "min_forecast_coverage": 0.7889273356401384,
+      "max_forecast_coverage": 0.7889273356401384,
+      "median_lead_hours": 240.0,
+      "median_delta_t_hours": 288.0002777777778
+    },
+    {
+      "event_id": "evt:2019-01-10",
+      "year": 2019,
+      "split": "val",
+      "n_pairs": 9,
+      "n_full_causal": 0,
+      "n_partial_causal": 9,
+      "n_state_only": 0,
+      "mean_forecast_coverage": 0.7932098765432098,
+      "min_forecast_coverage": 0.7916666666666666,
+      "max_forecast_coverage": 0.7951388888888888,
+      "median_lead_hours": 240.0,
+      "median_delta_t_hours": 288.0
+    },
+    {
+      "event_id": "evt:2019-06-15",
+      "year": 2019,
+      "split": "val",
+      "n_pairs": 10,
+      "n_full_causal": 2,
+      "n_partial_causal": 8,
+      "n_state_only": 0,
+      "mean_forecast_coverage": 0.8695501730103807,
+      "min_forecast_coverage": 0.7923875432525952,
+      "max_forecast_coverage": 1.0,
+      "median_lead_hours": 240.0,
+      "median_delta_t_hours": 288.0002777777778
+    },
+    {
+      "event_id": "evt:2020-01-15",
+      "year": 2020,
+      "split": "val",
+      "n_pairs": 7,
+      "n_full_causal": 0,
+      "n_partial_causal": 7,
+      "n_state_only": 0,
+      "mean_forecast_coverage": 0.7926587301587301,
+      "min_forecast_coverage": 0.7916666666666666,
+      "max_forecast_coverage": 0.7951388888888888,
+      "median_lead_hours": 240.0,
+      "median_delta_t_hours": 288.0
+    },
+    {
+      "event_id": "evt:2020-06-07",
+      "year": 2020,
+      "split": "val",
+      "n_pairs": 18,
+      "n_full_causal": 0,
+      "n_partial_causal": 18,
+      "n_state_only": 0,
+      "mean_forecast_coverage": 0.5220344213197738,
+      "min_forecast_coverage": 0.19774501300954034,
+      "max_forecast_coverage": 0.7923875432525952,
+      "median_lead_hours": 240.0,
+      "median_delta_t_hours": 504.00416666666666
+    },
+    {
+      "event_id": "evt:2021-06-02",
+      "year": 2021,
+      "split": "val",
+      "n_pairs": 32,
+      "n_full_causal": 0,
+      "n_partial_causal": 32,
+      "n_state_only": 0,
+      "mean_forecast_coverage": 0.789571619088812,
+      "min_forecast_coverage": 0.7889273356401384,
+      "max_forecast_coverage": 0.7923875432525952,
+      "median_lead_hours": 240.0,
+      "median_delta_t_hours": 288.0002777777778
+    },
+    {
+      "event_id": "evt:2022-05-16",
+      "year": 2022,
+      "split": "test",
+      "n_pairs": 10,
+      "n_full_causal": 0,
+      "n_partial_causal": 10,
+      "n_state_only": 0,
+      "mean_forecast_coverage": 0.52625557533452,
+      "min_forecast_coverage": 0.2635838150289017,
+      "max_forecast_coverage": 0.7889273356401384,
+      "median_lead_hours": 240.0,
+      "median_delta_t_hours": 576.0005555555556
+    },
+    {
+      "event_id": "evt:2023-06-16",
+      "year": 2023,
+      "split": "test",
+      "n_pairs": 25,
+      "n_full_causal": 0,
+      "n_partial_causal": 0,
+      "n_state_only": 25,
+      "mean_forecast_coverage": 0.0,
+      "min_forecast_coverage": 0.0,
+      "max_forecast_coverage": 0.0,
+      "median_lead_hours": null,
+      "median_delta_t_hours": 288.0002777777778
+    },
+    {
+      "event_id": "evt:2024-06-22",
+      "year": 2024,
+      "split": "test",
+      "n_pairs": 22,
+      "n_full_causal": 10,
+      "n_partial_causal": 12,
+      "n_state_only": 0,
+      "mean_forecast_coverage": 0.8324652777777778,
+      "min_forecast_coverage": 0.1987847222222222,
+      "max_forecast_coverage": 1.0,
+      "median_lead_hours": 240.0,
+      "median_delta_t_hours": 288.0
+    }
+  ],
+  "by_year": [
+    {
+      "year": "2015",
+      "n_pairs": 8,
+      "n_events": 1,
+      "n_full_causal": 0,
+      "n_partial_causal": 0,
+      "n_state_only": 8,
+      "n_coverage_zero": 8,
+      "zero_coverage_rate": 1.0,
+      "mean_forecast_coverage": 0.0
+    },
+    {
+      "year": "2016",
+      "n_pairs": 2,
+      "n_events": 1,
+      "n_full_causal": 0,
+      "n_partial_causal": 2,
+      "n_state_only": 0,
+      "n_coverage_zero": 0,
+      "zero_coverage_rate": 0.0,
+      "mean_forecast_coverage": 0.3968804159445407
+    },
+    {
+      "year": "2017",
+      "n_pairs": 30,
+      "n_events": 2,
+      "n_full_causal": 0,
+      "n_partial_causal": 30,
+      "n_state_only": 0,
+      "n_coverage_zero": 0,
+      "zero_coverage_rate": 0.0,
+      "mean_forecast_coverage": 0.7913606946046392
+    },
+    {
+      "year": "2018",
+      "n_pairs": 10,
+      "n_events": 2,
+      "n_full_causal": 0,
+      "n_partial_causal": 10,
+      "n_state_only": 0,
+      "n_coverage_zero": 0,
+      "zero_coverage_rate": 0.0,
+      "mean_forecast_coverage": 0.7902970011534025
+    },
+    {
+      "year": "2019",
+      "n_pairs": 19,
+      "n_events": 2,
+      "n_full_causal": 2,
+      "n_partial_causal": 17,
+      "n_state_only": 0,
+      "n_coverage_zero": 0,
+      "zero_coverage_rate": 0.0,
+      "mean_forecast_coverage": 0.8333889799469839
+    },
+    {
+      "year": "2020",
+      "n_pairs": 25,
+      "n_events": 2,
+      "n_full_causal": 0,
+      "n_partial_causal": 25,
+      "n_state_only": 0,
+      "n_coverage_zero": 0,
+      "zero_coverage_rate": 0.0,
+      "mean_forecast_coverage": 0.5978092277946816
+    },
+    {
+      "year": "2021",
+      "n_pairs": 32,
+      "n_events": 1,
+      "n_full_causal": 0,
+      "n_partial_causal": 32,
+      "n_state_only": 0,
+      "n_coverage_zero": 0,
+      "zero_coverage_rate": 0.0,
+      "mean_forecast_coverage": 0.789571619088812
+    },
+    {
+      "year": "2022",
+      "n_pairs": 10,
+      "n_events": 1,
+      "n_full_causal": 0,
+      "n_partial_causal": 10,
+      "n_state_only": 0,
+      "n_coverage_zero": 0,
+      "zero_coverage_rate": 0.0,
+      "mean_forecast_coverage": 0.52625557533452
+    },
+    {
+      "year": "2023",
+      "n_pairs": 25,
+      "n_events": 1,
+      "n_full_causal": 0,
+      "n_partial_causal": 0,
+      "n_state_only": 25,
+      "n_coverage_zero": 25,
+      "zero_coverage_rate": 1.0,
+      "mean_forecast_coverage": 0.0
+    },
+    {
+      "year": "2024",
+      "n_pairs": 22,
+      "n_events": 1,
+      "n_full_causal": 10,
+      "n_partial_causal": 12,
+      "n_state_only": 0,
+      "n_coverage_zero": 0,
+      "zero_coverage_rate": 0.0,
+      "mean_forecast_coverage": 0.8324652777777778
+    }
+  ],
+  "by_split": [
+    {
+      "split": "test",
+      "n_pairs": 57,
+      "n_events": 3,
+      "n_full_causal": 10,
+      "n_partial_causal": 22,
+      "n_state_only": 25,
+      "n_coverage_zero": 25,
+      "zero_coverage_rate": 0.43859649122807015,
+      "mean_forecast_coverage": 0.41362792744660193
+    },
+    {
+      "split": "train",
+      "n_pairs": 50,
+      "n_events": 6,
+      "n_full_causal": 0,
+      "n_partial_causal": 42,
+      "n_state_only": 8,
+      "n_coverage_zero": 8,
+      "zero_coverage_rate": 0.16,
+      "mean_forecast_coverage": 0.6487510336312456
+    },
+    {
+      "split": "val",
+      "n_pairs": 76,
+      "n_events": 5,
+      "n_full_causal": 2,
+      "n_partial_causal": 74,
+      "n_state_only": 0,
+      "n_coverage_zero": 0,
+      "zero_coverage_rate": 0.0,
+      "mean_forecast_coverage": 0.7374462253250226
+    }
+  ],
+  "by_region": [
+    {
+      "region": "dhaka_ne",
+      "n_pairs": 28,
+      "n_events": 12,
+      "n_full_causal": 2,
+      "n_partial_causal": 20,
+      "n_state_only": 6,
+      "n_coverage_zero": 6,
+      "zero_coverage_rate": 0.21428571428571427,
+      "mean_forecast_coverage": 0.59585483992047
+    },
+    {
+      "region": "dhaka_nw",
+      "n_pairs": 28,
+      "n_events": 12,
+      "n_full_causal": 2,
+      "n_partial_causal": 20,
+      "n_state_only": 6,
+      "n_coverage_zero": 6,
+      "zero_coverage_rate": 0.21428571428571427,
+      "mean_forecast_coverage": 0.59585483992047
+    },
+    {
+      "region": "dhaka_se",
+      "n_pairs": 18,
+      "n_events": 8,
+      "n_full_causal": 1,
+      "n_partial_causal": 17,
+      "n_state_only": 0,
+      "n_coverage_zero": 0,
+      "zero_coverage_rate": 0.0,
+      "mean_forecast_coverage": 0.7376626988817016
+    },
+    {
+      "region": "dhaka_sw",
+      "n_pairs": 20,
+      "n_events": 9,
+      "n_full_causal": 1,
+      "n_partial_causal": 19,
+      "n_state_only": 0,
+      "n_coverage_zero": 0,
+      "zero_coverage_rate": 0.0,
+      "mean_forecast_coverage": 0.7035844705879855
+    },
+    {
+      "region": "kishoreganj",
+      "n_pairs": 29,
+      "n_events": 12,
+      "n_full_causal": 2,
+      "n_partial_causal": 20,
+      "n_state_only": 7,
+      "n_coverage_zero": 7,
+      "zero_coverage_rate": 0.2413793103448276,
+      "mean_forecast_coverage": 0.5753081213025226
+    },
+    {
+      "region": "netrokona",
+      "n_pairs": 30,
+      "n_events": 12,
+      "n_full_causal": 2,
+      "n_partial_causal": 21,
+      "n_state_only": 7,
+      "n_coverage_zero": 7,
+      "zero_coverage_rate": 0.23333333333333334,
+      "mean_forecast_coverage": 0.577647202096175
+    },
+    {
+      "region": "sunamganj",
+      "n_pairs": 30,
+      "n_events": 12,
+      "n_full_causal": 2,
+      "n_partial_causal": 21,
+      "n_state_only": 7,
+      "n_coverage_zero": 7,
+      "zero_coverage_rate": 0.23333333333333334,
+      "mean_forecast_coverage": 0.577647202096175
+    }
+  ],
+  "by_delta_t": [
+    {
+      "delta_t_bucket": "10-14 days",
+      "n_pairs": 151,
+      "n_events": 12,
+      "n_full_causal": 10,
+      "n_partial_causal": 116,
+      "n_state_only": 25,
+      "n_coverage_zero": 25,
+      "zero_coverage_rate": 0.16556291390728478,
+      "mean_forecast_coverage": 0.6737922054940662
+    },
+    {
+      "delta_t_bucket": "14-21 days",
+      "n_pairs": 2,
+      "n_events": 1,
+      "n_full_causal": 0,
+      "n_partial_causal": 2,
+      "n_state_only": 0,
+      "n_coverage_zero": 0,
+      "zero_coverage_rate": 0.0,
+      "mean_forecast_coverage": 0.5265588914549654
+    },
+    {
+      "delta_t_bucket": "2-4 days",
+      "n_pairs": 2,
+      "n_events": 1,
+      "n_full_causal": 2,
+      "n_partial_causal": 0,
+      "n_state_only": 0,
+      "n_coverage_zero": 0,
+      "zero_coverage_rate": 0.0,
+      "mean_forecast_coverage": 1.0
+    },
+    {
+      "delta_t_bucket": "21+ days",
+      "n_pairs": 23,
+      "n_events": 5,
+      "n_full_causal": 0,
+      "n_partial_causal": 18,
+      "n_state_only": 5,
+      "n_coverage_zero": 5,
+      "zero_coverage_rate": 0.21739130434782608,
+      "mean_forecast_coverage": 0.23144953859209355
+    },
+    {
+      "delta_t_bucket": "4-7 days",
+      "n_pairs": 3,
+      "n_events": 1,
+      "n_full_causal": 0,
+      "n_partial_causal": 0,
+      "n_state_only": 3,
+      "n_coverage_zero": 3,
+      "zero_coverage_rate": 1.0,
+      "mean_forecast_coverage": 0.0
+    },
+    {
+      "delta_t_bucket": "7-10 days",
+      "n_pairs": 2,
+      "n_events": 1,
+      "n_full_causal": 0,
+      "n_partial_causal": 2,
+      "n_state_only": 0,
+      "n_coverage_zero": 0,
+      "zero_coverage_rate": 0.0,
+      "mean_forecast_coverage": 0.9705882352941176
+    }
+  ],
+  "by_source": [
+    {
+      "forecast_source": "",
+      "n_pairs": 33,
+      "n_events": 2,
+      "n_full_causal": 0,
+      "n_partial_causal": 0,
+      "n_state_only": 33,
+      "n_coverage_zero": 33,
+      "zero_coverage_rate": 1.0,
+      "mean_forecast_coverage": 0.0
+    },
+    {
+      "forecast_source": "open-meteo-single-runs-ecmwf-ifs",
+      "n_pairs": 22,
+      "n_events": 1,
+      "n_full_causal": 10,
+      "n_partial_causal": 12,
+      "n_state_only": 0,
+      "n_coverage_zero": 0,
+      "zero_coverage_rate": 0.0,
+      "mean_forecast_coverage": 0.8324652777777778
+    },
+    {
+      "forecast_source": "weatherbench2-hres-ifs",
+      "n_pairs": 128,
+      "n_events": 11,
+      "n_full_causal": 2,
+      "n_partial_causal": 126,
+      "n_state_only": 0,
+      "n_coverage_zero": 0,
+      "zero_coverage_rate": 0.0,
+      "mean_forecast_coverage": 0.7323907856219469
+    }
+  ],
+  "missingness": {
+    "mechanism": "MNAR",
+    "archive_gap_years": [
+      "2015",
+      "2023"
+    ],
+    "n_zero_coverage_pairs": 33,
+    "n_zero_explained_by_2015_or_2023": 33,
+    "split_zero_coverage_rate": {
+      "train": 0.16,
+      "val": 0.0,
+      "test": 0.43859649122807015
+    },
+    "delta_t_among_archive_eligible_years": [
+      {
+        "delta_t_bucket": "10-14 days",
+        "n_pairs": 126,
+        "n_events": 11,
+        "n_full_causal": 10,
+        "n_partial_causal": 116,
+        "n_state_only": 0,
+        "n_coverage_zero": 0,
+        "zero_coverage_rate": 0.0,
+        "mean_forecast_coverage": 0.8074811351555872
+      },
+      {
+        "delta_t_bucket": "14-21 days",
+        "n_pairs": 2,
+        "n_events": 1,
+        "n_full_causal": 0,
+        "n_partial_causal": 2,
+        "n_state_only": 0,
+        "n_coverage_zero": 0,
+        "zero_coverage_rate": 0.0,
+        "mean_forecast_coverage": 0.5265588914549654
+      },
+      {
+        "delta_t_bucket": "2-4 days",
+        "n_pairs": 2,
+        "n_events": 1,
+        "n_full_causal": 2,
+        "n_partial_causal": 0,
+        "n_state_only": 0,
+        "n_coverage_zero": 0,
+        "zero_coverage_rate": 0.0,
+        "mean_forecast_coverage": 1.0
+      },
+      {
+        "delta_t_bucket": "21+ days",
+        "n_pairs": 18,
+        "n_events": 4,
+        "n_full_causal": 0,
+        "n_partial_causal": 18,
+        "n_state_only": 0,
+        "n_coverage_zero": 0,
+        "zero_coverage_rate": 0.0,
+        "mean_forecast_coverage": 0.29574107708989733
+      },
+      {
+        "delta_t_bucket": "7-10 days",
+        "n_pairs": 2,
+        "n_events": 1,
+        "n_full_causal": 0,
+        "n_partial_causal": 2,
+        "n_state_only": 0,
+        "n_coverage_zero": 0,
+        "zero_coverage_rate": 0.0,
+        "mean_forecast_coverage": 0.9705882352941176
+      }
+    ],
+    "conclusion": "Coverage=0 is year/archive (2015 train, 2023 test), hence split-correlated. Among 2016\u20132022/2024, missingness follows the 10-day HRES wall vs \u0394t. Exclude STATE_ONLY from the forecast set so the mask cannot encode era."
+  },
+  "leakage": {
+    "n_pairs": 183,
+    "n_violations": 0,
+    "ok": true,
+    "state_timestamp_le_t0": true,
+    "era5_in_horizon_as_forecast": false,
+    "future_glofas_as_forecast": false,
+    "target_derived_features": false,
+    "violations": [],
+    "checks": [
+      "state_timestamp <= t0",
+      "forecast issue_time <= t0 (enforced at acquisition; rejected records not filled)",
+      "forecast valid_time in (t0,t1]",
+      "no post-t0 observed rainfall as input",
+      "no future GloFAS observations as forecast",
+      "no target-derived features"
+    ]
+  },
+  "input_contract": {
+    "target": {
+      "name": "NEWLY_FLOODED",
+      "definition": "DRY->FLOODED on pixels valid in both consecutive GFM scenes of the same event and AOI",
+      "t0": "earlier.valid_at",
+      "t1": "later.valid_at",
+      "not": [
+        "24h flood map",
+        "48h flood map",
+        "72h flood map",
+        "truncated 10-day GFM window"
+      ],
+      "label_resolution_m": 20.0
+    },
+    "regrid": {
+      "source_resolution": "1.5\u00b0 (240\u00d7121 equiangular with poles)",
+      "target_resolution": "nearest GloFAS proxy point; GFM working grid 64\u00d764 is not the NWP grid",
+      "regridding_method": "nearest-neighbor point sample at proxy lat/lon; no 20 m downscale",
+      "high_resolution_forecast_claim": false
+    },
+    "channels": [
+      {
+        "name": "STATE_AT_T0",
+        "source": "GloFAS reanalysis Q (Open-Meteo Flood API, forecast_days=0)",
+        "timestamp": "end of last complete Q calendar day before t0",
+        "status": "MODELLED_STATE",
+        "units": "m3 s-1",
+        "resolution": "daily 0.05deg proxy cell",
+        "required": true,
+        "note": "Not forecast forcing. Freshness recorded; currently FRESH on 183/183."
+      },
+      {
+        "name": "FORECAST_FORCING",
+        "source": "WB2 IFS HRES total_precipitation_6hr (2016\u20132022); Open-Meteo Single Runs IFS (2024)",
+        "timestamp": "issue_time <= t0; valid_time in (t0,t1]",
+        "status": "FORECAST_VINTAGE",
+        "units": "mm (native accumulation window)",
+        "resolution": "1.5\u00b0 (240\u00d7121 equiangular with poles)",
+        "required": true,
+        "note": "Native steps only. No ERA5 in (t0,t1]. No interpolation of missing leads."
+      },
+      {
+        "name": "FORCING_MASK",
+        "source": "derived from vintage windows",
+        "timestamp": "same as FORECAST_FORCING valid_time",
+        "status": "MASK",
+        "units": "1 = genuine vintage hour; 0 = unavailable",
+        "resolution": "hourly coverage of native windows; not 20 m",
+        "required": true,
+        "note": "M=0 precipitation is None, never 0.0 fill."
+      },
+      {
+        "name": "STATIC_SPATIAL_FEATURES",
+        "source": "existing GFM working-grid statics (parent cube)",
+        "timestamp": "time-invariant",
+        "status": "STATIC",
+        "units": "channel-specific",
+        "resolution": "GFM working grid 64x64; native DEM/HAND as recorded in v2.1",
+        "required": true,
+        "note": "Unchanged. Not a substitute for vintage precipitation."
+      },
+      {
+        "name": "STATE_FRESHNESS_MASK",
+        "source": "GloFAS staleness class (FRESH/STALE/VERY_STALE)",
+        "timestamp": "glofas_state_time",
+        "status": "OPTIONAL",
+        "units": "categorical",
+        "resolution": "pair scalar",
+        "required": false,
+        "note": "Currently constant FRESH; keep for future stale days. Do not drop pairs today."
+      },
+      {
+        "name": "FORECAST_LEAD_FEATURES",
+        "source": "vintage issue/valid timestamps",
+        "timestamp": "issue_time",
+        "status": "OPTIONAL",
+        "units": "hours",
+        "resolution": "pair scalar (lead min/max)",
+        "required": false,
+        "note": "Already on Phase 6.9B pair rows."
+      }
+    ],
+    "forbidden": [
+      "ERA5-Land after t0 as FORECAST_FORCING",
+      "GloFAS Q after t0 as FORECAST_FORCING",
+      "zero-fill of M=0 hours",
+      "interpolation of missing vintage steps",
+      "current-day forecast used retroactively",
+      "issue_time > t0"
+    ]
+  },
+  "training_gates": {
+    "causal_input_integrity": true,
+    "missingness_audit_published": true,
+    "state_only_excluded_from_forecast_set": true,
+    "min_split_events": true,
+    "event_level_eval_specified": true,
+    "input_contract_frozen": true,
+    "human_baseline_approval": false,
+    "training_authorized": false
+  },
+  "frozen_splits_path": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/splits_v2/splits.json",
+  "frozen_split_scheme": "event_temporal",
+  "decision_letter": "B",
+  "decision": "PARTIAL-CAUSAL BENCHMARK WITH EXPLICIT MASKING",
+  "target_b_status": "PARTIALLY FEASIBLE",
+  "hydro_status": "MODELLED_STATE_AT_T0",
+  "track_b": "SEPARATE",
+  "track_c": "NOT YET IMPLEMENTED",
+  "provenance": {
+    "envelope": {
+      "data_status": "DESIGN",
+      "provider": "floodlens-x-phase6.10",
+      "dataset": "phase6.10-partial-causal-design-v1",
+      "retrieved_at": "2026-09-03T02:05:06.196472+00:00",
+      "valid_at": null,
+      "expires_at": null,
+      "source_url": "docs/PHASE_6_10_PARTIAL_CAUSAL_BENCHMARK_DESIGN.md",
+      "source_version": "phase6.10-partial-causal-design-v1",
+      "freshness": "SNAPSHOT",
+      "fallback_used": false,
+      "simulated": false,
+      "spatial_coverage": null,
+      "temporal_coverage": null,
+      "data_version": "platform-v1",
+      "source": "floodlens-x-phase6.10",
+      "retrieval_time": "2026-09-03T02:05:06.196467+00:00",
+      "checksum": null,
+      "processing_version": "phase6.10-partial-causal-design-v1",
+      "license": "Design document; WB2/ECMWF HRES; Open-Meteo CC BY 4.0; GFM CEMS",
+      "attribution": "Phase 6.9B vintage pairs; CEMS GloFAS reanalysis (state only)",
+      "status": "DESIGN",
+      "label_kind": "OBSERVED",
+      "n_pairs": 183,
+      "n_forecast_eligible": 150,
+      "parent_cube": "phase6.5-gfm-spatial-v2.1"
+    },
+    "complete": true
+  },
+  "next_phase": "A future baseline experiment may be designed after human approval. Do not train in this phase."
+}

@@ -1,0 +1,76 @@
+{
+  "dataset_version": "phase4.5-v0",
+  "note": "License log. No WorldFloods. No global GloFAS cube. Open-Meteo Flood API used instead of CDS.",
+  "datasets": [
+    {
+      "id": "open-meteo-archive",
+      "provider": "Open-Meteo (ERA5 / ERA5-Land family)",
+      "license": "CC BY 4.0",
+      "attribution_required": true,
+      "attribution": "Weather data by Open-Meteo.com",
+      "role": "Hourly precipitation lookback features",
+      "commercial_ok": true,
+      "acquired": "7-day sample plus 2014-12-01..2024-12-31 3-city snapshot in data/ml/real/precip_2014_2024.json"
+    },
+    {
+      "id": "open-meteo-flood-glofas",
+      "provider": "Open-Meteo Flood API (GloFAS v4 reanalysis)",
+      "license": "CC BY 4.0; underlying GloFAS CEMS-FLOODS / Copernicus open",
+      "attribution_required": true,
+      "attribution": "Weather data by Open-Meteo.com; GloFAS/Copernicus EMS",
+      "role": "Track A modelled daily discharge labels at 3 AOI cells",
+      "commercial_ok": true,
+      "acquired": "2015-01-01..2024-12-31 3-cell snapshot in data/ml/real/discharge_2015_2024.json",
+      "label_kind": "MODELLED"
+    },
+    {
+      "id": "glofas-historical",
+      "provider": "CEMS / Copernicus CDS cems-glofas-historical",
+      "license": "CEMS-FLOODS / Copernicus open",
+      "attribution_required": true,
+      "role": "Track A modelled discharge labels at 3 AOI cells only",
+      "commercial_ok": true,
+      "acquired": "not downloaded; extractor refuses global cube; CDS credentials required",
+      "label_kind": "MODELLED"
+    },
+    {
+      "id": "cems-rapid-mapping-emsr",
+      "provider": "Copernicus EMS Rapid Mapping",
+      "license": "Copernicus open (some activations restricted/sensitive)",
+      "attribution_required": true,
+      "role": "Track B observed flood polygons when ingested",
+      "commercial_ok": true,
+      "acquired": "metadata catalog only; polygons not downloaded"
+    },
+    {
+      "id": "worldfloods-v2",
+      "provider": "UV / HuggingFace",
+      "license": "CC BY-NC 4.0",
+      "attribution_required": true,
+      "role": "Optional later raster research",
+      "commercial_ok": false,
+      "acquired": "not downloaded (~76 GB, NC license)"
+    },
+    {
+      "id": "copernicus-gfm-ensemble-flood-extent",
+      "provider": "CEMS / EODC Copernicus Global Flood Monitoring",
+      "license": "STAC proprietary; Copernicus / CEMS attribution required (not claimed CC-BY)",
+      "attribution_required": true,
+      "attribution": "Copernicus Emergency Management Service — Global Flood Monitoring (GFM)",
+      "role": "Phase 5 OBSERVED spatial flood-extent labels, AOI-clipped Equi7 E039N021T3",
+      "commercial_ok": null,
+      "acquired": "capped STAC search + public data.eodc.eu GeoTIFFs; processed 32x32 npz under data/ml/spatial/gfm/processed",
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "giezendanner-bangladesh-inundation-history",
+      "provider": "CyVerse / DOI 10.25739/2edm-jh03",
+      "license": "open download path (authors); not acquired",
+      "attribution_required": true,
+      "role": "Phase 5 DERIVED fallback — not acquired (GFM is the primary OBSERVED source)",
+      "commercial_ok": true,
+      "acquired": "not downloaded",
+      "label_kind": "DERIVED"
+    }
+  ]
+}

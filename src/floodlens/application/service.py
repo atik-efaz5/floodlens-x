@@ -1,11 +1,12 @@
 """Simulation lifecycle orchestration (notebook cell 538)."""
 
-from dataclasses import dataclass
-from typing import Callable, Optional, Union
+from dataclasses import dataclass, field
+from typing import Callable, List, Optional, Union
 
 import numpy as np
 
 from floodlens.application.progress import ProgressManager
+from floodlens.application.scenario_results import TemporalSnapshot, velocity_from_state
 from floodlens.core.config import SimulationConfig
 from floodlens.core.simulator import ShallowWaterSimulatorWithDiagnostics
 from floodlens.core.state import SimulationState
@@ -17,6 +18,7 @@ class PipelineResult:
 
     success: bool
     final_state: Optional[SimulationState] = None
+    snapshots: List[TemporalSnapshot] = field(default_factory=list)
 
 
 class SimulationService:
@@ -33,6 +35,15 @@ class SimulationService:
             self.config = simulator_or_config.config
         self.progress = ProgressManager()
         self.is_running = False
+
+    def _capture_snapshot(self) -> TemporalSnapshot:
+        """Copy application-visible fields after the current solver interval."""
+        state = self.sim.get_state()
+        h = np.asarray(state.h, dtype=np.float64).copy()
+        hu = np.asarray(state.U[:, :, 1], dtype=np.float64)
+        hv = np.asarray(state.U[:, :, 2], dtype=np.float64)
+        velocity = velocity_from_state(h, hu, hv, self.config.h_dry_threshold)
+        return TemporalSnapshot(time=float(state.time), depth=h, velocity=velocity)
 
     def run_scenario(
         self,
@@ -66,6 +77,10 @@ class SimulationService:
         if track_progress:
             print(f"Initializing scenario: {self.sim.config.name}")
 
+        snapshots: List[TemporalSnapshot] = []
+        if self.sim._state is not None:
+            snapshots.append(self._capture_snapshot())
+
         try:
             for _ in range(steps):
                 if not self.is_running:
@@ -74,6 +89,7 @@ class SimulationService:
                 self.sim.run(rainfall_rate=rain, manning_n=manning_field)
 
                 state = self.sim.get_state()
+                snapshots.append(self._capture_snapshot())
                 if track_progress:
                     u, v, _ = self.sim.velocity
                     max_v = np.max(np.sqrt(u**2 + v**2))
@@ -98,13 +114,17 @@ class SimulationService:
             if track_progress:
                 print(f"\nScenario '{self.sim.config.name}' completed successfully.")
                 self.sim.diagnostics.summary()
-            return PipelineResult(success=True, final_state=self.sim.get_state())
+            return PipelineResult(
+                success=True,
+                final_state=self.sim.get_state(),
+                snapshots=snapshots,
+            )
 
         except Exception as e:
             self.is_running = False
             if track_progress:
                 print(f"\n[CRITICAL FAILURE]: {str(e)}")
             final_state = self.sim._state
-            return PipelineResult(success=False, final_state=final_state)
+            return PipelineResult(success=False, final_state=final_state, snapshots=snapshots)
         finally:
             self.is_running = False

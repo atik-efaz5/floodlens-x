@@ -1,0 +1,113 @@
+{
+  "evaluated_at": "2026-09-02T17:40:28Z",
+  "model_id": "AI-SPATIAL-OCCURRENCE-v2",
+  "dataset": {
+    "dataset_version": "phase6-gfm-spatial-v2",
+    "n": 0,
+    "available": false,
+    "reason": "No GFM v2 processed maps. Run scripts/phase6_acquire.py.",
+    "label_kind": "OBSERVED"
+  },
+  "inventory": {
+    "n_independent_events": 0,
+    "verdict": "INSUFFICIENT FOR VALIDATION",
+    "cities": []
+  },
+  "channel_audit": {
+    "channels": {},
+    "n_spatial": 0,
+    "min_spatial_required": 4,
+    "cnn_allowed": false
+  },
+  "gate0": {
+    "gate": 0,
+    "pass": false,
+    "failed": [
+      "independent_events",
+      "regions",
+      "spatial_channels",
+      "dem_present",
+      "precip_lattice",
+      "label_observed"
+    ],
+    "checks": {
+      "independent_events": false,
+      "regions": false,
+      "spatial_channels": false,
+      "dem_present": false,
+      "precip_lattice": false,
+      "no_event_leak_train_test": true,
+      "label_observed": false,
+      "unknown_never_dry": true
+    },
+    "n_independent_events": 0,
+    "cities": [],
+    "n_spatial_channels": 0,
+    "event_gap_days": 45,
+    "spatial_channel_names": [],
+    "leak_event_ids": [],
+    "unknown_fraction": null,
+    "note": "If this gate fails: expand data. Do not train a U-Net."
+  },
+  "gate1": {
+    "gate": 1,
+    "pass": false,
+    "failed": [
+      "gate0",
+      "gbdt_beats_persistence",
+      "train_events"
+    ],
+    "checks": {
+      "gate0": false,
+      "gbdt_beats_persistence": false,
+      "train_events": false
+    },
+    "gbdt_iou": null,
+    "persistence_iou": null,
+    "n_train_events": 0,
+    "note": "DL / U-Net is allowed only if Gate 1 passes."
+  },
+  "gate2": {
+    "gate": 2,
+    "pass": false,
+    "failed": [
+      "gate1",
+      "event_metrics_reported",
+      "geographic_holdout_not_collapsed"
+    ],
+    "checks": {
+      "gate1": false,
+      "event_metrics_reported": false,
+      "geographic_holdout_not_collapsed": false,
+      "no_a_priori_80pct_claim": true,
+      "uncertainty_ok": true
+    },
+    "note": "Catalog VALIDATED only if Gate 2 passes. Public API stays UNAVAILABLE otherwise."
+  },
+  "cnn_trained": false,
+  "cnn_reason": "CNN refused: 0 spatial channels < 4. Do not train a U-Net on broadcast features.",
+  "baselines": null,
+  "status": "NOT_TRAINED",
+  "public_status": "NOT_TRAINED",
+  "catalog_status": "NOT_VALIDATED",
+  "promoted_to_validated": false,
+  "comparable_to_physics": false,
+  "accuracy_claim": null,
+  "target": {
+    "definition": "P(cell flooded) from GFM ensemble extent, tau=0.25, unknown=255 never dry",
+    "horizon_hours": 192,
+    "supported_product_horizons": [
+      192
+    ],
+    "unavailable_horizons": [
+      6,
+      12,
+      24,
+      48,
+      72
+    ],
+    "unavailable_reason": "GFM scenes are not daily 6\u201372 h maps. Labels are not invented."
+  },
+  "primary_model": "pixel_gbdt",
+  "note": "Phase 6 is formulation and gating. If Gate 0 fails: expand data. Do not train a U-Net. Catalog stays NOT_VALIDATED until Gate 2."
+}

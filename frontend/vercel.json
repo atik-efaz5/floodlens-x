@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://floodlens-x-api.onrender.com/api/:path*"
+    }
+  ]
+}

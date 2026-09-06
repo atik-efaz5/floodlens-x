@@ -1,0 +1,1481 @@
+{
+  "evaluated_at": "2026-09-02T18:31:49Z",
+  "phase": "6.5A",
+  "model_id": "AI-SPATIAL-OCCURRENCE-v2",
+  "dataset_version": "phase6.5-gfm-spatial-v2",
+  "dataset": {
+    "dataset_version": "phase6.5-gfm-spatial-v2",
+    "n": 155,
+    "dropped": 0,
+    "label_kind": "OBSERVED",
+    "horizon_hours": 192,
+    "grid": 64,
+    "available": true,
+    "splits": {
+      "train": 27,
+      "val": 81,
+      "test": 47
+    },
+    "cities": [
+      "dhaka_ne",
+      "dhaka_nw",
+      "dhaka_se",
+      "dhaka_sw",
+      "kishoreganj",
+      "netrokona",
+      "sunamganj"
+    ],
+    "not_horizons": [
+      6,
+      12,
+      24,
+      48,
+      72
+    ],
+    "not_horizons_reason": "GFM scenes are not daily 6\u201372 h maps. Do not invent those labels.",
+    "events": {
+      "n_tiles": 155,
+      "n_days": 42,
+      "n_cities": 7,
+      "cities": [
+        "dhaka_ne",
+        "dhaka_nw",
+        "dhaka_se",
+        "dhaka_sw",
+        "kishoreganj",
+        "netrokona",
+        "sunamganj"
+      ],
+      "days": [
+        "2016-06-30",
+        "2016-07-24",
+        "2016-08-17",
+        "2018-01-13",
+        "2018-01-15",
+        "2018-01-25",
+        "2018-06-06",
+        "2018-06-08",
+        "2018-06-18",
+        "2019-06-15",
+        "2019-06-27",
+        "2019-07-09",
+        "2019-07-21",
+        "2019-07-25",
+        "2019-08-02",
+        "2020-06-07",
+        "2020-06-09",
+        "2020-06-19",
+        "2020-06-21",
+        "2020-07-15",
+        "2020-07-19",
+        "2020-08-06",
+        "2020-08-08",
+        "2021-06-02",
+        "2021-06-04",
+        "2021-06-14",
+        "2021-06-16",
+        "2021-06-26",
+        "2021-07-08",
+        "2021-07-20",
+        "2021-08-01",
+        "2021-08-13",
+        "2022-05-16",
+        "2022-05-18",
+        "2022-05-28",
+        "2022-07-03",
+        "2023-06-16",
+        "2023-06-28",
+        "2023-07-10",
+        "2023-07-22",
+        "2023-08-03",
+        "2023-08-15"
+      ],
+      "n_independent_events": 8,
+      "n_city_episodes": 48,
+      "event_ids": [
+        "evt:2016-06-30",
+        "evt:2018-01-13",
+        "evt:2018-06-06",
+        "evt:2019-06-15",
+        "evt:2020-06-07",
+        "evt:2021-06-02",
+        "evt:2022-05-16",
+        "evt:2023-06-16"
+      ],
+      "n_flood_positive_events": 8,
+      "pixels": {
+        "flood": 22672,
+        "dry": 377072,
+        "unknown": 235136,
+        "valid": 399744,
+        "prevalence_flood_among_valid": 0.056716298430995835,
+        "unknown_fraction": 0.37036290322580645
+      },
+      "splits": {
+        "train": 27,
+        "val": 81,
+        "test": 47
+      },
+      "event_gap_days": 45,
+      "sufficient_for_validation": false,
+      "verdict": "INSUFFICIENT FOR VALIDATION",
+      "note": "Independent events = meteorological episodes separated by >45 days. Two city tiles on the same flood are one event. Orbit pairs two days apart are one event. Multiple 21-day revisits inside one monsoon are one event."
+    },
+    "validation_verdict": "INSUFFICIENT FOR VALIDATION"
+  },
+  "inventory": {
+    "n_tiles": 155,
+    "n_days": 42,
+    "n_cities": 7,
+    "cities": [
+      "dhaka_ne",
+      "dhaka_nw",
+      "dhaka_se",
+      "dhaka_sw",
+      "kishoreganj",
+      "netrokona",
+      "sunamganj"
+    ],
+    "days": [
+      "2016-06-30",
+      "2016-07-24",
+      "2016-08-17",
+      "2018-01-13",
+      "2018-01-15",
+      "2018-01-25",
+      "2018-06-06",
+      "2018-06-08",
+      "2018-06-18",
+      "2019-06-15",
+      "2019-06-27",
+      "2019-07-09",
+      "2019-07-21",
+      "2019-07-25",
+      "2019-08-02",
+      "2020-06-07",
+      "2020-06-09",
+      "2020-06-19",
+      "2020-06-21",
+      "2020-07-15",
+      "2020-07-19",
+      "2020-08-06",
+      "2020-08-08",
+      "2021-06-02",
+      "2021-06-04",
+      "2021-06-14",
+      "2021-06-16",
+      "2021-06-26",
+      "2021-07-08",
+      "2021-07-20",
+      "2021-08-01",
+      "2021-08-13",
+      "2022-05-16",
+      "2022-05-18",
+      "2022-05-28",
+      "2022-07-03",
+      "2023-06-16",
+      "2023-06-28",
+      "2023-07-10",
+      "2023-07-22",
+      "2023-08-03",
+      "2023-08-15"
+    ],
+    "n_independent_events": 8,
+    "n_city_episodes": 48,
+    "event_ids": [
+      "evt:2016-06-30",
+      "evt:2018-01-13",
+      "evt:2018-06-06",
+      "evt:2019-06-15",
+      "evt:2020-06-07",
+      "evt:2021-06-02",
+      "evt:2022-05-16",
+      "evt:2023-06-16"
+    ],
+    "n_flood_positive_events": 8,
+    "pixels": {
+      "flood": 22672,
+      "dry": 377072,
+      "unknown": 235136,
+      "valid": 399744,
+      "prevalence_flood_among_valid": 0.056716298430995835,
+      "unknown_fraction": 0.37036290322580645
+    },
+    "splits": {
+      "train": 27,
+      "val": 81,
+      "test": 47
+    },
+    "event_gap_days": 45,
+    "sufficient_for_validation": false,
+    "verdict": "INSUFFICIENT FOR VALIDATION",
+    "note": "Independent events = meteorological episodes separated by >45 days. Two city tiles on the same flood are one event. Orbit pairs two days apart are one event. Multiple 21-day revisits inside one monsoon are one event."
+  },
+  "events": [
+    {
+      "event_id": "evt:2016-06-30",
+      "event_start": "2016-06-30T00:00:00Z",
+      "event_peak": "2016-08-17T23:55:56Z",
+      "event_end": "2016-08-17T00:00:00Z",
+      "geographic_region": [
+        "dhaka_sw"
+      ],
+      "basin_ids": [
+        "central_floodplain"
+      ],
+      "source": "copernicus-gfm-ensemble-flood-extent",
+      "source_version": "GFM ensemble_flood_extent AS020M",
+      "label_source": "copernicus-gfm-ensemble-flood-extent",
+      "label_kind": "OBSERVED",
+      "provenance": {
+        "n_scenes": 3,
+        "n_tiles": 3,
+        "scene_ids": [
+          "ENSEMBLE_FLOOD_20160630T235553_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20160724T235554_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20160817T235556_VV_AS020M_E039N021T3"
+        ],
+        "tile_ids": [
+          "E039N021T3"
+        ]
+      },
+      "quality_status": "ok",
+      "pixels": {
+        "flood": 7,
+        "dry": 1385,
+        "unknown": 10896,
+        "valid": 1392,
+        "valid_fraction": 0.11328125,
+        "flood_among_valid": 0.005028735632183908
+      }
+    },
+    {
+      "event_id": "evt:2018-01-13",
+      "event_start": "2018-01-13T00:00:00Z",
+      "event_peak": "2018-01-13T12:04:33Z",
+      "event_end": "2018-01-25T00:00:00Z",
+      "geographic_region": [
+        "dhaka_ne",
+        "dhaka_nw",
+        "dhaka_se",
+        "dhaka_sw",
+        "kishoreganj",
+        "netrokona",
+        "sunamganj"
+      ],
+      "basin_ids": [
+        "central_floodplain",
+        "haor_meghna"
+      ],
+      "source": "copernicus-gfm-ensemble-flood-extent",
+      "source_version": "GFM ensemble_flood_extent AS020M",
+      "label_source": "copernicus-gfm-ensemble-flood-extent",
+      "label_kind": "OBSERVED",
+      "provenance": {
+        "n_scenes": 3,
+        "n_tiles": 12,
+        "scene_ids": [
+          "ENSEMBLE_FLOOD_20180113T120433_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20180115T235557_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20180125T120433_VV_AS020M_E039N021T3"
+        ],
+        "tile_ids": [
+          "E039N021T3"
+        ]
+      },
+      "quality_status": "ok",
+      "pixels": {
+        "flood": 531,
+        "dry": 30875,
+        "unknown": 17746,
+        "valid": 31406,
+        "valid_fraction": 0.6389567057291666,
+        "flood_among_valid": 0.016907597274406164
+      }
+    },
+    {
+      "event_id": "evt:2018-06-06",
+      "event_start": "2018-06-06T00:00:00Z",
+      "event_peak": "2018-06-18T12:04:37Z",
+      "event_end": "2018-06-18T00:00:00Z",
+      "geographic_region": [
+        "dhaka_ne",
+        "dhaka_nw",
+        "dhaka_se",
+        "dhaka_sw",
+        "kishoreganj",
+        "netrokona",
+        "sunamganj"
+      ],
+      "basin_ids": [
+        "central_floodplain",
+        "haor_meghna"
+      ],
+      "source": "copernicus-gfm-ensemble-flood-extent",
+      "source_version": "GFM ensemble_flood_extent AS020M",
+      "label_source": "copernicus-gfm-ensemble-flood-extent",
+      "label_kind": "OBSERVED",
+      "provenance": {
+        "n_scenes": 3,
+        "n_tiles": 12,
+        "scene_ids": [
+          "ENSEMBLE_FLOOD_20180606T120436_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20180608T235600_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20180618T120437_VV_AS020M_E039N021T3"
+        ],
+        "tile_ids": [
+          "E039N021T3"
+        ]
+      },
+      "quality_status": "ok",
+      "pixels": {
+        "flood": 1671,
+        "dry": 29703,
+        "unknown": 17778,
+        "valid": 31374,
+        "valid_fraction": 0.6383056640625,
+        "flood_among_valid": 0.05326066169439663
+      }
+    },
+    {
+      "event_id": "evt:2019-06-15",
+      "event_start": "2019-06-15T00:00:00Z",
+      "event_peak": "2019-07-21T23:56:09Z",
+      "event_end": "2019-08-02T00:00:00Z",
+      "geographic_region": [
+        "dhaka_ne",
+        "dhaka_nw",
+        "dhaka_se",
+        "dhaka_sw",
+        "kishoreganj",
+        "netrokona",
+        "sunamganj"
+      ],
+      "basin_ids": [
+        "central_floodplain",
+        "haor_meghna"
+      ],
+      "source": "copernicus-gfm-ensemble-flood-extent",
+      "source_version": "GFM ensemble_flood_extent AS020M",
+      "label_source": "copernicus-gfm-ensemble-flood-extent",
+      "label_kind": "OBSERVED",
+      "provenance": {
+        "n_scenes": 6,
+        "n_tiles": 17,
+        "scene_ids": [
+          "ENSEMBLE_FLOOD_20190615T235606_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20190627T235607_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20190709T235608_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20190721T235609_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20190725T120356_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20190802T235609_VV_AS020M_E039N021T3"
+        ],
+        "tile_ids": [
+          "E039N021T3"
+        ]
+      },
+      "quality_status": "ok",
+      "pixels": {
+        "flood": 1465,
+        "dry": 50755,
+        "unknown": 17412,
+        "valid": 52220,
+        "valid_fraction": 0.7499425551470589,
+        "flood_among_valid": 0.02805438529299119
+      }
+    },
+    {
+      "event_id": "evt:2020-06-07",
+      "event_start": "2020-06-07T00:00:00Z",
+      "event_peak": "2020-06-19T12:04:50Z",
+      "event_end": "2020-08-08T00:00:00Z",
+      "geographic_region": [
+        "dhaka_ne",
+        "dhaka_nw",
+        "dhaka_se",
+        "dhaka_sw",
+        "kishoreganj",
+        "netrokona",
+        "sunamganj"
+      ],
+      "basin_ids": [
+        "central_floodplain",
+        "haor_meghna"
+      ],
+      "source": "copernicus-gfm-ensemble-flood-extent",
+      "source_version": "GFM ensemble_flood_extent AS020M",
+      "label_source": "copernicus-gfm-ensemble-flood-extent",
+      "label_kind": "OBSERVED",
+      "provenance": {
+        "n_scenes": 8,
+        "n_tiles": 25,
+        "scene_ids": [
+          "ENSEMBLE_FLOOD_20200607T120449_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20200609T235613_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20200619T120450_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20200621T235614_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20200715T235615_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20200719T120423_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20200806T120452_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20200808T235616_VV_AS020M_E039N021T3"
+        ],
+        "tile_ids": [
+          "E039N021T3"
+        ]
+      },
+      "quality_status": "ok",
+      "pixels": {
+        "flood": 4497,
+        "dry": 56917,
+        "unknown": 40986,
+        "valid": 61414,
+        "valid_fraction": 0.59974609375,
+        "flood_among_valid": 0.07322434624027095
+      }
+    },
+    {
+      "event_id": "evt:2021-06-02",
+      "event_start": "2021-06-02T00:00:00Z",
+      "event_peak": "2021-07-08T12:04:57Z",
+      "event_end": "2021-08-13T00:00:00Z",
+      "geographic_region": [
+        "dhaka_ne",
+        "dhaka_nw",
+        "dhaka_se",
+        "dhaka_sw",
+        "kishoreganj",
+        "netrokona",
+        "sunamganj"
+      ],
+      "basin_ids": [
+        "central_floodplain",
+        "haor_meghna"
+      ],
+      "source": "copernicus-gfm-ensemble-flood-extent",
+      "source_version": "GFM ensemble_flood_extent AS020M",
+      "label_source": "copernicus-gfm-ensemble-flood-extent",
+      "label_kind": "OBSERVED",
+      "provenance": {
+        "n_scenes": 9,
+        "n_tiles": 39,
+        "scene_ids": [
+          "ENSEMBLE_FLOOD_20210602T120454_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20210604T235618_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20210614T120455_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20210616T235619_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20210626T120456_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20210708T120457_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20210720T120457_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20210801T120458_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20210813T120459_VV_AS020M_E039N021T3"
+        ],
+        "tile_ids": [
+          "E039N021T3"
+        ]
+      },
+      "quality_status": "ok",
+      "pixels": {
+        "flood": 1844,
+        "dry": 99273,
+        "unknown": 58627,
+        "valid": 101117,
+        "valid_fraction": 0.6329940404647436,
+        "flood_among_valid": 0.018236300523156345
+      }
+    },
+    {
+      "event_id": "evt:2022-05-16",
+      "event_start": "2022-05-16T00:00:00Z",
+      "event_peak": "2022-05-28T12:05:00Z",
+      "event_end": "2022-07-03T00:00:00Z",
+      "geographic_region": [
+        "dhaka_ne",
+        "dhaka_nw",
+        "dhaka_se",
+        "dhaka_sw",
+        "kishoreganj",
+        "netrokona",
+        "sunamganj"
+      ],
+      "basin_ids": [
+        "central_floodplain",
+        "haor_meghna"
+      ],
+      "source": "copernicus-gfm-ensemble-flood-extent",
+      "source_version": "GFM ensemble_flood_extent AS020M",
+      "label_source": "copernicus-gfm-ensemble-flood-extent",
+      "label_kind": "OBSERVED",
+      "provenance": {
+        "n_scenes": 4,
+        "n_tiles": 17,
+        "scene_ids": [
+          "ENSEMBLE_FLOOD_20220516T120459_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20220518T235623_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20220528T120500_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20220703T120503_VV_AS020M_E039N021T3"
+        ],
+        "tile_ids": [
+          "E039N021T3"
+        ]
+      },
+      "quality_status": "ok",
+      "pixels": {
+        "flood": 9402,
+        "dry": 34758,
+        "unknown": 25472,
+        "valid": 44160,
+        "valid_fraction": 0.6341911764705882,
+        "flood_among_valid": 0.21290760869565217
+      }
+    },
+    {
+      "event_id": "evt:2023-06-16",
+      "event_start": "2023-06-16T00:00:00Z",
+      "event_peak": "2023-06-28T12:05:07Z",
+      "event_end": "2023-08-15T00:00:00Z",
+      "geographic_region": [
+        "dhaka_ne",
+        "dhaka_nw",
+        "kishoreganj",
+        "netrokona",
+        "sunamganj"
+      ],
+      "basin_ids": [
+        "central_floodplain",
+        "haor_meghna"
+      ],
+      "source": "copernicus-gfm-ensemble-flood-extent",
+      "source_version": "GFM ensemble_flood_extent AS020M",
+      "label_source": "copernicus-gfm-ensemble-flood-extent",
+      "label_kind": "OBSERVED",
+      "provenance": {
+        "n_scenes": 6,
+        "n_tiles": 30,
+        "scene_ids": [
+          "ENSEMBLE_FLOOD_20230616T120507_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20230628T120507_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20230710T120508_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20230722T120509_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20230803T120510_VV_AS020M_E039N021T3",
+          "ENSEMBLE_FLOOD_20230815T120510_VV_AS020M_E039N021T3"
+        ],
+        "tile_ids": [
+          "E039N021T3"
+        ]
+      },
+      "quality_status": "ok",
+      "pixels": {
+        "flood": 3255,
+        "dry": 73406,
+        "unknown": 46219,
+        "valid": 76661,
+        "valid_fraction": 0.6238688151041667,
+        "flood_among_valid": 0.042459660061830655
+      }
+    }
+  ],
+  "coverage": {
+    "regions": [
+      {
+        "region_id": "dhaka_ne",
+        "n_events": 7,
+        "n_scenes": 24,
+        "n_tiles": 1,
+        "event_ids": [
+          "evt:2018-01-13",
+          "evt:2018-06-06",
+          "evt:2019-06-15",
+          "evt:2020-06-07",
+          "evt:2021-06-02",
+          "evt:2022-05-16",
+          "evt:2023-06-16"
+        ],
+        "dates_covered": [
+          "2018-01-13",
+          "2018-01-25",
+          "2018-06-06",
+          "2018-06-18",
+          "2019-07-25",
+          "2020-06-07",
+          "2020-06-19",
+          "2020-08-06",
+          "2021-06-02",
+          "2021-06-14",
+          "2021-06-26",
+          "2021-07-08",
+          "2021-07-20",
+          "2021-08-01",
+          "2021-08-13",
+          "2022-05-16",
+          "2022-05-28",
+          "2022-07-03",
+          "2023-06-16",
+          "2023-06-28",
+          "2023-07-10",
+          "2023-07-22",
+          "2023-08-03",
+          "2023-08-15"
+        ],
+        "valid_flood_pixels": 182,
+        "valid_dry_pixels": 14685,
+        "unknown_pixels": 83437,
+        "unknown_fraction": 0.8487650553385416
+      },
+      {
+        "region_id": "dhaka_nw",
+        "n_events": 7,
+        "n_scenes": 24,
+        "n_tiles": 1,
+        "event_ids": [
+          "evt:2018-01-13",
+          "evt:2018-06-06",
+          "evt:2019-06-15",
+          "evt:2020-06-07",
+          "evt:2021-06-02",
+          "evt:2022-05-16",
+          "evt:2023-06-16"
+        ],
+        "dates_covered": [
+          "2018-01-13",
+          "2018-01-25",
+          "2018-06-06",
+          "2018-06-18",
+          "2019-07-25",
+          "2020-06-07",
+          "2020-06-19",
+          "2020-08-06",
+          "2021-06-02",
+          "2021-06-14",
+          "2021-06-26",
+          "2021-07-08",
+          "2021-07-20",
+          "2021-08-01",
+          "2021-08-13",
+          "2022-05-16",
+          "2022-05-28",
+          "2022-07-03",
+          "2023-06-16",
+          "2023-06-28",
+          "2023-07-10",
+          "2023-07-22",
+          "2023-08-03",
+          "2023-08-15"
+        ],
+        "valid_flood_pixels": 418,
+        "valid_dry_pixels": 34561,
+        "unknown_pixels": 63325,
+        "unknown_fraction": 0.6441752115885416
+      },
+      {
+        "region_id": "dhaka_se",
+        "n_events": 6,
+        "n_scenes": 15,
+        "n_tiles": 1,
+        "event_ids": [
+          "evt:2018-01-13",
+          "evt:2018-06-06",
+          "evt:2019-06-15",
+          "evt:2020-06-07",
+          "evt:2021-06-02",
+          "evt:2022-05-16"
+        ],
+        "dates_covered": [
+          "2018-01-15",
+          "2018-06-08",
+          "2019-06-15",
+          "2019-06-27",
+          "2019-07-09",
+          "2019-07-21",
+          "2019-07-25",
+          "2019-08-02",
+          "2020-06-09",
+          "2020-06-21",
+          "2020-07-15",
+          "2020-08-08",
+          "2021-06-04",
+          "2021-06-16",
+          "2022-05-18"
+        ],
+        "valid_flood_pixels": 174,
+        "valid_dry_pixels": 35694,
+        "unknown_pixels": 25572,
+        "unknown_fraction": 0.4162109375
+      },
+      {
+        "region_id": "dhaka_sw",
+        "n_events": 7,
+        "n_scenes": 18,
+        "n_tiles": 1,
+        "event_ids": [
+          "evt:2016-06-30",
+          "evt:2018-01-13",
+          "evt:2018-06-06",
+          "evt:2019-06-15",
+          "evt:2020-06-07",
+          "evt:2021-06-02",
+          "evt:2022-05-16"
+        ],
+        "dates_covered": [
+          "2016-06-30",
+          "2016-07-24",
+          "2016-08-17",
+          "2018-01-15",
+          "2018-06-08",
+          "2019-06-15",
+          "2019-06-27",
+          "2019-07-09",
+          "2019-07-21",
+          "2019-07-25",
+          "2019-08-02",
+          "2020-06-09",
+          "2020-06-21",
+          "2020-07-15",
+          "2020-08-08",
+          "2021-06-04",
+          "2021-06-16",
+          "2022-05-18"
+        ],
+        "valid_flood_pixels": 868,
+        "valid_dry_pixels": 49883,
+        "unknown_pixels": 22977,
+        "unknown_fraction": 0.3116455078125
+      },
+      {
+        "region_id": "kishoreganj",
+        "n_events": 7,
+        "n_scenes": 24,
+        "n_tiles": 1,
+        "event_ids": [
+          "evt:2018-01-13",
+          "evt:2018-06-06",
+          "evt:2019-06-15",
+          "evt:2020-06-07",
+          "evt:2021-06-02",
+          "evt:2022-05-16",
+          "evt:2023-06-16"
+        ],
+        "dates_covered": [
+          "2018-01-13",
+          "2018-01-25",
+          "2018-06-06",
+          "2018-06-18",
+          "2019-07-25",
+          "2020-06-07",
+          "2020-06-19",
+          "2020-08-06",
+          "2021-06-02",
+          "2021-06-14",
+          "2021-06-26",
+          "2021-07-08",
+          "2021-07-20",
+          "2021-08-01",
+          "2021-08-13",
+          "2022-05-16",
+          "2022-05-28",
+          "2022-07-03",
+          "2023-06-16",
+          "2023-06-28",
+          "2023-07-10",
+          "2023-07-22",
+          "2023-08-03",
+          "2023-08-15"
+        ],
+        "valid_flood_pixels": 7412,
+        "valid_dry_pixels": 90892,
+        "unknown_pixels": 0,
+        "unknown_fraction": 0.0
+      },
+      {
+        "region_id": "netrokona",
+        "n_events": 7,
+        "n_scenes": 25,
+        "n_tiles": 1,
+        "event_ids": [
+          "evt:2018-01-13",
+          "evt:2018-06-06",
+          "evt:2019-06-15",
+          "evt:2020-06-07",
+          "evt:2021-06-02",
+          "evt:2022-05-16",
+          "evt:2023-06-16"
+        ],
+        "dates_covered": [
+          "2018-01-13",
+          "2018-01-25",
+          "2018-06-06",
+          "2018-06-18",
+          "2019-07-25",
+          "2020-06-07",
+          "2020-06-19",
+          "2020-07-19",
+          "2020-08-06",
+          "2021-06-02",
+          "2021-06-14",
+          "2021-06-26",
+          "2021-07-08",
+          "2021-07-20",
+          "2021-08-01",
+          "2021-08-13",
+          "2022-05-16",
+          "2022-05-28",
+          "2022-07-03",
+          "2023-06-16",
+          "2023-06-28",
+          "2023-07-10",
+          "2023-07-22",
+          "2023-08-03",
+          "2023-08-15"
+        ],
+        "valid_flood_pixels": 7729,
+        "valid_dry_pixels": 91981,
+        "unknown_pixels": 2690,
+        "unknown_fraction": 0.02626953125
+      },
+      {
+        "region_id": "sunamganj",
+        "n_events": 7,
+        "n_scenes": 25,
+        "n_tiles": 1,
+        "event_ids": [
+          "evt:2018-01-13",
+          "evt:2018-06-06",
+          "evt:2019-06-15",
+          "evt:2020-06-07",
+          "evt:2021-06-02",
+          "evt:2022-05-16",
+          "evt:2023-06-16"
+        ],
+        "dates_covered": [
+          "2018-01-13",
+          "2018-01-25",
+          "2018-06-06",
+          "2018-06-18",
+          "2019-07-25",
+          "2020-06-07",
+          "2020-06-19",
+          "2020-07-19",
+          "2020-08-06",
+          "2021-06-02",
+          "2021-06-14",
+          "2021-06-26",
+          "2021-07-08",
+          "2021-07-20",
+          "2021-08-01",
+          "2021-08-13",
+          "2022-05-16",
+          "2022-05-28",
+          "2022-07-03",
+          "2023-06-16",
+          "2023-06-28",
+          "2023-07-10",
+          "2023-07-22",
+          "2023-08-03",
+          "2023-08-15"
+        ],
+        "valid_flood_pixels": 5889,
+        "valid_dry_pixels": 59376,
+        "unknown_pixels": 37135,
+        "unknown_fraction": 0.362646484375
+      }
+    ],
+    "n_regions": 7
+  },
+  "channel_audit": {
+    "channels": {
+      "precip_24h": {
+        "class": "SPATIAL",
+        "spatial_variance": 14.643033550410538,
+        "temporal_variance": 223.96358600878523,
+        "unique_value_fraction": 0.9210291708669355,
+        "missingness": 0.0,
+        "n_tiles": 155,
+        "geographic_coverage": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ]
+      },
+      "precip_72h": {
+        "class": "SPATIAL",
+        "spatial_variance": 72.14628651330086,
+        "temporal_variance": 1288.0200080550514,
+        "unique_value_fraction": 0.9573525705645162,
+        "missingness": 0.0,
+        "n_tiles": 155,
+        "geographic_coverage": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ]
+      },
+      "log1p_q": {
+        "class": "TEMPORAL-ONLY",
+        "spatial_variance": 6.23454586384348e-31,
+        "temporal_variance": 0.21379604340770905,
+        "unique_value_fraction": 0.000244140625,
+        "missingness": 0.0,
+        "n_tiles": 155,
+        "geographic_coverage": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ]
+      },
+      "month_sin": {
+        "class": "TEMPORAL-ONLY",
+        "spatial_variance": 1.244523504708552e-32,
+        "temporal_variance": 0.19616299870587295,
+        "unique_value_fraction": 0.000244140625,
+        "missingness": 0.0,
+        "n_tiles": 155,
+        "geographic_coverage": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ]
+      },
+      "month_cos": {
+        "class": "TEMPORAL-ONLY",
+        "spatial_variance": 4.270345827658098e-32,
+        "temporal_variance": 0.2342185193212376,
+        "unique_value_fraction": 0.000244140625,
+        "missingness": 0.0,
+        "n_tiles": 155,
+        "geographic_coverage": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ]
+      },
+      "persistence": {
+        "class": "SPATIAL",
+        "spatial_variance": 0.03290947620505584,
+        "temporal_variance": 0.009738867662873884,
+        "unique_value_fraction": 0.0012626063913909974,
+        "missingness": 0.3723111087328767,
+        "n_tiles": 146,
+        "geographic_coverage": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ]
+      },
+      "persistence_valid": {
+        "class": "SPATIAL",
+        "spatial_variance": 0.11541495323181153,
+        "temporal_variance": 0.126259863999334,
+        "unique_value_fraction": 0.0003985005040322581,
+        "missingness": 0.0,
+        "n_tiles": 155,
+        "geographic_coverage": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ]
+      },
+      "precip_is_aoi_point": {
+        "class": "CONSTANT",
+        "spatial_variance": 0.0,
+        "temporal_variance": 0.0,
+        "unique_value_fraction": 0.000244140625,
+        "missingness": 0.0,
+        "n_tiles": 155,
+        "geographic_coverage": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ]
+      },
+      "dem": {
+        "class": "SPATIAL",
+        "spatial_variance": 7.127792241076778,
+        "temporal_variance": 1.8553392673937776,
+        "unique_value_fraction": 0.7913148941532258,
+        "missingness": 0.0,
+        "n_tiles": 155,
+        "geographic_coverage": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ]
+      },
+      "slope": {
+        "class": "SPATIAL",
+        "spatial_variance": 0.3020750543482642,
+        "temporal_variance": 0.037026325269443064,
+        "unique_value_fraction": 0.9429514238911291,
+        "missingness": 0.0,
+        "n_tiles": 155,
+        "geographic_coverage": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ]
+      },
+      "river_distance": {
+        "class": "SPATIAL",
+        "spatial_variance": 0.0003075349851010375,
+        "temporal_variance": 5.011872383664505e-05,
+        "unique_value_fraction": 0.9462646484375,
+        "missingness": 0.0,
+        "n_tiles": 130,
+        "geographic_coverage": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ]
+      },
+      "precip_intensity_24h": {
+        "class": "SPATIAL",
+        "spatial_variance": 1.4596461411883184,
+        "temporal_variance": 10.66839082123838,
+        "unique_value_fraction": 0.9142641129032258,
+        "missingness": 0.0,
+        "n_tiles": 155,
+        "geographic_coverage": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ]
+      },
+      "height_above_river": {
+        "class": "SPATIAL",
+        "spatial_variance": 6.942383262929571,
+        "temporal_variance": 2.5485965199216865,
+        "unique_value_fraction": 0.7870530348557693,
+        "missingness": 0.0,
+        "n_tiles": 130,
+        "geographic_coverage": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ]
+      }
+    },
+    "n_spatial": 9,
+    "min_spatial_required": 4,
+    "cnn_allowed": true,
+    "note": "A convolutional model needs within-tile spatial variance. Broadcast rain/Q/month are TEMPORAL-ONLY, not spatial features."
+  },
+  "feature_catalog": [
+    {
+      "units": "mm",
+      "source": "open-meteo-archive / ERA5-Land lattice IDW",
+      "spatial_resolution": "~11 km lattice onto working grid",
+      "temporal_resolution": "24 h accumulation ending at t0",
+      "valid_range": [
+        0,
+        null
+      ],
+      "missing_policy": "drop sample if cube completeness < 0.5; else IDW",
+      "feature_name": "precip_24h",
+      "class": "SPATIAL",
+      "spatial_variance": 14.643033550410538,
+      "provenance": {
+        "class": "SPATIAL",
+        "source": "open-meteo-archive / ERA5-Land lattice IDW",
+        "missingness": 0.0
+      }
+    },
+    {
+      "units": "mm",
+      "source": "open-meteo-archive / ERA5-Land lattice IDW",
+      "spatial_resolution": "~11 km lattice onto working grid",
+      "temporal_resolution": "72 h accumulation ending at t0",
+      "valid_range": [
+        0,
+        null
+      ],
+      "missing_policy": "same as precip_24h",
+      "feature_name": "precip_72h",
+      "class": "SPATIAL",
+      "spatial_variance": 72.14628651330086,
+      "provenance": {
+        "class": "SPATIAL",
+        "source": "open-meteo-archive / ERA5-Land lattice IDW",
+        "missingness": 0.0
+      }
+    },
+    {
+      "units": "mm/h",
+      "source": "max hourly lattice in 24 h lookback, IDW",
+      "spatial_resolution": "~11 km lattice onto working grid",
+      "temporal_resolution": "hourly max over 24 h",
+      "valid_range": [
+        0,
+        null
+      ],
+      "missing_policy": "NaN hours ignored",
+      "feature_name": "precip_intensity_24h",
+      "class": "SPATIAL",
+      "spatial_variance": 1.4596461411883184,
+      "provenance": {
+        "class": "SPATIAL",
+        "source": "max hourly lattice in 24 h lookback, IDW",
+        "missingness": 0.0
+      }
+    },
+    {
+      "units": "m",
+      "source": "FLOODLENS_DEM_PATH GLO-30 window or Open-Meteo elevation lattice",
+      "spatial_resolution": "GLO-30 ~30 m or elevation lattice ~AOI/17",
+      "temporal_resolution": "static",
+      "valid_range": null,
+      "missing_policy": "UNAVAILABLE; dem_present=false; not synthetic",
+      "feature_name": "dem",
+      "class": "SPATIAL",
+      "spatial_variance": 7.127792241076778,
+      "provenance": {
+        "class": "SPATIAL",
+        "source": "FLOODLENS_DEM_PATH GLO-30 window or Open-Meteo elevation lattice",
+        "missingness": 0.0
+      }
+    },
+    {
+      "units": "m / cell",
+      "source": "gradient of elevation",
+      "spatial_resolution": "same as dem",
+      "temporal_resolution": "static",
+      "valid_range": [
+        0,
+        null
+      ],
+      "missing_policy": "UNAVAILABLE if dem missing",
+      "feature_name": "slope",
+      "class": "SPATIAL",
+      "spatial_variance": 0.3020750543482642,
+      "provenance": {
+        "class": "SPATIAL",
+        "source": "gradient of elevation",
+        "missingness": 0.0
+      }
+    },
+    {
+      "units": "degrees",
+      "source": "HydroRIVERS or OSM waterways",
+      "spatial_resolution": "working grid",
+      "temporal_resolution": "static",
+      "valid_range": [
+        0,
+        null
+      ],
+      "missing_policy": "UNAVAILABLE if no vertices",
+      "feature_name": "river_distance",
+      "class": "SPATIAL",
+      "spatial_variance": 0.0003075349851010375,
+      "provenance": {
+        "class": "SPATIAL",
+        "source": "HydroRIVERS or OSM waterways",
+        "missingness": 0.0
+      }
+    },
+    {
+      "units": "m",
+      "source": "elevation minus min elevation on river-mask cells",
+      "spatial_resolution": "working grid",
+      "temporal_resolution": "static",
+      "valid_range": null,
+      "missing_policy": "UNAVAILABLE if dem or river missing",
+      "feature_name": "height_above_river",
+      "class": "SPATIAL",
+      "spatial_variance": 6.942383262929571,
+      "provenance": {
+        "class": "SPATIAL",
+        "source": "elevation minus min elevation on river-mask cells",
+        "missingness": 0.0
+      }
+    },
+    {
+      "units": "class 0/1",
+      "source": "previous completed GFM scene",
+      "spatial_resolution": "working grid",
+      "temporal_resolution": "previous scene before t0",
+      "valid_range": [
+        0,
+        1
+      ],
+      "missing_policy": "NaN where previous unknown",
+      "feature_name": "persistence",
+      "class": "SPATIAL",
+      "spatial_variance": 0.03290947620505584,
+      "provenance": {
+        "class": "SPATIAL",
+        "source": "previous completed GFM scene",
+        "missingness": 0.3723111087328767
+      }
+    },
+    {
+      "units": "log1p m3/s",
+      "source": "GloFAS via Open-Meteo",
+      "spatial_resolution": "tile scalar (TEMPORAL-ONLY)",
+      "temporal_resolution": "daily t-7..t-1",
+      "valid_range": [
+        0,
+        null
+      ],
+      "missing_policy": "drop if last Q missing",
+      "feature_name": "log1p_q",
+      "class": "TEMPORAL-ONLY",
+      "spatial_variance": 6.23454586384348e-31,
+      "provenance": {
+        "class": "TEMPORAL-ONLY",
+        "source": "GloFAS via Open-Meteo",
+        "missingness": 0.0
+      }
+    }
+  ],
+  "channel_counts": {
+    "n_channels": 13,
+    "n_spatial": 9,
+    "n_spatially_varying": 9,
+    "n_temporal_only": 3,
+    "n_constant": 1,
+    "n_missing": 0
+  },
+  "gate0": {
+    "gate": 0,
+    "pass": false,
+    "failed": [
+      "independent_events"
+    ],
+    "checks": {
+      "independent_events": false,
+      "regions": true,
+      "spatial_channels": true,
+      "dem_present": true,
+      "precip_lattice": true,
+      "no_event_leak_train_test": true,
+      "label_observed": true,
+      "unknown_never_dry": true
+    },
+    "n_independent_events": 8,
+    "cities": [
+      "dhaka_ne",
+      "dhaka_nw",
+      "dhaka_se",
+      "dhaka_sw",
+      "kishoreganj",
+      "netrokona",
+      "sunamganj"
+    ],
+    "n_spatial_channels": 9,
+    "event_gap_days": 45,
+    "spatial_channel_names": [
+      "precip_24h",
+      "precip_72h",
+      "persistence",
+      "persistence_valid",
+      "dem",
+      "slope",
+      "river_distance",
+      "precip_intensity_24h",
+      "height_above_river"
+    ],
+    "leak_event_ids": [],
+    "unknown_fraction": 0.37036290322580645,
+    "note": "If this gate fails: expand data. Do not train a U-Net."
+  },
+  "gates_af": {
+    "gates": {
+      "A": {
+        "name": "dataset_validity",
+        "status": "PASS",
+        "reasons": []
+      },
+      "B": {
+        "name": "event_independence",
+        "status": "FAIL",
+        "reasons": [
+          "events=8 < 20"
+        ],
+        "n_independent_events": 8
+      },
+      "C": {
+        "name": "spatial_feature_sufficiency",
+        "status": "PASS",
+        "reasons": [],
+        "n_spatial_channels": 9
+      },
+      "D": {
+        "name": "temporal_causality",
+        "status": "PASS",
+        "reasons": []
+      },
+      "E": {
+        "name": "label_quality",
+        "status": "PASS",
+        "reasons": [],
+        "unknown_fraction": 0.37036290322580645
+      },
+      "F": {
+        "name": "geographic_diversity",
+        "status": "PASS",
+        "reasons": [],
+        "cities": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "valid_regions": 7,
+        "geographic_holdout_iou": "PENDING",
+        "note": "Holdout IoU is not evaluated in Phase 6.5A (no model training)."
+      },
+      "G": {
+        "name": "baseline_competitiveness",
+        "status": "PENDING",
+        "reasons": [
+          "no_model_training_in_phase_6_5a"
+        ]
+      },
+      "H": {
+        "name": "uncertainty_calibration",
+        "status": "PENDING",
+        "reasons": [
+          "no_model_training_in_phase_6_5a"
+        ]
+      },
+      "I": {
+        "name": "reproducibility",
+        "status": "PASS",
+        "reasons": []
+      },
+      "J": {
+        "name": "physics_comparability",
+        "status": "FAIL",
+        "reasons": [
+          "COMPARISON NOT YET COMPARABLE"
+        ]
+      }
+    },
+    "note": "Gates G\u2013H pending until a separate training-approval phase. Do not train here."
+  },
+  "splits": {
+    "scheme": "event_temporal",
+    "pixel_iid": false,
+    "train_events": [
+      "evt:2016-06-30",
+      "evt:2018-01-13",
+      "evt:2018-06-06"
+    ],
+    "validation_events": [
+      "evt:2019-06-15",
+      "evt:2020-06-07",
+      "evt:2021-06-02"
+    ],
+    "test_events": [
+      "evt:2022-05-16",
+      "evt:2023-06-16"
+    ],
+    "geographic_holdout": {
+      "train_regions": [
+        "dhaka_ne",
+        "dhaka_nw",
+        "dhaka_se",
+        "dhaka_sw",
+        "kishoreganj"
+      ],
+      "test_regions": [
+        "netrokona",
+        "sunamganj"
+      ]
+    },
+    "temporal_holdout": {
+      "train_end": "2019-01-01",
+      "val_end": "2022-01-01",
+      "named_holdout": "2022-05-09/2022-06-21"
+    },
+    "leaks": {
+      "train_test": [],
+      "train_val": [],
+      "val_test": []
+    }
+  },
+  "cnn_trained": false,
+  "gbdt_trained": false,
+  "unet_trained": false,
+  "status": "NOT_TRAINED",
+  "public_status": "NOT_TRAINED",
+  "catalog_status": "NOT_VALIDATED",
+  "promoted_to_validated": false,
+  "comparable_to_physics": false,
+  "accuracy_claim": null,
+  "statistics": {
+    "n_independent_events": 8,
+    "n_scenes": 42,
+    "n_regions": 7,
+    "n_tiles": 155,
+    "valid_pixels": 399744,
+    "flood_pixels": 22672,
+    "dry_pixels": 377072,
+    "unknown_pixels": 235136,
+    "unknown_percentage": 37.03629032258065,
+    "samples_per_event": {
+      "evt:2016-06-30": 3,
+      "evt:2018-01-13": 12,
+      "evt:2018-06-06": 12,
+      "evt:2019-06-15": 17,
+      "evt:2020-06-07": 25,
+      "evt:2021-06-02": 39,
+      "evt:2022-05-16": 17,
+      "evt:2023-06-16": 30
+    }
+  },
+  "recommendation": "DATASET STILL INSUFFICIENT \u2014 DO NOT TRAIN.",
+  "note": "Phase 6.5A is dataset expansion and quality gates only. No model was trained. Spatial AI remains NOT_VALIDATED. POST /api/v1/forecast/ai-spatial stays UNAVAILABLE."
+}

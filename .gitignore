@@ -7,3 +7,15 @@ htmlcov/
 dist/
 build/
 *.egg-info/
+.env
+.vercel
+frontend/node_modules/
+frontend/dist/
+outputs/
+data/ml/experiments/
+src/floodlens/application/data/ml/spatial/gfm/raw/
+src/floodlens/application/data/ml/spatial/gfm/processed_v2/
+src/floodlens/application/data/ml/spatial/precip_lattice.json
+src/floodlens/application/data/ml/spatial/elevation_lattice.json
+src/floodlens/application/data/ml/spatial/rivers_osm.json
+src/floodlens/application/data/ml/spatial/hydrorivers.json

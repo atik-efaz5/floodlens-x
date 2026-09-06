@@ -1,0 +1,41 @@
+{
+  "dataset_version": "phase4.1-v0",
+  "product": "GloFAS v4 river discharge (LISFLOOD), 0.05°",
+  "label_kind": "MODELLED",
+  "data_status": "UNAVAILABLE",
+  "note": "Three AOI representative cells only. Not a field observation. Not SWE. CDS extract is required for REAL Q; this file is the cell list plus a documented 2-year RP placeholder.",
+  "return_period": {
+    "target": "2-year",
+    "source_file": null,
+    "status": "UNAVAILABLE",
+    "reason": "GloFAS return-period threshold file not extracted. Do not invent RP values."
+  },
+  "cells": [
+    {
+      "city_id": "sunamganj",
+      "lat": 24.95,
+      "lon": 91.35,
+      "grid": "0.05deg",
+      "role": "AOI representative outlet (city center snapped)"
+    },
+    {
+      "city_id": "dhaka",
+      "lat": 23.80,
+      "lon": 90.40,
+      "grid": "0.05deg",
+      "role": "AOI representative outlet (city center snapped)"
+    },
+    {
+      "city_id": "sylhet",
+      "lat": 24.80,
+      "lon": 91.90,
+      "grid": "0.05deg",
+      "role": "AOI representative outlet (city center snapped)"
+    }
+  ],
+  "extract_policy": {
+    "max_cells": 3,
+    "forbid_global_cube": true,
+    "script": "scripts/phase4_extract_glofas.py"
+  }
+}

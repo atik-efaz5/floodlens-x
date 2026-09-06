@@ -16,10 +16,13 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "pytest",
+    "fastapi",
+    "httpx2",
 ]
 gis = [
     "rasterio",
     "netCDF4",
+    "imagecodecs",
 ]
 
 [tool.setuptools.packages.find]

@@ -1,0 +1,9 @@
+{
+  "status": "ERROR",
+  "error": true,
+  "reason": "Single Runs API returned no hourly precipitation",
+  "source_url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=24.9500&longitude=91.3500&hourly=precipitation&timezone=UTC&forecast_days=16&models=ecmwf_ifs&run=2024-07-28T06%3A00",
+  "retrieved_at": "2026-09-03T01:14:23Z",
+  "proxy_city": "sunamganj",
+  "run": "2024-07-28T06:00:00Z"
+}

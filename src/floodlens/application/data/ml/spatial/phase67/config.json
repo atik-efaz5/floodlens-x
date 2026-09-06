@@ -1,0 +1,38 @@
+{
+  "experiment_id": "phase6.7-track-a-baselines-v1",
+  "dataset_version": "phase6.5-gfm-spatial-v2.1",
+  "config_sha256": "10d44c4acfabf414cc7eabc8daee2e73bd3198dffb598f82275b32a3408495df",
+  "operating_threshold": 0.5,
+  "gbdt_trees": 20,
+  "pixel_subsample": 8000,
+  "rng_seed": 0,
+  "rain": {
+    "chosen_mm": 10.0,
+    "quantile_0p7_mm": 20.006196751705964,
+    "candidates": [
+      {
+        "threshold_mm": 10.0,
+        "train_event_macro_iou": 0.045429812224176414
+      },
+      {
+        "threshold_mm": 20.006,
+        "train_event_macro_iou": 0.028815627501419926
+      },
+      {
+        "threshold_mm": 25.0,
+        "train_event_macro_iou": 0.023945718122857364
+      },
+      {
+        "threshold_mm": 50.0,
+        "train_event_macro_iou": 0.011674628771023982
+      },
+      {
+        "threshold_mm": 75.0,
+        "train_event_macro_iou": 0.007157188892459762
+      }
+    ]
+  },
+  "label_resolution_m": 20.0,
+  "working_grid": 64,
+  "horizon_hours": 192
+}

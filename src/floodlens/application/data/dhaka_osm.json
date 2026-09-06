@@ -1,0 +1,80 @@
+{
+  "city_id": "dhaka",
+  "source": "OpenStreetMap extract (bundled fixture; replace with Overpass ingest)",
+  "assets": [
+    {
+      "asset_type": "hospital",
+      "name": "Dhaka Medical College Hospital",
+      "lon": 90.395,
+      "lat": 23.726
+    },
+    {
+      "asset_type": "hospital",
+      "name": "Square Hospital",
+      "lon": 90.382,
+      "lat": 23.753
+    },
+    {
+      "asset_type": "school",
+      "name": "Viqarunnisa Noon School",
+      "lon": 90.412,
+      "lat": 23.746
+    },
+    {
+      "asset_type": "school",
+      "name": "Holy Cross College",
+      "lon": 90.393,
+      "lat": 23.745
+    },
+    {
+      "asset_type": "shelter",
+      "name": "Kamalapur Community Shelter",
+      "lon": 90.426,
+      "lat": 23.732,
+      "capacity": 5000
+    },
+    {
+      "asset_type": "bridge",
+      "name": "Buriganga Bridge",
+      "lon": 90.408,
+      "lat": 23.702
+    }
+  ],
+  "roads": [
+    {
+      "asset_type": "road",
+      "name": "Mirpur Road",
+      "coordinates": [
+        [90.368, 23.807],
+        [90.380, 23.770],
+        [90.393, 23.745]
+      ]
+    }
+  ],
+  "rivers": [
+    {
+      "id": "buriganga",
+      "name": "Buriganga",
+      "segments": [
+        {
+          "id": "buriganga-up",
+          "from_node": "upstream",
+          "to_node": "mid",
+          "coordinates": [
+            [90.330, 23.680],
+            [90.370, 23.700]
+          ]
+        },
+        {
+          "id": "buriganga-mid",
+          "from_node": "mid",
+          "to_node": "down",
+          "coordinates": [
+            [90.370, 23.700],
+            [90.420, 23.720]
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "experiment_id": "phase6.8a-target-b-transition-v1",
+  "dataset_version": "phase6.5-gfm-spatial-v2.1",
+  "t0_definition": "earlier.valid_at",
+  "horizon": "measured_delta_t",
+  "unknown": 255,
+  "event_gap_days": 45,
+  "rng_seed": 0
+}

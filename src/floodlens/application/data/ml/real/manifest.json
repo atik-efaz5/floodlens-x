@@ -1,0 +1,18 @@
+{
+  "dataset_version": "phase4.5-openmeteo-glofas-v1",
+  "retrieved_at": "2026-09-02T14:52:00.702488+00:00",
+  "files": {
+    "discharge_2015_2024.json": {
+      "sha256": "81943d2fb999156c2db54f4065a977b9c671c44ce35635ad712e5300d26ba6bf",
+      "bytes": 209411,
+      "role": "Track A modelled daily discharge labels + Q lookback"
+    },
+    "precip_2014_2024.json": {
+      "sha256": "6cb6090f36796044b12cb2be679e214fb445ac8d6f34c86cf82f5d94c0e68fd1",
+      "bytes": 6107146,
+      "role": "Hourly precip features (reanalysis up to issue time t)"
+    }
+  },
+  "size_estimate_note": "Three AOI points only. ~10 years daily Q + ~10 years hourly precip. Not a global cube. Not WorldFloods.",
+  "credentials": "none"
+}

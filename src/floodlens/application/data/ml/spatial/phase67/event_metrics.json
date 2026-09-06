@@ -1,0 +1,6688 @@
+{
+  "train": {
+    "persistence": [
+      {
+        "n_valid_pixels": 46622,
+        "iou": 0.12969924812030076,
+        "dice": 0.22961730449251247,
+        "precision": 0.29445234708392604,
+        "recall": 0.18818181818181817,
+        "auprc": 0.12113834361359548,
+        "auroc": 0.588642993797205,
+        "brier": 0.02979280168160954,
+        "prevalence": 0.02359401141092188,
+        "tp": 207.0,
+        "fp": 496.0,
+        "fn": 893.0,
+        "tn": 45026.0,
+        "event_id": "evt:2015-07-11",
+        "n_maps": 14,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj",
+          "sylhet"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2015
+        ],
+        "split": "train",
+        "n_unknown": 10722,
+        "n_pixels": 57344,
+        "n_flood": 1100,
+        "unknown_fraction": 0.18697684151785715
+      },
+      {
+        "n_valid_pixels": 12351,
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "auprc": 0.0021539880579697903,
+        "auroc": 0.49355910232520456,
+        "brier": 0.013521172374706502,
+        "prevalence": 0.0006477208323212695,
+        "tp": 0.0,
+        "fp": 159.0,
+        "fn": 8.0,
+        "tn": 12184.0,
+        "event_id": "evt:2016-01-19",
+        "n_maps": 5,
+        "city_ids": [
+          "dhaka_se",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj",
+          "sylhet"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2016
+        ],
+        "split": "train",
+        "n_unknown": 8129,
+        "n_pixels": 20480,
+        "n_flood": 8,
+        "unknown_fraction": 0.396923828125
+      },
+      {
+        "n_valid_pixels": 1392,
+        "iou": 0.2857142857142857,
+        "dice": 0.4444444444444444,
+        "precision": 1.0,
+        "recall": 0.2857142857142857,
+        "auprc": 0.2889374295492296,
+        "auroc": 0.6428571428571429,
+        "brier": 0.0035919540229885057,
+        "prevalence": 0.005028735632183908,
+        "tp": 2.0,
+        "fp": 0.0,
+        "fn": 5.0,
+        "tn": 1385.0,
+        "event_id": "evt:2016-06-30",
+        "n_maps": 3,
+        "city_ids": [
+          "dhaka_sw"
+        ],
+        "basin_ids": [
+          "central_floodplain"
+        ],
+        "flood_mechanisms": [
+          "monsoon_riverine"
+        ],
+        "years": [
+          2016
+        ],
+        "split": "train",
+        "n_unknown": 10896,
+        "n_pixels": 12288,
+        "n_flood": 7,
+        "unknown_fraction": 0.88671875
+      },
+      {
+        "n_valid_pixels": 74315,
+        "iou": 0.6670279920933495,
+        "dice": 0.8002600979192166,
+        "precision": 0.9516921397379913,
+        "recall": 0.6904039070749736,
+        "auprc": 0.8580867487699075,
+        "auroc": 0.8407143514889092,
+        "brier": 0.0702684518603243,
+        "prevalence": 0.2038888515104622,
+        "tp": 10461.0,
+        "fp": 531.0,
+        "fn": 4691.0,
+        "tn": 58632.0,
+        "event_id": "evt:2017-04-12",
+        "n_maps": 28,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_premonsoon_flash"
+        ],
+        "years": [
+          2017
+        ],
+        "split": "train",
+        "n_unknown": 40373,
+        "n_pixels": 114688,
+        "n_flood": 15152,
+        "unknown_fraction": 0.35202462332589285
+      },
+      {
+        "n_valid_pixels": 42396,
+        "iou": 0.040136312003029154,
+        "dice": 0.07717510010921005,
+        "precision": 0.04842393787117405,
+        "recall": 0.18996415770609318,
+        "auprc": 0.03613163302537316,
+        "auroc": 0.5445218075352172,
+        "brier": 0.11958675346730824,
+        "prevalence": 0.026323238041324654,
+        "tp": 212.0,
+        "fp": 4166.0,
+        "fn": 904.0,
+        "tn": 37114.0,
+        "event_id": "evt:2017-07-31",
+        "n_maps": 16,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2017
+        ],
+        "split": "train",
+        "n_unknown": 23140,
+        "n_pixels": 65536,
+        "n_flood": 1116,
+        "unknown_fraction": 0.35308837890625
+      },
+      {
+        "n_valid_pixels": 31406,
+        "iou": 0.06784492588369441,
+        "dice": 0.12706887346502937,
+        "precision": 0.08867362146050671,
+        "recall": 0.224105461393597,
+        "auprc": 0.07765260879763831,
+        "auroc": 0.5922470626806041,
+        "brier": 0.05206011590142011,
+        "prevalence": 0.016907597274406164,
+        "tp": 119.0,
+        "fp": 1223.0,
+        "fn": 412.0,
+        "tn": 29652.0,
+        "event_id": "evt:2018-01-13",
+        "n_maps": 12,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2018
+        ],
+        "split": "train",
+        "n_unknown": 17746,
+        "n_pixels": 49152,
+        "n_flood": 531,
+        "unknown_fraction": 0.3610432942708333
+      },
+      {
+        "n_valid_pixels": 31374,
+        "iou": 0.10764872521246459,
+        "dice": 0.19437340153452684,
+        "precision": 0.6690140845070423,
+        "recall": 0.11370436864153202,
+        "auprc": 0.15813247617327722,
+        "auroc": 0.5552698525697645,
+        "brier": 0.050200803212851405,
+        "prevalence": 0.05326066169439663,
+        "tp": 190.0,
+        "fp": 94.0,
+        "fn": 1481.0,
+        "tn": 29609.0,
+        "event_id": "evt:2018-06-06",
+        "n_maps": 12,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2018
+        ],
+        "split": "train",
+        "n_unknown": 17778,
+        "n_pixels": 49152,
+        "n_flood": 1671,
+        "unknown_fraction": 0.3616943359375
+      }
+    ],
+    "climatology": [
+      {
+        "n_valid_pixels": 46622,
+        "iou": 0.8129675810473815,
+        "dice": 0.8968363136176066,
+        "precision": 0.9047178538390379,
+        "recall": 0.889090909090909,
+        "auprc": 0.9606977561328129,
+        "auroc": 0.998726200318727,
+        "brier": 0.004114652596056225,
+        "prevalence": 0.02359401141092188,
+        "tp": 978.0,
+        "fp": 103.0,
+        "fn": 122.0,
+        "tn": 45419.0,
+        "event_id": "evt:2015-07-11",
+        "n_maps": 14,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj",
+          "sylhet"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2015
+        ],
+        "split": "train",
+        "n_unknown": 10722,
+        "n_pixels": 57344,
+        "n_flood": 1100,
+        "unknown_fraction": 0.18697684151785715
+      },
+      {
+        "n_valid_pixels": 12351,
+        "iou": 0.08421052631578947,
+        "dice": 0.1553398058252427,
+        "precision": 0.08421052631578947,
+        "recall": 1.0,
+        "auprc": 0.8480263157894736,
+        "auroc": 0.9991189338086365,
+        "brier": 0.006135355661709803,
+        "prevalence": 0.0006477208323212695,
+        "tp": 8.0,
+        "fp": 87.0,
+        "fn": 0.0,
+        "tn": 12256.0,
+        "event_id": "evt:2016-01-19",
+        "n_maps": 5,
+        "city_ids": [
+          "dhaka_se",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj",
+          "sylhet"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2016
+        ],
+        "split": "train",
+        "n_unknown": 8129,
+        "n_pixels": 20480,
+        "n_flood": 8,
+        "unknown_fraction": 0.396923828125
+      },
+      {
+        "n_valid_pixels": 1392,
+        "iou": 0.42857142857142855,
+        "dice": 0.6,
+        "precision": 1.0,
+        "recall": 0.42857142857142855,
+        "auprc": 0.755988455988456,
+        "auroc": 0.9991748323878288,
+        "brier": 0.00203544061302682,
+        "prevalence": 0.005028735632183908,
+        "tp": 3.0,
+        "fp": 0.0,
+        "fn": 4.0,
+        "tn": 1385.0,
+        "event_id": "evt:2016-06-30",
+        "n_maps": 3,
+        "city_ids": [
+          "dhaka_sw"
+        ],
+        "basin_ids": [
+          "central_floodplain"
+        ],
+        "flood_mechanisms": [
+          "monsoon_riverine"
+        ],
+        "years": [
+          2016
+        ],
+        "split": "train",
+        "n_unknown": 10896,
+        "n_pixels": 12288,
+        "n_flood": 7,
+        "unknown_fraction": 0.88671875
+      },
+      {
+        "n_valid_pixels": 74315,
+        "iou": 0.8652541864233839,
+        "dice": 0.9277600798017827,
+        "precision": 0.9052433281004709,
+        "recall": 0.9514255543822597,
+        "auprc": 0.9444341895246685,
+        "auroc": 0.9889909586987329,
+        "brier": 0.03348583731413577,
+        "prevalence": 0.2038888515104622,
+        "tp": 14416.0,
+        "fp": 1509.0,
+        "fn": 736.0,
+        "tn": 57654.0,
+        "event_id": "evt:2017-04-12",
+        "n_maps": 28,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_premonsoon_flash"
+        ],
+        "years": [
+          2017
+        ],
+        "split": "train",
+        "n_unknown": 40373,
+        "n_pixels": 114688,
+        "n_flood": 15152,
+        "unknown_fraction": 0.35202462332589285
+      },
+      {
+        "n_valid_pixels": 42396,
+        "iou": 0.2972749793559042,
+        "dice": 0.4583068109484405,
+        "precision": 0.7912087912087912,
+        "recall": 0.3225806451612903,
+        "auprc": 0.6565161801568092,
+        "auroc": 0.9900342598670501,
+        "brier": 0.011954744158253924,
+        "prevalence": 0.026323238041324654,
+        "tp": 360.0,
+        "fp": 95.0,
+        "fn": 756.0,
+        "tn": 41185.0,
+        "event_id": "evt:2017-07-31",
+        "n_maps": 16,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2017
+        ],
+        "split": "train",
+        "n_unknown": 23140,
+        "n_pixels": 65536,
+        "n_flood": 1116,
+        "unknown_fraction": 0.35308837890625
+      },
+      {
+        "n_valid_pixels": 31406,
+        "iou": 0.36988847583643125,
+        "dice": 0.5400271370420624,
+        "precision": 0.9660194174757282,
+        "recall": 0.3747645951035782,
+        "auprc": 0.9140298859035956,
+        "auroc": 0.9964845490518996,
+        "brier": 0.006603479872918834,
+        "prevalence": 0.016907597274406164,
+        "tp": 199.0,
+        "fp": 7.0,
+        "fn": 332.0,
+        "tn": 30868.0,
+        "event_id": "evt:2018-01-13",
+        "n_maps": 12,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2018
+        ],
+        "split": "train",
+        "n_unknown": 17746,
+        "n_pixels": 49152,
+        "n_flood": 531,
+        "unknown_fraction": 0.3610432942708333
+      },
+      {
+        "n_valid_pixels": 31374,
+        "iou": 0.294760980772623,
+        "dice": 0.4553133514986376,
+        "precision": 0.294760980772623,
+        "recall": 1.0,
+        "auprc": 0.9942527224215392,
+        "auroc": 0.9992750491989185,
+        "brier": 0.032001019952827184,
+        "prevalence": 0.05326066169439663,
+        "tp": 1671.0,
+        "fp": 3998.0,
+        "fn": 0.0,
+        "tn": 25705.0,
+        "event_id": "evt:2018-06-06",
+        "n_maps": 12,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2018
+        ],
+        "split": "train",
+        "n_unknown": 17778,
+        "n_pixels": 49152,
+        "n_flood": 1671,
+        "unknown_fraction": 0.3616943359375
+      }
+    ],
+    "rain_threshold": [
+      {
+        "n_valid_pixels": 46622,
+        "iou": 0.02359401141092188,
+        "dice": 0.04610033108419597,
+        "precision": 0.02359401141092188,
+        "recall": 1.0,
+        "auprc": 0.01936229360908756,
+        "auroc": 0.5,
+        "brier": 0.9764059885890781,
+        "prevalence": 0.02359401141092188,
+        "tp": 1100.0,
+        "fp": 45522.0,
+        "fn": 0.0,
+        "tn": 0.0,
+        "event_id": "evt:2015-07-11",
+        "n_maps": 14,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj",
+          "sylhet"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2015
+        ],
+        "split": "train",
+        "n_unknown": 10722,
+        "n_pixels": 57344,
+        "n_flood": 1100,
+        "unknown_fraction": 0.18697684151785715
+      },
+      {
+        "n_valid_pixels": 12351,
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "auprc": 0.002442309756126121,
+        "auroc": 0.5,
+        "brier": 0.0006477208323212695,
+        "prevalence": 0.0006477208323212695,
+        "tp": 0.0,
+        "fp": 0.0,
+        "fn": 8.0,
+        "tn": 12343.0,
+        "event_id": "evt:2016-01-19",
+        "n_maps": 5,
+        "city_ids": [
+          "dhaka_se",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj",
+          "sylhet"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2016
+        ],
+        "split": "train",
+        "n_unknown": 8129,
+        "n_pixels": 20480,
+        "n_flood": 8,
+        "unknown_fraction": 0.396923828125
+      },
+      {
+        "n_valid_pixels": 1392,
+        "iou": 0.007543103448275862,
+        "dice": 0.014973262032085561,
+        "precision": 0.007543103448275862,
+        "recall": 1.0,
+        "auprc": 0.005504285716732932,
+        "auroc": 0.6675090252707582,
+        "brier": 0.6616379310344828,
+        "prevalence": 0.005028735632183908,
+        "tp": 7.0,
+        "fp": 921.0,
+        "fn": 0.0,
+        "tn": 464.0,
+        "event_id": "evt:2016-06-30",
+        "n_maps": 3,
+        "city_ids": [
+          "dhaka_sw"
+        ],
+        "basin_ids": [
+          "central_floodplain"
+        ],
+        "flood_mechanisms": [
+          "monsoon_riverine"
+        ],
+        "years": [
+          2016
+        ],
+        "split": "train",
+        "n_unknown": 10896,
+        "n_pixels": 12288,
+        "n_flood": 7,
+        "unknown_fraction": 0.88671875
+      },
+      {
+        "n_valid_pixels": 74315,
+        "iou": 0.26401348666385693,
+        "dice": 0.41773840144803276,
+        "precision": 0.32679982113578776,
+        "recall": 0.5788014783526927,
+        "auprc": 0.3596876611037282,
+        "auroc": 0.6367208547891449,
+        "brier": 0.32897799905806363,
+        "prevalence": 0.2038888515104622,
+        "tp": 8770.0,
+        "fp": 18066.0,
+        "fn": 6382.0,
+        "tn": 41097.0,
+        "event_id": "evt:2017-04-12",
+        "n_maps": 28,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_premonsoon_flash"
+        ],
+        "years": [
+          2017
+        ],
+        "split": "train",
+        "n_unknown": 40373,
+        "n_pixels": 114688,
+        "n_flood": 15152,
+        "unknown_fraction": 0.35202462332589285
+      },
+      {
+        "n_valid_pixels": 42396,
+        "iou": 0.020484478539415436,
+        "dice": 0.04014657541628496,
+        "precision": 0.020695594199677758,
+        "recall": 0.6675627240143369,
+        "auprc": 0.025058736439845453,
+        "auroc": 0.4067828154955406,
+        "brier": 0.8402679498065855,
+        "prevalence": 0.026323238041324654,
+        "tp": 745.0,
+        "fp": 35253.0,
+        "fn": 371.0,
+        "tn": 6027.0,
+        "event_id": "evt:2017-07-31",
+        "n_maps": 16,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2017
+        ],
+        "split": "train",
+        "n_unknown": 23140,
+        "n_pixels": 65536,
+        "n_flood": 1116,
+        "unknown_fraction": 0.35308837890625
+      },
+      {
+        "n_valid_pixels": 31406,
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "auprc": 0.05561782452573696,
+        "auroc": 0.5,
+        "brier": 0.016907597274406164,
+        "prevalence": 0.016907597274406164,
+        "tp": 0.0,
+        "fp": 0.0,
+        "fn": 531.0,
+        "tn": 30875.0,
+        "event_id": "evt:2018-01-13",
+        "n_maps": 12,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2018
+        ],
+        "split": "train",
+        "n_unknown": 17746,
+        "n_pixels": 49152,
+        "n_flood": 531,
+        "unknown_fraction": 0.3610432942708333
+      },
+      {
+        "n_valid_pixels": 31374,
+        "iou": 0.0023736055067647755,
+        "dice": 0.004735969689793985,
+        "precision": 0.002952029520295203,
+        "recall": 0.011968880909634948,
+        "auprc": 0.04588937816048627,
+        "auroc": 0.39227538749720375,
+        "brier": 0.26792885829030405,
+        "prevalence": 0.05326066169439663,
+        "tp": 20.0,
+        "fp": 6755.0,
+        "fn": 1651.0,
+        "tn": 22948.0,
+        "event_id": "evt:2018-06-06",
+        "n_maps": 12,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2018
+        ],
+        "split": "train",
+        "n_unknown": 17778,
+        "n_pixels": 49152,
+        "n_flood": 1671,
+        "unknown_fraction": 0.3616943359375
+      }
+    ],
+    "pixel_logistic": [
+      {
+        "n_valid_pixels": 46622,
+        "iou": 0.024337866857551897,
+        "dice": 0.047519217330538085,
+        "precision": 0.024430301786080886,
+        "recall": 0.8654545454545455,
+        "auprc": 0.020081663643451708,
+        "auroc": 0.47280856209385275,
+        "brier": 0.8158082193419615,
+        "prevalence": 0.02359401141092188,
+        "tp": 952.0,
+        "fp": 38016.0,
+        "fn": 148.0,
+        "tn": 7506.0,
+        "event_id": "evt:2015-07-11",
+        "n_maps": 14,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj",
+          "sylhet"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2015
+        ],
+        "split": "train",
+        "n_unknown": 10722,
+        "n_pixels": 57344,
+        "n_flood": 1100,
+        "unknown_fraction": 0.18697684151785715
+      },
+      {
+        "n_valid_pixels": 12351,
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "auprc": 0.0010183595679929532,
+        "auroc": 0.548863728429069,
+        "brier": 0.028032629781563803,
+        "prevalence": 0.0006477208323212695,
+        "tp": 0.0,
+        "fp": 370.0,
+        "fn": 8.0,
+        "tn": 11973.0,
+        "event_id": "evt:2016-01-19",
+        "n_maps": 5,
+        "city_ids": [
+          "dhaka_se",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj",
+          "sylhet"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2016
+        ],
+        "split": "train",
+        "n_unknown": 8129,
+        "n_pixels": 20480,
+        "n_flood": 8,
+        "unknown_fraction": 0.396923828125
+      },
+      {
+        "n_valid_pixels": 1392,
+        "iou": 0.0035671819262782403,
+        "dice": 0.0071090047393364926,
+        "precision": 0.0035842293906810036,
+        "recall": 0.42857142857142855,
+        "auprc": 0.004597973394030665,
+        "auroc": 0.4322331098504384,
+        "brier": 0.5938049170645388,
+        "prevalence": 0.005028735632183908,
+        "tp": 3.0,
+        "fp": 834.0,
+        "fn": 4.0,
+        "tn": 551.0,
+        "event_id": "evt:2016-06-30",
+        "n_maps": 3,
+        "city_ids": [
+          "dhaka_sw"
+        ],
+        "basin_ids": [
+          "central_floodplain"
+        ],
+        "flood_mechanisms": [
+          "monsoon_riverine"
+        ],
+        "years": [
+          2016
+        ],
+        "split": "train",
+        "n_unknown": 10896,
+        "n_pixels": 12288,
+        "n_flood": 7,
+        "unknown_fraction": 0.88671875
+      },
+      {
+        "n_valid_pixels": 74315,
+        "iou": 0.30025371672749934,
+        "dice": 0.461838659432073,
+        "precision": 0.31177925169281967,
+        "recall": 0.8903775079197466,
+        "auprc": 0.37246504329049884,
+        "auroc": 0.7362220905558983,
+        "brier": 0.41779903289070214,
+        "prevalence": 0.2038888515104622,
+        "tp": 13491.0,
+        "fp": 29780.0,
+        "fn": 1661.0,
+        "tn": 29383.0,
+        "event_id": "evt:2017-04-12",
+        "n_maps": 28,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_premonsoon_flash"
+        ],
+        "years": [
+          2017
+        ],
+        "split": "train",
+        "n_unknown": 40373,
+        "n_pixels": 114688,
+        "n_flood": 15152,
+        "unknown_fraction": 0.35202462332589285
+      },
+      {
+        "n_valid_pixels": 42396,
+        "iou": 0.026416414665233798,
+        "dice": 0.05147309471633796,
+        "precision": 0.02645542373729789,
+        "recall": 0.9471326164874552,
+        "auprc": 0.02989810182641848,
+        "auroc": 0.4965616838237337,
+        "brier": 0.9170685403209103,
+        "prevalence": 0.026323238041324654,
+        "tp": 1057.0,
+        "fp": 38897.0,
+        "fn": 59.0,
+        "tn": 2383.0,
+        "event_id": "evt:2017-07-31",
+        "n_maps": 16,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2017
+        ],
+        "split": "train",
+        "n_unknown": 23140,
+        "n_pixels": 65536,
+        "n_flood": 1116,
+        "unknown_fraction": 0.35308837890625
+      },
+      {
+        "n_valid_pixels": 31406,
+        "iou": 0.004243281471004243,
+        "dice": 0.008450704225352112,
+        "precision": 0.006749156355455568,
+        "recall": 0.011299435028248588,
+        "auprc": 0.02478670145838677,
+        "auroc": 0.602465991140389,
+        "brier": 0.042100125794946576,
+        "prevalence": 0.016907597274406164,
+        "tp": 6.0,
+        "fp": 883.0,
+        "fn": 525.0,
+        "tn": 29992.0,
+        "event_id": "evt:2018-01-13",
+        "n_maps": 12,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2018
+        ],
+        "split": "train",
+        "n_unknown": 17746,
+        "n_pixels": 49152,
+        "n_flood": 531,
+        "unknown_fraction": 0.3610432942708333
+      },
+      {
+        "n_valid_pixels": 31374,
+        "iou": 0.08628595248020009,
+        "dice": 0.15886415963161934,
+        "precision": 0.09111717580772956,
+        "recall": 0.6193895870736086,
+        "auprc": 0.09650020287774223,
+        "auroc": 0.6435015651559254,
+        "brier": 0.34203519067858557,
+        "prevalence": 0.05326066169439663,
+        "tp": 1035.0,
+        "fp": 10324.0,
+        "fn": 636.0,
+        "tn": 19379.0,
+        "event_id": "evt:2018-06-06",
+        "n_maps": 12,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2018
+        ],
+        "split": "train",
+        "n_unknown": 17778,
+        "n_pixels": 49152,
+        "n_flood": 1671,
+        "unknown_fraction": 0.3616943359375
+      }
+    ],
+    "pixel_gbdt": [
+      {
+        "n_valid_pixels": 46622,
+        "iou": 0.12969924812030076,
+        "dice": 0.22961730449251247,
+        "precision": 0.29445234708392604,
+        "recall": 0.18818181818181817,
+        "auprc": 0.12113834361359548,
+        "auroc": 0.588642993797205,
+        "brier": 0.111237939889768,
+        "prevalence": 0.02359401141092188,
+        "tp": 207.0,
+        "fp": 496.0,
+        "fn": 893.0,
+        "tn": 45026.0,
+        "event_id": "evt:2015-07-11",
+        "n_maps": 14,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj",
+          "sylhet"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2015
+        ],
+        "split": "train",
+        "n_unknown": 10722,
+        "n_pixels": 57344,
+        "n_flood": 1100,
+        "unknown_fraction": 0.18697684151785715
+      },
+      {
+        "n_valid_pixels": 12351,
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "auprc": 0.0021539880579697903,
+        "auroc": 0.49355910232520456,
+        "brier": 0.10585905039800912,
+        "prevalence": 0.0006477208323212695,
+        "tp": 0.0,
+        "fp": 159.0,
+        "fn": 8.0,
+        "tn": 12184.0,
+        "event_id": "evt:2016-01-19",
+        "n_maps": 5,
+        "city_ids": [
+          "dhaka_se",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj",
+          "sylhet"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2016
+        ],
+        "split": "train",
+        "n_unknown": 8129,
+        "n_pixels": 20480,
+        "n_flood": 8,
+        "unknown_fraction": 0.396923828125
+      },
+      {
+        "n_valid_pixels": 1392,
+        "iou": 0.2857142857142857,
+        "dice": 0.4444444444444444,
+        "precision": 1.0,
+        "recall": 0.2857142857142857,
+        "auprc": 0.2889374295492296,
+        "auroc": 0.6428571428571429,
+        "brier": 0.09973116911811682,
+        "prevalence": 0.005028735632183908,
+        "tp": 2.0,
+        "fp": 0.0,
+        "fn": 5.0,
+        "tn": 1385.0,
+        "event_id": "evt:2016-06-30",
+        "n_maps": 3,
+        "city_ids": [
+          "dhaka_sw"
+        ],
+        "basin_ids": [
+          "central_floodplain"
+        ],
+        "flood_mechanisms": [
+          "monsoon_riverine"
+        ],
+        "years": [
+          2016
+        ],
+        "split": "train",
+        "n_unknown": 10896,
+        "n_pixels": 12288,
+        "n_flood": 7,
+        "unknown_fraction": 0.88671875
+      },
+      {
+        "n_valid_pixels": 74315,
+        "iou": 0.6670279920933495,
+        "dice": 0.8002600979192166,
+        "precision": 0.9516921397379913,
+        "recall": 0.6904039070749736,
+        "auprc": 0.8744588157845403,
+        "auroc": 0.8775732873622228,
+        "brier": 0.17993430086451662,
+        "prevalence": 0.2038888515104622,
+        "tp": 10461.0,
+        "fp": 531.0,
+        "fn": 4691.0,
+        "tn": 58632.0,
+        "event_id": "evt:2017-04-12",
+        "n_maps": 28,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_premonsoon_flash"
+        ],
+        "years": [
+          2017
+        ],
+        "split": "train",
+        "n_unknown": 40373,
+        "n_pixels": 114688,
+        "n_flood": 15152,
+        "unknown_fraction": 0.35202462332589285
+      },
+      {
+        "n_valid_pixels": 42396,
+        "iou": 0.040136312003029154,
+        "dice": 0.07717510010921005,
+        "precision": 0.04842393787117405,
+        "recall": 0.18996415770609318,
+        "auprc": 0.03613163302537316,
+        "auroc": 0.5445218075352172,
+        "brier": 0.16058127002746475,
+        "prevalence": 0.026323238041324654,
+        "tp": 212.0,
+        "fp": 4166.0,
+        "fn": 904.0,
+        "tn": 37114.0,
+        "event_id": "evt:2017-07-31",
+        "n_maps": 16,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2017
+        ],
+        "split": "train",
+        "n_unknown": 23140,
+        "n_pixels": 65536,
+        "n_flood": 1116,
+        "unknown_fraction": 0.35308837890625
+      },
+      {
+        "n_valid_pixels": 31406,
+        "iou": 0.06784492588369441,
+        "dice": 0.12706887346502937,
+        "precision": 0.08867362146050671,
+        "recall": 0.224105461393597,
+        "auprc": 0.07765260879763831,
+        "auroc": 0.5922470626806041,
+        "brier": 0.12471877772357144,
+        "prevalence": 0.016907597274406164,
+        "tp": 119.0,
+        "fp": 1223.0,
+        "fn": 412.0,
+        "tn": 29652.0,
+        "event_id": "evt:2018-01-13",
+        "n_maps": 12,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2018
+        ],
+        "split": "train",
+        "n_unknown": 17746,
+        "n_pixels": 49152,
+        "n_flood": 531,
+        "unknown_fraction": 0.3610432942708333
+      },
+      {
+        "n_valid_pixels": 31374,
+        "iou": 0.10764872521246459,
+        "dice": 0.19437340153452684,
+        "precision": 0.6690140845070423,
+        "recall": 0.11370436864153202,
+        "auprc": 0.15813247617327722,
+        "auroc": 0.5552698525697645,
+        "brier": 0.11734712424786922,
+        "prevalence": 0.05326066169439663,
+        "tp": 190.0,
+        "fp": 94.0,
+        "fn": 1481.0,
+        "tn": 29609.0,
+        "event_id": "evt:2018-06-06",
+        "n_maps": 12,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2018
+        ],
+        "split": "train",
+        "n_unknown": 17778,
+        "n_pixels": 49152,
+        "n_flood": 1671,
+        "unknown_fraction": 0.3616943359375
+      }
+    ],
+    "conv_smooth": [
+      {
+        "n_valid_pixels": 46622,
+        "iou": 0.09103840682788052,
+        "dice": 0.16688396349413298,
+        "precision": 0.29493087557603687,
+        "recall": 0.11636363636363636,
+        "auprc": 0.10804981637448625,
+        "auroc": 0.596581173538469,
+        "brier": 0.024696124491643063,
+        "prevalence": 0.02359401141092188,
+        "tp": 128.0,
+        "fp": 306.0,
+        "fn": 972.0,
+        "tn": 45216.0,
+        "event_id": "evt:2015-07-11",
+        "n_maps": 14,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj",
+          "sylhet"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2015
+        ],
+        "split": "train",
+        "n_unknown": 10722,
+        "n_pixels": 57344,
+        "n_flood": 1100,
+        "unknown_fraction": 0.18697684151785715
+      },
+      {
+        "n_valid_pixels": 12351,
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "auprc": 0.0018523726578337034,
+        "auroc": 0.4835534310945475,
+        "brier": 0.008331409162650898,
+        "prevalence": 0.0006477208323212695,
+        "tp": 0.0,
+        "fp": 139.0,
+        "fn": 8.0,
+        "tn": 12204.0,
+        "event_id": "evt:2016-01-19",
+        "n_maps": 5,
+        "city_ids": [
+          "dhaka_se",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj",
+          "sylhet"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2016
+        ],
+        "split": "train",
+        "n_unknown": 8129,
+        "n_pixels": 20480,
+        "n_flood": 8,
+        "unknown_fraction": 0.396923828125
+      },
+      {
+        "n_valid_pixels": 1392,
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "auprc": 0.17052965506632128,
+        "auroc": 0.7113460546673543,
+        "brier": 0.004496594295444871,
+        "prevalence": 0.005028735632183908,
+        "tp": 0.0,
+        "fp": 0.0,
+        "fn": 7.0,
+        "tn": 1385.0,
+        "event_id": "evt:2016-06-30",
+        "n_maps": 3,
+        "city_ids": [
+          "dhaka_sw"
+        ],
+        "basin_ids": [
+          "central_floodplain"
+        ],
+        "flood_mechanisms": [
+          "monsoon_riverine"
+        ],
+        "years": [
+          2016
+        ],
+        "split": "train",
+        "n_unknown": 10896,
+        "n_pixels": 12288,
+        "n_flood": 7,
+        "unknown_fraction": 0.88671875
+      },
+      {
+        "n_valid_pixels": 74315,
+        "iou": 0.6059955860716038,
+        "dice": 0.7546665648738405,
+        "precision": 0.8949751018560435,
+        "recall": 0.6523891235480465,
+        "auprc": 0.8480496921250383,
+        "auroc": 0.8592480667615239,
+        "brier": 0.07699274775459483,
+        "prevalence": 0.2038888515104622,
+        "tp": 9885.0,
+        "fp": 1160.0,
+        "fn": 5267.0,
+        "tn": 58003.0,
+        "event_id": "evt:2017-04-12",
+        "n_maps": 28,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_premonsoon_flash"
+        ],
+        "years": [
+          2017
+        ],
+        "split": "train",
+        "n_unknown": 40373,
+        "n_pixels": 114688,
+        "n_flood": 15152,
+        "unknown_fraction": 0.35202462332589285
+      },
+      {
+        "n_valid_pixels": 42396,
+        "iou": 0.02600829249905767,
+        "dice": 0.050698016164584865,
+        "precision": 0.03188539741219963,
+        "recall": 0.12365591397849462,
+        "auprc": 0.03599504168046259,
+        "auroc": 0.5579585651621238,
+        "brier": 0.09990751515109157,
+        "prevalence": 0.026323238041324654,
+        "tp": 138.0,
+        "fp": 4190.0,
+        "fn": 978.0,
+        "tn": 37090.0,
+        "event_id": "evt:2017-07-31",
+        "n_maps": 16,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2017
+        ],
+        "split": "train",
+        "n_unknown": 23140,
+        "n_pixels": 65536,
+        "n_flood": 1116,
+        "unknown_fraction": 0.35308837890625
+      },
+      {
+        "n_valid_pixels": 31406,
+        "iou": 0.06451612903225806,
+        "dice": 0.12121212121212122,
+        "precision": 0.11217948717948718,
+        "recall": 0.1318267419962335,
+        "auprc": 0.06375035508826671,
+        "auroc": 0.5734312007746442,
+        "brier": 0.029470267142474152,
+        "prevalence": 0.016907597274406164,
+        "tp": 70.0,
+        "fp": 554.0,
+        "fn": 461.0,
+        "tn": 30321.0,
+        "event_id": "evt:2018-01-13",
+        "n_maps": 12,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2018
+        ],
+        "split": "train",
+        "n_unknown": 17746,
+        "n_pixels": 49152,
+        "n_flood": 531,
+        "unknown_fraction": 0.3610432942708333
+      },
+      {
+        "n_valid_pixels": 31374,
+        "iou": 0.0499412455934195,
+        "dice": 0.09513150531617236,
+        "precision": 0.7327586206896551,
+        "recall": 0.050867743865948535,
+        "auprc": 0.20621194964666253,
+        "auroc": 0.5955170228751575,
+        "brier": 0.048687400985482195,
+        "prevalence": 0.05326066169439663,
+        "tp": 85.0,
+        "fp": 31.0,
+        "fn": 1586.0,
+        "tn": 29672.0,
+        "event_id": "evt:2018-06-06",
+        "n_maps": 12,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2018
+        ],
+        "split": "train",
+        "n_unknown": 17778,
+        "n_pixels": 49152,
+        "n_flood": 1671,
+        "unknown_fraction": 0.3616943359375
+      }
+    ],
+    "pixel_gbdt_no_persistence": [
+      {
+        "n_valid_pixels": 46622,
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "auprc": 0.02228703973273556,
+        "auroc": 0.4835162718525708,
+        "brier": 0.14082528528883667,
+        "prevalence": 0.02359401141092188,
+        "tp": 0.0,
+        "fp": 0.0,
+        "fn": 1100.0,
+        "tn": 45522.0,
+        "event_id": "evt:2015-07-11",
+        "n_maps": 14,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj",
+          "sylhet"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2015
+        ],
+        "split": "train",
+        "n_unknown": 10722,
+        "n_pixels": 57344,
+        "n_flood": 1100,
+        "unknown_fraction": 0.18697684151785715
+      },
+      {
+        "n_valid_pixels": 12351,
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "auprc": 0.002760063122259688,
+        "auroc": 0.6790792351940371,
+        "brier": 0.12270266723307831,
+        "prevalence": 0.0006477208323212695,
+        "tp": 0.0,
+        "fp": 0.0,
+        "fn": 8.0,
+        "tn": 12343.0,
+        "event_id": "evt:2016-01-19",
+        "n_maps": 5,
+        "city_ids": [
+          "dhaka_se",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj",
+          "sylhet"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2016
+        ],
+        "split": "train",
+        "n_unknown": 8129,
+        "n_pixels": 20480,
+        "n_flood": 8,
+        "unknown_fraction": 0.396923828125
+      },
+      {
+        "n_valid_pixels": 1392,
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "auprc": 0.0044798730518675976,
+        "auroc": 0.47158329035585356,
+        "brier": 0.18546819121490535,
+        "prevalence": 0.005028735632183908,
+        "tp": 0.0,
+        "fp": 35.0,
+        "fn": 7.0,
+        "tn": 1350.0,
+        "event_id": "evt:2016-06-30",
+        "n_maps": 3,
+        "city_ids": [
+          "dhaka_sw"
+        ],
+        "basin_ids": [
+          "central_floodplain"
+        ],
+        "flood_mechanisms": [
+          "monsoon_riverine"
+        ],
+        "years": [
+          2016
+        ],
+        "split": "train",
+        "n_unknown": 10896,
+        "n_pixels": 12288,
+        "n_flood": 7,
+        "unknown_fraction": 0.88671875
+      },
+      {
+        "n_valid_pixels": 74315,
+        "iou": 0.21682345562872374,
+        "dice": 0.35637619348271465,
+        "precision": 0.22141633443809342,
+        "recall": 0.9126847940865892,
+        "auprc": 0.38739758951793224,
+        "auroc": 0.6438418610328621,
+        "brier": 0.3210406622298155,
+        "prevalence": 0.2038888515104622,
+        "tp": 13829.0,
+        "fp": 48628.0,
+        "fn": 1323.0,
+        "tn": 10535.0,
+        "event_id": "evt:2017-04-12",
+        "n_maps": 28,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_premonsoon_flash"
+        ],
+        "years": [
+          2017
+        ],
+        "split": "train",
+        "n_unknown": 40373,
+        "n_pixels": 114688,
+        "n_flood": 15152,
+        "unknown_fraction": 0.35202462332589285
+      },
+      {
+        "n_valid_pixels": 42396,
+        "iou": 0.007508532423208191,
+        "dice": 0.014905149051490514,
+        "precision": 0.030555555555555555,
+        "recall": 0.00985663082437276,
+        "auprc": 0.024959455820907403,
+        "auroc": 0.43406420181434247,
+        "brier": 0.2090774674224446,
+        "prevalence": 0.026323238041324654,
+        "tp": 11.0,
+        "fp": 349.0,
+        "fn": 1105.0,
+        "tn": 40931.0,
+        "event_id": "evt:2017-07-31",
+        "n_maps": 16,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2017
+        ],
+        "split": "train",
+        "n_unknown": 23140,
+        "n_pixels": 65536,
+        "n_flood": 1116,
+        "unknown_fraction": 0.35308837890625
+      },
+      {
+        "n_valid_pixels": 31406,
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "auprc": 0.04669194866407903,
+        "auroc": 0.6456868028393452,
+        "brier": 0.1148845326567325,
+        "prevalence": 0.016907597274406164,
+        "tp": 0.0,
+        "fp": 0.0,
+        "fn": 531.0,
+        "tn": 30875.0,
+        "event_id": "evt:2018-01-13",
+        "n_maps": 12,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2018
+        ],
+        "split": "train",
+        "n_unknown": 17746,
+        "n_pixels": 49152,
+        "n_flood": 531,
+        "unknown_fraction": 0.3610432942708333
+      },
+      {
+        "n_valid_pixels": 31374,
+        "iou": 0.12173006774361647,
+        "dice": 0.21703985877543436,
+        "precision": 0.12846458424989002,
+        "recall": 0.698982645122681,
+        "auprc": 0.1399723965567517,
+        "auroc": 0.7455780912461657,
+        "brier": 0.1962396431543916,
+        "prevalence": 0.05326066169439663,
+        "tp": 1168.0,
+        "fp": 7924.0,
+        "fn": 503.0,
+        "tn": 21779.0,
+        "event_id": "evt:2018-06-06",
+        "n_maps": 12,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2018
+        ],
+        "split": "train",
+        "n_unknown": 17778,
+        "n_pixels": 49152,
+        "n_flood": 1671,
+        "unknown_fraction": 0.3616943359375
+      }
+    ]
+  },
+  "val": {
+    "persistence": [
+      {
+        "n_valid_pixels": 42973,
+        "iou": 0.015121630506245891,
+        "dice": 0.029792746113989636,
+        "precision": 0.015191545574636724,
+        "recall": 0.7666666666666667,
+        "auprc": 0.006323974506969916,
+        "auroc": 0.8659731116441174,
+        "brier": 0.034859097572894605,
+        "prevalence": 0.0006981127684825355,
+        "tp": 23.0,
+        "fp": 1491.0,
+        "fn": 7.0,
+        "tn": 41452.0,
+        "event_id": "evt:2019-01-10",
+        "n_maps": 16,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 22563,
+        "n_pixels": 65536,
+        "n_flood": 30,
+        "unknown_fraction": 0.3442840576171875
+      },
+      {
+        "n_valid_pixels": 52220,
+        "iou": 0.009683666881859263,
+        "dice": 0.01918158567774936,
+        "precision": 0.15151515151515152,
+        "recall": 0.010238907849829351,
+        "auprc": 0.05026196608707258,
+        "auroc": 0.5042919492455727,
+        "brier": 0.029375718115664497,
+        "prevalence": 0.02805438529299119,
+        "tp": 15.0,
+        "fp": 84.0,
+        "fn": 1450.0,
+        "tn": 50671.0,
+        "event_id": "evt:2019-06-15",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 17412,
+        "n_pixels": 69632,
+        "n_flood": 1465,
+        "unknown_fraction": 0.2500574448529412
+      },
+      {
+        "n_valid_pixels": 37153,
+        "iou": 0.004968944099378882,
+        "dice": 0.009888751545117428,
+        "precision": 0.005161290322580645,
+        "recall": 0.11764705882352941,
+        "auprc": 0.004812246102031496,
+        "auroc": 0.5484380125605565,
+        "brier": 0.02155949721422227,
+        "prevalence": 0.0009151347132129303,
+        "tp": 4.0,
+        "fp": 771.0,
+        "fn": 30.0,
+        "tn": 36348.0,
+        "event_id": "evt:2020-01-15",
+        "n_maps": 14,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 20191,
+        "n_pixels": 57344,
+        "n_flood": 34,
+        "unknown_fraction": 0.3521030970982143
+      },
+      {
+        "n_valid_pixels": 61414,
+        "iou": 0.1988993710691824,
+        "dice": 0.3318032786885246,
+        "precision": 0.40441176470588236,
+        "recall": 0.2812986435401379,
+        "auprc": 0.25578578157294324,
+        "auroc": 0.6242833854065923,
+        "brier": 0.0829615397140717,
+        "prevalence": 0.07322434624027095,
+        "tp": 1265.0,
+        "fp": 1863.0,
+        "fn": 3232.0,
+        "tn": 55054.0,
+        "event_id": "evt:2020-06-07",
+        "n_maps": 25,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 40986,
+        "n_pixels": 102400,
+        "n_flood": 4497,
+        "unknown_fraction": 0.40025390625
+      },
+      {
+        "n_valid_pixels": 101117,
+        "iou": 0.07905686546463246,
+        "dice": 0.14652956298200515,
+        "precision": 0.13929618768328444,
+        "recall": 0.15455531453362256,
+        "auprc": 0.04031092094398996,
+        "auroc": 0.5684081761390122,
+        "brier": 0.03283325256880643,
+        "prevalence": 0.018236300523156345,
+        "tp": 285.0,
+        "fp": 1761.0,
+        "fn": 1559.0,
+        "tn": 97512.0,
+        "event_id": "evt:2021-06-02",
+        "n_maps": 39,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2021
+        ],
+        "split": "val",
+        "n_unknown": 58627,
+        "n_pixels": 159744,
+        "n_flood": 1844,
+        "unknown_fraction": 0.3670059595352564
+      }
+    ],
+    "climatology": [
+      {
+        "n_valid_pixels": 42973,
+        "iou": 0.04,
+        "dice": 0.07692307692307693,
+        "precision": 0.043478260869565216,
+        "recall": 0.3333333333333333,
+        "auprc": 0.09702023996671183,
+        "auroc": 0.6596651375078593,
+        "brier": 0.00482605038955434,
+        "prevalence": 0.0006981127684825355,
+        "tp": 10.0,
+        "fp": 220.0,
+        "fn": 20.0,
+        "tn": 42723.0,
+        "event_id": "evt:2019-01-10",
+        "n_maps": 16,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 22563,
+        "n_pixels": 65536,
+        "n_flood": 30,
+        "unknown_fraction": 0.3442840576171875
+      },
+      {
+        "n_valid_pixels": 52220,
+        "iou": 0.07014997581035316,
+        "dice": 0.13110307414104883,
+        "precision": 0.19410977242302543,
+        "recall": 0.09897610921501707,
+        "auprc": 0.05836140452356426,
+        "auroc": 0.4614633505063305,
+        "brier": 0.03651726135095288,
+        "prevalence": 0.02805438529299119,
+        "tp": 145.0,
+        "fp": 602.0,
+        "fn": 1320.0,
+        "tn": 50153.0,
+        "event_id": "evt:2019-06-15",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 17412,
+        "n_pixels": 69632,
+        "n_flood": 1465,
+        "unknown_fraction": 0.2500574448529412
+      },
+      {
+        "n_valid_pixels": 37153,
+        "iou": 0.04132231404958678,
+        "dice": 0.07936507936507936,
+        "precision": 0.045871559633027525,
+        "recall": 0.29411764705882354,
+        "auprc": 0.037731344975453045,
+        "auroc": 0.842710170627695,
+        "brier": 0.005294974059297549,
+        "prevalence": 0.0009151347132129303,
+        "tp": 10.0,
+        "fp": 208.0,
+        "fn": 24.0,
+        "tn": 36911.0,
+        "event_id": "evt:2020-01-15",
+        "n_maps": 14,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 20191,
+        "n_pixels": 57344,
+        "n_flood": 34,
+        "unknown_fraction": 0.3521030970982143
+      },
+      {
+        "n_valid_pixels": 61414,
+        "iou": 0.2107667613285591,
+        "dice": 0.348154191311442,
+        "precision": 0.32152947824449046,
+        "recall": 0.37958639092728486,
+        "auprc": 0.30738820598977784,
+        "auroc": 0.6270717248081816,
+        "brier": 0.07240057030387173,
+        "prevalence": 0.07322434624027095,
+        "tp": 1707.0,
+        "fp": 3602.0,
+        "fn": 2790.0,
+        "tn": 53315.0,
+        "event_id": "evt:2020-06-07",
+        "n_maps": 25,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 40986,
+        "n_pixels": 102400,
+        "n_flood": 4497,
+        "unknown_fraction": 0.40025390625
+      },
+      {
+        "n_valid_pixels": 101117,
+        "iou": 0.05028378857750976,
+        "dice": 0.09575276534661825,
+        "precision": 0.05670567056705671,
+        "recall": 0.30748373101952275,
+        "auprc": 0.05736386793429174,
+        "auroc": 0.640879989279109,
+        "brier": 0.0750190819472567,
+        "prevalence": 0.018236300523156345,
+        "tp": 567.0,
+        "fp": 9432.0,
+        "fn": 1277.0,
+        "tn": 89841.0,
+        "event_id": "evt:2021-06-02",
+        "n_maps": 39,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2021
+        ],
+        "split": "val",
+        "n_unknown": 58627,
+        "n_pixels": 159744,
+        "n_flood": 1844,
+        "unknown_fraction": 0.3670059595352564
+      }
+    ],
+    "rain_threshold": [
+      {
+        "n_valid_pixels": 42973,
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "auprc": 0.00040612938863847413,
+        "auroc": 0.5,
+        "brier": 0.0006981127684825355,
+        "prevalence": 0.0006981127684825355,
+        "tp": 0.0,
+        "fp": 0.0,
+        "fn": 30.0,
+        "tn": 42943.0,
+        "event_id": "evt:2019-01-10",
+        "n_maps": 16,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 22563,
+        "n_pixels": 65536,
+        "n_flood": 30,
+        "unknown_fraction": 0.3442840576171875
+      },
+      {
+        "n_valid_pixels": 52220,
+        "iou": 0.04857468643101482,
+        "dice": 0.09264897781644194,
+        "precision": 0.055102832751261155,
+        "recall": 0.2907849829351536,
+        "auprc": 0.051022621425624685,
+        "auroc": 0.5734291381033763,
+        "brier": 0.15978552278820377,
+        "prevalence": 0.02805438529299119,
+        "tp": 426.0,
+        "fp": 7305.0,
+        "fn": 1039.0,
+        "tn": 43450.0,
+        "event_id": "evt:2019-06-15",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 17412,
+        "n_pixels": 69632,
+        "n_flood": 1465,
+        "unknown_fraction": 0.2500574448529412
+      },
+      {
+        "n_valid_pixels": 37153,
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "auprc": 0.004209267336931191,
+        "auroc": 0.5,
+        "brier": 0.0009151347132129303,
+        "prevalence": 0.0009151347132129303,
+        "tp": 0.0,
+        "fp": 0.0,
+        "fn": 34.0,
+        "tn": 37119.0,
+        "event_id": "evt:2020-01-15",
+        "n_maps": 14,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 20191,
+        "n_pixels": 57344,
+        "n_flood": 34,
+        "unknown_fraction": 0.3521030970982143
+      },
+      {
+        "n_valid_pixels": 61414,
+        "iou": 0.09051931674882495,
+        "dice": 0.1660113954124004,
+        "precision": 0.09167324571587795,
+        "recall": 0.8779186124082722,
+        "auprc": 0.12390617128141726,
+        "auroc": 0.5953185661791874,
+        "brier": 0.645895072784707,
+        "prevalence": 0.07322434624027095,
+        "tp": 3948.0,
+        "fp": 39118.0,
+        "fn": 549.0,
+        "tn": 17799.0,
+        "event_id": "evt:2020-06-07",
+        "n_maps": 25,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 40986,
+        "n_pixels": 102400,
+        "n_flood": 4497,
+        "unknown_fraction": 0.40025390625
+      },
+      {
+        "n_valid_pixels": 101117,
+        "iou": 0.019154509138266582,
+        "dice": 0.0375890190673099,
+        "precision": 0.019305645684620378,
+        "recall": 0.7098698481561823,
+        "auprc": 0.01999615409046584,
+        "auroc": 0.520025129874229,
+        "brier": 0.6628954577370768,
+        "prevalence": 0.018236300523156345,
+        "tp": 1309.0,
+        "fp": 66495.0,
+        "fn": 535.0,
+        "tn": 32778.0,
+        "event_id": "evt:2021-06-02",
+        "n_maps": 39,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2021
+        ],
+        "split": "val",
+        "n_unknown": 58627,
+        "n_pixels": 159744,
+        "n_flood": 1844,
+        "unknown_fraction": 0.3670059595352564
+      }
+    ],
+    "pixel_logistic": [
+      {
+        "n_valid_pixels": 42973,
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "auprc": 0.000412025954613152,
+        "auroc": 0.37450806883543303,
+        "brier": 0.0245694174384792,
+        "prevalence": 0.0006981127684825355,
+        "tp": 0.0,
+        "fp": 1103.0,
+        "fn": 30.0,
+        "tn": 41840.0,
+        "event_id": "evt:2019-01-10",
+        "n_maps": 16,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 22563,
+        "n_pixels": 65536,
+        "n_flood": 30,
+        "unknown_fraction": 0.3442840576171875
+      },
+      {
+        "n_valid_pixels": 52220,
+        "iou": 0.03375592661306947,
+        "dice": 0.06530734333715539,
+        "precision": 0.03522641712380338,
+        "recall": 0.447098976109215,
+        "auprc": 0.032967802630335226,
+        "auroc": 0.544431177950154,
+        "brier": 0.3527817185813612,
+        "prevalence": 0.02805438529299119,
+        "tp": 655.0,
+        "fp": 17939.0,
+        "fn": 810.0,
+        "tn": 32816.0,
+        "event_id": "evt:2019-06-15",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 17412,
+        "n_pixels": 69632,
+        "n_flood": 1465,
+        "unknown_fraction": 0.2500574448529412
+      },
+      {
+        "n_valid_pixels": 37153,
+        "iou": 0.0007380073800738007,
+        "dice": 0.0014749262536873156,
+        "precision": 0.0007564296520423601,
+        "recall": 0.029411764705882353,
+        "auprc": 0.0016316819282329667,
+        "auroc": 0.6299798105615801,
+        "brier": 0.03332609340660426,
+        "prevalence": 0.0009151347132129303,
+        "tp": 1.0,
+        "fp": 1321.0,
+        "fn": 33.0,
+        "tn": 35798.0,
+        "event_id": "evt:2020-01-15",
+        "n_maps": 14,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 20191,
+        "n_pixels": 57344,
+        "n_flood": 34,
+        "unknown_fraction": 0.3521030970982143
+      },
+      {
+        "n_valid_pixels": 61414,
+        "iou": 0.08435540731671276,
+        "dice": 0.15558627134152278,
+        "precision": 0.08525709409003628,
+        "recall": 0.8885923949299533,
+        "auprc": 0.12253458703413671,
+        "auroc": 0.6075148306201944,
+        "brier": 0.7015931342527625,
+        "prevalence": 0.07322434624027095,
+        "tp": 3996.0,
+        "fp": 42874.0,
+        "fn": 501.0,
+        "tn": 14043.0,
+        "event_id": "evt:2020-06-07",
+        "n_maps": 25,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 40986,
+        "n_pixels": 102400,
+        "n_flood": 4497,
+        "unknown_fraction": 0.40025390625
+      },
+      {
+        "n_valid_pixels": 101117,
+        "iou": 0.018948337565524716,
+        "dice": 0.03719194951688357,
+        "precision": 0.01910952031509742,
+        "recall": 0.6919739696312365,
+        "auprc": 0.022515812534291947,
+        "auroc": 0.5387333867323905,
+        "brier": 0.6485924426818775,
+        "prevalence": 0.018236300523156345,
+        "tp": 1276.0,
+        "fp": 65497.0,
+        "fn": 568.0,
+        "tn": 33776.0,
+        "event_id": "evt:2021-06-02",
+        "n_maps": 39,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2021
+        ],
+        "split": "val",
+        "n_unknown": 58627,
+        "n_pixels": 159744,
+        "n_flood": 1844,
+        "unknown_fraction": 0.3670059595352564
+      }
+    ],
+    "pixel_gbdt": [
+      {
+        "n_valid_pixels": 42973,
+        "iou": 0.015121630506245891,
+        "dice": 0.029792746113989636,
+        "precision": 0.015191545574636724,
+        "recall": 0.7666666666666667,
+        "auprc": 0.006323974506969916,
+        "auroc": 0.8659731116441174,
+        "brier": 0.11774181255983819,
+        "prevalence": 0.0006981127684825355,
+        "tp": 23.0,
+        "fp": 1491.0,
+        "fn": 7.0,
+        "tn": 41452.0,
+        "event_id": "evt:2019-01-10",
+        "n_maps": 16,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 22563,
+        "n_pixels": 65536,
+        "n_flood": 30,
+        "unknown_fraction": 0.3442840576171875
+      },
+      {
+        "n_valid_pixels": 52220,
+        "iou": 0.009683666881859263,
+        "dice": 0.01918158567774936,
+        "precision": 0.15151515151515152,
+        "recall": 0.010238907849829351,
+        "auprc": 0.05026196608707258,
+        "auroc": 0.5042919492455727,
+        "brier": 0.10969554251484676,
+        "prevalence": 0.02805438529299119,
+        "tp": 15.0,
+        "fp": 84.0,
+        "fn": 1450.0,
+        "tn": 50671.0,
+        "event_id": "evt:2019-06-15",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 17412,
+        "n_pixels": 69632,
+        "n_flood": 1465,
+        "unknown_fraction": 0.2500574448529412
+      },
+      {
+        "n_valid_pixels": 37153,
+        "iou": 0.004968944099378882,
+        "dice": 0.009888751545117428,
+        "precision": 0.005161290322580645,
+        "recall": 0.11764705882352941,
+        "auprc": 0.004812246102031496,
+        "auroc": 0.5484380125605565,
+        "brier": 0.11027896499537115,
+        "prevalence": 0.0009151347132129303,
+        "tp": 4.0,
+        "fp": 771.0,
+        "fn": 30.0,
+        "tn": 36348.0,
+        "event_id": "evt:2020-01-15",
+        "n_maps": 14,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 20191,
+        "n_pixels": 57344,
+        "n_flood": 34,
+        "unknown_fraction": 0.3521030970982143
+      },
+      {
+        "n_valid_pixels": 61414,
+        "iou": 0.1988993710691824,
+        "dice": 0.3318032786885246,
+        "precision": 0.40441176470588236,
+        "recall": 0.2812986435401379,
+        "auprc": 0.25578578157294324,
+        "auroc": 0.6242833854065923,
+        "brier": 0.13362411956136436,
+        "prevalence": 0.07322434624027095,
+        "tp": 1265.0,
+        "fp": 1863.0,
+        "fn": 3232.0,
+        "tn": 55054.0,
+        "event_id": "evt:2020-06-07",
+        "n_maps": 25,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 40986,
+        "n_pixels": 102400,
+        "n_flood": 4497,
+        "unknown_fraction": 0.40025390625
+      },
+      {
+        "n_valid_pixels": 101117,
+        "iou": 0.07905686546463246,
+        "dice": 0.14652956298200515,
+        "precision": 0.13929618768328444,
+        "recall": 0.15455531453362256,
+        "auprc": 0.04031092094398996,
+        "auroc": 0.5684081761390122,
+        "brier": 0.1137028773998789,
+        "prevalence": 0.018236300523156345,
+        "tp": 285.0,
+        "fp": 1761.0,
+        "fn": 1559.0,
+        "tn": 97512.0,
+        "event_id": "evt:2021-06-02",
+        "n_maps": 39,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2021
+        ],
+        "split": "val",
+        "n_unknown": 58627,
+        "n_pixels": 159744,
+        "n_flood": 1844,
+        "unknown_fraction": 0.3670059595352564
+      }
+    ],
+    "conv_smooth": [
+      {
+        "n_valid_pixels": 42973,
+        "iou": 0.0009380863039399625,
+        "dice": 0.0018744142455482662,
+        "precision": 0.0009643201542912247,
+        "recall": 0.03333333333333333,
+        "auprc": 0.004297917340382012,
+        "auroc": 0.8685466781547633,
+        "brier": 0.018303769837678726,
+        "prevalence": 0.0006981127684825355,
+        "tp": 1.0,
+        "fp": 1036.0,
+        "fn": 29.0,
+        "tn": 41907.0,
+        "event_id": "evt:2019-01-10",
+        "n_maps": 16,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 22563,
+        "n_pixels": 65536,
+        "n_flood": 30,
+        "unknown_fraction": 0.3442840576171875
+      },
+      {
+        "n_valid_pixels": 52220,
+        "iou": 0.0006706908115358819,
+        "dice": 0.0013404825737265416,
+        "precision": 0.037037037037037035,
+        "recall": 0.0006825938566552901,
+        "auprc": 0.04487618888790474,
+        "auroc": 0.5021856922921227,
+        "brier": 0.02841373864608896,
+        "prevalence": 0.02805438529299119,
+        "tp": 1.0,
+        "fp": 26.0,
+        "fn": 1464.0,
+        "tn": 50729.0,
+        "event_id": "evt:2019-06-15",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 17412,
+        "n_pixels": 69632,
+        "n_flood": 1465,
+        "unknown_fraction": 0.2500574448529412
+      },
+      {
+        "n_valid_pixels": 37153,
+        "iou": 0.003105590062111801,
+        "dice": 0.006191950464396285,
+        "precision": 0.0034602076124567475,
+        "recall": 0.029411764705882353,
+        "auprc": 0.0029425244457480645,
+        "auroc": 0.5585109417564812,
+        "brier": 0.008533946878988551,
+        "prevalence": 0.0009151347132129303,
+        "tp": 1.0,
+        "fp": 288.0,
+        "fn": 33.0,
+        "tn": 36831.0,
+        "event_id": "evt:2020-01-15",
+        "n_maps": 14,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 20191,
+        "n_pixels": 57344,
+        "n_flood": 34,
+        "unknown_fraction": 0.3521030970982143
+      },
+      {
+        "n_valid_pixels": 61414,
+        "iou": 0.12942691564713457,
+        "dice": 0.2291904218928164,
+        "precision": 0.31917427550615324,
+        "recall": 0.17878585723815876,
+        "auprc": 0.2239071897968326,
+        "auroc": 0.6732478882511836,
+        "brier": 0.07314534386537515,
+        "prevalence": 0.07322434624027095,
+        "tp": 804.0,
+        "fp": 1715.0,
+        "fn": 3693.0,
+        "tn": 55202.0,
+        "event_id": "evt:2020-06-07",
+        "n_maps": 25,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 40986,
+        "n_pixels": 102400,
+        "n_flood": 4497,
+        "unknown_fraction": 0.40025390625
+      },
+      {
+        "n_valid_pixels": 101117,
+        "iou": 0.04364326375711575,
+        "dice": 0.08363636363636363,
+        "precision": 0.12693156732891833,
+        "recall": 0.06236442516268981,
+        "auprc": 0.04238453084708079,
+        "auroc": 0.5800532889289517,
+        "brier": 0.02300476516813368,
+        "prevalence": 0.018236300523156345,
+        "tp": 115.0,
+        "fp": 791.0,
+        "fn": 1729.0,
+        "tn": 98482.0,
+        "event_id": "evt:2021-06-02",
+        "n_maps": 39,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2021
+        ],
+        "split": "val",
+        "n_unknown": 58627,
+        "n_pixels": 159744,
+        "n_flood": 1844,
+        "unknown_fraction": 0.3670059595352564
+      }
+    ],
+    "pixel_gbdt_no_persistence": [
+      {
+        "n_valid_pixels": 42973,
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "auprc": 0.0004085391359163125,
+        "auroc": 0.3061795092719807,
+        "brier": 0.10873471078579293,
+        "prevalence": 0.0006981127684825355,
+        "tp": 0.0,
+        "fp": 0.0,
+        "fn": 30.0,
+        "tn": 42943.0,
+        "event_id": "evt:2019-01-10",
+        "n_maps": 16,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 22563,
+        "n_pixels": 65536,
+        "n_flood": 30,
+        "unknown_fraction": 0.3442840576171875
+      },
+      {
+        "n_valid_pixels": 52220,
+        "iou": 0.022373987054686306,
+        "dice": 0.04376869391824526,
+        "precision": 0.023608496907770907,
+        "recall": 0.29965870307167236,
+        "auprc": 0.030196780534731543,
+        "auroc": 0.48966692365082476,
+        "brier": 0.21254082341700706,
+        "prevalence": 0.02805438529299119,
+        "tp": 439.0,
+        "fp": 18156.0,
+        "fn": 1026.0,
+        "tn": 32599.0,
+        "event_id": "evt:2019-06-15",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 17412,
+        "n_pixels": 69632,
+        "n_flood": 1465,
+        "unknown_fraction": 0.2500574448529412
+      },
+      {
+        "n_valid_pixels": 37153,
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "auprc": 0.0031275586212669475,
+        "auroc": 0.6426925009072569,
+        "brier": 0.10952802868913313,
+        "prevalence": 0.0009151347132129303,
+        "tp": 0.0,
+        "fp": 0.0,
+        "fn": 34.0,
+        "tn": 37119.0,
+        "event_id": "evt:2020-01-15",
+        "n_maps": 14,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 20191,
+        "n_pixels": 57344,
+        "n_flood": 34,
+        "unknown_fraction": 0.3521030970982143
+      },
+      {
+        "n_valid_pixels": 61414,
+        "iou": 0.09713266566058444,
+        "dice": 0.17706639989996248,
+        "precision": 0.10895660203139428,
+        "recall": 0.4723148765843896,
+        "auprc": 0.14869514714693916,
+        "auroc": 0.5733052298036095,
+        "brier": 0.22161959030770445,
+        "prevalence": 0.07322434624027095,
+        "tp": 2124.0,
+        "fp": 17370.0,
+        "fn": 2373.0,
+        "tn": 39547.0,
+        "event_id": "evt:2020-06-07",
+        "n_maps": 25,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 40986,
+        "n_pixels": 102400,
+        "n_flood": 4497,
+        "unknown_fraction": 0.40025390625
+      },
+      {
+        "n_valid_pixels": 101117,
+        "iou": 0.01752798823928531,
+        "dice": 0.03445210046677039,
+        "precision": 0.018489065606361828,
+        "recall": 0.25216919739696314,
+        "auprc": 0.023802845143163283,
+        "auroc": 0.44063296237398597,
+        "brier": 0.21445836921020156,
+        "prevalence": 0.018236300523156345,
+        "tp": 465.0,
+        "fp": 24685.0,
+        "fn": 1379.0,
+        "tn": 74588.0,
+        "event_id": "evt:2021-06-02",
+        "n_maps": 39,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2021
+        ],
+        "split": "val",
+        "n_unknown": 58627,
+        "n_pixels": 159744,
+        "n_flood": 1844,
+        "unknown_fraction": 0.3670059595352564
+      }
+    ]
+  },
+  "test": {
+    "persistence": [
+      {
+        "n_valid_pixels": 44160,
+        "iou": 0.15882776215084712,
+        "dice": 0.2741179791137454,
+        "precision": 0.2920726572837724,
+        "recall": 0.2582429270368007,
+        "auprc": 0.3474242186630632,
+        "auroc": 0.5444646938538626,
+        "brier": 0.2911911231884058,
+        "prevalence": 0.21290760869565217,
+        "tp": 2428.0,
+        "fp": 5885.0,
+        "fn": 6974.0,
+        "tn": 28873.0,
+        "event_id": "evt:2022-05-16",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "haor_premonsoon_flash",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2022
+        ],
+        "split": "test",
+        "n_unknown": 25472,
+        "n_pixels": 69632,
+        "n_flood": 9402,
+        "unknown_fraction": 0.36580882352941174
+      },
+      {
+        "n_valid_pixels": 76661,
+        "iou": 0.1030011655011655,
+        "dice": 0.18676528860124159,
+        "precision": 0.1638090824837813,
+        "recall": 0.2172043010752688,
+        "auprc": 0.08843951780151336,
+        "auroc": 0.5840196913381139,
+        "brier": 0.08031463195105726,
+        "prevalence": 0.042459660061830655,
+        "tp": 707.0,
+        "fp": 3609.0,
+        "fn": 2548.0,
+        "tn": 69797.0,
+        "event_id": "evt:2023-06-16",
+        "n_maps": 30,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2023
+        ],
+        "split": "test",
+        "n_unknown": 46219,
+        "n_pixels": 122880,
+        "n_flood": 3255,
+        "unknown_fraction": 0.37613118489583336
+      },
+      {
+        "n_valid_pixels": 75023,
+        "iou": 0.26114102864278466,
+        "dice": 0.4141345380283433,
+        "precision": 0.4132394714091639,
+        "recall": 0.4150334904490201,
+        "auprc": 0.2934783548207174,
+        "auroc": 0.6720408712082917,
+        "brier": 0.126187969022833,
+        "prevalence": 0.10746037881716274,
+        "tp": 3346.0,
+        "fp": 4751.0,
+        "fn": 4716.0,
+        "tn": 62210.0,
+        "event_id": "evt:2024-06-22",
+        "n_maps": 29,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2024
+        ],
+        "split": "test",
+        "n_unknown": 43761,
+        "n_pixels": 118784,
+        "n_flood": 8062,
+        "unknown_fraction": 0.368408203125
+      }
+    ],
+    "climatology": [
+      {
+        "n_valid_pixels": 44160,
+        "iou": 0.45420885597702887,
+        "dice": 0.6246817355157184,
+        "precision": 0.6106877984354363,
+        "recall": 0.639332057009147,
+        "auprc": 0.43437324202062255,
+        "auroc": 0.7528418589852597,
+        "brier": 0.15579716282284178,
+        "prevalence": 0.21290760869565217,
+        "tp": 6011.0,
+        "fp": 3832.0,
+        "fn": 3391.0,
+        "tn": 30926.0,
+        "event_id": "evt:2022-05-16",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "haor_premonsoon_flash",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2022
+        ],
+        "split": "test",
+        "n_unknown": 25472,
+        "n_pixels": 69632,
+        "n_flood": 9402,
+        "unknown_fraction": 0.36580882352941174
+      },
+      {
+        "n_valid_pixels": 76661,
+        "iou": 0.24725943970767356,
+        "dice": 0.396484375,
+        "precision": 0.3289447032610897,
+        "recall": 0.4989247311827957,
+        "auprc": 0.2247953587318091,
+        "auroc": 0.7364940555552556,
+        "brier": 0.06388735103281336,
+        "prevalence": 0.042459660061830655,
+        "tp": 1624.0,
+        "fp": 3313.0,
+        "fn": 1631.0,
+        "tn": 70093.0,
+        "event_id": "evt:2023-06-16",
+        "n_maps": 30,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2023
+        ],
+        "split": "test",
+        "n_unknown": 46219,
+        "n_pixels": 122880,
+        "n_flood": 3255,
+        "unknown_fraction": 0.37613118489583336
+      },
+      {
+        "n_valid_pixels": 75023,
+        "iou": 0.1825261158594492,
+        "dice": 0.3087054288467716,
+        "precision": 0.4378132118451025,
+        "recall": 0.23840238154304144,
+        "auprc": 0.2899229489241532,
+        "auroc": 0.5877173202538527,
+        "brier": 0.11444446777177619,
+        "prevalence": 0.10746037881716274,
+        "tp": 1922.0,
+        "fp": 2468.0,
+        "fn": 6140.0,
+        "tn": 64493.0,
+        "event_id": "evt:2024-06-22",
+        "n_maps": 29,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2024
+        ],
+        "split": "test",
+        "n_unknown": 43761,
+        "n_pixels": 118784,
+        "n_flood": 8062,
+        "unknown_fraction": 0.368408203125
+      }
+    ],
+    "rain_threshold": [
+      {
+        "n_valid_pixels": 44160,
+        "iou": 0.28052550231839257,
+        "dice": 0.43814121907060954,
+        "precision": 0.32882186817285664,
+        "recall": 0.6563497128270581,
+        "auprc": 0.5239571936135338,
+        "auroc": 0.6469791604586409,
+        "brier": 0.35840126811594203,
+        "prevalence": 0.21290760869565217,
+        "tp": 6171.0,
+        "fp": 12596.0,
+        "fn": 3231.0,
+        "tn": 22162.0,
+        "event_id": "evt:2022-05-16",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "haor_premonsoon_flash",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2022
+        ],
+        "split": "test",
+        "n_unknown": 25472,
+        "n_pixels": 69632,
+        "n_flood": 9402,
+        "unknown_fraction": 0.36580882352941174
+      },
+      {
+        "n_valid_pixels": 76661,
+        "iou": 0.04034249093869832,
+        "dice": 0.07755617268366574,
+        "precision": 0.041025641025641026,
+        "recall": 0.7078341013824885,
+        "auprc": 0.0626347749189152,
+        "auroc": 0.48708055231236513,
+        "brier": 0.7149267554558381,
+        "prevalence": 0.042459660061830655,
+        "tp": 2304.0,
+        "fp": 53856.0,
+        "fn": 951.0,
+        "tn": 19550.0,
+        "event_id": "evt:2023-06-16",
+        "n_maps": 30,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2023
+        ],
+        "split": "test",
+        "n_unknown": 46219,
+        "n_pixels": 122880,
+        "n_flood": 3255,
+        "unknown_fraction": 0.37613118489583336
+      },
+      {
+        "n_valid_pixels": 75023,
+        "iou": 0.11008535098414911,
+        "dice": 0.19833673309273497,
+        "precision": 0.11538695608073841,
+        "recall": 0.7055321260233193,
+        "auprc": 0.1893421336498613,
+        "auroc": 0.5271511528400672,
+        "brier": 0.612892046439092,
+        "prevalence": 0.10746037881716274,
+        "tp": 5688.0,
+        "fp": 43607.0,
+        "fn": 2374.0,
+        "tn": 23354.0,
+        "event_id": "evt:2024-06-22",
+        "n_maps": 29,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2024
+        ],
+        "split": "test",
+        "n_unknown": 43761,
+        "n_pixels": 118784,
+        "n_flood": 8062,
+        "unknown_fraction": 0.368408203125
+      }
+    ],
+    "pixel_logistic": [
+      {
+        "n_valid_pixels": 44160,
+        "iou": 0.2670814838300571,
+        "dice": 0.4215695474023334,
+        "precision": 0.29859541849439497,
+        "recall": 0.7167623909806424,
+        "auprc": 0.5289643765560971,
+        "auroc": 0.7047028324656265,
+        "brier": 0.4135362905437487,
+        "prevalence": 0.21290760869565217,
+        "tp": 6739.0,
+        "fp": 15830.0,
+        "fn": 2663.0,
+        "tn": 18928.0,
+        "event_id": "evt:2022-05-16",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "haor_premonsoon_flash",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2022
+        ],
+        "split": "test",
+        "n_unknown": 25472,
+        "n_pixels": 69632,
+        "n_flood": 9402,
+        "unknown_fraction": 0.36580882352941174
+      },
+      {
+        "n_valid_pixels": 76661,
+        "iou": 0.0527753422809739,
+        "dice": 0.10025945738172266,
+        "precision": 0.052886808711961206,
+        "recall": 0.9615975422427036,
+        "auprc": 0.0940938242679577,
+        "auroc": 0.6238327894022735,
+        "brier": 0.7295635004004472,
+        "prevalence": 0.042459660061830655,
+        "tp": 3130.0,
+        "fp": 56053.0,
+        "fn": 125.0,
+        "tn": 17353.0,
+        "event_id": "evt:2023-06-16",
+        "n_maps": 30,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2023
+        ],
+        "split": "test",
+        "n_unknown": 46219,
+        "n_pixels": 122880,
+        "n_flood": 3255,
+        "unknown_fraction": 0.37613118489583336
+      },
+      {
+        "n_valid_pixels": 75023,
+        "iou": 0.1279826464208243,
+        "dice": 0.22692307692307692,
+        "precision": 0.1301359874585293,
+        "recall": 0.8855122798313073,
+        "auprc": 0.20837326783664437,
+        "auroc": 0.6123186943339031,
+        "brier": 0.6436373541867737,
+        "prevalence": 0.10746037881716274,
+        "tp": 7139.0,
+        "fp": 47719.0,
+        "fn": 923.0,
+        "tn": 19242.0,
+        "event_id": "evt:2024-06-22",
+        "n_maps": 29,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2024
+        ],
+        "split": "test",
+        "n_unknown": 43761,
+        "n_pixels": 118784,
+        "n_flood": 8062,
+        "unknown_fraction": 0.368408203125
+      }
+    ],
+    "pixel_gbdt": [
+      {
+        "n_valid_pixels": 44160,
+        "iou": 0.15882776215084712,
+        "dice": 0.2741179791137454,
+        "precision": 0.2920726572837724,
+        "recall": 0.2582429270368007,
+        "auprc": 0.3474242186630632,
+        "auroc": 0.5444646938538626,
+        "brier": 0.22776950562209397,
+        "prevalence": 0.21290760869565217,
+        "tp": 2428.0,
+        "fp": 5885.0,
+        "fn": 6974.0,
+        "tn": 28873.0,
+        "event_id": "evt:2022-05-16",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "haor_premonsoon_flash",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2022
+        ],
+        "split": "test",
+        "n_unknown": 25472,
+        "n_pixels": 69632,
+        "n_flood": 9402,
+        "unknown_fraction": 0.36580882352941174
+      },
+      {
+        "n_valid_pixels": 76661,
+        "iou": 0.1030011655011655,
+        "dice": 0.18676528860124159,
+        "precision": 0.1638090824837813,
+        "recall": 0.2172043010752688,
+        "auprc": 0.08843951780151336,
+        "auroc": 0.5840196913381139,
+        "brier": 0.1363851933874708,
+        "prevalence": 0.042459660061830655,
+        "tp": 707.0,
+        "fp": 3609.0,
+        "fn": 2548.0,
+        "tn": 69797.0,
+        "event_id": "evt:2023-06-16",
+        "n_maps": 30,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2023
+        ],
+        "split": "test",
+        "n_unknown": 46219,
+        "n_pixels": 122880,
+        "n_flood": 3255,
+        "unknown_fraction": 0.37613118489583336
+      },
+      {
+        "n_valid_pixels": 75023,
+        "iou": 0.26114102864278466,
+        "dice": 0.4141345380283433,
+        "precision": 0.4132394714091639,
+        "recall": 0.4150334904490201,
+        "auprc": 0.2934783548207174,
+        "auroc": 0.6720408712082917,
+        "brier": 0.1542439415418703,
+        "prevalence": 0.10746037881716274,
+        "tp": 3346.0,
+        "fp": 4751.0,
+        "fn": 4716.0,
+        "tn": 62210.0,
+        "event_id": "evt:2024-06-22",
+        "n_maps": 29,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2024
+        ],
+        "split": "test",
+        "n_unknown": 43761,
+        "n_pixels": 118784,
+        "n_flood": 8062,
+        "unknown_fraction": 0.368408203125
+      }
+    ],
+    "conv_smooth": [
+      {
+        "n_valid_pixels": 44160,
+        "iou": 0.13937259505641428,
+        "dice": 0.24464796794504864,
+        "precision": 0.264873574615766,
+        "recall": 0.2272920655179749,
+        "auprc": 0.3007976683109288,
+        "auroc": 0.5978652390450524,
+        "brier": 0.2590767020039363,
+        "prevalence": 0.21290760869565217,
+        "tp": 2137.0,
+        "fp": 5931.0,
+        "fn": 7265.0,
+        "tn": 28827.0,
+        "event_id": "evt:2022-05-16",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "haor_premonsoon_flash",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2022
+        ],
+        "split": "test",
+        "n_unknown": 25472,
+        "n_pixels": 69632,
+        "n_flood": 9402,
+        "unknown_fraction": 0.36580882352941174
+      },
+      {
+        "n_valid_pixels": 76661,
+        "iou": 0.06650289524477979,
+        "dice": 0.12471207634090162,
+        "precision": 0.1342543393552958,
+        "recall": 0.11643625192012289,
+        "auprc": 0.08275972363858061,
+        "auroc": 0.5835946328508245,
+        "brier": 0.05863492969931272,
+        "prevalence": 0.042459660061830655,
+        "tp": 379.0,
+        "fp": 2444.0,
+        "fn": 2876.0,
+        "tn": 70962.0,
+        "event_id": "evt:2023-06-16",
+        "n_maps": 30,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2023
+        ],
+        "split": "test",
+        "n_unknown": 46219,
+        "n_pixels": 122880,
+        "n_flood": 3255,
+        "unknown_fraction": 0.37613118489583336
+      },
+      {
+        "n_valid_pixels": 75023,
+        "iou": 0.20423146759295807,
+        "dice": 0.3391897207289891,
+        "precision": 0.35970522803114574,
+        "recall": 0.32088811709253284,
+        "auprc": 0.2817114757399592,
+        "auroc": 0.6770451281951385,
+        "brier": 0.11066696747976712,
+        "prevalence": 0.10746037881716274,
+        "tp": 2587.0,
+        "fp": 4605.0,
+        "fn": 5475.0,
+        "tn": 62356.0,
+        "event_id": "evt:2024-06-22",
+        "n_maps": 29,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2024
+        ],
+        "split": "test",
+        "n_unknown": 43761,
+        "n_pixels": 118784,
+        "n_flood": 8062,
+        "unknown_fraction": 0.368408203125
+      }
+    ],
+    "pixel_gbdt_no_persistence": [
+      {
+        "n_valid_pixels": 44160,
+        "iou": 0.2886770484645612,
+        "dice": 0.4480207803941499,
+        "precision": 0.47754905501384376,
+        "recall": 0.4219315039353329,
+        "auprc": 0.5068513505612332,
+        "auroc": 0.6480754710244458,
+        "brier": 0.20927992396163445,
+        "prevalence": 0.21290760869565217,
+        "tp": 3967.0,
+        "fp": 4340.0,
+        "fn": 5435.0,
+        "tn": 30418.0,
+        "event_id": "evt:2022-05-16",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "haor_premonsoon_flash",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2022
+        ],
+        "split": "test",
+        "n_unknown": 25472,
+        "n_pixels": 69632,
+        "n_flood": 9402,
+        "unknown_fraction": 0.36580882352941174
+      },
+      {
+        "n_valid_pixels": 76661,
+        "iou": 0.018815716657443277,
+        "dice": 0.036936447582835416,
+        "precision": 0.022434839986803037,
+        "recall": 0.10445468509984639,
+        "auprc": 0.04868003005309043,
+        "auroc": 0.5638226833711865,
+        "brier": 0.21070861177856937,
+        "prevalence": 0.042459660061830655,
+        "tp": 340.0,
+        "fp": 14815.0,
+        "fn": 2915.0,
+        "tn": 58591.0,
+        "event_id": "evt:2023-06-16",
+        "n_maps": 30,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2023
+        ],
+        "split": "test",
+        "n_unknown": 46219,
+        "n_pixels": 122880,
+        "n_flood": 3255,
+        "unknown_fraction": 0.37613118489583336
+      },
+      {
+        "n_valid_pixels": 75023,
+        "iou": 0.02581686163775716,
+        "dice": 0.05033425088478175,
+        "precision": 0.041687021657710474,
+        "recall": 0.06350781443810469,
+        "auprc": 0.10441123767632997,
+        "auroc": 0.480731897313895,
+        "brier": 0.2183007714997818,
+        "prevalence": 0.10746037881716274,
+        "tp": 512.0,
+        "fp": 11770.0,
+        "fn": 7550.0,
+        "tn": 55191.0,
+        "event_id": "evt:2024-06-22",
+        "n_maps": 29,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2024
+        ],
+        "split": "test",
+        "n_unknown": 43761,
+        "n_pixels": 118784,
+        "n_flood": 8062,
+        "unknown_fraction": 0.368408203125
+      }
+    ]
+  },
+  "val_test": {
+    "persistence": [
+      {
+        "n_valid_pixels": 42973,
+        "iou": 0.015121630506245891,
+        "dice": 0.029792746113989636,
+        "precision": 0.015191545574636724,
+        "recall": 0.7666666666666667,
+        "auprc": 0.006323974506969916,
+        "auroc": 0.8659731116441174,
+        "brier": 0.034859097572894605,
+        "prevalence": 0.0006981127684825355,
+        "tp": 23.0,
+        "fp": 1491.0,
+        "fn": 7.0,
+        "tn": 41452.0,
+        "event_id": "evt:2019-01-10",
+        "n_maps": 16,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 22563,
+        "n_pixels": 65536,
+        "n_flood": 30,
+        "unknown_fraction": 0.3442840576171875
+      },
+      {
+        "n_valid_pixels": 52220,
+        "iou": 0.009683666881859263,
+        "dice": 0.01918158567774936,
+        "precision": 0.15151515151515152,
+        "recall": 0.010238907849829351,
+        "auprc": 0.05026196608707258,
+        "auroc": 0.5042919492455727,
+        "brier": 0.029375718115664497,
+        "prevalence": 0.02805438529299119,
+        "tp": 15.0,
+        "fp": 84.0,
+        "fn": 1450.0,
+        "tn": 50671.0,
+        "event_id": "evt:2019-06-15",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 17412,
+        "n_pixels": 69632,
+        "n_flood": 1465,
+        "unknown_fraction": 0.2500574448529412
+      },
+      {
+        "n_valid_pixels": 37153,
+        "iou": 0.004968944099378882,
+        "dice": 0.009888751545117428,
+        "precision": 0.005161290322580645,
+        "recall": 0.11764705882352941,
+        "auprc": 0.004812246102031496,
+        "auroc": 0.5484380125605565,
+        "brier": 0.02155949721422227,
+        "prevalence": 0.0009151347132129303,
+        "tp": 4.0,
+        "fp": 771.0,
+        "fn": 30.0,
+        "tn": 36348.0,
+        "event_id": "evt:2020-01-15",
+        "n_maps": 14,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 20191,
+        "n_pixels": 57344,
+        "n_flood": 34,
+        "unknown_fraction": 0.3521030970982143
+      },
+      {
+        "n_valid_pixels": 61414,
+        "iou": 0.1988993710691824,
+        "dice": 0.3318032786885246,
+        "precision": 0.40441176470588236,
+        "recall": 0.2812986435401379,
+        "auprc": 0.25578578157294324,
+        "auroc": 0.6242833854065923,
+        "brier": 0.0829615397140717,
+        "prevalence": 0.07322434624027095,
+        "tp": 1265.0,
+        "fp": 1863.0,
+        "fn": 3232.0,
+        "tn": 55054.0,
+        "event_id": "evt:2020-06-07",
+        "n_maps": 25,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 40986,
+        "n_pixels": 102400,
+        "n_flood": 4497,
+        "unknown_fraction": 0.40025390625
+      },
+      {
+        "n_valid_pixels": 101117,
+        "iou": 0.07905686546463246,
+        "dice": 0.14652956298200515,
+        "precision": 0.13929618768328444,
+        "recall": 0.15455531453362256,
+        "auprc": 0.04031092094398996,
+        "auroc": 0.5684081761390122,
+        "brier": 0.03283325256880643,
+        "prevalence": 0.018236300523156345,
+        "tp": 285.0,
+        "fp": 1761.0,
+        "fn": 1559.0,
+        "tn": 97512.0,
+        "event_id": "evt:2021-06-02",
+        "n_maps": 39,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2021
+        ],
+        "split": "val",
+        "n_unknown": 58627,
+        "n_pixels": 159744,
+        "n_flood": 1844,
+        "unknown_fraction": 0.3670059595352564
+      },
+      {
+        "n_valid_pixels": 44160,
+        "iou": 0.15882776215084712,
+        "dice": 0.2741179791137454,
+        "precision": 0.2920726572837724,
+        "recall": 0.2582429270368007,
+        "auprc": 0.3474242186630632,
+        "auroc": 0.5444646938538626,
+        "brier": 0.2911911231884058,
+        "prevalence": 0.21290760869565217,
+        "tp": 2428.0,
+        "fp": 5885.0,
+        "fn": 6974.0,
+        "tn": 28873.0,
+        "event_id": "evt:2022-05-16",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "haor_premonsoon_flash",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2022
+        ],
+        "split": "test",
+        "n_unknown": 25472,
+        "n_pixels": 69632,
+        "n_flood": 9402,
+        "unknown_fraction": 0.36580882352941174
+      },
+      {
+        "n_valid_pixels": 76661,
+        "iou": 0.1030011655011655,
+        "dice": 0.18676528860124159,
+        "precision": 0.1638090824837813,
+        "recall": 0.2172043010752688,
+        "auprc": 0.08843951780151336,
+        "auroc": 0.5840196913381139,
+        "brier": 0.08031463195105726,
+        "prevalence": 0.042459660061830655,
+        "tp": 707.0,
+        "fp": 3609.0,
+        "fn": 2548.0,
+        "tn": 69797.0,
+        "event_id": "evt:2023-06-16",
+        "n_maps": 30,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2023
+        ],
+        "split": "test",
+        "n_unknown": 46219,
+        "n_pixels": 122880,
+        "n_flood": 3255,
+        "unknown_fraction": 0.37613118489583336
+      },
+      {
+        "n_valid_pixels": 75023,
+        "iou": 0.26114102864278466,
+        "dice": 0.4141345380283433,
+        "precision": 0.4132394714091639,
+        "recall": 0.4150334904490201,
+        "auprc": 0.2934783548207174,
+        "auroc": 0.6720408712082917,
+        "brier": 0.126187969022833,
+        "prevalence": 0.10746037881716274,
+        "tp": 3346.0,
+        "fp": 4751.0,
+        "fn": 4716.0,
+        "tn": 62210.0,
+        "event_id": "evt:2024-06-22",
+        "n_maps": 29,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2024
+        ],
+        "split": "test",
+        "n_unknown": 43761,
+        "n_pixels": 118784,
+        "n_flood": 8062,
+        "unknown_fraction": 0.368408203125
+      }
+    ],
+    "climatology": [
+      {
+        "n_valid_pixels": 42973,
+        "iou": 0.04,
+        "dice": 0.07692307692307693,
+        "precision": 0.043478260869565216,
+        "recall": 0.3333333333333333,
+        "auprc": 0.09702023996671183,
+        "auroc": 0.6596651375078593,
+        "brier": 0.00482605038955434,
+        "prevalence": 0.0006981127684825355,
+        "tp": 10.0,
+        "fp": 220.0,
+        "fn": 20.0,
+        "tn": 42723.0,
+        "event_id": "evt:2019-01-10",
+        "n_maps": 16,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 22563,
+        "n_pixels": 65536,
+        "n_flood": 30,
+        "unknown_fraction": 0.3442840576171875
+      },
+      {
+        "n_valid_pixels": 52220,
+        "iou": 0.07014997581035316,
+        "dice": 0.13110307414104883,
+        "precision": 0.19410977242302543,
+        "recall": 0.09897610921501707,
+        "auprc": 0.05836140452356426,
+        "auroc": 0.4614633505063305,
+        "brier": 0.03651726135095288,
+        "prevalence": 0.02805438529299119,
+        "tp": 145.0,
+        "fp": 602.0,
+        "fn": 1320.0,
+        "tn": 50153.0,
+        "event_id": "evt:2019-06-15",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 17412,
+        "n_pixels": 69632,
+        "n_flood": 1465,
+        "unknown_fraction": 0.2500574448529412
+      },
+      {
+        "n_valid_pixels": 37153,
+        "iou": 0.04132231404958678,
+        "dice": 0.07936507936507936,
+        "precision": 0.045871559633027525,
+        "recall": 0.29411764705882354,
+        "auprc": 0.037731344975453045,
+        "auroc": 0.842710170627695,
+        "brier": 0.005294974059297549,
+        "prevalence": 0.0009151347132129303,
+        "tp": 10.0,
+        "fp": 208.0,
+        "fn": 24.0,
+        "tn": 36911.0,
+        "event_id": "evt:2020-01-15",
+        "n_maps": 14,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 20191,
+        "n_pixels": 57344,
+        "n_flood": 34,
+        "unknown_fraction": 0.3521030970982143
+      },
+      {
+        "n_valid_pixels": 61414,
+        "iou": 0.2107667613285591,
+        "dice": 0.348154191311442,
+        "precision": 0.32152947824449046,
+        "recall": 0.37958639092728486,
+        "auprc": 0.30738820598977784,
+        "auroc": 0.6270717248081816,
+        "brier": 0.07240057030387173,
+        "prevalence": 0.07322434624027095,
+        "tp": 1707.0,
+        "fp": 3602.0,
+        "fn": 2790.0,
+        "tn": 53315.0,
+        "event_id": "evt:2020-06-07",
+        "n_maps": 25,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 40986,
+        "n_pixels": 102400,
+        "n_flood": 4497,
+        "unknown_fraction": 0.40025390625
+      },
+      {
+        "n_valid_pixels": 101117,
+        "iou": 0.05028378857750976,
+        "dice": 0.09575276534661825,
+        "precision": 0.05670567056705671,
+        "recall": 0.30748373101952275,
+        "auprc": 0.05736386793429174,
+        "auroc": 0.640879989279109,
+        "brier": 0.0750190819472567,
+        "prevalence": 0.018236300523156345,
+        "tp": 567.0,
+        "fp": 9432.0,
+        "fn": 1277.0,
+        "tn": 89841.0,
+        "event_id": "evt:2021-06-02",
+        "n_maps": 39,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2021
+        ],
+        "split": "val",
+        "n_unknown": 58627,
+        "n_pixels": 159744,
+        "n_flood": 1844,
+        "unknown_fraction": 0.3670059595352564
+      },
+      {
+        "n_valid_pixels": 44160,
+        "iou": 0.45420885597702887,
+        "dice": 0.6246817355157184,
+        "precision": 0.6106877984354363,
+        "recall": 0.639332057009147,
+        "auprc": 0.43437324202062255,
+        "auroc": 0.7528418589852597,
+        "brier": 0.15579716282284178,
+        "prevalence": 0.21290760869565217,
+        "tp": 6011.0,
+        "fp": 3832.0,
+        "fn": 3391.0,
+        "tn": 30926.0,
+        "event_id": "evt:2022-05-16",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "haor_premonsoon_flash",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2022
+        ],
+        "split": "test",
+        "n_unknown": 25472,
+        "n_pixels": 69632,
+        "n_flood": 9402,
+        "unknown_fraction": 0.36580882352941174
+      },
+      {
+        "n_valid_pixels": 76661,
+        "iou": 0.24725943970767356,
+        "dice": 0.396484375,
+        "precision": 0.3289447032610897,
+        "recall": 0.4989247311827957,
+        "auprc": 0.2247953587318091,
+        "auroc": 0.7364940555552556,
+        "brier": 0.06388735103281336,
+        "prevalence": 0.042459660061830655,
+        "tp": 1624.0,
+        "fp": 3313.0,
+        "fn": 1631.0,
+        "tn": 70093.0,
+        "event_id": "evt:2023-06-16",
+        "n_maps": 30,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2023
+        ],
+        "split": "test",
+        "n_unknown": 46219,
+        "n_pixels": 122880,
+        "n_flood": 3255,
+        "unknown_fraction": 0.37613118489583336
+      },
+      {
+        "n_valid_pixels": 75023,
+        "iou": 0.1825261158594492,
+        "dice": 0.3087054288467716,
+        "precision": 0.4378132118451025,
+        "recall": 0.23840238154304144,
+        "auprc": 0.2899229489241532,
+        "auroc": 0.5877173202538527,
+        "brier": 0.11444446777177619,
+        "prevalence": 0.10746037881716274,
+        "tp": 1922.0,
+        "fp": 2468.0,
+        "fn": 6140.0,
+        "tn": 64493.0,
+        "event_id": "evt:2024-06-22",
+        "n_maps": 29,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2024
+        ],
+        "split": "test",
+        "n_unknown": 43761,
+        "n_pixels": 118784,
+        "n_flood": 8062,
+        "unknown_fraction": 0.368408203125
+      }
+    ],
+    "rain_threshold": [
+      {
+        "n_valid_pixels": 42973,
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "auprc": 0.00040612938863847413,
+        "auroc": 0.5,
+        "brier": 0.0006981127684825355,
+        "prevalence": 0.0006981127684825355,
+        "tp": 0.0,
+        "fp": 0.0,
+        "fn": 30.0,
+        "tn": 42943.0,
+        "event_id": "evt:2019-01-10",
+        "n_maps": 16,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 22563,
+        "n_pixels": 65536,
+        "n_flood": 30,
+        "unknown_fraction": 0.3442840576171875
+      },
+      {
+        "n_valid_pixels": 52220,
+        "iou": 0.04857468643101482,
+        "dice": 0.09264897781644194,
+        "precision": 0.055102832751261155,
+        "recall": 0.2907849829351536,
+        "auprc": 0.051022621425624685,
+        "auroc": 0.5734291381033763,
+        "brier": 0.15978552278820377,
+        "prevalence": 0.02805438529299119,
+        "tp": 426.0,
+        "fp": 7305.0,
+        "fn": 1039.0,
+        "tn": 43450.0,
+        "event_id": "evt:2019-06-15",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 17412,
+        "n_pixels": 69632,
+        "n_flood": 1465,
+        "unknown_fraction": 0.2500574448529412
+      },
+      {
+        "n_valid_pixels": 37153,
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "auprc": 0.004209267336931191,
+        "auroc": 0.5,
+        "brier": 0.0009151347132129303,
+        "prevalence": 0.0009151347132129303,
+        "tp": 0.0,
+        "fp": 0.0,
+        "fn": 34.0,
+        "tn": 37119.0,
+        "event_id": "evt:2020-01-15",
+        "n_maps": 14,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 20191,
+        "n_pixels": 57344,
+        "n_flood": 34,
+        "unknown_fraction": 0.3521030970982143
+      },
+      {
+        "n_valid_pixels": 61414,
+        "iou": 0.09051931674882495,
+        "dice": 0.1660113954124004,
+        "precision": 0.09167324571587795,
+        "recall": 0.8779186124082722,
+        "auprc": 0.12390617128141726,
+        "auroc": 0.5953185661791874,
+        "brier": 0.645895072784707,
+        "prevalence": 0.07322434624027095,
+        "tp": 3948.0,
+        "fp": 39118.0,
+        "fn": 549.0,
+        "tn": 17799.0,
+        "event_id": "evt:2020-06-07",
+        "n_maps": 25,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 40986,
+        "n_pixels": 102400,
+        "n_flood": 4497,
+        "unknown_fraction": 0.40025390625
+      },
+      {
+        "n_valid_pixels": 101117,
+        "iou": 0.019154509138266582,
+        "dice": 0.0375890190673099,
+        "precision": 0.019305645684620378,
+        "recall": 0.7098698481561823,
+        "auprc": 0.01999615409046584,
+        "auroc": 0.520025129874229,
+        "brier": 0.6628954577370768,
+        "prevalence": 0.018236300523156345,
+        "tp": 1309.0,
+        "fp": 66495.0,
+        "fn": 535.0,
+        "tn": 32778.0,
+        "event_id": "evt:2021-06-02",
+        "n_maps": 39,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2021
+        ],
+        "split": "val",
+        "n_unknown": 58627,
+        "n_pixels": 159744,
+        "n_flood": 1844,
+        "unknown_fraction": 0.3670059595352564
+      },
+      {
+        "n_valid_pixels": 44160,
+        "iou": 0.28052550231839257,
+        "dice": 0.43814121907060954,
+        "precision": 0.32882186817285664,
+        "recall": 0.6563497128270581,
+        "auprc": 0.5239571936135338,
+        "auroc": 0.6469791604586409,
+        "brier": 0.35840126811594203,
+        "prevalence": 0.21290760869565217,
+        "tp": 6171.0,
+        "fp": 12596.0,
+        "fn": 3231.0,
+        "tn": 22162.0,
+        "event_id": "evt:2022-05-16",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "haor_premonsoon_flash",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2022
+        ],
+        "split": "test",
+        "n_unknown": 25472,
+        "n_pixels": 69632,
+        "n_flood": 9402,
+        "unknown_fraction": 0.36580882352941174
+      },
+      {
+        "n_valid_pixels": 76661,
+        "iou": 0.04034249093869832,
+        "dice": 0.07755617268366574,
+        "precision": 0.041025641025641026,
+        "recall": 0.7078341013824885,
+        "auprc": 0.0626347749189152,
+        "auroc": 0.48708055231236513,
+        "brier": 0.7149267554558381,
+        "prevalence": 0.042459660061830655,
+        "tp": 2304.0,
+        "fp": 53856.0,
+        "fn": 951.0,
+        "tn": 19550.0,
+        "event_id": "evt:2023-06-16",
+        "n_maps": 30,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2023
+        ],
+        "split": "test",
+        "n_unknown": 46219,
+        "n_pixels": 122880,
+        "n_flood": 3255,
+        "unknown_fraction": 0.37613118489583336
+      },
+      {
+        "n_valid_pixels": 75023,
+        "iou": 0.11008535098414911,
+        "dice": 0.19833673309273497,
+        "precision": 0.11538695608073841,
+        "recall": 0.7055321260233193,
+        "auprc": 0.1893421336498613,
+        "auroc": 0.5271511528400672,
+        "brier": 0.612892046439092,
+        "prevalence": 0.10746037881716274,
+        "tp": 5688.0,
+        "fp": 43607.0,
+        "fn": 2374.0,
+        "tn": 23354.0,
+        "event_id": "evt:2024-06-22",
+        "n_maps": 29,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2024
+        ],
+        "split": "test",
+        "n_unknown": 43761,
+        "n_pixels": 118784,
+        "n_flood": 8062,
+        "unknown_fraction": 0.368408203125
+      }
+    ],
+    "pixel_logistic": [
+      {
+        "n_valid_pixels": 42973,
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "auprc": 0.000412025954613152,
+        "auroc": 0.37450806883543303,
+        "brier": 0.0245694174384792,
+        "prevalence": 0.0006981127684825355,
+        "tp": 0.0,
+        "fp": 1103.0,
+        "fn": 30.0,
+        "tn": 41840.0,
+        "event_id": "evt:2019-01-10",
+        "n_maps": 16,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 22563,
+        "n_pixels": 65536,
+        "n_flood": 30,
+        "unknown_fraction": 0.3442840576171875
+      },
+      {
+        "n_valid_pixels": 52220,
+        "iou": 0.03375592661306947,
+        "dice": 0.06530734333715539,
+        "precision": 0.03522641712380338,
+        "recall": 0.447098976109215,
+        "auprc": 0.032967802630335226,
+        "auroc": 0.544431177950154,
+        "brier": 0.3527817185813612,
+        "prevalence": 0.02805438529299119,
+        "tp": 655.0,
+        "fp": 17939.0,
+        "fn": 810.0,
+        "tn": 32816.0,
+        "event_id": "evt:2019-06-15",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 17412,
+        "n_pixels": 69632,
+        "n_flood": 1465,
+        "unknown_fraction": 0.2500574448529412
+      },
+      {
+        "n_valid_pixels": 37153,
+        "iou": 0.0007380073800738007,
+        "dice": 0.0014749262536873156,
+        "precision": 0.0007564296520423601,
+        "recall": 0.029411764705882353,
+        "auprc": 0.0016316819282329667,
+        "auroc": 0.6299798105615801,
+        "brier": 0.03332609340660426,
+        "prevalence": 0.0009151347132129303,
+        "tp": 1.0,
+        "fp": 1321.0,
+        "fn": 33.0,
+        "tn": 35798.0,
+        "event_id": "evt:2020-01-15",
+        "n_maps": 14,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 20191,
+        "n_pixels": 57344,
+        "n_flood": 34,
+        "unknown_fraction": 0.3521030970982143
+      },
+      {
+        "n_valid_pixels": 61414,
+        "iou": 0.08435540731671276,
+        "dice": 0.15558627134152278,
+        "precision": 0.08525709409003628,
+        "recall": 0.8885923949299533,
+        "auprc": 0.12253458703413671,
+        "auroc": 0.6075148306201944,
+        "brier": 0.7015931342527625,
+        "prevalence": 0.07322434624027095,
+        "tp": 3996.0,
+        "fp": 42874.0,
+        "fn": 501.0,
+        "tn": 14043.0,
+        "event_id": "evt:2020-06-07",
+        "n_maps": 25,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 40986,
+        "n_pixels": 102400,
+        "n_flood": 4497,
+        "unknown_fraction": 0.40025390625
+      },
+      {
+        "n_valid_pixels": 101117,
+        "iou": 0.018948337565524716,
+        "dice": 0.03719194951688357,
+        "precision": 0.01910952031509742,
+        "recall": 0.6919739696312365,
+        "auprc": 0.022515812534291947,
+        "auroc": 0.5387333867323905,
+        "brier": 0.6485924426818775,
+        "prevalence": 0.018236300523156345,
+        "tp": 1276.0,
+        "fp": 65497.0,
+        "fn": 568.0,
+        "tn": 33776.0,
+        "event_id": "evt:2021-06-02",
+        "n_maps": 39,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2021
+        ],
+        "split": "val",
+        "n_unknown": 58627,
+        "n_pixels": 159744,
+        "n_flood": 1844,
+        "unknown_fraction": 0.3670059595352564
+      },
+      {
+        "n_valid_pixels": 44160,
+        "iou": 0.2670814838300571,
+        "dice": 0.4215695474023334,
+        "precision": 0.29859541849439497,
+        "recall": 0.7167623909806424,
+        "auprc": 0.5289643765560971,
+        "auroc": 0.7047028324656265,
+        "brier": 0.4135362905437487,
+        "prevalence": 0.21290760869565217,
+        "tp": 6739.0,
+        "fp": 15830.0,
+        "fn": 2663.0,
+        "tn": 18928.0,
+        "event_id": "evt:2022-05-16",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "haor_premonsoon_flash",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2022
+        ],
+        "split": "test",
+        "n_unknown": 25472,
+        "n_pixels": 69632,
+        "n_flood": 9402,
+        "unknown_fraction": 0.36580882352941174
+      },
+      {
+        "n_valid_pixels": 76661,
+        "iou": 0.0527753422809739,
+        "dice": 0.10025945738172266,
+        "precision": 0.052886808711961206,
+        "recall": 0.9615975422427036,
+        "auprc": 0.0940938242679577,
+        "auroc": 0.6238327894022735,
+        "brier": 0.7295635004004472,
+        "prevalence": 0.042459660061830655,
+        "tp": 3130.0,
+        "fp": 56053.0,
+        "fn": 125.0,
+        "tn": 17353.0,
+        "event_id": "evt:2023-06-16",
+        "n_maps": 30,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2023
+        ],
+        "split": "test",
+        "n_unknown": 46219,
+        "n_pixels": 122880,
+        "n_flood": 3255,
+        "unknown_fraction": 0.37613118489583336
+      },
+      {
+        "n_valid_pixels": 75023,
+        "iou": 0.1279826464208243,
+        "dice": 0.22692307692307692,
+        "precision": 0.1301359874585293,
+        "recall": 0.8855122798313073,
+        "auprc": 0.20837326783664437,
+        "auroc": 0.6123186943339031,
+        "brier": 0.6436373541867737,
+        "prevalence": 0.10746037881716274,
+        "tp": 7139.0,
+        "fp": 47719.0,
+        "fn": 923.0,
+        "tn": 19242.0,
+        "event_id": "evt:2024-06-22",
+        "n_maps": 29,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2024
+        ],
+        "split": "test",
+        "n_unknown": 43761,
+        "n_pixels": 118784,
+        "n_flood": 8062,
+        "unknown_fraction": 0.368408203125
+      }
+    ],
+    "pixel_gbdt": [
+      {
+        "n_valid_pixels": 42973,
+        "iou": 0.015121630506245891,
+        "dice": 0.029792746113989636,
+        "precision": 0.015191545574636724,
+        "recall": 0.7666666666666667,
+        "auprc": 0.006323974506969916,
+        "auroc": 0.8659731116441174,
+        "brier": 0.11774181255983819,
+        "prevalence": 0.0006981127684825355,
+        "tp": 23.0,
+        "fp": 1491.0,
+        "fn": 7.0,
+        "tn": 41452.0,
+        "event_id": "evt:2019-01-10",
+        "n_maps": 16,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 22563,
+        "n_pixels": 65536,
+        "n_flood": 30,
+        "unknown_fraction": 0.3442840576171875
+      },
+      {
+        "n_valid_pixels": 52220,
+        "iou": 0.009683666881859263,
+        "dice": 0.01918158567774936,
+        "precision": 0.15151515151515152,
+        "recall": 0.010238907849829351,
+        "auprc": 0.05026196608707258,
+        "auroc": 0.5042919492455727,
+        "brier": 0.10969554251484676,
+        "prevalence": 0.02805438529299119,
+        "tp": 15.0,
+        "fp": 84.0,
+        "fn": 1450.0,
+        "tn": 50671.0,
+        "event_id": "evt:2019-06-15",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 17412,
+        "n_pixels": 69632,
+        "n_flood": 1465,
+        "unknown_fraction": 0.2500574448529412
+      },
+      {
+        "n_valid_pixels": 37153,
+        "iou": 0.004968944099378882,
+        "dice": 0.009888751545117428,
+        "precision": 0.005161290322580645,
+        "recall": 0.11764705882352941,
+        "auprc": 0.004812246102031496,
+        "auroc": 0.5484380125605565,
+        "brier": 0.11027896499537115,
+        "prevalence": 0.0009151347132129303,
+        "tp": 4.0,
+        "fp": 771.0,
+        "fn": 30.0,
+        "tn": 36348.0,
+        "event_id": "evt:2020-01-15",
+        "n_maps": 14,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 20191,
+        "n_pixels": 57344,
+        "n_flood": 34,
+        "unknown_fraction": 0.3521030970982143
+      },
+      {
+        "n_valid_pixels": 61414,
+        "iou": 0.1988993710691824,
+        "dice": 0.3318032786885246,
+        "precision": 0.40441176470588236,
+        "recall": 0.2812986435401379,
+        "auprc": 0.25578578157294324,
+        "auroc": 0.6242833854065923,
+        "brier": 0.13362411956136436,
+        "prevalence": 0.07322434624027095,
+        "tp": 1265.0,
+        "fp": 1863.0,
+        "fn": 3232.0,
+        "tn": 55054.0,
+        "event_id": "evt:2020-06-07",
+        "n_maps": 25,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 40986,
+        "n_pixels": 102400,
+        "n_flood": 4497,
+        "unknown_fraction": 0.40025390625
+      },
+      {
+        "n_valid_pixels": 101117,
+        "iou": 0.07905686546463246,
+        "dice": 0.14652956298200515,
+        "precision": 0.13929618768328444,
+        "recall": 0.15455531453362256,
+        "auprc": 0.04031092094398996,
+        "auroc": 0.5684081761390122,
+        "brier": 0.1137028773998789,
+        "prevalence": 0.018236300523156345,
+        "tp": 285.0,
+        "fp": 1761.0,
+        "fn": 1559.0,
+        "tn": 97512.0,
+        "event_id": "evt:2021-06-02",
+        "n_maps": 39,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2021
+        ],
+        "split": "val",
+        "n_unknown": 58627,
+        "n_pixels": 159744,
+        "n_flood": 1844,
+        "unknown_fraction": 0.3670059595352564
+      },
+      {
+        "n_valid_pixels": 44160,
+        "iou": 0.15882776215084712,
+        "dice": 0.2741179791137454,
+        "precision": 0.2920726572837724,
+        "recall": 0.2582429270368007,
+        "auprc": 0.3474242186630632,
+        "auroc": 0.5444646938538626,
+        "brier": 0.22776950562209397,
+        "prevalence": 0.21290760869565217,
+        "tp": 2428.0,
+        "fp": 5885.0,
+        "fn": 6974.0,
+        "tn": 28873.0,
+        "event_id": "evt:2022-05-16",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "haor_premonsoon_flash",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2022
+        ],
+        "split": "test",
+        "n_unknown": 25472,
+        "n_pixels": 69632,
+        "n_flood": 9402,
+        "unknown_fraction": 0.36580882352941174
+      },
+      {
+        "n_valid_pixels": 76661,
+        "iou": 0.1030011655011655,
+        "dice": 0.18676528860124159,
+        "precision": 0.1638090824837813,
+        "recall": 0.2172043010752688,
+        "auprc": 0.08843951780151336,
+        "auroc": 0.5840196913381139,
+        "brier": 0.1363851933874708,
+        "prevalence": 0.042459660061830655,
+        "tp": 707.0,
+        "fp": 3609.0,
+        "fn": 2548.0,
+        "tn": 69797.0,
+        "event_id": "evt:2023-06-16",
+        "n_maps": 30,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2023
+        ],
+        "split": "test",
+        "n_unknown": 46219,
+        "n_pixels": 122880,
+        "n_flood": 3255,
+        "unknown_fraction": 0.37613118489583336
+      },
+      {
+        "n_valid_pixels": 75023,
+        "iou": 0.26114102864278466,
+        "dice": 0.4141345380283433,
+        "precision": 0.4132394714091639,
+        "recall": 0.4150334904490201,
+        "auprc": 0.2934783548207174,
+        "auroc": 0.6720408712082917,
+        "brier": 0.1542439415418703,
+        "prevalence": 0.10746037881716274,
+        "tp": 3346.0,
+        "fp": 4751.0,
+        "fn": 4716.0,
+        "tn": 62210.0,
+        "event_id": "evt:2024-06-22",
+        "n_maps": 29,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2024
+        ],
+        "split": "test",
+        "n_unknown": 43761,
+        "n_pixels": 118784,
+        "n_flood": 8062,
+        "unknown_fraction": 0.368408203125
+      }
+    ],
+    "conv_smooth": [
+      {
+        "n_valid_pixels": 42973,
+        "iou": 0.0009380863039399625,
+        "dice": 0.0018744142455482662,
+        "precision": 0.0009643201542912247,
+        "recall": 0.03333333333333333,
+        "auprc": 0.004297917340382012,
+        "auroc": 0.8685466781547633,
+        "brier": 0.018303769837678726,
+        "prevalence": 0.0006981127684825355,
+        "tp": 1.0,
+        "fp": 1036.0,
+        "fn": 29.0,
+        "tn": 41907.0,
+        "event_id": "evt:2019-01-10",
+        "n_maps": 16,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 22563,
+        "n_pixels": 65536,
+        "n_flood": 30,
+        "unknown_fraction": 0.3442840576171875
+      },
+      {
+        "n_valid_pixels": 52220,
+        "iou": 0.0006706908115358819,
+        "dice": 0.0013404825737265416,
+        "precision": 0.037037037037037035,
+        "recall": 0.0006825938566552901,
+        "auprc": 0.04487618888790474,
+        "auroc": 0.5021856922921227,
+        "brier": 0.02841373864608896,
+        "prevalence": 0.02805438529299119,
+        "tp": 1.0,
+        "fp": 26.0,
+        "fn": 1464.0,
+        "tn": 50729.0,
+        "event_id": "evt:2019-06-15",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 17412,
+        "n_pixels": 69632,
+        "n_flood": 1465,
+        "unknown_fraction": 0.2500574448529412
+      },
+      {
+        "n_valid_pixels": 37153,
+        "iou": 0.003105590062111801,
+        "dice": 0.006191950464396285,
+        "precision": 0.0034602076124567475,
+        "recall": 0.029411764705882353,
+        "auprc": 0.0029425244457480645,
+        "auroc": 0.5585109417564812,
+        "brier": 0.008533946878988551,
+        "prevalence": 0.0009151347132129303,
+        "tp": 1.0,
+        "fp": 288.0,
+        "fn": 33.0,
+        "tn": 36831.0,
+        "event_id": "evt:2020-01-15",
+        "n_maps": 14,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 20191,
+        "n_pixels": 57344,
+        "n_flood": 34,
+        "unknown_fraction": 0.3521030970982143
+      },
+      {
+        "n_valid_pixels": 61414,
+        "iou": 0.12942691564713457,
+        "dice": 0.2291904218928164,
+        "precision": 0.31917427550615324,
+        "recall": 0.17878585723815876,
+        "auprc": 0.2239071897968326,
+        "auroc": 0.6732478882511836,
+        "brier": 0.07314534386537515,
+        "prevalence": 0.07322434624027095,
+        "tp": 804.0,
+        "fp": 1715.0,
+        "fn": 3693.0,
+        "tn": 55202.0,
+        "event_id": "evt:2020-06-07",
+        "n_maps": 25,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 40986,
+        "n_pixels": 102400,
+        "n_flood": 4497,
+        "unknown_fraction": 0.40025390625
+      },
+      {
+        "n_valid_pixels": 101117,
+        "iou": 0.04364326375711575,
+        "dice": 0.08363636363636363,
+        "precision": 0.12693156732891833,
+        "recall": 0.06236442516268981,
+        "auprc": 0.04238453084708079,
+        "auroc": 0.5800532889289517,
+        "brier": 0.02300476516813368,
+        "prevalence": 0.018236300523156345,
+        "tp": 115.0,
+        "fp": 791.0,
+        "fn": 1729.0,
+        "tn": 98482.0,
+        "event_id": "evt:2021-06-02",
+        "n_maps": 39,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2021
+        ],
+        "split": "val",
+        "n_unknown": 58627,
+        "n_pixels": 159744,
+        "n_flood": 1844,
+        "unknown_fraction": 0.3670059595352564
+      },
+      {
+        "n_valid_pixels": 44160,
+        "iou": 0.13937259505641428,
+        "dice": 0.24464796794504864,
+        "precision": 0.264873574615766,
+        "recall": 0.2272920655179749,
+        "auprc": 0.3007976683109288,
+        "auroc": 0.5978652390450524,
+        "brier": 0.2590767020039363,
+        "prevalence": 0.21290760869565217,
+        "tp": 2137.0,
+        "fp": 5931.0,
+        "fn": 7265.0,
+        "tn": 28827.0,
+        "event_id": "evt:2022-05-16",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "haor_premonsoon_flash",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2022
+        ],
+        "split": "test",
+        "n_unknown": 25472,
+        "n_pixels": 69632,
+        "n_flood": 9402,
+        "unknown_fraction": 0.36580882352941174
+      },
+      {
+        "n_valid_pixels": 76661,
+        "iou": 0.06650289524477979,
+        "dice": 0.12471207634090162,
+        "precision": 0.1342543393552958,
+        "recall": 0.11643625192012289,
+        "auprc": 0.08275972363858061,
+        "auroc": 0.5835946328508245,
+        "brier": 0.05863492969931272,
+        "prevalence": 0.042459660061830655,
+        "tp": 379.0,
+        "fp": 2444.0,
+        "fn": 2876.0,
+        "tn": 70962.0,
+        "event_id": "evt:2023-06-16",
+        "n_maps": 30,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2023
+        ],
+        "split": "test",
+        "n_unknown": 46219,
+        "n_pixels": 122880,
+        "n_flood": 3255,
+        "unknown_fraction": 0.37613118489583336
+      },
+      {
+        "n_valid_pixels": 75023,
+        "iou": 0.20423146759295807,
+        "dice": 0.3391897207289891,
+        "precision": 0.35970522803114574,
+        "recall": 0.32088811709253284,
+        "auprc": 0.2817114757399592,
+        "auroc": 0.6770451281951385,
+        "brier": 0.11066696747976712,
+        "prevalence": 0.10746037881716274,
+        "tp": 2587.0,
+        "fp": 4605.0,
+        "fn": 5475.0,
+        "tn": 62356.0,
+        "event_id": "evt:2024-06-22",
+        "n_maps": 29,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2024
+        ],
+        "split": "test",
+        "n_unknown": 43761,
+        "n_pixels": 118784,
+        "n_flood": 8062,
+        "unknown_fraction": 0.368408203125
+      }
+    ],
+    "pixel_gbdt_no_persistence": [
+      {
+        "n_valid_pixels": 42973,
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "auprc": 0.0004085391359163125,
+        "auroc": 0.3061795092719807,
+        "brier": 0.10873471078579293,
+        "prevalence": 0.0006981127684825355,
+        "tp": 0.0,
+        "fp": 0.0,
+        "fn": 30.0,
+        "tn": 42943.0,
+        "event_id": "evt:2019-01-10",
+        "n_maps": 16,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 22563,
+        "n_pixels": 65536,
+        "n_flood": 30,
+        "unknown_fraction": 0.3442840576171875
+      },
+      {
+        "n_valid_pixels": 52220,
+        "iou": 0.022373987054686306,
+        "dice": 0.04376869391824526,
+        "precision": 0.023608496907770907,
+        "recall": 0.29965870307167236,
+        "auprc": 0.030196780534731543,
+        "auroc": 0.48966692365082476,
+        "brier": 0.21254082341700706,
+        "prevalence": 0.02805438529299119,
+        "tp": 439.0,
+        "fp": 18156.0,
+        "fn": 1026.0,
+        "tn": 32599.0,
+        "event_id": "evt:2019-06-15",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2019
+        ],
+        "split": "val",
+        "n_unknown": 17412,
+        "n_pixels": 69632,
+        "n_flood": 1465,
+        "unknown_fraction": 0.2500574448529412
+      },
+      {
+        "n_valid_pixels": 37153,
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "auprc": 0.0031275586212669475,
+        "auroc": 0.6426925009072569,
+        "brier": 0.10952802868913313,
+        "prevalence": 0.0009151347132129303,
+        "tp": 0.0,
+        "fp": 0.0,
+        "fn": 34.0,
+        "tn": 37119.0,
+        "event_id": "evt:2020-01-15",
+        "n_maps": 14,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "winter_or_early"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 20191,
+        "n_pixels": 57344,
+        "n_flood": 34,
+        "unknown_fraction": 0.3521030970982143
+      },
+      {
+        "n_valid_pixels": 61414,
+        "iou": 0.09713266566058444,
+        "dice": 0.17706639989996248,
+        "precision": 0.10895660203139428,
+        "recall": 0.4723148765843896,
+        "auprc": 0.14869514714693916,
+        "auroc": 0.5733052298036095,
+        "brier": 0.22161959030770445,
+        "prevalence": 0.07322434624027095,
+        "tp": 2124.0,
+        "fp": 17370.0,
+        "fn": 2373.0,
+        "tn": 39547.0,
+        "event_id": "evt:2020-06-07",
+        "n_maps": 25,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2020
+        ],
+        "split": "val",
+        "n_unknown": 40986,
+        "n_pixels": 102400,
+        "n_flood": 4497,
+        "unknown_fraction": 0.40025390625
+      },
+      {
+        "n_valid_pixels": 101117,
+        "iou": 0.01752798823928531,
+        "dice": 0.03445210046677039,
+        "precision": 0.018489065606361828,
+        "recall": 0.25216919739696314,
+        "auprc": 0.023802845143163283,
+        "auroc": 0.44063296237398597,
+        "brier": 0.21445836921020156,
+        "prevalence": 0.018236300523156345,
+        "tp": 465.0,
+        "fp": 24685.0,
+        "fn": 1379.0,
+        "tn": 74588.0,
+        "event_id": "evt:2021-06-02",
+        "n_maps": 39,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2021
+        ],
+        "split": "val",
+        "n_unknown": 58627,
+        "n_pixels": 159744,
+        "n_flood": 1844,
+        "unknown_fraction": 0.3670059595352564
+      },
+      {
+        "n_valid_pixels": 44160,
+        "iou": 0.2886770484645612,
+        "dice": 0.4480207803941499,
+        "precision": 0.47754905501384376,
+        "recall": 0.4219315039353329,
+        "auprc": 0.5068513505612332,
+        "auroc": 0.6480754710244458,
+        "brier": 0.20927992396163445,
+        "prevalence": 0.21290760869565217,
+        "tp": 3967.0,
+        "fp": 4340.0,
+        "fn": 5435.0,
+        "tn": 30418.0,
+        "event_id": "evt:2022-05-16",
+        "n_maps": 17,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "haor_premonsoon_flash",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2022
+        ],
+        "split": "test",
+        "n_unknown": 25472,
+        "n_pixels": 69632,
+        "n_flood": 9402,
+        "unknown_fraction": 0.36580882352941174
+      },
+      {
+        "n_valid_pixels": 76661,
+        "iou": 0.018815716657443277,
+        "dice": 0.036936447582835416,
+        "precision": 0.022434839986803037,
+        "recall": 0.10445468509984639,
+        "auprc": 0.04868003005309043,
+        "auroc": 0.5638226833711865,
+        "brier": 0.21070861177856937,
+        "prevalence": 0.042459660061830655,
+        "tp": 340.0,
+        "fp": 14815.0,
+        "fn": 2915.0,
+        "tn": 58591.0,
+        "event_id": "evt:2023-06-16",
+        "n_maps": 30,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2023
+        ],
+        "split": "test",
+        "n_unknown": 46219,
+        "n_pixels": 122880,
+        "n_flood": 3255,
+        "unknown_fraction": 0.37613118489583336
+      },
+      {
+        "n_valid_pixels": 75023,
+        "iou": 0.02581686163775716,
+        "dice": 0.05033425088478175,
+        "precision": 0.041687021657710474,
+        "recall": 0.06350781443810469,
+        "auprc": 0.10441123767632997,
+        "auroc": 0.480731897313895,
+        "brier": 0.2183007714997818,
+        "prevalence": 0.10746037881716274,
+        "tp": 512.0,
+        "fp": 11770.0,
+        "fn": 7550.0,
+        "tn": 55191.0,
+        "event_id": "evt:2024-06-22",
+        "n_maps": 29,
+        "city_ids": [
+          "dhaka_ne",
+          "dhaka_nw",
+          "dhaka_se",
+          "dhaka_sw",
+          "kishoreganj",
+          "netrokona",
+          "sunamganj"
+        ],
+        "basin_ids": [
+          "central_floodplain",
+          "haor_meghna"
+        ],
+        "flood_mechanisms": [
+          "haor_monsoon_inundation",
+          "monsoon_riverine"
+        ],
+        "years": [
+          2024
+        ],
+        "split": "test",
+        "n_unknown": 43761,
+        "n_pixels": 118784,
+        "n_flood": 8062,
+        "unknown_fraction": 0.368408203125
+      }
+    ]
+  }
+}

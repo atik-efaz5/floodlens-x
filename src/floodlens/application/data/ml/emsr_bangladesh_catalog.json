@@ -1,0 +1,48 @@
+{
+  "dataset_version": "phase4.1-v0",
+  "label_kind": "OBSERVED",
+  "data_status": "PARTIAL",
+  "polygons_downloaded": false,
+  "note": "Absence of an EMSR activation is not a dry label. Track B metrics exclude times with y_track_b_available=false. Flood polygons were not downloaded in Phase 4.1.",
+  "harvest": {
+    "endpoint": "https://rapidmapping.emergency.copernicus.eu/backend/dashboard-api/public-activations-info/",
+    "n_public_listed": 261,
+    "n_bangladesh_in_public_list": 0,
+    "retrieved_note": "Current Rapid Mapping public list did not include Bangladesh activations at harvest time. Older activations remain citable from public Copernicus/JRC pages."
+  },
+  "cited_public_activations": [
+    {
+      "code": "EMSR097",
+      "name": "Floods in Bangladesh",
+      "event_time_utc": "2014-08-10T00:00:00Z",
+      "activation_time_utc": "2014-08-22T12:43:00Z",
+      "category": "Flood",
+      "source_url": "https://emergency.copernicus.eu/mapping/list-of-components/EMSR097",
+      "jrc_dataset": "https://doi.org/10.2905/jrc.fncn1h0",
+      "intersects_mvp_aois": "UNKNOWN",
+      "intersects_reason": "Northern Brahmaputra / northwest districts in public maps (e.g. Baghabari). Polygon intersection with Dhaka/Sunamganj/Sylhet bounds is not computed because vectors were not downloaded.",
+      "y_track_b_available": false
+    },
+    {
+      "code": "EMSR439",
+      "name": "Flood in Bashan Char, Bangladesh",
+      "event_time_utc": "2020-05-20T12:00:00Z",
+      "activation_time_utc": "2020-05-20T15:01:00Z",
+      "category": "Storm",
+      "source_url": "https://mapping.emergency.copernicus.eu/activations/EMSR439/",
+      "jrc_dataset": "https://doi.org/10.2905/cb6985f6-e798-4a9d-8c58-9b3597bdf7c3",
+      "intersects_mvp_aois": false,
+      "intersects_reason": "Public AOI is Bashan Char, Noakhali (coastal). Outside Dhaka, Sunamganj, and Sylhet city bounds.",
+      "y_track_b_available": false
+    }
+  ],
+  "named_holdout_events_not_in_emsr_public_list": [
+    {
+      "name": "2022 north-east Bangladesh / Sylhet-Sunamganj monsoon flood",
+      "window_utc": ["2022-05-09", "2022-06-21"],
+      "note": "Documented in GloFAS news and International Charter / UNOSAT Sentinel-1 mapping. No EMSR code is invented. Track B remains unavailable until a licensed observed polygon is ingested.",
+      "split": "test_holdout",
+      "y_track_b_available": false
+    }
+  ]
+}

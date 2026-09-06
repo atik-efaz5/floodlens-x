@@ -1,0 +1,202 @@
+{
+  "A_rainfall": {
+    "groups": [
+      "rainfall"
+    ],
+    "n_features": 6,
+    "features": [
+      "antecedent_24h",
+      "antecedent_72h",
+      "precip_24h_local",
+      "precip_72h_local",
+      "precip_6h",
+      "precip_mean_6h"
+    ],
+    "event_macro_iou": {
+      "mean": 0.05295831959783787,
+      "median": 0.025262128873770245,
+      "std": 0.073162439944362,
+      "iqr": 0.038156633202922355,
+      "n": 8
+    },
+    "micro_iou": 0.054423839235892196,
+    "event_macro_auprc": {
+      "mean": 0.10814280161387649,
+      "median": 0.03614532859203201,
+      "std": 0.16597324481556897,
+      "iqr": 0.09408002802512219,
+      "n": 8
+    },
+    "n_events": 8
+  },
+  "B_terrain": {
+    "groups": [
+      "terrain"
+    ],
+    "n_features": 2,
+    "features": [
+      "dem",
+      "slope"
+    ],
+    "event_macro_iou": {
+      "mean": 0.06679283760375362,
+      "median": 0.03634834885735014,
+      "std": 0.0819398574917662,
+      "iqr": 0.07286658352842654,
+      "n": 8
+    },
+    "micro_iou": 0.06395369656012058,
+    "event_macro_auprc": {
+      "mean": 0.08749565631573392,
+      "median": 0.042814712120693786,
+      "std": 0.10490269767853376,
+      "iqr": 0.10893839706112017,
+      "n": 8
+    },
+    "n_events": 8
+  },
+  "C_river_static": {
+    "groups": [
+      "river_static"
+    ],
+    "n_features": 3,
+    "features": [
+      "river_distance",
+      "row_norm",
+      "col_norm"
+    ],
+    "event_macro_iou": {
+      "mean": 0.0742247497886911,
+      "median": 0.04298344738720168,
+      "std": 0.08493831140205278,
+      "iqr": 0.0819594990376613,
+      "n": 8
+    },
+    "micro_iou": 0.07369640434709711,
+    "event_macro_auprc": {
+      "mean": 0.0896350434302293,
+      "median": 0.04505887939742412,
+      "std": 0.11757603563585342,
+      "iqr": 0.09008939528927781,
+      "n": 8
+    },
+    "n_events": 8
+  },
+  "D_rainfall_terrain": {
+    "groups": [
+      "rainfall",
+      "terrain"
+    ],
+    "n_features": 8,
+    "features": [
+      "antecedent_24h",
+      "antecedent_72h",
+      "precip_24h_local",
+      "precip_72h_local",
+      "precip_6h",
+      "precip_mean_6h",
+      "dem",
+      "slope"
+    ],
+    "event_macro_iou": {
+      "mean": 0.06331851434500498,
+      "median": 0.03473020890338789,
+      "std": 0.07923212771552958,
+      "iqr": 0.07072227264106026,
+      "n": 8
+    },
+    "micro_iou": 0.06685452157951383,
+    "event_macro_auprc": {
+      "mean": 0.10731230715822564,
+      "median": 0.032742996892995015,
+      "std": 0.16601102755711625,
+      "iqr": 0.09298937203757712,
+      "n": 8
+    },
+    "n_events": 8
+  },
+  "E_rainfall_terrain_river": {
+    "groups": [
+      "rainfall",
+      "terrain",
+      "river_static"
+    ],
+    "n_features": 11,
+    "features": [
+      "antecedent_24h",
+      "antecedent_72h",
+      "precip_24h_local",
+      "precip_72h_local",
+      "precip_6h",
+      "precip_mean_6h",
+      "dem",
+      "slope",
+      "river_distance",
+      "row_norm",
+      "col_norm"
+    ],
+    "event_macro_iou": {
+      "mean": 0.06331851434500498,
+      "median": 0.03473020890338789,
+      "std": 0.07923212771552958,
+      "iqr": 0.07072227264106026,
+      "n": 8
+    },
+    "micro_iou": 0.06685452157951383,
+    "event_macro_auprc": {
+      "mean": 0.10731230715822564,
+      "median": 0.032742996892995015,
+      "std": 0.16601102755711625,
+      "iqr": 0.09298937203757712,
+      "n": 8
+    },
+    "n_events": 8
+  },
+  "F_all": {
+    "groups": [
+      "rainfall",
+      "terrain",
+      "river_static",
+      "persistence",
+      "season",
+      "hydrology"
+    ],
+    "n_features": 18,
+    "features": [
+      "antecedent_24h",
+      "antecedent_72h",
+      "precip_24h_local",
+      "precip_72h_local",
+      "precip_6h",
+      "log1p_q",
+      "month_sin",
+      "month_cos",
+      "persistence",
+      "persistence_valid",
+      "row_norm",
+      "col_norm",
+      "dem",
+      "slope",
+      "river_distance",
+      "precip_is_aoi_point",
+      "q_is_glofas_cell",
+      "precip_mean_6h"
+    ],
+    "event_macro_iou": {
+      "mean": 0.10383755428951202,
+      "median": 0.09102901548289899,
+      "std": 0.08939400764743384,
+      "iqr": 0.1550835247802817,
+      "n": 8
+    },
+    "micro_iou": 0.16541676911728548,
+    "event_macro_auprc": {
+      "mean": 0.13585462256228764,
+      "median": 0.06935074194429297,
+      "std": 0.1306921980273829,
+      "iqr": 0.23339474055015183,
+      "n": 8
+    },
+    "n_events": 8
+  }
+}

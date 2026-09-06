@@ -1,0 +1,145 @@
+{
+  "observation_families": {
+    "A": "GFM OBSERVED 20 m scene labels",
+    "B": "Bangladesh 2001\u20132022 Giezendanner DERIVED 500 m 8-day",
+    "C": "Global Flood Database OBSERVED event-max 250 m",
+    "D": "DFO event catalog (no pixels)"
+  },
+  "sources": {
+    "copernicus-gfm-ensemble-flood-extent": {
+      "family": "A",
+      "dataset_name": "Copernicus GFM ensemble_flood_extent",
+      "provider": "CEMS / EODC",
+      "observation_type": "Sentinel-1 SAR ensemble flood extent",
+      "label_kind": "OBSERVED",
+      "raw_or_derived": "raw_observed_product",
+      "spatial_resolution_m": 20,
+      "temporal_resolution": "S1 revisit ~6\u201312 d; 192 h scene slot",
+      "event_definition": "45-day meteorological cluster of GFM scenes",
+      "flood_definition": "ensemble class 1 at tau=0.25 on AOI grid; 255 unknown",
+      "permanent_water": "not a separate class; may appear as flood or dry",
+      "unknown": "uint8 255 nodata/exclusion, never recoded dry",
+      "bangladesh": true,
+      "temporal_coverage": "2015\u2013present (public STAC)",
+      "license": "STAC proprietary; Copernicus attribution",
+      "commercial_ok": null,
+      "access": "https://stac.eodc.eu/api/v1",
+      "accessible": true,
+      "reproducible": true,
+      "role": "primary_training_label"
+    },
+    "giezendanner-bangladesh-inundation-history": {
+      "family": "B",
+      "dataset_name": "Bangladesh Inundation History",
+      "provider": "University of Arizona / CyVerse (Giezendanner et al. 2023)",
+      "observation_type": "CNN\u2013LSTM fusion of Sentinel-1 fractional inundation onto MODIS 8-day composites",
+      "label_kind": "DERIVED",
+      "raw_or_derived": "model_output",
+      "spatial_resolution_m": 500,
+      "temporal_resolution": "8-day, 985 GeoTIFFs, 2001\u20132022",
+      "event_definition": "none published; continuous fractional inundation, not an event inventory",
+      "flood_definition": "fractional inundated area (not binary GFM class)",
+      "permanent_water": "absorbed into fractional water; not GFM-compatible",
+      "unknown": "optical MODIS gaps imputed by the fusion model; not a 255 mask",
+      "bangladesh": true,
+      "temporal_coverage": "2001\u20132022, most of Bangladesh",
+      "license": "CyVerse curated download; companion code MIT; training inputs include FABDEM (CC BY-NC-SA)",
+      "doi": "10.25739/2edm-jh03",
+      "access": "https://datacommons.cyverse.org/browse/iplant/home/shared/commons_repo/curated/Giezendanner_BangladeshInundationHistory_Mai2023",
+      "accessible": false,
+      "access_blocker": "Anonymous GET redirects to unblockme.cyverse.org (captcha/login). Rasters not downloaded.",
+      "reproducible": false,
+      "role": "not_acquired"
+    },
+    "global-flood-database": {
+      "family": "C",
+      "dataset_name": "Global Flood Database v1 (MODIS events)",
+      "provider": "Cloud to Street / Dartmouth Flood Observatory",
+      "observation_type": "MODIS Terra/Aqua water classification, event-maximum extent",
+      "label_kind": "OBSERVED",
+      "raw_or_derived": "observed_event_max_map",
+      "spatial_resolution_m": 250,
+      "temporal_resolution": "one map per DFO event (2000\u20132018); 3-day MODIS composites inside the event",
+      "event_definition": "DFO catalog events that passed GFD QC (significant inundation beyond permanent water)",
+      "flood_definition": "maximum water during the DFO date range, including permanent water unless jrc_perm_water masked",
+      "permanent_water": "JRC GSW band provided; default flooded band includes permanent water",
+      "unknown": "cloud via clear_views / clear_perc; optical, not GFM 255",
+      "bangladesh": true,
+      "temporal_coverage": "2000-02-17 \u2026 2018-12-10; 913 mapped events globally, 28 intersecting Bangladesh",
+      "license": "CC BY-NC 4.0",
+      "commercial_ok": false,
+      "access": "GEE GLOBAL_FLOOD_DB/MODIS_EVENTS/V1; QC CSV on GitHub",
+      "accessible": true,
+      "accessible_what": "event metadata (this study). Rasters not ingested (NC + incompatible target).",
+      "reproducible": true,
+      "role": "event_discovery_only",
+      "do_not_use": "population exposure metrics are not flood labels"
+    },
+    "dartmouth-flood-observatory": {
+      "family": "D",
+      "dataset_name": "DFO Global Active Archive of Large Flood Events (Bangladesh listing)",
+      "provider": "Dartmouth Flood Observatory, University of Colorado",
+      "observation_type": "event catalog from news, government, instruments, and remote sensing",
+      "label_kind": "INVENTORY",
+      "raw_or_derived": "catalog_not_pixels",
+      "spatial_resolution_m": null,
+      "temporal_resolution": "event start/end dates",
+      "event_definition": "DFO discrete flood IDs (may split or merge one monsoon)",
+      "flood_definition": "reported flooding; polygon is affected-area estimate, not inundation",
+      "permanent_water": "n/a",
+      "unknown": "n/a",
+      "bangladesh": true,
+      "temporal_coverage": "1985\u2013present; 115 BD-listed rows; this study uses 2000+",
+      "license": "catalog listing; no restriction specified on the public wiki table",
+      "access": "https://floodobservatory.colorado.edu/wiki/Bangladesh",
+      "accessible": true,
+      "reproducible": true,
+      "role": "event_discovery_only"
+    }
+  },
+  "pairs": {
+    "gfm__giezendanner": {
+      "left": "copernicus-gfm-ensemble-flood-extent",
+      "right": "giezendanner-bangladesh-inundation-history",
+      "decision": "D",
+      "reason": "Giezendanner is DERIVED CNN\u2013LSTM fractional inundation at 8-day / 500 m, trained on S1 fractions fused onto MODIS. GFM is OBSERVED 20 m SAR ensemble at a 192 h scene slot with 255 unknown. Different flood definition, resolution, temporal aggregation, permanent-water treatment, and uncertainty. Training inputs include FABDEM (NC-SA). Do not unify pixels. Rasters were not accessible."
+    },
+    "gfm__gfd": {
+      "left": "copernicus-gfm-ensemble-flood-extent",
+      "right": "global-flood-database",
+      "decision": "C",
+      "reason": "GFD is observed MODIS event-maximum water at 250 m for DFO date ranges, optical/cloud-limited, CC BY-NC, and not a t0\u2192t+192 h forecast label. Useful to discover which DFO events were satellite-mapped. Do not merge event-max pixels with GFM scene labels or upsample 250 m to 20 m. Population exposure is not a label. Optional future separate-eval track would be B, not a unified training set."
+    },
+    "giezendanner__gfd": {
+      "left": "giezendanner-bangladesh-inundation-history",
+      "right": "global-flood-database",
+      "decision": "D",
+      "reason": "Derived 8-day 500 m fractional inundation vs observed event-max 250 m MODIS. Incompatible flood definition, timing, and processing. Do not merge."
+    },
+    "gfm__dfo": {
+      "left": "copernicus-gfm-ensemble-flood-extent",
+      "right": "dartmouth-flood-observatory",
+      "decision": "C",
+      "reason": "DFO is an event catalog without inundation rasters. Match events in time, never invent DFO pixels. One DFO ID and one GFM cluster can describe the same real-world flood."
+    },
+    "gfd__dfo": {
+      "left": "global-flood-database",
+      "right": "dartmouth-flood-observatory",
+      "decision": "C",
+      "reason": "GFD events are a QC subset of DFO IDs (2000\u20132018). Same real-world event; GFD adds a mapped extent, DFO adds the catalog. Not two independent floods."
+    }
+  },
+  "default_state": "SEPARATE OBSERVATION FAMILY",
+  "harmonization": {
+    "strategy_a": "GFM-only training labels; other sources event discovery only. RECOMMENDED.",
+    "strategy_b": "Separate evaluation tracks per family. Optional later; not implemented.",
+    "strategy_c": "Harmonized intersection/union/probabilistic target. NOT implemented. Not justified."
+  },
+  "resolution": {
+    "do_not_upsample": true,
+    "gfm_m": 20,
+    "giezendanner_m": 500,
+    "gfd_m": 250,
+    "recommendation": "Keep GFM-only 20 m as the high-resolution benchmark. If a historical track is ever built, keep it at native 500 m / 250 m as a coarse-resolution research benchmark. Multi-resolution training labels are not scientifically justified here."
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "permutation": [
+    {
+      "feature": "persistence",
+      "event_macro_brier": 0.12067909498926503,
+      "delta_brier": 0.003670431583005146
+    },
+    {
+      "feature": "antecedent_24h",
+      "event_macro_brier": 0.11700866340625989,
+      "delta_brier": 0.0
+    },
+    {
+      "feature": "antecedent_72h",
+      "event_macro_brier": 0.11700866340625989,
+      "delta_brier": 0.0
+    },
+    {
+      "feature": "precip_24h_local",
+      "event_macro_brier": 0.11700866340625989,
+      "delta_brier": 0.0
+    },
+    {
+      "feature": "precip_72h_local",
+      "event_macro_brier": 0.11700866340625989,
+      "delta_brier": 0.0
+    },
+    {
+      "feature": "precip_6h",
+      "event_macro_brier": 0.11700866340625989,
+      "delta_brier": 0.0
+    },
+    {
+      "feature": "log1p_q",
+      "event_macro_brier": 0.11700866340625989,
+      "delta_brier": 0.0
+    },
+    {
+      "feature": "month_sin",
+      "event_macro_brier": 0.11700866340625989,
+      "delta_brier": 0.0
+    },
+    {
+      "feature": "month_cos",
+      "event_macro_brier": 0.11700866340625989,
+      "delta_brier": 0.0
+    },
+    {
+      "feature": "persistence_valid",
+      "event_macro_brier": 0.11700866340625989,
+      "delta_brier": 0.0
+    },
+    {
+      "feature": "row_norm",
+      "event_macro_brier": 0.11700866340625989,
+      "delta_brier": 0.0
+    },
+    {
+      "feature": "col_norm",
+      "event_macro_brier": 0.11700866340625989,
+      "delta_brier": 0.0
+    },
+    {
+      "feature": "dem",
+      "event_macro_brier": 0.11700866340625989,
+      "delta_brier": 0.0
+    },
+    {
+      "feature": "slope",
+      "event_macro_brier": 0.11700866340625989,
+      "delta_brier": 0.0
+    },
+    {
+      "feature": "river_distance",
+      "event_macro_brier": 0.11700866340625989,
+      "delta_brier": 0.0
+    },
+    {
+      "feature": "precip_is_aoi_point",
+      "event_macro_brier": 0.11700866340625989,
+      "delta_brier": 0.0
+    },
+    {
+      "feature": "q_is_glofas_cell",
+      "event_macro_brier": 0.11700866340625989,
+      "delta_brier": 0.0
+    },
+    {
+      "feature": "precip_mean_6h",
+      "event_macro_brier": 0.11700866340625989,
+      "delta_brier": 0.0
+    }
+  ],
+  "logistic": [
+    {
+      "feature": "intercept",
+      "coefficient": 2.051062631850305
+    },
+    {
+      "feature": "dem",
+      "coefficient": -15.111773597123635
+    },
+    {
+      "feature": "month_sin",
+      "coefficient": 12.465767843119373
+    },
+    {
+      "feature": "persistence",
+      "coefficient": 9.586584996308902
+    },
+    {
+      "feature": "log1p_q",
+      "coefficient": 6.280464946101299
+    },
+    {
+      "feature": "persistence_valid",
+      "coefficient": 5.323128721795313
+    },
+    {
+      "feature": "precip_is_aoi_point",
+      "coefficient": -4.8420775459690155
+    },
+    {
+      "feature": "precip_24h_local",
+      "coefficient": 3.338416914938971
+    },
+    {
+      "feature": "slope",
+      "coefficient": -3.163446953496121
+    },
+    {
+      "feature": "col_norm",
+      "coefficient": 2.798079233360118
+    },
+    {
+      "feature": "q_is_glofas_cell",
+      "coefficient": 1.8754419552786696
+    },
+    {
+      "feature": "antecedent_72h",
+      "coefficient": 1.7962667856256695
+    },
+    {
+      "feature": "antecedent_24h",
+      "coefficient": 1.5067261282860431
+    },
+    {
+      "feature": "precip_72h_local",
+      "coefficient": -1.0958289333815383
+    },
+    {
+      "feature": "row_norm",
+      "coefficient": 0.9313577970456238
+    },
+    {
+      "feature": "month_cos",
+      "coefficient": -0.8600461745494505
+    },
+    {
+      "feature": "precip_6h",
+      "coefficient": 0.6469603150367134
+    },
+    {
+      "feature": "precip_mean_6h",
+      "coefficient": 0.1078267191731048
+    },
+    {
+      "feature": "river_distance",
+      "coefficient": -0.07331869479946232
+    }
+  ]
+}

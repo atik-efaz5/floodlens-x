@@ -1,0 +1,1135 @@
+{
+  "run_id": "real-A-62e492594d5f5fa6",
+  "dataset_version": "phase4.5-openmeteo-glofas-v1",
+  "track": "A",
+  "label_kind": "MODELLED",
+  "role": "REAL_HISTORICAL_HINDCAST",
+  "not_synthetic": true,
+  "synthetic_scores_excluded": true,
+  "seed": 7,
+  "created_at": "2026-09-02T15:08:31.462965Z",
+  "horizons": [
+    24,
+    48,
+    72
+  ],
+  "skipped_horizons": [
+    6,
+    12
+  ],
+  "dataset": {
+    "dataset_version": "phase4.5-openmeteo-glofas-v1",
+    "n": 32850,
+    "label_kind": "MODELLED",
+    "horizons": [
+      24,
+      48,
+      72
+    ],
+    "q_thresholds_m3s": {
+      "sunamganj": 50.76,
+      "dhaka": 83.92,
+      "sylhet": 25.85
+    },
+    "annual_maxima_train": {
+      "sunamganj": {
+        "2015": 115.14,
+        "2016": 50.88,
+        "2017": 64.46,
+        "2018": 41.85,
+        "2019": 50.17,
+        "2020": 50.76,
+        "2021": 46.53
+      },
+      "dhaka": {
+        "2015": 108.4,
+        "2016": 83.92,
+        "2017": 118.4,
+        "2018": 66.3,
+        "2019": 70.12,
+        "2020": 98.31,
+        "2021": 78.43
+      },
+      "sylhet": {
+        "2015": 30.05,
+        "2016": 25.85,
+        "2017": 33.83,
+        "2018": 33.99,
+        "2019": 17.58,
+        "2020": 15.63,
+        "2021": 14.03
+      }
+    },
+    "splits": {
+      "train": 23004,
+      "val": 2889,
+      "test": 6957
+    },
+    "cities": [
+      "dhaka",
+      "sunamganj",
+      "sylhet"
+    ],
+    "manifest": {
+      "dataset_version": "phase4.5-openmeteo-glofas-v1",
+      "retrieved_at": "2026-09-02T14:52:00.702488+00:00",
+      "files": {
+        "discharge_2015_2024.json": {
+          "sha256": "81943d2fb999156c2db54f4065a977b9c671c44ce35635ad712e5300d26ba6bf",
+          "bytes": 209411,
+          "role": "Track A modelled daily discharge labels + Q lookback"
+        },
+        "precip_2014_2024.json": {
+          "sha256": "6cb6090f36796044b12cb2be679e214fb445ac8d6f34c86cf82f5d94c0e68fd1",
+          "bytes": 6107146,
+          "role": "Hourly precip features (reanalysis up to issue time t)"
+        }
+      },
+      "size_estimate_note": "Three AOI points only. ~10 years daily Q + ~10 years hourly precip. Not a global cube. Not WorldFloods.",
+      "credentials": "none"
+    },
+    "source_files": [
+      "src/floodlens/application/data/ml/real/discharge_2015_2024.json",
+      "src/floodlens/application/data/ml/real/precip_2014_2024.json"
+    ],
+    "positive": "GloFAS daily river_discharge on valid_at date >= train-period median AMS (\u22482-year RP)",
+    "negative": "modelled Q below that threshold",
+    "unknown": "missing Q; dropped, never treated as dry",
+    "not_horizons": [
+      6,
+      12
+    ],
+    "not_horizons_reason": "Labels are daily. Sub-daily 6h/12h targets would be fake."
+  },
+  "val": {
+    "split": "val",
+    "track": "A",
+    "label_kind": "MODELLED",
+    "n": 2889,
+    "prevalence": 0.0,
+    "models": {
+      "persistence": {
+        "n": 2889,
+        "prevalence": 0.0,
+        "auprc": null,
+        "auroc": null,
+        "brier": 0.0,
+        "bss": 1.0,
+        "recall_at_precision_0.7": {
+          "recall": 0.0,
+          "threshold": 1.0,
+          "precision_target": 0.7
+        },
+        "operating_point": {
+          "tp": 0.0,
+          "fp": 0.0,
+          "fn": 0.0,
+          "tn": 2889.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "csi": 0.0,
+          "f1": 0.0,
+          "threshold": 0.15
+        },
+        "accuracy_claim": null
+      },
+      "climatology": {
+        "n": 2889,
+        "prevalence": 0.0,
+        "auprc": null,
+        "auroc": null,
+        "brier": 0.0017028861518591865,
+        "bss": -2.3071304466744094,
+        "recall_at_precision_0.7": {
+          "recall": 0.0,
+          "threshold": 1.0,
+          "precision_target": 0.7
+        },
+        "operating_point": {
+          "tp": 0.0,
+          "fp": 0.0,
+          "fn": 0.0,
+          "tn": 2889.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "csi": 0.0,
+          "f1": 0.0,
+          "threshold": 0.15
+        },
+        "accuracy_claim": null
+      },
+      "logistic": {
+        "n": 2889,
+        "prevalence": 0.0,
+        "auprc": null,
+        "auroc": null,
+        "brier": 0.0018685637163200857,
+        "bss": -2.628888490899089,
+        "recall_at_precision_0.7": {
+          "recall": 0.0,
+          "threshold": 1.0,
+          "precision_target": 0.7
+        },
+        "operating_point": {
+          "tp": 0.0,
+          "fp": 28.0,
+          "fn": 0.0,
+          "tn": 2861.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "csi": 0.0,
+          "f1": 0.0,
+          "threshold": 0.15
+        },
+        "accuracy_claim": null
+      },
+      "xgboost_class": {
+        "n": 2889,
+        "prevalence": 0.0,
+        "auprc": null,
+        "auroc": null,
+        "brier": 0.0003492065194019561,
+        "bss": 0.3218151952022542,
+        "recall_at_precision_0.7": {
+          "recall": 0.0,
+          "threshold": 1.0,
+          "precision_target": 0.7
+        },
+        "operating_point": {
+          "tp": 0.0,
+          "fp": 3.0,
+          "fn": 0.0,
+          "tn": 2886.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "csi": 0.0,
+          "f1": 0.0,
+          "threshold": 0.15
+        },
+        "accuracy_claim": null
+      }
+    },
+    "beats_persistence": {
+      "xgboost_class": false
+    },
+    "by_horizon": {
+      "24": {
+        "xgboost_class": {
+          "n": 963,
+          "prevalence": 0.0,
+          "auprc": null,
+          "auroc": null,
+          "brier": 0.0003492065194019561,
+          "bss": 0.3218151952022542,
+          "recall_at_precision_0.7": {
+            "recall": 0.0,
+            "threshold": 1.0,
+            "precision_target": 0.7
+          },
+          "operating_point": {
+            "tp": 0.0,
+            "fp": 1.0,
+            "fn": 0.0,
+            "tn": 962.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "csi": 0.0,
+            "f1": 0.0,
+            "threshold": 0.15
+          },
+          "accuracy_claim": null
+        },
+        "persistence": {
+          "n": 963,
+          "prevalence": 0.0,
+          "auprc": null,
+          "auroc": null,
+          "brier": 0.0,
+          "bss": 1.0,
+          "recall_at_precision_0.7": {
+            "recall": 0.0,
+            "threshold": 1.0,
+            "precision_target": 0.7
+          },
+          "operating_point": {
+            "tp": 0.0,
+            "fp": 0.0,
+            "fn": 0.0,
+            "tn": 963.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "csi": 0.0,
+            "f1": 0.0,
+            "threshold": 0.15
+          },
+          "accuracy_claim": null
+        }
+      },
+      "48": {
+        "xgboost_class": {
+          "n": 963,
+          "prevalence": 0.0,
+          "auprc": null,
+          "auroc": null,
+          "brier": 0.0003492065194019561,
+          "bss": 0.3218151952022542,
+          "recall_at_precision_0.7": {
+            "recall": 0.0,
+            "threshold": 1.0,
+            "precision_target": 0.7
+          },
+          "operating_point": {
+            "tp": 0.0,
+            "fp": 1.0,
+            "fn": 0.0,
+            "tn": 962.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "csi": 0.0,
+            "f1": 0.0,
+            "threshold": 0.15
+          },
+          "accuracy_claim": null
+        },
+        "persistence": {
+          "n": 963,
+          "prevalence": 0.0,
+          "auprc": null,
+          "auroc": null,
+          "brier": 0.0,
+          "bss": 1.0,
+          "recall_at_precision_0.7": {
+            "recall": 0.0,
+            "threshold": 1.0,
+            "precision_target": 0.7
+          },
+          "operating_point": {
+            "tp": 0.0,
+            "fp": 0.0,
+            "fn": 0.0,
+            "tn": 963.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "csi": 0.0,
+            "f1": 0.0,
+            "threshold": 0.15
+          },
+          "accuracy_claim": null
+        }
+      },
+      "72": {
+        "xgboost_class": {
+          "n": 963,
+          "prevalence": 0.0,
+          "auprc": null,
+          "auroc": null,
+          "brier": 0.0003492065194019561,
+          "bss": 0.3218151952022542,
+          "recall_at_precision_0.7": {
+            "recall": 0.0,
+            "threshold": 1.0,
+            "precision_target": 0.7
+          },
+          "operating_point": {
+            "tp": 0.0,
+            "fp": 1.0,
+            "fn": 0.0,
+            "tn": 962.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "csi": 0.0,
+            "f1": 0.0,
+            "threshold": 0.15
+          },
+          "accuracy_claim": null
+        },
+        "persistence": {
+          "n": 963,
+          "prevalence": 0.0,
+          "auprc": null,
+          "auroc": null,
+          "brier": 0.0,
+          "bss": 1.0,
+          "recall_at_precision_0.7": {
+            "recall": 0.0,
+            "threshold": 1.0,
+            "precision_target": 0.7
+          },
+          "operating_point": {
+            "tp": 0.0,
+            "fp": 0.0,
+            "fn": 0.0,
+            "tn": 963.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "csi": 0.0,
+            "f1": 0.0,
+            "threshold": 0.15
+          },
+          "accuracy_claim": null
+        }
+      }
+    },
+    "accuracy_claim": null,
+    "note": "2022 val excluding named holdout has prevalence 0 at the train-only AMS threshold; AUPRC/AUROC are undefined. Threshold and conformal used 2020\u20132021 train years. Tracks A and B must not be mixed. Accuracy is not reported.",
+    "threshold_source": "train_2020_2021_inner_tune (val 2022 has zero positives outside named holdout)"
+  },
+  "test": {
+    "split": "test",
+    "track": "A",
+    "label_kind": "MODELLED",
+    "n": 6957,
+    "prevalence": 0.0258732212160414,
+    "models": {
+      "persistence": {
+        "n": 6957,
+        "prevalence": 0.0258732212160414,
+        "auprc": 0.507320214734978,
+        "auroc": 0.8289065958388667,
+        "brier": 0.017248814144027597,
+        "bss": 0.31590112276477345,
+        "recall_at_precision_0.7": {
+          "recall": 0.6666666666666666,
+          "threshold": 1.0,
+          "precision_target": 0.7
+        },
+        "operating_point": {
+          "tp": 120.0,
+          "fp": 60.0,
+          "fn": 60.0,
+          "tn": 6717.0,
+          "precision": 0.6666666666666666,
+          "recall": 0.6666666666666666,
+          "csi": 0.5,
+          "f1": 0.6666666666666666,
+          "threshold": 0.15
+        },
+        "accuracy_claim": null
+      },
+      "climatology": {
+        "n": 6957,
+        "prevalence": 0.0258732212160414,
+        "auprc": 0.18144094847465858,
+        "auroc": 0.8615095174856131,
+        "brier": 0.023639052589068104,
+        "bss": 0.062460224798391084,
+        "recall_at_precision_0.7": {
+          "recall": 0.0,
+          "threshold": 1.0,
+          "precision_target": 0.7
+        },
+        "operating_point": {
+          "tp": 0.0,
+          "fp": 0.0,
+          "fn": 180.0,
+          "tn": 6777.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "csi": 0.0,
+          "f1": 0.0,
+          "threshold": 0.15
+        },
+        "accuracy_claim": null
+      },
+      "logistic": {
+        "n": 6957,
+        "prevalence": 0.0258732212160414,
+        "auprc": 0.18209894352183317,
+        "auroc": 0.9200195104356238,
+        "brier": 0.023539063829376566,
+        "bss": 0.06642584224142023,
+        "recall_at_precision_0.7": {
+          "recall": 0.0,
+          "threshold": 1.0,
+          "precision_target": 0.7
+        },
+        "operating_point": {
+          "tp": 41.0,
+          "fp": 158.0,
+          "fn": 139.0,
+          "tn": 6619.0,
+          "precision": 0.20603015075376885,
+          "recall": 0.22777777777777777,
+          "csi": 0.12130177514792899,
+          "f1": 0.21635883905013192,
+          "threshold": 0.15
+        },
+        "accuracy_claim": null
+      },
+      "xgboost_class": {
+        "n": 6957,
+        "prevalence": 0.0258732212160414,
+        "auprc": 0.27607645286220356,
+        "auroc": 0.940491121932025,
+        "brier": 0.022235355705641443,
+        "bss": 0.11813173090382723,
+        "recall_at_precision_0.7": {
+          "recall": 0.0,
+          "threshold": 1.0,
+          "precision_target": 0.7
+        },
+        "operating_point": {
+          "tp": 36.0,
+          "fp": 63.0,
+          "fn": 144.0,
+          "tn": 6714.0,
+          "precision": 0.36363636363636365,
+          "recall": 0.2,
+          "csi": 0.14814814814814814,
+          "f1": 0.25806451612903225,
+          "threshold": 0.15
+        },
+        "accuracy_claim": null
+      }
+    },
+    "beats_persistence": {
+      "xgboost_class": false
+    },
+    "by_horizon": {
+      "24": {
+        "xgboost_class": {
+          "n": 2322,
+          "prevalence": 0.025839793281653745,
+          "auprc": 0.2972497668982677,
+          "auroc": 0.9617300324196876,
+          "brier": 0.022034686371273034,
+          "bss": 0.12498297776534573,
+          "recall_at_precision_0.7": {
+            "recall": 0.0,
+            "threshold": 1.0,
+            "precision_target": 0.7
+          },
+          "operating_point": {
+            "tp": 11.0,
+            "fp": 22.0,
+            "fn": 49.0,
+            "tn": 2240.0,
+            "precision": 0.3333333333333333,
+            "recall": 0.18333333333333332,
+            "csi": 0.13414634146341464,
+            "f1": 0.23655913978494622,
+            "threshold": 0.15
+          },
+          "accuracy_claim": null
+        },
+        "persistence": {
+          "n": 2322,
+          "prevalence": 0.025839793281653745,
+          "auprc": 0.5452387049300979,
+          "auroc": 0.8460212201591512,
+          "brier": 0.015503875968992248,
+          "bss": 0.3843272758731242,
+          "recall_at_precision_0.7": {
+            "recall": 0.7,
+            "threshold": 1.0,
+            "precision_target": 0.7
+          },
+          "operating_point": {
+            "tp": 42.0,
+            "fp": 18.0,
+            "fn": 18.0,
+            "tn": 2244.0,
+            "precision": 0.7,
+            "recall": 0.7,
+            "csi": 0.5384615384615384,
+            "f1": 0.7,
+            "threshold": 0.15
+          },
+          "accuracy_claim": null
+        }
+      },
+      "48": {
+        "xgboost_class": {
+          "n": 2319,
+          "prevalence": 0.0258732212160414,
+          "auprc": 0.2893222990699383,
+          "auroc": 0.9433414490187398,
+          "brier": 0.022176286463713314,
+          "bss": 0.12047445439454096,
+          "recall_at_precision_0.7": {
+            "recall": 0.0,
+            "threshold": 1.0,
+            "precision_target": 0.7
+          },
+          "operating_point": {
+            "tp": 13.0,
+            "fp": 20.0,
+            "fn": 47.0,
+            "tn": 2239.0,
+            "precision": 0.3939393939393939,
+            "recall": 0.21666666666666667,
+            "csi": 0.1625,
+            "f1": 0.27956989247311825,
+            "threshold": 0.15
+          },
+          "accuracy_claim": null
+        },
+        "persistence": {
+          "n": 2319,
+          "prevalence": 0.0258732212160414,
+          "auprc": 0.5124414009778121,
+          "auroc": 0.8289065958388667,
+          "brier": 0.017248814144027597,
+          "bss": 0.31590112276477345,
+          "recall_at_precision_0.7": {
+            "recall": 0.6666666666666666,
+            "threshold": 1.0,
+            "precision_target": 0.7
+          },
+          "operating_point": {
+            "tp": 40.0,
+            "fp": 20.0,
+            "fn": 20.0,
+            "tn": 2239.0,
+            "precision": 0.6666666666666666,
+            "recall": 0.6666666666666666,
+            "csi": 0.5,
+            "f1": 0.6666666666666666,
+            "threshold": 0.15
+          },
+          "accuracy_claim": null
+        }
+      },
+      "72": {
+        "xgboost_class": {
+          "n": 2316,
+          "prevalence": 0.025906735751295335,
+          "auprc": 0.2578924427924086,
+          "auroc": 0.9163416075650118,
+          "brier": 0.022495690665241957,
+          "bss": 0.10893733664370131,
+          "recall_at_precision_0.7": {
+            "recall": 0.0,
+            "threshold": 1.0,
+            "precision_target": 0.7
+          },
+          "operating_point": {
+            "tp": 12.0,
+            "fp": 21.0,
+            "fn": 48.0,
+            "tn": 2235.0,
+            "precision": 0.36363636363636365,
+            "recall": 0.2,
+            "csi": 0.14814814814814814,
+            "f1": 0.25806451612903225,
+            "threshold": 0.15
+          },
+          "accuracy_claim": null
+        },
+        "persistence": {
+          "n": 2316,
+          "prevalence": 0.025906735751295335,
+          "auprc": 0.4803646534466115,
+          "auroc": 0.811790780141844,
+          "brier": 0.018998272884283247,
+          "bss": 0.24747135407602294,
+          "recall_at_precision_0.7": {
+            "recall": 0.6333333333333333,
+            "threshold": 1.0,
+            "precision_target": 0.7
+          },
+          "operating_point": {
+            "tp": 38.0,
+            "fp": 22.0,
+            "fn": 22.0,
+            "tn": 2234.0,
+            "precision": 0.6333333333333333,
+            "recall": 0.6333333333333333,
+            "csi": 0.4634146341463415,
+            "f1": 0.6333333333333333,
+            "threshold": 0.15
+          },
+          "accuracy_claim": null
+        }
+      }
+    },
+    "accuracy_claim": null,
+    "note": "Tracks A and B must not be mixed. Accuracy is not reported."
+  },
+  "geographic_holdout_sunamganj": {
+    "split": "test",
+    "track": "A",
+    "label_kind": "MODELLED",
+    "n": 2319,
+    "prevalence": 0.06597671410090557,
+    "models": {
+      "persistence": {
+        "n": 2319,
+        "prevalence": 0.06597671410090557,
+        "auprc": 0.58939566621106,
+        "auroc": 0.884539134213242,
+        "brier": 0.028460543337645538,
+        "bss": 0.5603730284719386,
+        "recall_at_precision_0.7": {
+          "recall": 0.7843137254901961,
+          "threshold": 0.0,
+          "precision_target": 0.7
+        },
+        "operating_point": {
+          "tp": 120.0,
+          "fp": 33.0,
+          "fn": 33.0,
+          "tn": 2133.0,
+          "precision": 0.7843137254901961,
+          "recall": 0.7843137254901961,
+          "csi": 0.6451612903225806,
+          "f1": 0.7843137254901961,
+          "threshold": 0.5
+        },
+        "accuracy_claim": null
+      },
+      "climatology": {
+        "n": 2319,
+        "prevalence": 0.06597671410090557,
+        "auprc": 0.23316960449722973,
+        "auroc": 0.8892374124164901,
+        "brier": 0.06193521152258279,
+        "bss": 0.04329340625738387,
+        "recall_at_precision_0.7": {
+          "recall": 0.0,
+          "threshold": 1.0,
+          "precision_target": 0.7
+        },
+        "operating_point": {
+          "tp": 0.0,
+          "fp": 0.0,
+          "fn": 153.0,
+          "tn": 2166.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "csi": 0.0,
+          "f1": 0.0,
+          "threshold": 0.5
+        },
+        "accuracy_claim": null
+      },
+      "logistic": {
+        "n": 2319,
+        "prevalence": 0.06597671410090557,
+        "auprc": 0.22734168354130282,
+        "auroc": 0.8765049879600963,
+        "brier": 0.060156236910538584,
+        "bss": 0.0707730369812225,
+        "recall_at_precision_0.7": {
+          "recall": 0.0,
+          "threshold": 1.0,
+          "precision_target": 0.7
+        },
+        "operating_point": {
+          "tp": 0.0,
+          "fp": 2.0,
+          "fn": 153.0,
+          "tn": 2164.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "csi": 0.0,
+          "f1": 0.0,
+          "threshold": 0.5
+        },
+        "accuracy_claim": null
+      },
+      "xgboost_class": {
+        "n": 2319,
+        "prevalence": 0.06597671410090557,
+        "auprc": 0.326762947823008,
+        "auroc": 0.9268643745586878,
+        "brier": 0.06015576472778076,
+        "bss": 0.0707803307378232,
+        "recall_at_precision_0.7": {
+          "recall": 0.0,
+          "threshold": 1.0,
+          "precision_target": 0.7
+        },
+        "operating_point": {
+          "tp": 0.0,
+          "fp": 0.0,
+          "fn": 153.0,
+          "tn": 2166.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "csi": 0.0,
+          "f1": 0.0,
+          "threshold": 0.5
+        },
+        "accuracy_claim": null
+      }
+    },
+    "beats_persistence": {
+      "xgboost_class": false
+    },
+    "by_horizon": {
+      "24": {
+        "xgboost_class": {
+          "n": 774,
+          "prevalence": 0.06589147286821706,
+          "auprc": 0.3140059799564956,
+          "auroc": 0.9247010007322432,
+          "brier": 0.06030017784238163,
+          "bss": 0.06734654411608121,
+          "recall_at_precision_0.7": {
+            "recall": 0.0,
+            "threshold": 1.0,
+            "precision_target": 0.7
+          },
+          "operating_point": {
+            "tp": 0.0,
+            "fp": 0.0,
+            "fn": 51.0,
+            "tn": 723.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "csi": 0.0,
+            "f1": 0.0,
+            "threshold": 0.5
+          },
+          "accuracy_claim": null
+        },
+        "persistence": {
+          "n": 774,
+          "prevalence": 0.06589147286821706,
+          "auprc": 0.6339423253459127,
+          "auroc": 0.9055406394923114,
+          "brier": 0.023255813953488372,
+          "bss": 0.6403059488512823,
+          "recall_at_precision_0.7": {
+            "recall": 0.8235294117647058,
+            "threshold": 0.0,
+            "precision_target": 0.7
+          },
+          "operating_point": {
+            "tp": 42.0,
+            "fp": 9.0,
+            "fn": 9.0,
+            "tn": 714.0,
+            "precision": 0.8235294117647058,
+            "recall": 0.8235294117647058,
+            "csi": 0.7,
+            "f1": 0.8235294117647058,
+            "threshold": 0.5
+          },
+          "accuracy_claim": null
+        }
+      },
+      "48": {
+        "xgboost_class": {
+          "n": 773,
+          "prevalence": 0.06597671410090557,
+          "auprc": 0.3482864968919771,
+          "auroc": 0.9293221443702134,
+          "brier": 0.05998414029040707,
+          "bss": 0.07343139508145458,
+          "recall_at_precision_0.7": {
+            "recall": 0.0,
+            "threshold": 1.0,
+            "precision_target": 0.7
+          },
+          "operating_point": {
+            "tp": 0.0,
+            "fp": 0.0,
+            "fn": 51.0,
+            "tn": 722.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "csi": 0.0,
+            "f1": 0.0,
+            "threshold": 0.5
+          },
+          "accuracy_claim": null
+        },
+        "persistence": {
+          "n": 773,
+          "prevalence": 0.06597671410090557,
+          "auprc": 0.5953776527551722,
+          "auroc": 0.884539134213242,
+          "brier": 0.028460543337645538,
+          "bss": 0.5603730284719386,
+          "recall_at_precision_0.7": {
+            "recall": 0.7843137254901961,
+            "threshold": 0.0,
+            "precision_target": 0.7
+          },
+          "operating_point": {
+            "tp": 40.0,
+            "fp": 11.0,
+            "fn": 11.0,
+            "tn": 711.0,
+            "precision": 0.7843137254901961,
+            "recall": 0.7843137254901961,
+            "csi": 0.6451612903225806,
+            "f1": 0.7843137254901961,
+            "threshold": 0.5
+          },
+          "accuracy_claim": null
+        }
+      },
+      "72": {
+        "xgboost_class": {
+          "n": 772,
+          "prevalence": 0.06606217616580311,
+          "auprc": 0.3355633355325412,
+          "auroc": 0.9265725707758832,
+          "brier": 0.06018282423476107,
+          "bss": 0.07156306173441018,
+          "recall_at_precision_0.7": {
+            "recall": 0.0,
+            "threshold": 1.0,
+            "precision_target": 0.7
+          },
+          "operating_point": {
+            "tp": 0.0,
+            "fp": 0.0,
+            "fn": 51.0,
+            "tn": 721.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "csi": 0.0,
+            "f1": 0.0,
+            "threshold": 0.5
+          },
+          "accuracy_claim": null
+        },
+        "persistence": {
+          "n": 772,
+          "prevalence": 0.06606217616580311,
+          "auprc": 0.5576590222811688,
+          "auroc": 0.863533763019771,
+          "brier": 0.03367875647668394,
+          "bss": 0.4804397775379845,
+          "recall_at_precision_0.7": {
+            "recall": 0.7450980392156863,
+            "threshold": 0.0,
+            "precision_target": 0.7
+          },
+          "operating_point": {
+            "tp": 38.0,
+            "fp": 13.0,
+            "fn": 13.0,
+            "tn": 708.0,
+            "precision": 0.7450980392156863,
+            "recall": 0.7450980392156863,
+            "csi": 0.59375,
+            "f1": 0.7450980392156863,
+            "threshold": 0.5
+          },
+          "accuracy_claim": null
+        }
+      }
+    },
+    "accuracy_claim": null,
+    "note": "Tracks A and B must not be mixed. Accuracy is not reported."
+  },
+  "conformal": {
+    "q80": 0.021895754568677657,
+    "q10": 0.004492870891382564,
+    "q90": 0.05573095507011044,
+    "alpha": 0.2,
+    "kind": "conformal"
+  },
+  "conformal_coverage_val": 0.8007295941632467,
+  "conformal_coverage_test": 0.8299554405634613,
+  "conformal_target": 0.8,
+  "threshold_source": "train_2020_2021_inner_tune (val 2022 has zero positives outside named holdout)",
+  "operating_threshold": 0.15,
+  "lstm": {
+    "trained": false,
+    "justified": false,
+    "reason": "insufficient sequences",
+    "val_auprc": null,
+    "xgboost_val_auprc": null,
+    "headroom": null,
+    "scientific_reason": "Primary data are tabular AOI time series (precip windows + 7-day Q). TinyLSTM packing requires all five production horizons including 6h/12h; daily GloFAS labels cannot support those heads without fabricating targets. A ConvLSTM/GNN is unjustified (no raster cube, no river graph). GBDT is the appropriate first real model."
+  },
+  "error_analysis": {
+    "false_negatives_lowest_p": [
+      {
+        "city_id": "dhaka",
+        "issue_time": "2024-05-25T00:00:00Z",
+        "horizon_hours": 72,
+        "y": 1,
+        "p": 0.004815393547891656,
+        "antecedent_24h": 0.0,
+        "q_last": 13.59
+      },
+      {
+        "city_id": "dhaka",
+        "issue_time": "2024-05-26T00:00:00Z",
+        "horizon_hours": 48,
+        "y": 1,
+        "p": 0.004815393547891656,
+        "antecedent_24h": 0.4,
+        "q_last": 14.31
+      },
+      {
+        "city_id": "dhaka",
+        "issue_time": "2024-05-26T00:00:00Z",
+        "horizon_hours": 72,
+        "y": 1,
+        "p": 0.004815393547891656,
+        "antecedent_24h": 0.4,
+        "q_last": 14.31
+      },
+      {
+        "city_id": "sylhet",
+        "issue_time": "2024-05-26T00:00:00Z",
+        "horizon_hours": 72,
+        "y": 1,
+        "p": 0.004815393547891656,
+        "antecedent_24h": 0.0,
+        "q_last": 6.1
+      },
+      {
+        "city_id": "dhaka",
+        "issue_time": "2023-08-05T00:00:00Z",
+        "horizon_hours": 72,
+        "y": 1,
+        "p": 0.005217171940550703,
+        "antecedent_24h": 14.3,
+        "q_last": 28.79
+      },
+      {
+        "city_id": "dhaka",
+        "issue_time": "2024-08-18T00:00:00Z",
+        "horizon_hours": 72,
+        "y": 1,
+        "p": 0.006577023022954475,
+        "antecedent_24h": 6.6,
+        "q_last": 34.81
+      },
+      {
+        "city_id": "dhaka",
+        "issue_time": "2023-08-06T00:00:00Z",
+        "horizon_hours": 48,
+        "y": 1,
+        "p": 0.007977271965797597,
+        "antecedent_24h": 14.9,
+        "q_last": 36.67
+      },
+      {
+        "city_id": "dhaka",
+        "issue_time": "2023-10-04T00:00:00Z",
+        "horizon_hours": 72,
+        "y": 1,
+        "p": 0.008414353064138867,
+        "antecedent_24h": 11.8,
+        "q_last": 33.43
+      }
+    ],
+    "false_positives_highest_p": [
+      {
+        "city_id": "sunamganj",
+        "issue_time": "2022-06-18T00:00:00Z",
+        "horizon_hours": 24,
+        "y": 0,
+        "p": 0.186391889698299,
+        "antecedent_24h": 96.1,
+        "q_last": 40.88
+      },
+      {
+        "city_id": "sunamganj",
+        "issue_time": "2022-06-18T00:00:00Z",
+        "horizon_hours": 48,
+        "y": 0,
+        "p": 0.186391889698299,
+        "antecedent_24h": 96.1,
+        "q_last": 40.88
+      },
+      {
+        "city_id": "sunamganj",
+        "issue_time": "2022-06-18T00:00:00Z",
+        "horizon_hours": 72,
+        "y": 0,
+        "p": 0.186391889698299,
+        "antecedent_24h": 96.1,
+        "q_last": 40.88
+      },
+      {
+        "city_id": "sunamganj",
+        "issue_time": "2022-06-20T00:00:00Z",
+        "horizon_hours": 24,
+        "y": 0,
+        "p": 0.186391889698299,
+        "antecedent_24h": 60.7,
+        "q_last": 45.99
+      },
+      {
+        "city_id": "sunamganj",
+        "issue_time": "2022-06-20T00:00:00Z",
+        "horizon_hours": 48,
+        "y": 0,
+        "p": 0.186391889698299,
+        "antecedent_24h": 60.7,
+        "q_last": 45.99
+      },
+      {
+        "city_id": "sunamganj",
+        "issue_time": "2022-06-20T00:00:00Z",
+        "horizon_hours": 72,
+        "y": 0,
+        "p": 0.186391889698299,
+        "antecedent_24h": 60.7,
+        "q_last": 45.99
+      },
+      {
+        "city_id": "sunamganj",
+        "issue_time": "2023-08-13T00:00:00Z",
+        "horizon_hours": 24,
+        "y": 0,
+        "p": 0.186391889698299,
+        "antecedent_24h": 35.2,
+        "q_last": 37.11
+      },
+      {
+        "city_id": "sunamganj",
+        "issue_time": "2023-08-13T00:00:00Z",
+        "horizon_hours": 48,
+        "y": 0,
+        "p": 0.186391889698299,
+        "antecedent_24h": 35.2,
+        "q_last": 37.11
+      }
+    ],
+    "n_false_negatives": 144,
+    "n_false_positives": 63,
+    "n_correct": 6750,
+    "threshold": 0.15,
+    "note": "Track A MODELLED labels. Not in-situ flood maps. Physics SWE not paired."
+  },
+  "physics_comparison": {
+    "status": "LIMITED",
+    "footnote": "Physics Baseline v0.1 is a short SWE burst forced by that hour's rain, not a 24h inundation model, and is scored against MODELLED GloFAS Q exceedance \u2014 not a like-for-like hydrodynamic comparison.",
+    "n_paired": 0,
+    "reason": "SWE burst max depth / flood_fraction is not GloFAS Q exceedance. No conversion is applied. Metrics for physics on this label are null, not zero.",
+    "ai_test": {
+      "n": 6957,
+      "prevalence": 0.0258732212160414,
+      "auprc": 0.27607645286220356,
+      "auroc": 0.940491121932025,
+      "brier": 0.022235355705641443,
+      "bss": 0.11813173090382723,
+      "recall_at_precision_0.7": {
+        "recall": 0.0,
+        "threshold": 1.0,
+        "precision_target": 0.7
+      },
+      "operating_point": {
+        "tp": 36.0,
+        "fp": 63.0,
+        "fn": 144.0,
+        "tn": 6714.0,
+        "precision": 0.36363636363636365,
+        "recall": 0.2,
+        "csi": 0.14814814814814814,
+        "f1": 0.25806451612903225,
+        "threshold": 0.15
+      },
+      "accuracy_claim": null
+    },
+    "physics_test": null,
+    "comparable_quantities": false
+  },
+  "best_model_on_test_auprc": "persistence",
+  "shipped_model": "xgboost_class",
+  "best_model": "xgboost_class",
+  "accuracy_claim": null,
+  "note": "Persistence is a strong baseline for daily Q exceedance. Do not claim the GBDT beats persistence unless test AUPRC/F1 say so. Not synthetic Track A/B scores."
+}

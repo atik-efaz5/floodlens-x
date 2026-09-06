@@ -1,0 +1,16 @@
+{
+  "id": "ai-spatial-forecast",
+  "title": "AI Spatial Flood Occurrence",
+  "kind": "AI_SPATIAL",
+  "status": "TRAINED",
+  "accuracy_claim": null,
+  "model_id": "AI-SPATIAL-OCCURRENCE-v0.1",
+  "run_id": "spatial-4060daa5b9479794",
+  "dataset_version": "phase55-gfm-aoi-v0.2",
+  "checkpoint": "src/floodlens/application/data/ml/spatial/checkpoint.json",
+  "validated_split_ids": null,
+  "label_kind": "OBSERVED",
+  "horizon_hours": 192,
+  "comparable_to_physics": false,
+  "note": "Fit completed on GFM AOI tiles. Not validated. Public catalog remains NOT_TRAINED. AOI GBDT VALIDATED status is unchanged."
+}

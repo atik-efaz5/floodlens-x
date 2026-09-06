@@ -1,0 +1,42 @@
+{
+  "gates": {
+    "B1": {
+      "pass": true,
+      "rule": "valid earlier/later pair (same AOI, later after earlier, maps exist)"
+    },
+    "B2": {
+      "pass": true,
+      "rule": "same real-world event_id; calendar proximity is not sufficient"
+    },
+    "B3": {
+      "pass": true,
+      "rule": "jointly valid transition mask (unknown never inferred)"
+    },
+    "B4": {
+      "pass": true,
+      "rule": "no target leakage; in-horizon rain is POST-T0 OBSERVATION"
+    },
+    "B5": {
+      "pass": true,
+      "rule": "forcing completeness recorded (COMPLETE/PARTIAL/MISSING)"
+    },
+    "B6": {
+      "pass": true,
+      "rule": "transition signal: \u226520 pairs with new-flood or recession, mean turnover \u22650.01, \u22655 events; pixel count alone is not enough",
+      "n_pairs_with_change": 157,
+      "mean_turnover_eligible": 0.05790246787624591,
+      "n_events_with_change": 14
+    },
+    "B7": {
+      "pass": true,
+      "rule": "\u22658 independent events represented by pairs (not pair count)",
+      "n_independent_events": 15,
+      "n_events_with_pairs": 14
+    }
+  },
+  "n_pairs": 183,
+  "n_eligible_pairs": 183,
+  "class": "FORECASTABILITY AUDIT",
+  "validated": false,
+  "all_pass": true
+}

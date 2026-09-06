@@ -7,14 +7,16 @@ from floodlens.application.geospatial import (
     DEFAULT_VISUALIZATION_LAYERS,
     ScenarioSession,
 )
-from floodlens.application.web_server import app, set_session
+from floodlens.application.web_server import app, get_result_store, reset_result_store, set_session
 
 
 @pytest.fixture
 def client():
     set_session(ScenarioSession.default_sunamganj())
+    reset_result_store()
     with TestClient(app) as test_client:
         yield test_client
+    reset_result_store()
 
 
 def test_metadata_returns_geospatial_contract(client):
@@ -53,6 +55,8 @@ def test_scenario_run_returns_inundation_metrics(client):
             "ny": 20,
             "rainfall_rate": 1.0e-4,
             "duration_seconds": 1.0,
+            "city_id": "sunamganj",
+            "scenario_id": "moderate_rain",
         },
     )
     assert response.status_code == 200
@@ -67,6 +71,25 @@ def test_scenario_run_returns_inundation_metrics(client):
     assert data["simulation_time_s"] > 0.0
 
 
+def test_scenario_run_accepts_unequal_nx_ny(client):
+    response = client.post(
+        "/api/scenario/run",
+        json={
+            "nx": 12,
+            "ny": 8,
+            "rainfall_rate": 1.0e-4,
+            "duration_seconds": 0.5,
+            "city_id": "sunamganj",
+            "scenario_id": "moderate_rain",
+        },
+    )
+    assert response.status_code == 200
+    data = response.json()
+    assert data["success"] is True
+    assert data["nx"] == 12
+    assert data["ny"] == 8
+
+
 def test_cell_inspect_maps_geographic_point_to_matrix_cell(client):
     run_response = client.post(
         "/api/scenario/run",
@@ -75,43 +98,50 @@ def test_cell_inspect_maps_geographic_point_to_matrix_cell(client):
             "ny": 30,
             "rainfall_rate": 1.0e-4,
             "duration_seconds": 1.0,
+            "city_id": "sunamganj",
+            "scenario_id": "moderate_rain",
         },
     )
     assert run_response.status_code == 200
-    assert run_response.json()["success"] is True
+    run_data = run_response.json()
+    assert run_data["success"] is True
 
     response = client.get(
         "/api/cell/inspect",
-        params={"latitude": 24.95, "longitude": 91.35},
+        params={
+            "lat": 24.95,
+            "lon": 91.35,
+            "city_id": "sunamganj",
+            "scenario_id": "moderate_rain",
+            "time": run_data["simulation_time_s"],
+        },
     )
     assert response.status_code == 200
 
     data = response.json()
-    assert set(data.keys()) == {
-        "latitude",
-        "longitude",
-        "row",
-        "column",
-        "depth_m",
-        "velocity_m_s",
-        "max_depth_m",
-        "is_flooded",
-        "within_bounds",
-    }
+    assert data["city_id"] == "sunamganj"
+    assert data["scenario_id"] == "moderate_rain"
+    assert data["modeled"] is True
     assert data["latitude"] == 24.95
     assert data["longitude"] == 91.35
     assert data["within_bounds"] is True
     assert 0 <= data["row"] < 30
     assert 0 <= data["column"] < 30
-    assert data["depth_m"] >= 0.0
-    assert data["velocity_m_s"] >= 0.0
-    assert data["max_depth_m"] >= 0.0
-    assert isinstance(data["is_flooded"], bool)
+    assert data["depth"] >= 0.0
+    assert data["velocity"] >= 0.0
+    assert data["maximum_depth"] >= 0.0
+    assert data["flood_status"] in {"flooded", "not_flooded"}
 
 
-def test_cell_inspect_requires_prior_simulation(client):
+def test_cell_inspect_requires_stored_result(client):
     response = client.get(
         "/api/cell/inspect",
-        params={"latitude": 24.95, "longitude": 91.35},
+        params={
+            "lat": 24.95,
+            "lon": 91.35,
+            "city_id": "sunamganj",
+            "scenario_id": "moderate_rain",
+        },
     )
-    assert response.status_code == 409
+    assert response.status_code == 404
+    assert response.json()["detail"]["error_code"] == "RESULT_NOT_AVAILABLE"

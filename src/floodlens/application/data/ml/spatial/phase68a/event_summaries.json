@@ -1,0 +1,765 @@
+[
+  {
+    "event_id": "evt:2015-07-11",
+    "n_pairs": 8,
+    "n_maps": 14,
+    "n_regions": 5,
+    "regions": [
+      "dhaka_ne",
+      "dhaka_nw",
+      "kishoreganj",
+      "netrokona",
+      "sunamganj"
+    ],
+    "split": "train",
+    "flood_mechanism": "monsoon_riverine",
+    "year": 2015,
+    "independent_event": true,
+    "delta_t_hours": {
+      "n": 8,
+      "min": 120.13416666666667,
+      "median": 576.0002777777778,
+      "mean": 405.0504861111111,
+      "max": 576.0002777777778,
+      "q25": 120.13416666666667,
+      "q75": 576.0002777777778
+    },
+    "iou": {
+      "n": 8,
+      "min": 0.1206896551724138,
+      "median": 0.28783552255853795,
+      "mean": 0.3617155770945566,
+      "max": 0.6666666666666666,
+      "q25": 0.22010869565217392,
+      "q75": 0.5710301837270342
+    },
+    "new_flood_fraction": {
+      "n": 8,
+      "min": 0.0007168458781362007,
+      "median": 0.0031998172883064514,
+      "mean": 0.008214258739454826,
+      "max": 0.04200913242009133,
+      "q25": 0.0018300091610355311,
+      "q75": 0.00515969290568369
+    },
+    "recession_fraction": {
+      "n": 8,
+      "min": 0.00035842293906810036,
+      "median": 0.008992401541095891,
+      "mean": 0.01706733873154656,
+      "max": 0.084716796875,
+      "q25": 0.0009486586663730779,
+      "q75": 0.013497029758433933
+    },
+    "forcing_complete_frac": 0.0
+  },
+  {
+    "event_id": "evt:2016-06-30",
+    "n_pairs": 2,
+    "n_maps": 3,
+    "n_regions": 1,
+    "regions": [
+      "dhaka_sw"
+    ],
+    "split": "train",
+    "flood_mechanism": "monsoon_riverine",
+    "year": 2016,
+    "independent_event": true,
+    "delta_t_hours": {
+      "n": 2,
+      "min": 576.0002777777778,
+      "median": 576.0004166666668,
+      "mean": 576.0004166666668,
+      "max": 576.0005555555556,
+      "q25": 576.0003472222222,
+      "q75": 576.0004861111112
+    },
+    "iou": {
+      "n": 2,
+      "min": 0.0,
+      "median": 0.2,
+      "mean": 0.2,
+      "max": 0.4,
+      "q25": 0.1,
+      "q75": 0.30000000000000004
+    },
+    "new_flood_fraction": {
+      "n": 2,
+      "min": 0.004310344827586207,
+      "median": 0.005387931034482759,
+      "mean": 0.005387931034482759,
+      "max": 0.00646551724137931,
+      "q25": 0.004849137931034483,
+      "q75": 0.005926724137931034
+    },
+    "recession_fraction": {
+      "n": 2,
+      "min": 0.0,
+      "median": 0.0,
+      "mean": 0.0,
+      "max": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "forcing_complete_frac": 1.0
+  },
+  {
+    "event_id": "evt:2017-04-12",
+    "n_pairs": 21,
+    "n_maps": 28,
+    "n_regions": 7,
+    "regions": [
+      "dhaka_ne",
+      "dhaka_nw",
+      "dhaka_se",
+      "dhaka_sw",
+      "kishoreganj",
+      "netrokona",
+      "sunamganj"
+    ],
+    "split": "train",
+    "flood_mechanism": "haor_premonsoon_flash",
+    "year": 2017,
+    "independent_event": true,
+    "delta_t_hours": {
+      "n": 21,
+      "min": 288.0,
+      "median": 288.0002777777778,
+      "mean": 288.0001851851853,
+      "max": 288.0002777777778,
+      "q25": 288.0,
+      "q75": 288.0002777777778
+    },
+    "iou": {
+      "n": 18,
+      "min": 0.0,
+      "median": 0.8288740006573556,
+      "mean": 0.6388962356706832,
+      "max": 1.0,
+      "q25": 0.42158417935702197,
+      "q75": 0.9268694120622333
+    },
+    "new_flood_fraction": {
+      "n": 21,
+      "min": 0.0,
+      "median": 0.0016339869281045752,
+      "mean": 0.03372557626258723,
+      "max": 0.1966798989534464,
+      "q25": 0.0,
+      "q75": 0.03870967741935484
+    },
+    "recession_fraction": {
+      "n": 21,
+      "min": 0.0,
+      "median": 0.00035919540229885057,
+      "mean": 0.007412862034575416,
+      "max": 0.05529622980251347,
+      "q25": 0.0,
+      "q75": 0.007080078125
+    },
+    "forcing_complete_frac": 1.0
+  },
+  {
+    "event_id": "evt:2017-07-31",
+    "n_pairs": 9,
+    "n_maps": 16,
+    "n_regions": 7,
+    "regions": [
+      "dhaka_ne",
+      "dhaka_nw",
+      "dhaka_se",
+      "dhaka_sw",
+      "kishoreganj",
+      "netrokona",
+      "sunamganj"
+    ],
+    "split": "train",
+    "flood_mechanism": "monsoon_riverine",
+    "year": 2017,
+    "independent_event": true,
+    "delta_t_hours": {
+      "n": 9,
+      "min": 288.0,
+      "median": 288.0,
+      "mean": 288.00006172839505,
+      "max": 288.0002777777778,
+      "q25": 288.0,
+      "q75": 288.0
+    },
+    "iou": {
+      "n": 8,
+      "min": 0.0,
+      "median": 0.10289115646258504,
+      "mean": 0.1218921119324012,
+      "max": 0.33460076045627374,
+      "q25": 0.04401408450704225,
+      "q75": 0.17094017094017094
+    },
+    "new_flood_fraction": {
+      "n": 9,
+      "min": 0.0,
+      "median": 0.012858851674641148,
+      "mean": 0.031041534179081145,
+      "max": 0.09233060312732688,
+      "q25": 0.004086636697997548,
+      "q75": 0.038818359375
+    },
+    "recession_fraction": {
+      "n": 9,
+      "min": 0.0,
+      "median": 0.002136752136752137,
+      "mean": 0.0023846634918051,
+      "max": 0.009033203125,
+      "q25": 0.0,
+      "q75": 0.0032131381649410924
+    },
+    "forcing_complete_frac": 1.0
+  },
+  {
+    "event_id": "evt:2018-01-13",
+    "n_pairs": 5,
+    "n_maps": 12,
+    "n_regions": 5,
+    "regions": [
+      "dhaka_ne",
+      "dhaka_nw",
+      "kishoreganj",
+      "netrokona",
+      "sunamganj"
+    ],
+    "split": "train",
+    "flood_mechanism": "winter_or_early",
+    "year": 2018,
+    "independent_event": true,
+    "delta_t_hours": {
+      "n": 5,
+      "min": 288.0,
+      "median": 288.0,
+      "mean": 288.0,
+      "max": 288.0,
+      "q25": 288.0,
+      "q75": 288.0
+    },
+    "iou": {
+      "n": 4,
+      "min": 0.17490494296577946,
+      "median": 0.2736143637782982,
+      "mean": 0.43053341763059394,
+      "max": 1.0,
+      "q25": 0.22200492426603502,
+      "q75": 0.48214285714285715
+    },
+    "new_flood_fraction": {
+      "n": 5,
+      "min": 0.0,
+      "median": 0.0,
+      "mean": 4.8828125e-05,
+      "max": 0.000244140625,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "recession_fraction": {
+      "n": 5,
+      "min": 0.0,
+      "median": 0.007080078125,
+      "mean": 0.02143593121086762,
+      "max": 0.0776386404293381,
+      "q25": 0.0,
+      "q75": 0.0224609375
+    },
+    "forcing_complete_frac": 1.0
+  },
+  {
+    "event_id": "evt:2018-06-06",
+    "n_pairs": 5,
+    "n_maps": 12,
+    "n_regions": 5,
+    "regions": [
+      "dhaka_ne",
+      "dhaka_nw",
+      "kishoreganj",
+      "netrokona",
+      "sunamganj"
+    ],
+    "split": "train",
+    "flood_mechanism": "monsoon_riverine",
+    "year": 2018,
+    "independent_event": true,
+    "delta_t_hours": {
+      "n": 5,
+      "min": 288.0002777777778,
+      "median": 288.0002777777778,
+      "mean": 288.0002777777778,
+      "max": 288.0002777777778,
+      "q25": 288.0002777777778,
+      "q75": 288.0002777777778
+    },
+    "iou": {
+      "n": 5,
+      "min": 0.02912621359223301,
+      "median": 0.12633832976445397,
+      "mean": 0.27216804358208874,
+      "max": 0.75,
+      "q25": 0.12204234122042341,
+      "q75": 0.3333333333333333
+    },
+    "new_flood_fraction": {
+      "n": 5,
+      "min": 0.0,
+      "median": 0.048583984375,
+      "mean": 0.07338523025230555,
+      "max": 0.171142578125,
+      "q25": 0.002136752136752137,
+      "q75": 0.1450628366247756
+    },
+    "recession_fraction": {
+      "n": 5,
+      "min": 0.000244140625,
+      "median": 0.0009765625,
+      "mean": 0.001962365376507242,
+      "max": 0.00641025641025641,
+      "q25": 0.0007446016381236039,
+      "q75": 0.001436265709156194
+    },
+    "forcing_complete_frac": 1.0
+  },
+  {
+    "event_id": "evt:2019-01-10",
+    "n_pairs": 9,
+    "n_maps": 16,
+    "n_regions": 7,
+    "regions": [
+      "dhaka_ne",
+      "dhaka_nw",
+      "dhaka_se",
+      "dhaka_sw",
+      "kishoreganj",
+      "netrokona",
+      "sunamganj"
+    ],
+    "split": "val",
+    "flood_mechanism": "winter_or_early",
+    "year": 2019,
+    "independent_event": true,
+    "delta_t_hours": {
+      "n": 9,
+      "min": 287.9997222222222,
+      "median": 288.0,
+      "mean": 287.99993827160495,
+      "max": 288.0,
+      "q25": 288.0,
+      "q75": 288.0
+    },
+    "iou": {
+      "n": 3,
+      "min": 0.0,
+      "median": 0.5714285714285714,
+      "mean": 0.44047619047619047,
+      "max": 0.75,
+      "q25": 0.2857142857142857,
+      "q75": 0.6607142857142857
+    },
+    "new_flood_fraction": {
+      "n": 9,
+      "min": 0.0,
+      "median": 0.0,
+      "mean": 0.0,
+      "max": 0.0,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "recession_fraction": {
+      "n": 9,
+      "min": 0.0,
+      "median": 0.0,
+      "mean": 0.00035618424580099767,
+      "max": 0.0017921146953405018,
+      "q25": 0.0,
+      "q75": 0.0005975500448162533
+    },
+    "forcing_complete_frac": 1.0
+  },
+  {
+    "event_id": "evt:2019-06-15",
+    "n_pairs": 10,
+    "n_maps": 17,
+    "n_regions": 2,
+    "regions": [
+      "dhaka_se",
+      "dhaka_sw"
+    ],
+    "split": "val",
+    "flood_mechanism": "monsoon_riverine",
+    "year": 2019,
+    "independent_event": true,
+    "delta_t_hours": {
+      "n": 10,
+      "min": 84.12972222222223,
+      "median": 288.0002777777778,
+      "mean": 230.40016666666665,
+      "max": 288.0002777777778,
+      "q25": 203.87027777777777,
+      "q75": 288.0002777777778
+    },
+    "iou": {
+      "n": 10,
+      "min": 0.0,
+      "median": 0.014556623931623932,
+      "mean": 0.09362390250033722,
+      "max": 0.4,
+      "q25": 0.0,
+      "q75": 0.06102941176470588
+    },
+    "new_flood_fraction": {
+      "n": 10,
+      "min": 0.0,
+      "median": 0.0014655023464758272,
+      "mean": 0.014380558865393736,
+      "max": 0.08577405857740586,
+      "q25": 0.0002042483660130719,
+      "q75": 0.004441288931207142
+    },
+    "recession_fraction": {
+      "n": 10,
+      "min": 0.0,
+      "median": 0.0025005469412311644,
+      "mean": 0.011147805284198835,
+      "max": 0.05615428247305729,
+      "q25": 0.0,
+      "q75": 0.008793969849246231
+    },
+    "forcing_complete_frac": 1.0
+  },
+  {
+    "event_id": "evt:2020-01-15",
+    "n_pairs": 7,
+    "n_maps": 14,
+    "n_regions": 7,
+    "regions": [
+      "dhaka_ne",
+      "dhaka_nw",
+      "dhaka_se",
+      "dhaka_sw",
+      "kishoreganj",
+      "netrokona",
+      "sunamganj"
+    ],
+    "split": "val",
+    "flood_mechanism": "winter_or_early",
+    "year": 2020,
+    "independent_event": true,
+    "delta_t_hours": {
+      "n": 7,
+      "min": 287.9997222222222,
+      "median": 288.0,
+      "mean": 287.9999206349206,
+      "max": 288.0,
+      "q25": 287.9998611111111,
+      "q75": 288.0
+    },
+    "iou": {
+      "n": 4,
+      "min": 0.0,
+      "median": 0.029411764705882353,
+      "mean": 0.07026143790849673,
+      "max": 0.2222222222222222,
+      "q25": 0.0,
+      "q75": 0.09967320261437908
+    },
+    "new_flood_fraction": {
+      "n": 7,
+      "min": 0.0,
+      "median": 0.0,
+      "mean": 0.00012125307382325677,
+      "max": 0.00048828125,
+      "q25": 0.0,
+      "q75": 0.0001802451333813987
+    },
+    "recession_fraction": {
+      "n": 7,
+      "min": 0.0,
+      "median": 0.00029850746268656717,
+      "mean": 0.0011290181555897896,
+      "max": 0.005407354001441961,
+      "q25": 0.0,
+      "q75": 0.0010986328125
+    },
+    "forcing_complete_frac": 1.0
+  },
+  {
+    "event_id": "evt:2020-06-07",
+    "n_pairs": 18,
+    "n_maps": 25,
+    "n_regions": 7,
+    "regions": [
+      "dhaka_ne",
+      "dhaka_nw",
+      "dhaka_se",
+      "dhaka_sw",
+      "kishoreganj",
+      "netrokona",
+      "sunamganj"
+    ],
+    "split": "val",
+    "flood_mechanism": "monsoon_riverine",
+    "year": 2020,
+    "independent_event": true,
+    "delta_t_hours": {
+      "n": 18,
+      "min": 288.0002777777778,
+      "median": 504.00416666666666,
+      "mean": 560.0003240740741,
+      "max": 1152.0005555555556,
+      "q25": 288.0002777777778,
+      "q75": 683.9944444444444
+    },
+    "iou": {
+      "n": 18,
+      "min": 0.0,
+      "median": 0.04781171248237117,
+      "mean": 0.17876490913412432,
+      "max": 0.6818181818181818,
+      "q25": 0.0,
+      "q75": 0.3458333333333333
+    },
+    "new_flood_fraction": {
+      "n": 18,
+      "min": 0.0,
+      "median": 0.022768721621260684,
+      "mean": 0.042953868139428586,
+      "max": 0.21916508538899432,
+      "q25": 0.002743729754154177,
+      "q75": 0.046840650459071514
+    },
+    "recession_fraction": {
+      "n": 18,
+      "min": 0.0,
+      "median": 0.006525811317082664,
+      "mean": 0.05585086423342332,
+      "max": 0.34330985915492956,
+      "q25": 0.001664094895173052,
+      "q75": 0.025499018780501398
+    },
+    "forcing_complete_frac": 1.0
+  },
+  {
+    "event_id": "evt:2021-06-02",
+    "n_pairs": 32,
+    "n_maps": 39,
+    "n_regions": 7,
+    "regions": [
+      "dhaka_ne",
+      "dhaka_nw",
+      "dhaka_se",
+      "dhaka_sw",
+      "kishoreganj",
+      "netrokona",
+      "sunamganj"
+    ],
+    "split": "val",
+    "flood_mechanism": "monsoon_riverine",
+    "year": 2021,
+    "independent_event": true,
+    "delta_t_hours": {
+      "n": 32,
+      "min": 288.0,
+      "median": 288.0002777777778,
+      "mean": 288.000234375,
+      "max": 288.0002777777778,
+      "q25": 288.0002777777778,
+      "q75": 288.0002777777778
+    },
+    "iou": {
+      "n": 28,
+      "min": 0.0,
+      "median": 0.10818713450292397,
+      "mean": 0.1281769981861816,
+      "max": 0.625,
+      "q25": 0.007310024905416453,
+      "q75": 0.14777599142550912
+    },
+    "new_flood_fraction": {
+      "n": 32,
+      "min": 0.0,
+      "median": 0.0015566573183760685,
+      "mean": 0.013488624760792899,
+      "max": 0.135986328125,
+      "q25": 0.0,
+      "q75": 0.008905520384339081
+    },
+    "recession_fraction": {
+      "n": 32,
+      "min": 0.0,
+      "median": 0.0013427734375,
+      "mean": 0.011458156993314074,
+      "max": 0.102294921875,
+      "q25": 0.0,
+      "q75": 0.008152738530585107
+    },
+    "forcing_complete_frac": 1.0
+  },
+  {
+    "event_id": "evt:2022-05-16",
+    "n_pairs": 10,
+    "n_maps": 17,
+    "n_regions": 5,
+    "regions": [
+      "dhaka_ne",
+      "dhaka_nw",
+      "kishoreganj",
+      "netrokona",
+      "sunamganj"
+    ],
+    "split": "test",
+    "flood_mechanism": "haor_premonsoon_flash",
+    "year": 2022,
+    "independent_event": true,
+    "delta_t_hours": {
+      "n": 10,
+      "min": 288.0002777777778,
+      "median": 576.0005555555556,
+      "mean": 576.0005555555556,
+      "max": 864.0008333333334,
+      "q25": 288.0002777777778,
+      "q75": 864.0008333333334
+    },
+    "iou": {
+      "n": 10,
+      "min": 0.0,
+      "median": 0.15019060081929905,
+      "mean": 0.18969025046088614,
+      "max": 0.5,
+      "q25": 0.058428803516557465,
+      "q75": 0.28236727138113593
+    },
+    "new_flood_fraction": {
+      "n": 10,
+      "min": 0.00641025641025641,
+      "median": 0.06665665064102563,
+      "mean": 0.14945390793171756,
+      "max": 0.5790229885057471,
+      "q25": 0.01650357301649373,
+      "q75": 0.22320556640625
+    },
+    "recession_fraction": {
+      "n": 10,
+      "min": 0.0,
+      "median": 0.005714181160942144,
+      "mean": 0.16101105700433394,
+      "max": 0.7705035971223022,
+      "q25": 8.979885057471264e-05,
+      "q75": 0.2849577834867135
+    },
+    "forcing_complete_frac": 1.0
+  },
+  {
+    "event_id": "evt:2023-06-16",
+    "n_pairs": 25,
+    "n_maps": 30,
+    "n_regions": 5,
+    "regions": [
+      "dhaka_ne",
+      "dhaka_nw",
+      "kishoreganj",
+      "netrokona",
+      "sunamganj"
+    ],
+    "split": "test",
+    "flood_mechanism": "monsoon_riverine",
+    "year": 2023,
+    "independent_event": true,
+    "delta_t_hours": {
+      "n": 25,
+      "min": 288.0,
+      "median": 288.0002777777778,
+      "mean": 288.0001666666667,
+      "max": 288.0002777777778,
+      "q25": 288.0,
+      "q75": 288.0002777777778
+    },
+    "iou": {
+      "n": 22,
+      "min": 0.0,
+      "median": 0.20884353741496597,
+      "mean": 0.20904015213370455,
+      "max": 0.5595238095238095,
+      "q25": 0.040918423140424987,
+      "q75": 0.312408140192199
+    },
+    "new_flood_fraction": {
+      "n": 25,
+      "min": 0.0,
+      "median": 0.00732421875,
+      "mean": 0.028963392962621817,
+      "max": 0.203125,
+      "q25": 0.00048828125,
+      "q75": 0.013723365836041893
+    },
+    "recession_fraction": {
+      "n": 25,
+      "min": 0.0,
+      "median": 0.00646551724137931,
+      "mean": 0.02586618660917567,
+      "max": 0.20447976878612717,
+      "q25": 0.0,
+      "q75": 0.015534682080924855
+    },
+    "forcing_complete_frac": 1.0
+  },
+  {
+    "event_id": "evt:2024-06-22",
+    "n_pairs": 22,
+    "n_maps": 29,
+    "n_regions": 7,
+    "regions": [
+      "dhaka_ne",
+      "dhaka_nw",
+      "dhaka_se",
+      "dhaka_sw",
+      "kishoreganj",
+      "netrokona",
+      "sunamganj"
+    ],
+    "split": "test",
+    "flood_mechanism": "monsoon_riverine",
+    "year": 2024,
+    "independent_event": true,
+    "delta_t_hours": {
+      "n": 22,
+      "min": 287.9997222222222,
+      "median": 288.0,
+      "mean": 366.54530303030293,
+      "max": 1151.9997222222223,
+      "q25": 287.9997222222222,
+      "q75": 288.0
+    },
+    "iou": {
+      "n": 21,
+      "min": 0.0,
+      "median": 0.2191780821917808,
+      "mean": 0.30876437709283533,
+      "max": 0.6993318485523385,
+      "q25": 0.1032258064516129,
+      "q75": 0.5561674008810573
+    },
+    "new_flood_fraction": {
+      "n": 22,
+      "min": 0.0,
+      "median": 0.0025264148752653925,
+      "mean": 0.005689173919252719,
+      "max": 0.0211864406779661,
+      "q25": 0.000272105112751424,
+      "q75": 0.008884653660551665
+    },
+    "recession_fraction": {
+      "n": 22,
+      "min": 0.0,
+      "median": 0.010615711252653927,
+      "mean": 0.05862017542629245,
+      "max": 0.333740234375,
+      "q25": 0.0018113992981991524,
+      "q75": 0.04946036037699563
+    },
+    "forcing_complete_frac": 1.0
+  }
+]

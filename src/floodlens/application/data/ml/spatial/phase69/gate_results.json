@@ -1,0 +1,51 @@
+{
+  "gates": {
+    "6.9A": {
+      "pass": true,
+      "status": "PASS",
+      "rule": "forecast-vintage integrity: FORECAST-AVAILABLE implies issue_time <= t0",
+      "n_violations": 0
+    },
+    "6.9B": {
+      "pass": false,
+      "status": "FAIL",
+      "rule": "in-horizon forecast precip coverage in the cube",
+      "n_pairs_with_forecast": 0,
+      "forecast_pair_fraction": 0.0
+    },
+    "6.9C": {
+      "pass": false,
+      "status": "FAIL",
+      "rule": "hydrological state available and aligned to Target B t0",
+      "n_cube_q_post_t0": 178,
+      "n_cube_q_aligned": 0
+    },
+    "6.9D": {
+      "pass": false,
+      "status": "FAIL",
+      "rule": "temporal alignment of forecast/hydro forcing to Target B t0 (not valid_at\u2212192 h)"
+    },
+    "6.9E": {
+      "pass": true,
+      "status": "PASS",
+      "rule": "no hindsight contamination: ERA5 in (t0,t1] is POST-T0 OBSERVATION, not a forecast input"
+    },
+    "6.9F": {
+      "pass": false,
+      "status": "FAIL",
+      "rule": "usable Target-B pairs with acquired causal in-horizon forecast forcing",
+      "n_usable_forecast_pairs": 0
+    },
+    "6.9G": {
+      "pass": true,
+      "status": "PASS",
+      "rule": "event diversity of Target B pairs (not pair count); official Gate B still 20",
+      "n_independent_events": 14,
+      "n_events_in_audit": 14,
+      "official_gate_b": "FAIL (15 < 20, unchanged)"
+    }
+  },
+  "class": "CAUSAL FORCING AUDIT",
+  "validated": false,
+  "official_gate_b_unchanged": true
+}

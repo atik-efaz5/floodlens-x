@@ -1,0 +1,500 @@
+{
+  "dataset_version": "phase6.5-gfm-spatial-v2.1",
+  "n_cube_eligible": 15,
+  "n_gfm_indexed": 16,
+  "events": [
+    {
+      "event_id": "evt:2015-07-11",
+      "source_event_id": "evt:2015-07-11",
+      "event_start": "2015-07-11",
+      "event_peak": "2015-07-16",
+      "event_end": "2015-08-09",
+      "region_ids": [
+        "dhaka_ne",
+        "dhaka_nw",
+        "kishoreganj",
+        "netrokona",
+        "sunamganj",
+        "sylhet"
+      ],
+      "basin_ids": [
+        "central_floodplain",
+        "haor_meghna"
+      ],
+      "flood_mechanism": "haor_monsoon_inundation",
+      "quality_status": "ok",
+      "pixels_flood": 1100,
+      "pixels_dry": 45522,
+      "pixels_unknown": 10722,
+      "unknown_fraction": 0.18697684151785715,
+      "source": "copernicus-gfm-ensemble-flood-extent",
+      "observation_family": "A",
+      "label_kind": "OBSERVED",
+      "spatial_resolution_m": 20,
+      "cube_eligible": true,
+      "gfm_available": true
+    },
+    {
+      "event_id": "evt:2016-01-19",
+      "source_event_id": "evt:2016-01-19",
+      "event_start": "2016-01-19",
+      "event_peak": "2016-01-19",
+      "event_end": "2016-02-02",
+      "region_ids": [
+        "dhaka_se",
+        "kishoreganj",
+        "netrokona",
+        "sunamganj",
+        "sylhet"
+      ],
+      "basin_ids": [
+        "central_floodplain",
+        "haor_meghna"
+      ],
+      "flood_mechanism": "winter_or_early",
+      "quality_status": "ok",
+      "pixels_flood": 8,
+      "pixels_dry": 12343,
+      "pixels_unknown": 8129,
+      "unknown_fraction": 0.396923828125,
+      "source": "copernicus-gfm-ensemble-flood-extent",
+      "observation_family": "A",
+      "label_kind": "OBSERVED",
+      "spatial_resolution_m": 20,
+      "cube_eligible": true,
+      "gfm_available": true
+    },
+    {
+      "event_id": "evt:2016-06-30",
+      "source_event_id": "evt:2016-06-30",
+      "event_start": "2016-06-30",
+      "event_peak": "2016-08-17",
+      "event_end": "2016-08-17",
+      "region_ids": [
+        "dhaka_sw"
+      ],
+      "basin_ids": [
+        "central_floodplain"
+      ],
+      "flood_mechanism": "monsoon_riverine",
+      "quality_status": "ok",
+      "pixels_flood": 7,
+      "pixels_dry": 1385,
+      "pixels_unknown": 10896,
+      "unknown_fraction": 0.88671875,
+      "source": "copernicus-gfm-ensemble-flood-extent",
+      "observation_family": "A",
+      "label_kind": "OBSERVED",
+      "spatial_resolution_m": 20,
+      "cube_eligible": true,
+      "gfm_available": true
+    },
+    {
+      "event_id": "evt:2017-04-12",
+      "source_event_id": "evt:2017-04-12",
+      "event_start": "2017-04-12",
+      "event_peak": "2017-05-06",
+      "event_end": "2017-05-20",
+      "region_ids": [
+        "dhaka_ne",
+        "dhaka_nw",
+        "dhaka_se",
+        "dhaka_sw",
+        "kishoreganj",
+        "netrokona",
+        "sunamganj"
+      ],
+      "basin_ids": [
+        "central_floodplain",
+        "haor_meghna"
+      ],
+      "flood_mechanism": "haor_premonsoon_flash",
+      "quality_status": "ok",
+      "pixels_flood": 15152,
+      "pixels_dry": 59163,
+      "pixels_unknown": 40373,
+      "unknown_fraction": 0.35202462332589285,
+      "source": "copernicus-gfm-ensemble-flood-extent",
+      "observation_family": "A",
+      "label_kind": "OBSERVED",
+      "spatial_resolution_m": 20,
+      "cube_eligible": true,
+      "gfm_available": true
+    },
+    {
+      "event_id": "evt:2017-07-31",
+      "source_event_id": "evt:2017-07-31",
+      "event_start": "2017-07-31",
+      "event_peak": "2017-08-22",
+      "event_end": "2017-08-24",
+      "region_ids": [
+        "dhaka_ne",
+        "dhaka_nw",
+        "dhaka_se",
+        "dhaka_sw",
+        "kishoreganj",
+        "netrokona",
+        "sunamganj"
+      ],
+      "basin_ids": [
+        "central_floodplain",
+        "haor_meghna"
+      ],
+      "flood_mechanism": "haor_monsoon_inundation",
+      "quality_status": "ok",
+      "pixels_flood": 1116,
+      "pixels_dry": 41280,
+      "pixels_unknown": 23140,
+      "unknown_fraction": 0.35308837890625,
+      "source": "copernicus-gfm-ensemble-flood-extent",
+      "observation_family": "A",
+      "label_kind": "OBSERVED",
+      "spatial_resolution_m": 20,
+      "cube_eligible": true,
+      "gfm_available": true
+    },
+    {
+      "event_id": "evt:2018-01-13",
+      "source_event_id": "evt:2018-01-13",
+      "event_start": "2018-01-13",
+      "event_peak": "2018-01-13",
+      "event_end": "2018-01-25",
+      "region_ids": [
+        "dhaka_ne",
+        "dhaka_nw",
+        "dhaka_se",
+        "dhaka_sw",
+        "kishoreganj",
+        "netrokona",
+        "sunamganj"
+      ],
+      "basin_ids": [
+        "central_floodplain",
+        "haor_meghna"
+      ],
+      "flood_mechanism": "winter_or_early",
+      "quality_status": "ok",
+      "pixels_flood": 531,
+      "pixels_dry": 30875,
+      "pixels_unknown": 17746,
+      "unknown_fraction": 0.3610432942708333,
+      "source": "copernicus-gfm-ensemble-flood-extent",
+      "observation_family": "A",
+      "label_kind": "OBSERVED",
+      "spatial_resolution_m": 20,
+      "cube_eligible": true,
+      "gfm_available": true
+    },
+    {
+      "event_id": "evt:2018-06-06",
+      "source_event_id": "evt:2018-06-06",
+      "event_start": "2018-06-06",
+      "event_peak": "2018-06-18",
+      "event_end": "2018-06-18",
+      "region_ids": [
+        "dhaka_ne",
+        "dhaka_nw",
+        "dhaka_se",
+        "dhaka_sw",
+        "kishoreganj",
+        "netrokona",
+        "sunamganj"
+      ],
+      "basin_ids": [
+        "central_floodplain",
+        "haor_meghna"
+      ],
+      "flood_mechanism": "haor_monsoon_inundation",
+      "quality_status": "ok",
+      "pixels_flood": 1671,
+      "pixels_dry": 29703,
+      "pixels_unknown": 17778,
+      "unknown_fraction": 0.3616943359375,
+      "source": "copernicus-gfm-ensemble-flood-extent",
+      "observation_family": "A",
+      "label_kind": "OBSERVED",
+      "spatial_resolution_m": 20,
+      "cube_eligible": true,
+      "gfm_available": true
+    },
+    {
+      "event_id": "evt:2019-01-10",
+      "source_event_id": "evt:2019-01-10",
+      "event_start": "2019-01-10",
+      "event_peak": "2019-01-10",
+      "event_end": "2019-02-03",
+      "region_ids": [
+        "dhaka_ne",
+        "dhaka_nw",
+        "dhaka_se",
+        "dhaka_sw",
+        "kishoreganj",
+        "netrokona",
+        "sunamganj"
+      ],
+      "basin_ids": [
+        "central_floodplain",
+        "haor_meghna"
+      ],
+      "flood_mechanism": "winter_or_early",
+      "quality_status": "ok",
+      "pixels_flood": 30,
+      "pixels_dry": 42943,
+      "pixels_unknown": 22563,
+      "unknown_fraction": 0.3442840576171875,
+      "source": "copernicus-gfm-ensemble-flood-extent",
+      "observation_family": "A",
+      "label_kind": "OBSERVED",
+      "spatial_resolution_m": 20,
+      "cube_eligible": true,
+      "gfm_available": true
+    },
+    {
+      "event_id": "evt:2019-06-15",
+      "source_event_id": "evt:2019-06-15",
+      "event_start": "2019-06-15",
+      "event_peak": "2019-07-21",
+      "event_end": "2019-08-02",
+      "region_ids": [
+        "dhaka_ne",
+        "dhaka_nw",
+        "dhaka_se",
+        "dhaka_sw",
+        "kishoreganj",
+        "netrokona",
+        "sunamganj"
+      ],
+      "basin_ids": [
+        "central_floodplain",
+        "haor_meghna"
+      ],
+      "flood_mechanism": "haor_monsoon_inundation",
+      "quality_status": "ok",
+      "pixels_flood": 1465,
+      "pixels_dry": 50755,
+      "pixels_unknown": 17412,
+      "unknown_fraction": 0.2500574448529412,
+      "source": "copernicus-gfm-ensemble-flood-extent",
+      "observation_family": "A",
+      "label_kind": "OBSERVED",
+      "spatial_resolution_m": 20,
+      "cube_eligible": true,
+      "gfm_available": true
+    },
+    {
+      "event_id": "evt:2020-01-15",
+      "source_event_id": "evt:2020-01-15",
+      "event_start": "2020-01-15",
+      "event_peak": "2020-01-15",
+      "event_end": "2020-01-29",
+      "region_ids": [
+        "dhaka_ne",
+        "dhaka_nw",
+        "dhaka_se",
+        "dhaka_sw",
+        "kishoreganj",
+        "netrokona",
+        "sunamganj"
+      ],
+      "basin_ids": [
+        "central_floodplain",
+        "haor_meghna"
+      ],
+      "flood_mechanism": "winter_or_early",
+      "quality_status": "ok",
+      "pixels_flood": 34,
+      "pixels_dry": 37119,
+      "pixels_unknown": 20191,
+      "unknown_fraction": 0.3521030970982143,
+      "source": "copernicus-gfm-ensemble-flood-extent",
+      "observation_family": "A",
+      "label_kind": "OBSERVED",
+      "spatial_resolution_m": 20,
+      "cube_eligible": true,
+      "gfm_available": true
+    },
+    {
+      "event_id": "evt:2020-06-07",
+      "source_event_id": "evt:2020-06-07",
+      "event_start": "2020-06-07",
+      "event_peak": "2020-06-19",
+      "event_end": "2020-08-08",
+      "region_ids": [
+        "dhaka_ne",
+        "dhaka_nw",
+        "dhaka_se",
+        "dhaka_sw",
+        "kishoreganj",
+        "netrokona",
+        "sunamganj"
+      ],
+      "basin_ids": [
+        "central_floodplain",
+        "haor_meghna"
+      ],
+      "flood_mechanism": "haor_monsoon_inundation",
+      "quality_status": "ok",
+      "pixels_flood": 4497,
+      "pixels_dry": 56917,
+      "pixels_unknown": 40986,
+      "unknown_fraction": 0.40025390625,
+      "source": "copernicus-gfm-ensemble-flood-extent",
+      "observation_family": "A",
+      "label_kind": "OBSERVED",
+      "spatial_resolution_m": 20,
+      "cube_eligible": true,
+      "gfm_available": true
+    },
+    {
+      "event_id": "evt:2021-06-02",
+      "source_event_id": "evt:2021-06-02",
+      "event_start": "2021-06-02",
+      "event_peak": "2021-07-08",
+      "event_end": "2021-08-13",
+      "region_ids": [
+        "dhaka_ne",
+        "dhaka_nw",
+        "dhaka_se",
+        "dhaka_sw",
+        "kishoreganj",
+        "netrokona",
+        "sunamganj"
+      ],
+      "basin_ids": [
+        "central_floodplain",
+        "haor_meghna"
+      ],
+      "flood_mechanism": "haor_monsoon_inundation",
+      "quality_status": "ok",
+      "pixels_flood": 1844,
+      "pixels_dry": 99273,
+      "pixels_unknown": 58627,
+      "unknown_fraction": 0.3670059595352564,
+      "source": "copernicus-gfm-ensemble-flood-extent",
+      "observation_family": "A",
+      "label_kind": "OBSERVED",
+      "spatial_resolution_m": 20,
+      "cube_eligible": true,
+      "gfm_available": true
+    },
+    {
+      "event_id": "evt:2022-05-16",
+      "source_event_id": "evt:2022-05-16",
+      "event_start": "2022-05-16",
+      "event_peak": "2022-05-28",
+      "event_end": "2022-07-03",
+      "region_ids": [
+        "dhaka_ne",
+        "dhaka_nw",
+        "dhaka_se",
+        "dhaka_sw",
+        "kishoreganj",
+        "netrokona",
+        "sunamganj"
+      ],
+      "basin_ids": [
+        "central_floodplain",
+        "haor_meghna"
+      ],
+      "flood_mechanism": "haor_premonsoon_flash",
+      "quality_status": "ok",
+      "pixels_flood": 9402,
+      "pixels_dry": 34758,
+      "pixels_unknown": 25472,
+      "unknown_fraction": 0.36580882352941174,
+      "source": "copernicus-gfm-ensemble-flood-extent",
+      "observation_family": "A",
+      "label_kind": "OBSERVED",
+      "spatial_resolution_m": 20,
+      "cube_eligible": true,
+      "gfm_available": true
+    },
+    {
+      "event_id": "evt:2023-06-16",
+      "source_event_id": "evt:2023-06-16",
+      "event_start": "2023-06-16",
+      "event_peak": "2023-06-28",
+      "event_end": "2023-08-15",
+      "region_ids": [
+        "dhaka_ne",
+        "dhaka_nw",
+        "kishoreganj",
+        "netrokona",
+        "sunamganj"
+      ],
+      "basin_ids": [
+        "central_floodplain",
+        "haor_meghna"
+      ],
+      "flood_mechanism": "haor_monsoon_inundation",
+      "quality_status": "ok",
+      "pixels_flood": 3255,
+      "pixels_dry": 73406,
+      "pixels_unknown": 46219,
+      "unknown_fraction": 0.37613118489583336,
+      "source": "copernicus-gfm-ensemble-flood-extent",
+      "observation_family": "A",
+      "label_kind": "OBSERVED",
+      "spatial_resolution_m": 20,
+      "cube_eligible": true,
+      "gfm_available": true
+    },
+    {
+      "event_id": "evt:2024-06-22",
+      "source_event_id": "evt:2024-06-22",
+      "event_start": "2024-06-22",
+      "event_peak": "2024-06-22",
+      "event_end": "2024-08-11",
+      "region_ids": [
+        "dhaka_ne",
+        "dhaka_nw",
+        "dhaka_se",
+        "dhaka_sw",
+        "kishoreganj",
+        "netrokona",
+        "sunamganj"
+      ],
+      "basin_ids": [
+        "central_floodplain",
+        "haor_meghna"
+      ],
+      "flood_mechanism": "haor_monsoon_inundation",
+      "quality_status": "ok",
+      "pixels_flood": 8062,
+      "pixels_dry": 66961,
+      "pixels_unknown": 43761,
+      "unknown_fraction": 0.368408203125,
+      "source": "copernicus-gfm-ensemble-flood-extent",
+      "observation_family": "A",
+      "label_kind": "OBSERVED",
+      "spatial_resolution_m": 20,
+      "cube_eligible": true,
+      "gfm_available": true
+    },
+    {
+      "event_id": "evt:2025-07-11",
+      "source_event_id": "evt:2025-07-11",
+      "event_start": "2025-07-11",
+      "event_peak": "2025-08-04",
+      "event_end": "2025-08-04",
+      "region_ids": [
+        "sunamganj",
+        "kishoreganj",
+        "netrokona",
+        "dhaka_nw",
+        "dhaka_ne",
+        "dhaka_sw",
+        "dhaka_se"
+      ],
+      "flood_mechanism": "monsoon_riverine",
+      "quality_status": "ok",
+      "source": "copernicus-gfm-ensemble-flood-extent",
+      "observation_family": "A",
+      "label_kind": "OBSERVED",
+      "spatial_resolution_m": 20,
+      "cube_eligible": false,
+      "gfm_available": true,
+      "rejection_from_cube": "precip_lattice_window_excludes_2025"
+    }
+  ]
+}

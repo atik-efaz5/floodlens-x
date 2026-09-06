@@ -1,0 +1,26 @@
+{
+  "aoi_bounds": [
+    91.5,
+    24.4,
+    92.3,
+    25.2
+  ],
+  "corners_in_tile": {
+    "E039N021T3": 4,
+    "E039N024T3": 0
+  },
+  "probe_scene": "ENSEMBLE_FLOOD_20180606T120436_VV_AS020M_E039N021T3.tif",
+  "valid_frac_on_probe": {
+    "sylhet": 0.0012170914897495493,
+    "sunamganj": 0.6741247690162447,
+    "kishoreganj": 1.0
+  },
+  "min_valid_frac": 0.05,
+  "diagnosis": "scene_footprint_mismatch",
+  "kept_sylhet_scenes": [
+    "ENSEMBLE_FLOOD_20150711T115614_VV_AS020M_E039N021T3",
+    "ENSEMBLE_FLOOD_20160119T115610_VV_AS020M_E039N021T3"
+  ],
+  "note": "Sylhet's 0.8\u00b0 box lies on E039N021T3 (not N024). On typical covering Sunamganj orbits (e.g. 20180606T120436), Sylhet valid_frac is ~0.1% because that SAR swath does not cover Sylhet city. This is footprint mismatch, not a 5% threshold bug and not solved by enlarging the AOI. Neighbor tile E039N024T3 does not contain the AOI. A minority of other orbits (2015-07-11, 2016-01-19) do clip \u22655% valid Sylhet pixels; those are orbit-specific, not a reason to enlarge the box.",
+  "n_kept_sylhet_scenes": 2
+}

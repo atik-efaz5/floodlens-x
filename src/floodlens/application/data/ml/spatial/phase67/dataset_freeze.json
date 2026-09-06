@@ -1,0 +1,154 @@
+{
+  "experiment_id": "phase6.7-track-a-baselines-v1",
+  "dataset_version": "phase6.5-gfm-spatial-v2.1",
+  "expected_dataset_version": "phase6.5-gfm-spatial-v2.1",
+  "n_independent_events": 15,
+  "event_ids": [
+    "evt:2015-07-11",
+    "evt:2016-01-19",
+    "evt:2016-06-30",
+    "evt:2017-04-12",
+    "evt:2017-07-31",
+    "evt:2018-01-13",
+    "evt:2018-06-06",
+    "evt:2019-01-10",
+    "evt:2019-06-15",
+    "evt:2020-01-15",
+    "evt:2020-06-07",
+    "evt:2021-06-02",
+    "evt:2022-05-16",
+    "evt:2023-06-16",
+    "evt:2024-06-22"
+  ],
+  "train_events": [
+    "evt:2015-07-11",
+    "evt:2016-01-19",
+    "evt:2016-06-30",
+    "evt:2017-04-12",
+    "evt:2017-07-31",
+    "evt:2018-01-13",
+    "evt:2018-06-06"
+  ],
+  "validation_events": [
+    "evt:2019-01-10",
+    "evt:2019-06-15",
+    "evt:2020-01-15",
+    "evt:2020-06-07",
+    "evt:2021-06-02"
+  ],
+  "test_events": [
+    "evt:2022-05-16",
+    "evt:2023-06-16",
+    "evt:2024-06-22"
+  ],
+  "regions": [
+    "dhaka_ne",
+    "dhaka_nw",
+    "dhaka_se",
+    "dhaka_sw",
+    "kishoreganj",
+    "netrokona",
+    "sunamganj",
+    "sylhet"
+  ],
+  "n_maps": 277,
+  "feature_channels": [
+    "antecedent_24h",
+    "antecedent_72h",
+    "precip_24h_local",
+    "precip_72h_local",
+    "precip_6h",
+    "log1p_q",
+    "month_sin",
+    "month_cos",
+    "persistence",
+    "persistence_valid",
+    "row_norm",
+    "col_norm",
+    "dem",
+    "slope",
+    "river_distance",
+    "precip_is_aoi_point",
+    "q_is_glofas_cell",
+    "precip_mean_6h"
+  ],
+  "n_pixel_features": 18,
+  "target_horizon_hours": 192,
+  "supported_horizons": [
+    192
+  ],
+  "unsupported_horizons": [
+    6,
+    12,
+    24,
+    48,
+    72
+  ],
+  "label_resolution_m": 20.0,
+  "label_crs": "Equi7 Asia AS020M E039N021T3",
+  "working_grid": "64x64",
+  "working_cell_size_m_by_aoi": {
+    "dhaka_ne": 635.845962866706,
+    "dhaka_nw": 635.8459628667287,
+    "dhaka_se": 637.316051876399,
+    "dhaka_sw": 637.3160518764216,
+    "kishoreganj": 791.8533589910476,
+    "netrokona": 788.8448411791085,
+    "sunamganj": 473.1149985640852,
+    "sylhet": 1263.172361378538
+  },
+  "working_cell_sizes_m": [
+    473.1149985640852,
+    635.845962866706,
+    635.8459628667287,
+    637.316051876399,
+    637.3160518764216,
+    788.8448411791085,
+    791.8533589910476,
+    1263.172361378538
+  ],
+  "flood_fraction_tau": 0.25,
+  "unknown_code": 255,
+  "label_kind": "OBSERVED",
+  "pixels": {
+    "flood": 48174,
+    "dry": 682403,
+    "unknown": 404015,
+    "valid": 730577,
+    "prevalence_flood_among_valid": 0.065939661390928,
+    "unknown_fraction": 0.35608835599052346
+  },
+  "note": "Observation / label native resolution is 20 m Equi7. The working tensor is 64\u00d764 on AOI geographic bounds (~0.5\u20131 km/cell). They are not equivalent.",
+  "config_sha256": "10d44c4acfabf414cc7eabc8daee2e73bd3198dffb598f82275b32a3408495df",
+  "split_lock": {
+    "ok": true,
+    "observed": {
+      "train_events": [
+        "evt:2015-07-11",
+        "evt:2016-01-19",
+        "evt:2016-06-30",
+        "evt:2017-04-12",
+        "evt:2017-07-31",
+        "evt:2018-01-13",
+        "evt:2018-06-06"
+      ],
+      "validation_events": [
+        "evt:2019-01-10",
+        "evt:2019-06-15",
+        "evt:2020-01-15",
+        "evt:2020-06-07",
+        "evt:2021-06-02"
+      ],
+      "test_events": [
+        "evt:2022-05-16",
+        "evt:2023-06-16",
+        "evt:2024-06-22"
+      ]
+    },
+    "leaks": {
+      "train_test": [],
+      "train_val": [],
+      "val_test": []
+    }
+  }
+}

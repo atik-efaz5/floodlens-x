@@ -25,9 +25,34 @@ cd floodlens-x
 # Install in editable mode
 pip install -e .
 
-# Run test suite
-pytest -v
+# Run test suite (optional: deselect the known xgboost quarantine)
+pytest tests --deselect tests/test_phase4_baselines.py::test_xgboost_beats_persistence_track_a_and_b
 ```
+
+---
+
+## Platform (Command Center)
+
+The product UI is a Vite/React/Leaflet Command Center talking to FastAPI `/api/v1`. This is **LOCAL-DEMO**, not cloud-production.
+
+```bash
+# API (from repo root)
+export PYTHONPATH=src MPLCONFIGDIR=/tmp/mpl-floodlens
+python -m uvicorn floodlens.application.web_server:app --host 127.0.0.1 --port 8000
+
+# Frontend
+cd frontend && npm install && npm run dev
+```
+
+Open `http://127.0.0.1:5173/`. Demo identity: `Authorization: Bearer demo.<general|emergency|researcher|admin>`.
+
+Optional infra (`docker compose up`): PostGIS, Redis, MinIO. The API does not require them.
+
+Environment template: `.env.example`. Do not commit secrets.
+
+Scientific freeze: Spatial AI **NOT_VALIDATED**, spatial API **UNAVAILABLE**, Target B **PARTIALLY FEASIBLE**, model training **NOT AUTHORIZED**, solver `src/floodlens/numerical/**` unmodified.
+
+See `docs/PHASE_7_9_FINAL_INTEGRATION_REPORT.md` for the capability matrix, RBAC, deployment classification, and known limitations.
 
 ---
 

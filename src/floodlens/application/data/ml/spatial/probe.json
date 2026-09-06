@@ -1,0 +1,41 @@
+{
+  "probed_at": "2026-09-02T16:46:13Z",
+  "max_mvp_bytes": 8589934592,
+  "gfm": {
+    "provider": "CEMS / EODC Copernicus GFM",
+    "stac": "https://stac.eodc.eu/api/v1",
+    "collection": "GFM",
+    "collection_http": 200,
+    "license_stac": "proprietary",
+    "license_note": "STAC lists 'proprietary'. Use Copernicus / CEMS GFM attribution. Do not claim CC-BY. REST wiki documents a portal token for some endpoints; this probe used public STAC + public data.eodc.eu asset URLs.",
+    "label_kind": "OBSERVED",
+    "search_http": 200,
+    "n_search_hits_june2022_sunamganj_limit5": 5,
+    "sample_item_id": "ENSEMBLE_FLOOD_20220630T234834_VV_AS020M_E039N021T3",
+    "sample_asset_href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2022/06/30/ENSEMBLE_FLOOD_20220630T234834_VV_AS020M_E039N021T3.tif",
+    "sample_head_http": 200,
+    "sample_bytes": 144290,
+    "download_public_no_token": true,
+    "shared_equi7_tile": "E039N021T3",
+    "credentials_required": false
+  },
+  "cyverse_inundation": {
+    "provider": "CyVerse (Giezendanner Bangladesh Inundation History, DOI 10.25739/2edm-jh03)",
+    "url": "https://data.cyverse.org/dav-anon/iplant/home/shared/commons_repo/curated/Giezendanner_BangladeshInundationHistory_2022",
+    "http": 200,
+    "location": null,
+    "blocked": false,
+    "label_kind": "DERIVED",
+    "note": "Fallback only if GFM download is not public. Never call these maps OBSERVED. Anonymous HEAD succeeded; GFM remains the primary OBSERVED source so this archive was not downloaded."
+  },
+  "dem": {
+    "env": "FLOODLENS_DEM_PATH",
+    "path": null,
+    "available": false,
+    "data_status": "UNAVAILABLE",
+    "note": "DEM window is not invented when unset."
+  },
+  "primary_label_source": "GFM",
+  "stop": false,
+  "note": "Probe only. Large archives were not downloaded. GFM scenes that intersect the Equi7 tile but have nodata over the AOI must be dropped (unknown, never dry)."
+}

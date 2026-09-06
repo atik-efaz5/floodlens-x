@@ -151,6 +151,54 @@ class DEMManager:
         return z.astype(np.float64), metadata
 
     @staticmethod
+    def windowed_stats(
+        filepath: Union[str, Path],
+        max_size: int = 64,
+    ) -> Dict[str, Any]:
+        """Read a small window of a GeoTIFF. Does not load the full raster."""
+        if not HAS_RASTERIO:
+            raise ImportError(
+                "rasterio is required for GeoTIFF support. "
+                "Install with: pip install rasterio"
+            )
+
+        filepath = Path(filepath)
+        if not filepath.exists():
+            raise FileNotFoundError(f"GeoTIFF file not found: {filepath}")
+
+        from rasterio.windows import Window
+
+        with rasterio.open(filepath) as src:
+            window = Window(0, 0, min(max_size, src.width), min(max_size, src.height))
+            sample = src.read(1, window=window)
+            transform = src.transform
+            nodata = src.nodata
+            if nodata is not None:
+                finite = sample[sample != nodata]
+            else:
+                finite = sample[np.isfinite(sample)]
+            min_z = float(finite.min()) if finite.size else None
+            max_z = float(finite.max()) if finite.size else None
+            bounds = src.bounds
+            crs = src.crs.to_string() if src.crs else "EPSG:4326"
+            return {
+                "crs": crs,
+                "bounds": {
+                    "west": float(bounds.left),
+                    "south": float(bounds.bottom),
+                    "east": float(bounds.right),
+                    "north": float(bounds.top),
+                },
+                "resolution_deg": (abs(float(transform.a)), abs(float(transform.e))),
+                "nodata": float(nodata) if nodata is not None else None,
+                "min_elevation": min_z,
+                "max_elevation": max_z,
+                "window_shape": [int(sample.shape[0]), int(sample.shape[1])],
+                "full_shape": [int(src.height), int(src.width)],
+                "uri": str(filepath.resolve()),
+            }
+
+    @staticmethod
     def save_geotiff(
         data: np.ndarray,
         metadata: GeoTIFFMetadata,

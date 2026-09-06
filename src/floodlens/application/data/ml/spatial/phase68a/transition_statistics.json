@@ -1,0 +1,13 @@
+{
+  "mean_iou": 0.2557592737572294,
+  "median_iou": 0.14388489208633093,
+  "mean_new_flood_fraction": 0.028002824271198153,
+  "median_new_flood_fraction": 0.0026897788404064557,
+  "mean_recession_fraction": 0.029899643605047748,
+  "median_recession_fraction": 0.0017979144192736426,
+  "mean_persistent_flood_fraction": 0.030041805109983725,
+  "mean_turnover_fraction": 0.05790246787624591,
+  "n_pairs_with_new_flood": 131,
+  "n_pairs_with_recession": 127,
+  "mean_n_newly_flooded": 87.49726775956285
+}

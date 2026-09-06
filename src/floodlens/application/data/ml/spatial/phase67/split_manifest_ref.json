@@ -1,0 +1,34 @@
+{
+  "path": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/splits_v2/splits.json",
+  "lock": {
+    "ok": true,
+    "observed": {
+      "train_events": [
+        "evt:2015-07-11",
+        "evt:2016-01-19",
+        "evt:2016-06-30",
+        "evt:2017-04-12",
+        "evt:2017-07-31",
+        "evt:2018-01-13",
+        "evt:2018-06-06"
+      ],
+      "validation_events": [
+        "evt:2019-01-10",
+        "evt:2019-06-15",
+        "evt:2020-01-15",
+        "evt:2020-06-07",
+        "evt:2021-06-02"
+      ],
+      "test_events": [
+        "evt:2022-05-16",
+        "evt:2023-06-16",
+        "evt:2024-06-22"
+      ]
+    },
+    "leaks": {
+      "train_test": [],
+      "train_val": [],
+      "val_test": []
+    }
+  }
+}

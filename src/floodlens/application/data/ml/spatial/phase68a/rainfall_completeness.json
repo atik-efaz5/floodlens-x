@@ -1,0 +1,13 @@
+{
+  "n_complete": 175,
+  "n_partial": 0,
+  "n_missing": 8,
+  "complete_pair_fraction": 0.9562841530054644,
+  "mean_pre_t0_coverage": 0.9562841530054644,
+  "mean_in_horizon_coverage": 0.9562841530054644,
+  "forecast_available_in_horizon": false,
+  "lattice_start": "2016-06-01",
+  "lattice_end": "2024-08-31",
+  "lattice_kind": "REANALYSIS",
+  "filled": false
+}

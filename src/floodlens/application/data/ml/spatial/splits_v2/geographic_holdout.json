@@ -1,0 +1,14 @@
+{
+  "train_regions": [
+    "dhaka_ne",
+    "dhaka_nw",
+    "dhaka_se",
+    "dhaka_sw",
+    "kishoreganj"
+  ],
+  "test_regions": [
+    "netrokona",
+    "sunamganj",
+    "sylhet"
+  ]
+}

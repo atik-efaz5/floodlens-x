@@ -1,0 +1,2058 @@
+{
+  "dataset_version": "phase55-gfm-aoi-v0.2",
+  "label_kind": "OBSERVED",
+  "source": "copernicus-gfm-ensemble-flood-extent",
+  "tile": "E039N021T3",
+  "acquired_at": "2026-09-02T17:17:26Z",
+  "raw_bytes": 32726583,
+  "max_bytes": 209715200,
+  "n_candidates": 95,
+  "n_kept": 39,
+  "scenes": [
+    {
+      "id": "ENSEMBLE_FLOOD_20180113T120433_VV_AS020M_E039N021T3",
+      "datetime": "2018-01-13T12:04:33Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20180113T120433_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "66860f999ff4ac01401d264b5f4c14ec041e7c0e386b2880c1e99967b438ed6a",
+      "bytes": 385537,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.12211287561652974,
+          "n_flood": 0,
+          "n_dry": 138,
+          "n_unknown": 886,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        },
+        "sunamganj": {
+          "valid_frac": 0.678211287588252,
+          "n_flood": 55,
+          "n_dry": 651,
+          "n_unknown": 318,
+          "grid": {
+            "city_id": "sunamganj",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              91.2,
+              24.8,
+              91.5,
+              25.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 946.2299971281705,
+            "dy_m": 1043.6250000000025,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20180115T235557_VV_AS020M_E039N021T3",
+      "datetime": "2018-01-15T23:55:57Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20180115T235557_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "4577e2ddc6db8a6dbb32faf6f32a219c7ea18fd3b8f6810472b5a081c32552bb",
+      "bytes": 172966,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.3625492822619108,
+          "n_flood": 0,
+          "n_dry": 383,
+          "n_unknown": 641,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20180125T120433_VV_AS020M_E039N021T3",
+      "datetime": "2018-01-25T12:04:33Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20180125T120433_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "39c833762f52483b44d9a9895f00f016471ee210995a0d5fad44e327b33c5ddd",
+      "bytes": 237244,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.12199114149122528,
+          "n_flood": 0,
+          "n_dry": 138,
+          "n_unknown": 886,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        },
+        "sunamganj": {
+          "valid_frac": 0.67669473752831,
+          "n_flood": 6,
+          "n_dry": 698,
+          "n_unknown": 320,
+          "grid": {
+            "city_id": "sunamganj",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              91.2,
+              24.8,
+              91.5,
+              25.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 946.2299971281705,
+            "dy_m": 1043.6250000000025,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20180606T120436_VV_AS020M_E039N021T3",
+      "datetime": "2018-06-06T12:04:36Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20180606T120436_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "2fcc0e22b3604341f4469f588ed1f80c93ac9433c7a2a876269a618cc9b2fbe4",
+      "bytes": 409743,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.12207269217484361,
+          "n_flood": 0,
+          "n_dry": 138,
+          "n_unknown": 886,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        },
+        "sunamganj": {
+          "valid_frac": 0.6741247690162447,
+          "n_flood": 5,
+          "n_dry": 699,
+          "n_unknown": 320,
+          "grid": {
+            "city_id": "sunamganj",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              91.2,
+              24.8,
+              91.5,
+              25.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 946.2299971281705,
+            "dy_m": 1043.6250000000025,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20180608T235600_VV_AS020M_E039N021T3",
+      "datetime": "2018-06-08T23:56:00Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20180608T235600_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "fcf1a2b9d6e2b1490d3f8ecf5f407a0eb3529e099f6820d391df882ac58f7484",
+      "bytes": 181310,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.3623090365786384,
+          "n_flood": 0,
+          "n_dry": 383,
+          "n_unknown": 641,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20180618T120437_VV_AS020M_E039N021T3",
+      "datetime": "2018-06-18T12:04:37Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20180618T120437_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "88bf2b82e2bbba8feb6b89dacf4e82abb49e35886c19434fa0be59f46599008c",
+      "bytes": 972270,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.122127936186327,
+          "n_flood": 0,
+          "n_dry": 138,
+          "n_unknown": 886,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        },
+        "sunamganj": {
+          "valid_frac": 0.674487967353699,
+          "n_flood": 99,
+          "n_dry": 605,
+          "n_unknown": 320,
+          "grid": {
+            "city_id": "sunamganj",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              91.2,
+              24.8,
+              91.5,
+              25.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 946.2299971281705,
+            "dy_m": 1043.6250000000025,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20190615T235606_VV_AS020M_E039N021T3",
+      "datetime": "2019-06-15T23:56:06Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20190615T235606_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "8612aafef8a70967df74cb9ad94faf6167bc2d4c859ae53ca8b1c029c9def72c",
+      "bytes": 163904,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.3621857898196862,
+          "n_flood": 0,
+          "n_dry": 383,
+          "n_unknown": 641,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20190627T235607_VV_AS020M_E039N021T3",
+      "datetime": "2019-06-27T23:56:07Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20190627T235607_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "3eae16f0ce2b3e3ab402a3e0fbbbb51438ffa788d53f45541fcf53221af77220",
+      "bytes": 169329,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.36224557173211286,
+          "n_flood": 0,
+          "n_dry": 383,
+          "n_unknown": 641,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20190709T235608_VV_AS020M_E039N021T3",
+      "datetime": "2019-07-09T23:56:08Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20190709T235608_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "e4c3d4e27e0ff370692f7551fcc01215472e1d5fa6023f96625630e94c6e7cf1",
+      "bytes": 255421,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.36224011309764487,
+          "n_flood": 0,
+          "n_dry": 383,
+          "n_unknown": 641,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20190721T235609_VV_AS020M_E039N021T3",
+      "datetime": "2019-07-21T23:56:09Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20190721T235609_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "341ac471dbadb67349e622a8ee963a1c2431a69bb11546c93d2a0163237dcff4",
+      "bytes": 572347,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.36214613251144273,
+          "n_flood": 11,
+          "n_dry": 372,
+          "n_unknown": 641,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20190725T120356_VV_AS020M_E039N021T3",
+      "datetime": "2019-07-25T12:03:56Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20190725T120356_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "46f6dd1e76960a03456d1b9063204ebe1cfecb51bf9bd5d06f93536b29a9f282",
+      "bytes": 2065140,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.7335368899778681,
+          "n_flood": 6,
+          "n_dry": 757,
+          "n_unknown": 261,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        },
+        "sunamganj": {
+          "valid_frac": 0.671903313307279,
+          "n_flood": 15,
+          "n_dry": 683,
+          "n_unknown": 326,
+          "grid": {
+            "city_id": "sunamganj",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              91.2,
+              24.8,
+              91.5,
+              25.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 946.2299971281705,
+            "dy_m": 1043.6250000000025,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20190802T235609_VV_AS020M_E039N021T3",
+      "datetime": "2019-08-02T23:56:09Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20190802T235609_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "98251fb48b1dbc142a84863cd4568f53e86938a61ad154b2b362dd65489ff661",
+      "bytes": 547793,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.36194547836973345,
+          "n_flood": 0,
+          "n_dry": 383,
+          "n_unknown": 641,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20200607T120449_VV_AS020M_E039N021T3",
+      "datetime": "2020-06-07T12:04:49Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20200607T120449_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "62bbbdef76952e57a99f9f6199be39b93085972ed5658b473374e2d1c4fc245d",
+      "bytes": 1040248,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.12219140103285256,
+          "n_flood": 0,
+          "n_dry": 138,
+          "n_unknown": 886,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        },
+        "sunamganj": {
+          "valid_frac": 0.25097399120229036,
+          "n_flood": 4,
+          "n_dry": 264,
+          "n_unknown": 756,
+          "grid": {
+            "city_id": "sunamganj",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              91.2,
+              24.8,
+              91.5,
+              25.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 946.2299971281705,
+            "dy_m": 1043.6250000000025,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20200609T235613_VV_AS020M_E039N021T3",
+      "datetime": "2020-06-09T23:56:13Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20200609T235613_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "27931c3eef38ee2d054a22d7a60fd5e5dacd3ae6d7a913adb12a5c6e84902f1d",
+      "bytes": 200747,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.36236684549065495,
+          "n_flood": 0,
+          "n_dry": 383,
+          "n_unknown": 641,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20200619T120450_VV_AS020M_E039N021T3",
+      "datetime": "2020-06-19T12:04:50Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20200619T120450_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "0260405167cbab6650a15549dc7c1550909bd7a6b221dade4d7527e1b44b6f42",
+      "bytes": 1756648,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.1219501688493751,
+          "n_flood": 0,
+          "n_dry": 138,
+          "n_unknown": 886,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        },
+        "sunamganj": {
+          "valid_frac": 0.45885023727883495,
+          "n_flood": 146,
+          "n_dry": 471,
+          "n_unknown": 407,
+          "grid": {
+            "city_id": "sunamganj",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              91.2,
+              24.8,
+              91.5,
+              25.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 946.2299971281705,
+            "dy_m": 1043.6250000000025,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20200621T235614_VV_AS020M_E039N021T3",
+      "datetime": "2020-06-21T23:56:14Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20200621T235614_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "19a9f5564ddce1f3c91dd3968149d3584fda4ab45add2582365769311ec0e9d6",
+      "bytes": 267133,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.36202847592031917,
+          "n_flood": 0,
+          "n_dry": 383,
+          "n_unknown": 641,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20200715T235615_VV_AS020M_E039N021T3",
+      "datetime": "2020-07-15T23:56:15Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20200715T235615_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "095660b5bfbe3fba46911d143d3344d6bdad7d60a630c1e21fe45ce9695fe332",
+      "bytes": 405755,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.3622386004639971,
+          "n_flood": 5,
+          "n_dry": 378,
+          "n_unknown": 641,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20200719T120423_VV_AS020M_E039N021T3",
+      "datetime": "2020-07-19T12:04:23Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20200719T120423_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "1d515d216dcc536975273fd71c0191940024ad34e3170251f1c7e2c6f065afa1",
+      "bytes": 538412,
+      "cities": {
+        "sunamganj": {
+          "valid_frac": 0.14178167051893306,
+          "n_flood": 2,
+          "n_dry": 154,
+          "n_unknown": 868,
+          "grid": {
+            "city_id": "sunamganj",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              91.2,
+              24.8,
+              91.5,
+              25.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 946.2299971281705,
+            "dy_m": 1043.6250000000025,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20200806T120452_VV_AS020M_E039N021T3",
+      "datetime": "2020-08-06T12:04:52Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20200806T120452_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "9662052996137cea84c84cc9aeb631691edf30f678397fec261ffb30dad2a1ad",
+      "bytes": 1049233,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.12198864235737246,
+          "n_flood": 5,
+          "n_dry": 133,
+          "n_unknown": 886,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        },
+        "sunamganj": {
+          "valid_frac": 0.6735158566161735,
+          "n_flood": 0,
+          "n_dry": 701,
+          "n_unknown": 323,
+          "grid": {
+            "city_id": "sunamganj",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              91.2,
+              24.8,
+              91.5,
+              25.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 946.2299971281705,
+            "dy_m": 1043.6250000000025,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20200808T235616_VV_AS020M_E039N021T3",
+      "datetime": "2020-08-08T23:56:16Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20200808T235616_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "7231214f16430a5cd3e549bb8be824437dc93c8b26465a6b7095793c6cd5492d",
+      "bytes": 763526,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.36204721942421536,
+          "n_flood": 4,
+          "n_dry": 379,
+          "n_unknown": 641,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20210602T120454_VV_AS020M_E039N021T3",
+      "datetime": "2021-06-02T12:04:54Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20210602T120454_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "8c9c82e50d62f4fde0bac6e89a7a20955c6fedc37191b88c518115e23826cd1b",
+      "bytes": 258737,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.12207137684123687,
+          "n_flood": 1,
+          "n_dry": 137,
+          "n_unknown": 886,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        },
+        "sunamganj": {
+          "valid_frac": 0.674408450557925,
+          "n_flood": 1,
+          "n_dry": 703,
+          "n_unknown": 320,
+          "grid": {
+            "city_id": "sunamganj",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              91.2,
+              24.8,
+              91.5,
+              25.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 946.2299971281705,
+            "dy_m": 1043.6250000000025,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20210604T235618_VV_AS020M_E039N021T3",
+      "datetime": "2021-06-04T23:56:18Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20210604T235618_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "fbd47d37f8fc3779bc78d9988f3d6890ba331a85a2eb49d73386c67513aec007",
+      "bytes": 203112,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.3625290261243669,
+          "n_flood": 0,
+          "n_dry": 383,
+          "n_unknown": 641,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20210614T120455_VV_AS020M_E039N021T3",
+      "datetime": "2021-06-14T12:04:55Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20210614T120455_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "0e8a2a57e4b5a90483ef2b0dbd64e770fc0c48426c97c043725f05e9bb15b578",
+      "bytes": 249239,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.12202119686413945,
+          "n_flood": 0,
+          "n_dry": 138,
+          "n_unknown": 886,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        },
+        "sunamganj": {
+          "valid_frac": 0.6729721336612864,
+          "n_flood": 0,
+          "n_dry": 700,
+          "n_unknown": 324,
+          "grid": {
+            "city_id": "sunamganj",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              91.2,
+              24.8,
+              91.5,
+              25.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 946.2299971281705,
+            "dy_m": 1043.6250000000025,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20210616T235619_VV_AS020M_E039N021T3",
+      "datetime": "2021-06-16T23:56:19Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20210616T235619_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "602e87fe384710714db4125763553b9cee484a1aa6265959f192c0c10ff7712e",
+      "bytes": 305888,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.36216888778283945,
+          "n_flood": 2,
+          "n_dry": 381,
+          "n_unknown": 641,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20210626T120456_VV_AS020M_E039N021T3",
+      "datetime": "2021-06-26T12:04:56Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20210626T120456_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "fb658ba9f85c723673efeb03502c6e9997c30df9202c0d248029c43c515b34ce",
+      "bytes": 544877,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.12215365095833891,
+          "n_flood": 1,
+          "n_dry": 137,
+          "n_unknown": 886,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        },
+        "sunamganj": {
+          "valid_frac": 0.6735402131121764,
+          "n_flood": 49,
+          "n_dry": 653,
+          "n_unknown": 322,
+          "grid": {
+            "city_id": "sunamganj",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              91.2,
+              24.8,
+              91.5,
+              25.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 946.2299971281705,
+            "dy_m": 1043.6250000000025,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20210708T120457_VV_AS020M_E039N021T3",
+      "datetime": "2021-07-08T12:04:57Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20210708T120457_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "790519c81f111d57d8df36aaee8a0ea5843e0fa9da2a9f056381a64369bda355",
+      "bytes": 825095,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.12227170214954448,
+          "n_flood": 0,
+          "n_dry": 138,
+          "n_unknown": 886,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        },
+        "sunamganj": {
+          "valid_frac": 0.6761782365395437,
+          "n_flood": 7,
+          "n_dry": 697,
+          "n_unknown": 320,
+          "grid": {
+            "city_id": "sunamganj",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              91.2,
+              24.8,
+              91.5,
+              25.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 946.2299971281705,
+            "dy_m": 1043.6250000000025,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20210720T120457_VV_AS020M_E039N021T3",
+      "datetime": "2021-07-20T12:04:57Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20210720T120457_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "5dc1ef974e44651509ca2ab5cdd96a8b5a953708a681240bb33e0e81d1215ae5",
+      "bytes": 318776,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.12201514632954842,
+          "n_flood": 0,
+          "n_dry": 138,
+          "n_unknown": 886,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        },
+        "sunamganj": {
+          "valid_frac": 0.6729459862464598,
+          "n_flood": 0,
+          "n_dry": 700,
+          "n_unknown": 324,
+          "grid": {
+            "city_id": "sunamganj",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              91.2,
+              24.8,
+              91.5,
+              25.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 946.2299971281705,
+            "dy_m": 1043.6250000000025,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20210801T120458_VV_AS020M_E039N021T3",
+      "datetime": "2021-08-01T12:04:58Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20210801T120458_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "393982a4512b81585b149b0db9aeae895916894eae2f50ccfb2f260db0a948e9",
+      "bytes": 234330,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.12192945234506883,
+          "n_flood": 0,
+          "n_dry": 138,
+          "n_unknown": 886,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        },
+        "sunamganj": {
+          "valid_frac": 0.6734836200773462,
+          "n_flood": 1,
+          "n_dry": 701,
+          "n_unknown": 322,
+          "grid": {
+            "city_id": "sunamganj",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              91.2,
+              24.8,
+              91.5,
+              25.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 946.2299971281705,
+            "dy_m": 1043.6250000000025,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20210813T120459_VV_AS020M_E039N021T3",
+      "datetime": "2021-08-13T12:04:59Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20210813T120459_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "39efb1dee0e6869e5edfd216061b01b8055498410e459cc54a513f0837937a95",
+      "bytes": 655675,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.12200133532667758,
+          "n_flood": 0,
+          "n_dry": 138,
+          "n_unknown": 886,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        },
+        "sunamganj": {
+          "valid_frac": 0.674733681416316,
+          "n_flood": 6,
+          "n_dry": 698,
+          "n_unknown": 320,
+          "grid": {
+            "city_id": "sunamganj",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              91.2,
+              24.8,
+              91.5,
+              25.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 946.2299971281705,
+            "dy_m": 1043.6250000000025,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20220516T120459_VV_AS020M_E039N021T3",
+      "datetime": "2022-05-16T12:04:59Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20220516T120459_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "febc050335d394fab3225e88e4de60266eb2f2a90054f4c6291148d9b2d97086",
+      "bytes": 800966,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.12201350216253998,
+          "n_flood": 0,
+          "n_dry": 138,
+          "n_unknown": 886,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        },
+        "sunamganj": {
+          "valid_frac": 0.6745789460299448,
+          "n_flood": 169,
+          "n_dry": 535,
+          "n_unknown": 320,
+          "grid": {
+            "city_id": "sunamganj",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              91.2,
+              24.8,
+              91.5,
+              25.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 946.2299971281705,
+            "dy_m": 1043.6250000000025,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20220518T235623_VV_AS020M_E039N021T3",
+      "datetime": "2022-05-18T23:56:23Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20220518T235623_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "44cc27f287ab4d23c70bb360635331aaa4e49f6bcc32dd745d7743ba9393348a",
+      "bytes": 371565,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.36274704266968527,
+          "n_flood": 1,
+          "n_dry": 383,
+          "n_unknown": 640,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20220528T120500_VV_AS020M_E039N021T3",
+      "datetime": "2022-05-28T12:05:00Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20220528T120500_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "31866827163ded7b7b11f565f029dcc1e4bd1d9c63debe65cd6b0c635555cca5",
+      "bytes": 1379622,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.12197969808884658,
+          "n_flood": 0,
+          "n_dry": 138,
+          "n_unknown": 886,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        },
+        "sunamganj": {
+          "valid_frac": 0.6740373721776463,
+          "n_flood": 606,
+          "n_dry": 98,
+          "n_unknown": 320,
+          "grid": {
+            "city_id": "sunamganj",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              91.2,
+              24.8,
+              91.5,
+              25.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 946.2299971281705,
+            "dy_m": 1043.6250000000025,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20220703T120503_VV_AS020M_E039N021T3",
+      "datetime": "2022-07-03T12:05:03Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20220703T120503_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "666f811cedad53b04c62c204b2bf46c12de61a724c97f57a62e8322cd744cc1d",
+      "bytes": 1188569,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.12200501826077646,
+          "n_flood": 4,
+          "n_dry": 134,
+          "n_unknown": 886,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        },
+        "sunamganj": {
+          "valid_frac": 0.6728156073560916,
+          "n_flood": 57,
+          "n_dry": 642,
+          "n_unknown": 325,
+          "grid": {
+            "city_id": "sunamganj",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              91.2,
+              24.8,
+              91.5,
+              25.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 946.2299971281705,
+            "dy_m": 1043.6250000000025,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20230616T120507_VV_AS020M_E039N021T3",
+      "datetime": "2023-06-16T12:05:07Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20230616T120507_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "8a7cfc41670e098bc1b087aac39ebaa9aabdd62fc03d8501eb3d264f68f46a64",
+      "bytes": 252904,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.12202941769918163,
+          "n_flood": 0,
+          "n_dry": 138,
+          "n_unknown": 886,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        },
+        "sunamganj": {
+          "valid_frac": 0.6730928415900064,
+          "n_flood": 7,
+          "n_dry": 693,
+          "n_unknown": 324,
+          "grid": {
+            "city_id": "sunamganj",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              91.2,
+              24.8,
+              91.5,
+              25.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 946.2299971281705,
+            "dy_m": 1043.6250000000025,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20230628T120507_VV_AS020M_E039N021T3",
+      "datetime": "2023-06-28T12:05:07Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20230628T120507_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "14b9524ca6a78e2000566d9f37a98ec0b9266b195a3596d4f9022c79dd4eee8b",
+      "bytes": 1178973,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.12235213479959708,
+          "n_flood": 0,
+          "n_dry": 138,
+          "n_unknown": 886,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        },
+        "sunamganj": {
+          "valid_frac": 0.6734957983253477,
+          "n_flood": 119,
+          "n_dry": 582,
+          "n_unknown": 323,
+          "grid": {
+            "city_id": "sunamganj",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              91.2,
+              24.8,
+              91.5,
+              25.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 946.2299971281705,
+            "dy_m": 1043.6250000000025,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20230710T120508_VV_AS020M_E039N021T3",
+      "datetime": "2023-07-10T12:05:08Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20230710T120508_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "f762b62bde77a79b2d51dda6f4e9917a371b600863376948ecbb22962c3e7958",
+      "bytes": 685317,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.12152932786189628,
+          "n_flood": 1,
+          "n_dry": 137,
+          "n_unknown": 886,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        },
+        "sunamganj": {
+          "valid_frac": 0.6700074466404691,
+          "n_flood": 6,
+          "n_dry": 692,
+          "n_unknown": 326,
+          "grid": {
+            "city_id": "sunamganj",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              91.2,
+              24.8,
+              91.5,
+              25.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 946.2299971281705,
+            "dy_m": 1043.6250000000025,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20230722T120509_VV_AS020M_E039N021T3",
+      "datetime": "2023-07-22T12:05:09Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20230722T120509_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "e8928285302f434ad1b4c4ccaaf49bfbb87bbb86c795af25bf7180f62318bf1d",
+      "bytes": 410920,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.12179022428279462,
+          "n_flood": 0,
+          "n_dry": 138,
+          "n_unknown": 886,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        },
+        "sunamganj": {
+          "valid_frac": 0.6705948680146554,
+          "n_flood": 2,
+          "n_dry": 696,
+          "n_unknown": 326,
+          "grid": {
+            "city_id": "sunamganj",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              91.2,
+              24.8,
+              91.5,
+              25.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 946.2299971281705,
+            "dy_m": 1043.6250000000025,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20230803T120510_VV_AS020M_E039N021T3",
+      "datetime": "2023-08-03T12:05:10Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20230803T120510_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "7446573b32893a1566f1df1cd8f005cdbd4f1879b4fa4ce99e4074159c47b2d5",
+      "bytes": 367614,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.12182935545759535,
+          "n_flood": 0,
+          "n_dry": 138,
+          "n_unknown": 886,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        },
+        "sunamganj": {
+          "valid_frac": 0.6704032397005154,
+          "n_flood": 8,
+          "n_dry": 690,
+          "n_unknown": 326,
+          "grid": {
+            "city_id": "sunamganj",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              91.2,
+              24.8,
+              91.5,
+              25.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 946.2299971281705,
+            "dy_m": 1043.6250000000025,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20230815T120510_VV_AS020M_E039N021T3",
+      "datetime": "2023-08-15T12:05:10Z",
+      "href": "/Users/atik/Projects/floodlens-x/src/floodlens/application/data/ml/spatial/gfm/raw/ENSEMBLE_FLOOD_20230815T120510_VV_AS020M_E039N021T3.tif",
+      "tile": "E039N021T3",
+      "sha256": "e4071756ac9fd20027ec0093248ffb892c678ad97d7d582a9d7178de5d5ad59b",
+      "bytes": 718021,
+      "cities": {
+        "dhaka": {
+          "valid_frac": 0.12206999574094979,
+          "n_flood": 0,
+          "n_dry": 138,
+          "n_unknown": 886,
+          "grid": {
+            "city_id": "dhaka",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              90.0,
+              23.5,
+              90.8,
+              24.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 2546.3327556260533,
+            "dy_m": 2087.250000000005,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        },
+        "sunamganj": {
+          "valid_frac": 0.6716801648218412,
+          "n_flood": 5,
+          "n_dry": 693,
+          "n_unknown": 326,
+          "grid": {
+            "city_id": "sunamganj",
+            "nx": 32,
+            "ny": 32,
+            "bounds": [
+              91.2,
+              24.8,
+              91.5,
+              25.1
+            ],
+            "crs": "EPSG:4326",
+            "dx_m": 946.2299971281705,
+            "dy_m": 1043.6250000000025,
+            "target_resolution_m": 500.0,
+            "note": "Working tensor is 32\u00d732 on the city geographic bounds. Native GFM is 20 m Equi7. This is not 500 m radar."
+          }
+        }
+      },
+      "label_kind": "OBSERVED"
+    }
+  ],
+  "skipped_empty": [
+    {
+      "id": "ENSEMBLE_FLOOD_20160630T235553_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20160714T233939_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20160724T235554_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20160817T235556_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20170615T233928_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20170630T115640_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20170702T234803_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20170712T115640_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20170714T234803_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20170724T115641_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20170805T115642_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20170817T115642_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20180110T234805_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20180120T115641_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20180122T234804_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20180601T115644_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20180603T234807_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20180613T115645_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20180615T234808_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20180625T115646_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20180707T115646_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20180709T234809_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20180719T115647_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20180731T115648_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20180812T115649_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20190702T115652_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20190816T233944_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20200602T115657_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20200614T115658_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20200626T115658_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20200708T115659_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20200729T233950_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20210606T233952_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20210609T115703_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20210611T234826_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20210618T233953_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20210705T234828_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20210727T115706_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20220511T115707_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20220513T234830_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20220520T233957_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20220523T115708_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20220525T234831_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20220606T234832_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20220618T234833_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20220630T234834_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20220712T234834_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20220724T234835_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20220805T234836_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20220815T115714_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20230601T234837_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20230707T234839_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20230729T115717_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20240617T115716_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20240711T115715_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    },
+    {
+      "id": "ENSEMBLE_FLOOD_20240804T115715_VV_AS020M_E039N021T3",
+      "reason": "AOI nodata (unknown, not dry)"
+    }
+  ],
+  "skipped_cap": [],
+  "attribution": "Copernicus Emergency Management Service \u2014 Global Flood Monitoring (GFM).",
+  "license_stac": "proprietary",
+  "index_source": "local_product_tile_geotiffs"
+}

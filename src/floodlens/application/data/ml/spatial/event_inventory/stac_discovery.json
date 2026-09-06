@@ -1,0 +1,1231 @@
+{
+  "acquired_at": "2026-09-02T19:15:22Z",
+  "clusters": [
+    {
+      "event_id": "cand:2017-04",
+      "year": 2017,
+      "start": "2017-04-12",
+      "end": "2017-05-20",
+      "season": "premonsoon",
+      "mechanism": "haor_premonsoon_flash",
+      "n_stac_features": 82,
+      "n_orbit_candidates": 14,
+      "candidates": [
+        {
+          "id": "ENSEMBLE_FLOOD_20170412T120427_VV_AS020M_E039N021T3",
+          "datetime": "2017-04-12T12:04:27Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/04/12/ENSEMBLE_FLOOD_20170412T120427_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170424T120428_VV_AS020M_E039N021T3",
+          "datetime": "2017-04-24T12:04:28Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/04/24/ENSEMBLE_FLOOD_20170424T120428_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170506T120428_VV_AS020M_E039N021T3",
+          "datetime": "2017-05-06T12:04:28Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/05/06/ENSEMBLE_FLOOD_20170506T120428_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170518T120429_VV_AS020M_E039N021T3",
+          "datetime": "2017-05-18T12:04:29Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/05/18/ENSEMBLE_FLOOD_20170518T120429_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170414T235551_VV_AS020M_E039N021T3",
+          "datetime": "2017-04-14T23:55:51Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/04/14/ENSEMBLE_FLOOD_20170414T235551_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170426T235551_VV_AS020M_E039N021T3",
+          "datetime": "2017-04-26T23:55:51Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/04/26/ENSEMBLE_FLOOD_20170426T235551_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170508T235552_VV_AS020M_E039N021T3",
+          "datetime": "2017-05-08T23:55:52Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/05/08/ENSEMBLE_FLOOD_20170508T235552_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170520T235553_VV_AS020M_E039N021T3",
+          "datetime": "2017-05-20T23:55:53Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/05/20/ENSEMBLE_FLOOD_20170520T235553_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170416T233925_VV_AS020M_E039N021T3",
+          "datetime": "2017-04-16T23:39:25Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/04/16/ENSEMBLE_FLOOD_20170416T233925_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170419T115636_VV_AS020M_E039N021T3",
+          "datetime": "2017-04-19T11:56:36Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/04/19/ENSEMBLE_FLOOD_20170419T115636_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170421T234759_VV_AS020M_E039N021T3",
+          "datetime": "2017-04-21T23:47:59Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/04/21/ENSEMBLE_FLOOD_20170421T234759_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170428T233925_VV_AS020M_E039N021T3",
+          "datetime": "2017-04-28T23:39:25Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/04/28/ENSEMBLE_FLOOD_20170428T233925_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170501T115636_VV_AS020M_E039N021T3",
+          "datetime": "2017-05-01T11:56:36Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/05/01/ENSEMBLE_FLOOD_20170501T115636_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170513T115637_VV_AS020M_E039N021T3",
+          "datetime": "2017-05-13T11:56:37Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/05/13/ENSEMBLE_FLOOD_20170513T115637_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        }
+      ],
+      "stac_empty": false,
+      "attempts": [
+        {
+          "id": "ENSEMBLE_FLOOD_20170412T120427_VV_AS020M_E039N021T3",
+          "datetime": "2017-04-12T12:04:27Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/04/12/ENSEMBLE_FLOOD_20170412T120427_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 708277
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170424T120428_VV_AS020M_E039N021T3",
+          "datetime": "2017-04-24T12:04:28Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/04/24/ENSEMBLE_FLOOD_20170424T120428_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 1696341
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170506T120428_VV_AS020M_E039N021T3",
+          "datetime": "2017-05-06T12:04:28Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/05/06/ENSEMBLE_FLOOD_20170506T120428_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 1094404
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170518T120429_VV_AS020M_E039N021T3",
+          "datetime": "2017-05-18T12:04:29Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/05/18/ENSEMBLE_FLOOD_20170518T120429_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 1108018
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170414T235551_VV_AS020M_E039N021T3",
+          "datetime": "2017-04-14T23:55:51Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/04/14/ENSEMBLE_FLOOD_20170414T235551_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "downloaded",
+          "bytes": 173689,
+          "checksum": {
+            "bytes": 173689,
+            "sha256_ends": "95f83b5791c54e18ecf16fd28442bfebe6d429571af67a67ed33f4e0d96c8e93"
+          }
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170426T235551_VV_AS020M_E039N021T3",
+          "datetime": "2017-04-26T23:55:51Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/04/26/ENSEMBLE_FLOOD_20170426T235551_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "downloaded",
+          "bytes": 455629,
+          "checksum": {
+            "bytes": 455629,
+            "sha256_ends": "380601c163c97a8d0a88f15a6c823a37dbb2c852d24315417912f969aad7e2c4"
+          }
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170508T235552_VV_AS020M_E039N021T3",
+          "datetime": "2017-05-08T23:55:52Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/05/08/ENSEMBLE_FLOOD_20170508T235552_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "downloaded",
+          "bytes": 170555,
+          "checksum": {
+            "bytes": 170555,
+            "sha256_ends": "8a7ab598a092e1cd39217e03726a06e30ffdca33fab67367d97e17fd214712cd"
+          }
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170520T235553_VV_AS020M_E039N021T3",
+          "datetime": "2017-05-20T23:55:53Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/05/20/ENSEMBLE_FLOOD_20170520T235553_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "downloaded",
+          "bytes": 167494,
+          "checksum": {
+            "bytes": 167494,
+            "sha256_ends": "51196875f685a142c9f5b5cb2924de32c9aaa9c80f591914c65b295842b26ea1"
+          }
+        }
+      ],
+      "probe_scene_id": "ENSEMBLE_FLOOD_20170520T235553_VV_AS020M_E039N021T3",
+      "n_new_downloads": 4
+    },
+    {
+      "event_id": "cand:2017-08",
+      "year": 2017,
+      "start": "2017-07-31",
+      "end": "2017-08-25",
+      "season": "monsoon",
+      "mechanism": "monsoon_riverine",
+      "n_stac_features": 58,
+      "n_orbit_candidates": 8,
+      "candidates": [
+        {
+          "id": "ENSEMBLE_FLOOD_20170810T120434_VV_AS020M_E039N021T3",
+          "datetime": "2017-08-10T12:04:34Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/08/10/ENSEMBLE_FLOOD_20170810T120434_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170822T120434_VV_AS020M_E039N021T3",
+          "datetime": "2017-08-22T12:04:34Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/08/22/ENSEMBLE_FLOOD_20170822T120434_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170731T235557_VV_AS020M_E039N021T3",
+          "datetime": "2017-07-31T23:55:57Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/07/31/ENSEMBLE_FLOOD_20170731T235557_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170812T235557_VV_AS020M_E039N021T3",
+          "datetime": "2017-08-12T23:55:57Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/08/12/ENSEMBLE_FLOOD_20170812T235557_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170824T235558_VV_AS020M_E039N021T3",
+          "datetime": "2017-08-24T23:55:58Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/08/24/ENSEMBLE_FLOOD_20170824T235558_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170805T115642_VV_AS020M_E039N021T3",
+          "datetime": "2017-08-05T11:56:42Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/08/05/ENSEMBLE_FLOOD_20170805T115642_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170807T234805_VV_AS020M_E039N021T3",
+          "datetime": "2017-08-07T23:48:05Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/08/07/ENSEMBLE_FLOOD_20170807T234805_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170817T115642_VV_AS020M_E039N021T3",
+          "datetime": "2017-08-17T11:56:42Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/08/17/ENSEMBLE_FLOOD_20170817T115642_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        }
+      ],
+      "stac_empty": false,
+      "attempts": [
+        {
+          "id": "ENSEMBLE_FLOOD_20170810T120434_VV_AS020M_E039N021T3",
+          "datetime": "2017-08-10T12:04:34Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/08/10/ENSEMBLE_FLOOD_20170810T120434_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 511340
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170822T120434_VV_AS020M_E039N021T3",
+          "datetime": "2017-08-22T12:04:34Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/08/22/ENSEMBLE_FLOOD_20170822T120434_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 1578022
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170731T235557_VV_AS020M_E039N021T3",
+          "datetime": "2017-07-31T23:55:57Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/07/31/ENSEMBLE_FLOOD_20170731T235557_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 3602247
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170812T235557_VV_AS020M_E039N021T3",
+          "datetime": "2017-08-12T23:55:57Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/08/12/ENSEMBLE_FLOOD_20170812T235557_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 333410
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170824T235558_VV_AS020M_E039N021T3",
+          "datetime": "2017-08-24T23:55:58Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/08/24/ENSEMBLE_FLOOD_20170824T235558_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "downloaded",
+          "bytes": 624591,
+          "checksum": {
+            "bytes": 624591,
+            "sha256_ends": "90b8ae67a92e753cd034d2947b6b9b8a965a17ed83022133fddd1e19af324044"
+          }
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170805T115642_VV_AS020M_E039N021T3",
+          "datetime": "2017-08-05T11:56:42Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/08/05/ENSEMBLE_FLOOD_20170805T115642_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 133432
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170807T234805_VV_AS020M_E039N021T3",
+          "datetime": "2017-08-07T23:48:05Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/08/07/ENSEMBLE_FLOOD_20170807T234805_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "downloaded",
+          "bytes": 148935,
+          "checksum": {
+            "bytes": 148935,
+            "sha256_ends": "45e6fdf01ceaaf6e08827485b829ec27d343c693b0cb4a63d6a23c6cca8bd077"
+          }
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20170817T115642_VV_AS020M_E039N021T3",
+          "datetime": "2017-08-17T11:56:42Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2017/08/17/ENSEMBLE_FLOOD_20170817T115642_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 144587
+        }
+      ],
+      "probe_scene_id": "ENSEMBLE_FLOOD_20170807T234805_VV_AS020M_E039N021T3",
+      "n_new_downloads": 2
+    },
+    {
+      "event_id": "cand:2024-07",
+      "year": 2024,
+      "start": "2024-06-20",
+      "end": "2024-08-15",
+      "season": "monsoon",
+      "mechanism": "monsoon_riverine",
+      "n_stac_features": 89,
+      "n_orbit_candidates": 13,
+      "candidates": [
+        {
+          "id": "ENSEMBLE_FLOOD_20240622T120508_VV_AS020M_E039N021T3",
+          "datetime": "2024-06-22T12:05:08Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2024/06/22/ENSEMBLE_FLOOD_20240622T120508_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20240704T120507_VV_AS020M_E039N021T3",
+          "datetime": "2024-07-04T12:05:07Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2024/07/04/ENSEMBLE_FLOOD_20240704T120507_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20240716T120507_VV_AS020M_E039N021T3",
+          "datetime": "2024-07-16T12:05:07Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2024/07/16/ENSEMBLE_FLOOD_20240716T120507_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20240728T120506_VV_AS020M_E039N021T3",
+          "datetime": "2024-07-28T12:05:06Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2024/07/28/ENSEMBLE_FLOOD_20240728T120506_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20240809T120506_VV_AS020M_E039N021T3",
+          "datetime": "2024-08-09T12:05:06Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2024/08/09/ENSEMBLE_FLOOD_20240809T120506_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20240624T235631_VV_AS020M_E039N021T3",
+          "datetime": "2024-06-24T23:56:31Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2024/06/24/ENSEMBLE_FLOOD_20240624T235631_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20240811T235630_VV_AS020M_E039N021T3",
+          "datetime": "2024-08-11T23:56:30Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2024/08/11/ENSEMBLE_FLOOD_20240811T235630_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20240629T115716_VV_AS020M_E039N021T3",
+          "datetime": "2024-06-29T11:57:16Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2024/06/29/ENSEMBLE_FLOOD_20240629T115716_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20240711T115715_VV_AS020M_E039N021T3",
+          "datetime": "2024-07-11T11:57:15Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2024/07/11/ENSEMBLE_FLOOD_20240711T115715_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20240723T115715_VV_AS020M_E039N021T3",
+          "datetime": "2024-07-23T11:57:15Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2024/07/23/ENSEMBLE_FLOOD_20240723T115715_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20240804T115715_VV_AS020M_E039N021T3",
+          "datetime": "2024-08-04T11:57:15Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2024/08/04/ENSEMBLE_FLOOD_20240804T115715_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20240806T234838_VV_AS020M_E039N021T3",
+          "datetime": "2024-08-06T23:48:38Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2024/08/06/ENSEMBLE_FLOOD_20240806T234838_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20240813T234003_VV_AS020M_E039N021T3",
+          "datetime": "2024-08-13T23:40:03Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2024/08/13/ENSEMBLE_FLOOD_20240813T234003_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        }
+      ],
+      "stac_empty": false,
+      "attempts": [
+        {
+          "id": "ENSEMBLE_FLOOD_20240622T120508_VV_AS020M_E039N021T3",
+          "datetime": "2024-06-22T12:05:08Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2024/06/22/ENSEMBLE_FLOOD_20240622T120508_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 1878647
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20240704T120507_VV_AS020M_E039N021T3",
+          "datetime": "2024-07-04T12:05:07Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2024/07/04/ENSEMBLE_FLOOD_20240704T120507_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 1370721
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20240716T120507_VV_AS020M_E039N021T3",
+          "datetime": "2024-07-16T12:05:07Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2024/07/16/ENSEMBLE_FLOOD_20240716T120507_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 1238408
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20240728T120506_VV_AS020M_E039N021T3",
+          "datetime": "2024-07-28T12:05:06Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2024/07/28/ENSEMBLE_FLOOD_20240728T120506_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 343180
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20240809T120506_VV_AS020M_E039N021T3",
+          "datetime": "2024-08-09T12:05:06Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2024/08/09/ENSEMBLE_FLOOD_20240809T120506_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "downloaded",
+          "bytes": 565670,
+          "checksum": {
+            "bytes": 565670,
+            "sha256_ends": "a5df3ddf7260c2ed4bb7c1edeb0aa9a1436ff4dc1ac919770e70ab2fa3fb8f88"
+          }
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20240624T235631_VV_AS020M_E039N021T3",
+          "datetime": "2024-06-24T23:56:31Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2024/06/24/ENSEMBLE_FLOOD_20240624T235631_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "downloaded",
+          "bytes": 307616,
+          "checksum": {
+            "bytes": 307616,
+            "sha256_ends": "20b5789c79095e87c5b6d8958c33b12731c970d7cd20e57371db143047fe6ec2"
+          }
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20240811T235630_VV_AS020M_E039N021T3",
+          "datetime": "2024-08-11T23:56:30Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2024/08/11/ENSEMBLE_FLOOD_20240811T235630_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "downloaded",
+          "bytes": 3695966,
+          "checksum": {
+            "bytes": 3695966,
+            "sha256_ends": "f120b46fd431dc0acd8144116810978ac0f3e1baf3a70105ae1bdd852c3d81dc"
+          }
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20240629T115716_VV_AS020M_E039N021T3",
+          "datetime": "2024-06-29T11:57:16Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2024/06/29/ENSEMBLE_FLOOD_20240629T115716_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "downloaded",
+          "bytes": 137937,
+          "checksum": {
+            "bytes": 137937,
+            "sha256_ends": "973f1931132c216670b87f1e59e72918badb7e1330af7c941db0451408a20629"
+          }
+        }
+      ],
+      "probe_scene_id": "ENSEMBLE_FLOOD_20240629T115716_VV_AS020M_E039N021T3",
+      "n_new_downloads": 4
+    },
+    {
+      "event_id": "cand:2025-07",
+      "year": 2025,
+      "start": "2025-06-20",
+      "end": "2025-08-15",
+      "season": "monsoon",
+      "mechanism": "monsoon_riverine",
+      "n_stac_features": 100,
+      "n_orbit_candidates": 17,
+      "candidates": [
+        {
+          "id": "ENSEMBLE_FLOOD_20250711T120458_VV_AS020M_E039N021T3",
+          "datetime": "2025-07-11T12:04:58Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2025/07/11/ENSEMBLE_FLOOD_20250711T120458_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20250723T120458_VV_AS020M_E039N021T3",
+          "datetime": "2025-07-23T12:04:58Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2025/07/23/ENSEMBLE_FLOOD_20250723T120458_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20250804T120458_VV_AS020M_E039N021T3",
+          "datetime": "2025-08-04T12:04:58Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2025/08/04/ENSEMBLE_FLOOD_20250804T120458_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20250713T235622_VV_AS020M_E039N021T3",
+          "datetime": "2025-07-13T23:56:22Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2025/07/13/ENSEMBLE_FLOOD_20250713T235622_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20250725T235622_VV_AS020M_E039N021T3",
+          "datetime": "2025-07-25T23:56:22Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2025/07/25/ENSEMBLE_FLOOD_20250725T235622_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20250806T235637_VV_AS020M_E039N021T3",
+          "datetime": "2025-08-06T23:56:37Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2025/08/06/ENSEMBLE_FLOOD_20250806T235637_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20250706T115707_VV_AS020M_E039N021T3",
+          "datetime": "2025-07-06T11:57:07Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2025/07/06/ENSEMBLE_FLOOD_20250706T115707_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20250708T234830_VV_AS020M_E039N021T3",
+          "datetime": "2025-07-08T23:48:30Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2025/07/08/ENSEMBLE_FLOOD_20250708T234830_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20250715T233955_VV_AS020M_E039N021T3",
+          "datetime": "2025-07-15T23:39:55Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2025/07/15/ENSEMBLE_FLOOD_20250715T233955_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20250718T115706_VV_AS020M_E039N021T3",
+          "datetime": "2025-07-18T11:57:06Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2025/07/18/ENSEMBLE_FLOOD_20250718T115706_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20250720T234829_VV_AS020M_E039N021T3",
+          "datetime": "2025-07-20T23:48:29Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2025/07/20/ENSEMBLE_FLOOD_20250720T234829_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20250727T234007_VV_AS020M_E039N021T3",
+          "datetime": "2025-07-27T23:40:07Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2025/07/27/ENSEMBLE_FLOOD_20250727T234007_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20250730T115706_VV_AS020M_E039N021T3",
+          "datetime": "2025-07-30T11:57:06Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2025/07/30/ENSEMBLE_FLOOD_20250730T115706_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20250801T234830_VV_AS020M_E039N021T3",
+          "datetime": "2025-08-01T23:48:30Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2025/08/01/ENSEMBLE_FLOOD_20250801T234830_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20250808T234007_VV_AS020M_E039N021T3",
+          "datetime": "2025-08-08T23:40:07Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2025/08/08/ENSEMBLE_FLOOD_20250808T234007_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20250811T115706_VV_AS020M_E039N021T3",
+          "datetime": "2025-08-11T11:57:06Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2025/08/11/ENSEMBLE_FLOOD_20250811T115706_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20250813T234819_VV_AS020M_E039N021T3",
+          "datetime": "2025-08-13T23:48:19Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2025/08/13/ENSEMBLE_FLOOD_20250813T234819_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        }
+      ],
+      "stac_empty": false,
+      "attempts": [
+        {
+          "id": "ENSEMBLE_FLOOD_20250711T120458_VV_AS020M_E039N021T3",
+          "datetime": "2025-07-11T12:04:58Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2025/07/11/ENSEMBLE_FLOOD_20250711T120458_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 414764
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20250723T120458_VV_AS020M_E039N021T3",
+          "datetime": "2025-07-23T12:04:58Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2025/07/23/ENSEMBLE_FLOOD_20250723T120458_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 378810
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20250804T120458_VV_AS020M_E039N021T3",
+          "datetime": "2025-08-04T12:04:58Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2025/08/04/ENSEMBLE_FLOOD_20250804T120458_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 1186461
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20250713T235622_VV_AS020M_E039N021T3",
+          "datetime": "2025-07-13T23:56:22Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2025/07/13/ENSEMBLE_FLOOD_20250713T235622_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 3924177
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20250725T235622_VV_AS020M_E039N021T3",
+          "datetime": "2025-07-25T23:56:22Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2025/07/25/ENSEMBLE_FLOOD_20250725T235622_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "downloaded",
+          "bytes": 958727,
+          "checksum": {
+            "bytes": 958727,
+            "sha256_ends": "ccf4718120f1f0bcde5cd411f1edcb3642396287a47a0ea486a5de7e992208d0"
+          }
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20250806T235637_VV_AS020M_E039N021T3",
+          "datetime": "2025-08-06T23:56:37Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2025/08/06/ENSEMBLE_FLOOD_20250806T235637_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "downloaded",
+          "bytes": 164696,
+          "checksum": {
+            "bytes": 164696,
+            "sha256_ends": "04b2597162d11872c69e17b7f2d49776dfdd827d8e59674c216d8bb098345ffd"
+          }
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20250706T115707_VV_AS020M_E039N021T3",
+          "datetime": "2025-07-06T11:57:07Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2025/07/06/ENSEMBLE_FLOOD_20250706T115707_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "downloaded",
+          "bytes": 143309,
+          "checksum": {
+            "bytes": 143309,
+            "sha256_ends": "8526a73a254ef9679aa497a4794464b83ef90a7ecfb3caffed376298b5f08816"
+          }
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20250708T234830_VV_AS020M_E039N021T3",
+          "datetime": "2025-07-08T23:48:30Z",
+          "href": "https://data.eodc.eu/collections/GFM_LAYERS/flood_extent/AS020M/2025/07/08/ENSEMBLE_FLOOD_20250708T234830_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "downloaded",
+          "bytes": 259301,
+          "checksum": {
+            "bytes": 259301,
+            "sha256_ends": "ad0e8558caf8320276a77e807a64b2d4446e161fe2a1f4897e411d9c4767e2d6"
+          }
+        }
+      ],
+      "probe_scene_id": "ENSEMBLE_FLOOD_20250708T234830_VV_AS020M_E039N021T3",
+      "n_new_downloads": 4
+    },
+    {
+      "event_id": "cand:2015-07",
+      "year": 2015,
+      "start": "2015-07-01",
+      "end": "2015-08-20",
+      "season": "monsoon",
+      "mechanism": "monsoon_riverine",
+      "n_stac_features": 47,
+      "n_orbit_candidates": 6,
+      "candidates": [
+        {
+          "id": "ENSEMBLE_FLOOD_20150716T120417_VV_AS020M_E039N021T3",
+          "datetime": "2015-07-16T12:04:17Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2015/07/16/ENSEMBLE_FLOOD_20150716T120417_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20150809T120418_VV_AS020M_E039N021T3",
+          "datetime": "2015-08-09T12:04:18Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2015/08/09/ENSEMBLE_FLOOD_20150809T120418_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20150706T235549_VV_AS020M_E039N021T3",
+          "datetime": "2015-07-06T23:55:49Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2015/07/06/ENSEMBLE_FLOOD_20150706T235549_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20150701T234737_VV_AS020M_E039N021T3",
+          "datetime": "2015-07-01T23:47:37Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2015/07/01/ENSEMBLE_FLOOD_20150701T234737_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20150711T115614_VV_AS020M_E039N021T3",
+          "datetime": "2015-07-11T11:56:14Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2015/07/11/ENSEMBLE_FLOOD_20150711T115614_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20150818T234740_VV_AS020M_E039N021T3",
+          "datetime": "2015-08-18T23:47:40Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2015/08/18/ENSEMBLE_FLOOD_20150818T234740_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        }
+      ],
+      "stac_empty": false,
+      "attempts": [
+        {
+          "id": "ENSEMBLE_FLOOD_20150716T120417_VV_AS020M_E039N021T3",
+          "datetime": "2015-07-16T12:04:17Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2015/07/16/ENSEMBLE_FLOOD_20150716T120417_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 812830
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20150809T120418_VV_AS020M_E039N021T3",
+          "datetime": "2015-08-09T12:04:18Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2015/08/09/ENSEMBLE_FLOOD_20150809T120418_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 431337
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20150706T235549_VV_AS020M_E039N021T3",
+          "datetime": "2015-07-06T23:55:49Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2015/07/06/ENSEMBLE_FLOOD_20150706T235549_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 221625
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20150701T234737_VV_AS020M_E039N021T3",
+          "datetime": "2015-07-01T23:47:37Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2015/07/01/ENSEMBLE_FLOOD_20150701T234737_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 336898
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20150711T115614_VV_AS020M_E039N021T3",
+          "datetime": "2015-07-11T11:56:14Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2015/07/11/ENSEMBLE_FLOOD_20150711T115614_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "downloaded",
+          "bytes": 285124,
+          "checksum": {
+            "bytes": 285124,
+            "sha256_ends": "a5c29fa5a4ebce5f53527cf1999310d81ccc802d686405afbcdc81bdef9eb420"
+          }
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20150818T234740_VV_AS020M_E039N021T3",
+          "datetime": "2015-08-18T23:47:40Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2015/08/18/ENSEMBLE_FLOOD_20150818T234740_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "downloaded",
+          "bytes": 5313739,
+          "checksum": {
+            "bytes": 5313739,
+            "sha256_ends": "159502713dbcbed3fd0391cee5bab199b38801bef44ad40745a94f058f06c7fe"
+          }
+        }
+      ],
+      "probe_scene_id": "ENSEMBLE_FLOOD_20150818T234740_VV_AS020M_E039N021T3",
+      "n_new_downloads": 2
+    },
+    {
+      "event_id": "cand:2016-01",
+      "year": 2016,
+      "start": "2016-01-10",
+      "end": "2016-02-05",
+      "season": "winter",
+      "mechanism": "winter_or_early",
+      "n_stac_features": 20,
+      "n_orbit_candidates": 3,
+      "candidates": [
+        {
+          "id": "ENSEMBLE_FLOOD_20160119T115610_VV_AS020M_E039N021T3",
+          "datetime": "2016-01-19T11:56:10Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2016/01/19/ENSEMBLE_FLOOD_20160119T115610_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20160128T233930_VV_AS020M_E039N021T3",
+          "datetime": "2016-01-28T23:39:30Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2016/01/28/ENSEMBLE_FLOOD_20160128T233930_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20160202T234733_VV_AS020M_E039N021T3",
+          "datetime": "2016-02-02T23:47:33Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2016/02/02/ENSEMBLE_FLOOD_20160202T234733_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        }
+      ],
+      "stac_empty": false,
+      "attempts": [
+        {
+          "id": "ENSEMBLE_FLOOD_20160119T115610_VV_AS020M_E039N021T3",
+          "datetime": "2016-01-19T11:56:10Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2016/01/19/ENSEMBLE_FLOOD_20160119T115610_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 153643
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20160128T233930_VV_AS020M_E039N021T3",
+          "datetime": "2016-01-28T23:39:30Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2016/01/28/ENSEMBLE_FLOOD_20160128T233930_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 122628
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20160202T234733_VV_AS020M_E039N021T3",
+          "datetime": "2016-02-02T23:47:33Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2016/02/02/ENSEMBLE_FLOOD_20160202T234733_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 214747
+        }
+      ],
+      "probe_scene_id": null,
+      "n_new_downloads": 0
+    },
+    {
+      "event_id": "cand:2019-01",
+      "year": 2019,
+      "start": "2019-01-10",
+      "end": "2019-02-05",
+      "season": "winter",
+      "mechanism": "winter_or_early",
+      "n_stac_features": 57,
+      "n_orbit_candidates": 9,
+      "candidates": [
+        {
+          "id": "ENSEMBLE_FLOOD_20190120T120440_VV_AS020M_E039N021T3",
+          "datetime": "2019-01-20T12:04:40Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2019/01/20/ENSEMBLE_FLOOD_20190120T120440_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20190201T120440_VV_AS020M_E039N021T3",
+          "datetime": "2019-02-01T12:04:40Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2019/02/01/ENSEMBLE_FLOOD_20190201T120440_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20190110T235604_VV_AS020M_E039N021T3",
+          "datetime": "2019-01-10T23:56:04Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2019/01/10/ENSEMBLE_FLOOD_20190110T235604_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20190122T235603_VV_AS020M_E039N021T3",
+          "datetime": "2019-01-22T23:56:03Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2019/01/22/ENSEMBLE_FLOOD_20190122T235603_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20190203T235603_VV_AS020M_E039N021T3",
+          "datetime": "2019-02-03T23:56:03Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2019/02/03/ENSEMBLE_FLOOD_20190203T235603_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20190115T115648_VV_AS020M_E039N021T3",
+          "datetime": "2019-01-15T11:56:48Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2019/01/15/ENSEMBLE_FLOOD_20190115T115648_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20190117T234811_VV_AS020M_E039N021T3",
+          "datetime": "2019-01-17T23:48:11Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2019/01/17/ENSEMBLE_FLOOD_20190117T234811_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20190127T115648_VV_AS020M_E039N021T3",
+          "datetime": "2019-01-27T11:56:48Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2019/01/27/ENSEMBLE_FLOOD_20190127T115648_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20190129T234811_VV_AS020M_E039N021T3",
+          "datetime": "2019-01-29T23:48:11Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2019/01/29/ENSEMBLE_FLOOD_20190129T234811_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        }
+      ],
+      "stac_empty": false,
+      "attempts": [
+        {
+          "id": "ENSEMBLE_FLOOD_20190120T120440_VV_AS020M_E039N021T3",
+          "datetime": "2019-01-20T12:04:40Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2019/01/20/ENSEMBLE_FLOOD_20190120T120440_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 160732
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20190201T120440_VV_AS020M_E039N021T3",
+          "datetime": "2019-02-01T12:04:40Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2019/02/01/ENSEMBLE_FLOOD_20190201T120440_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 159408
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20190110T235604_VV_AS020M_E039N021T3",
+          "datetime": "2019-01-10T23:56:04Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2019/01/10/ENSEMBLE_FLOOD_20190110T235604_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 174038
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20190122T235603_VV_AS020M_E039N021T3",
+          "datetime": "2019-01-22T23:56:03Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2019/01/22/ENSEMBLE_FLOOD_20190122T235603_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 181310
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20190203T235603_VV_AS020M_E039N021T3",
+          "datetime": "2019-02-03T23:56:03Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2019/02/03/ENSEMBLE_FLOOD_20190203T235603_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "downloaded",
+          "bytes": 158703,
+          "checksum": {
+            "bytes": 158703,
+            "sha256_ends": "c4ac96c61341c650f284230468004383e1422f3606d1fce6cbde85f0f69c9e23"
+          }
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20190115T115648_VV_AS020M_E039N021T3",
+          "datetime": "2019-01-15T11:56:48Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2019/01/15/ENSEMBLE_FLOOD_20190115T115648_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "downloaded",
+          "bytes": 132860,
+          "checksum": {
+            "bytes": 132860,
+            "sha256_ends": "20737dca46f188a1b43725f0920c68ca8935c8dc14c0f4f8f44d6d4685c94eab"
+          }
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20190117T234811_VV_AS020M_E039N021T3",
+          "datetime": "2019-01-17T23:48:11Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2019/01/17/ENSEMBLE_FLOOD_20190117T234811_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "downloaded",
+          "bytes": 135150,
+          "checksum": {
+            "bytes": 135150,
+            "sha256_ends": "dc457df08146070fab582e7d0a8dc8a582d38e5352f0f87054eb39cdac56ea3c"
+          }
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20190127T115648_VV_AS020M_E039N021T3",
+          "datetime": "2019-01-27T11:56:48Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2019/01/27/ENSEMBLE_FLOOD_20190127T115648_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "downloaded",
+          "bytes": 133349,
+          "checksum": {
+            "bytes": 133349,
+            "sha256_ends": "3678621f0d7b8ec88a9c7f6ab75c79d046242dec13706fd8799196f562807d58"
+          }
+        }
+      ],
+      "probe_scene_id": "ENSEMBLE_FLOOD_20190127T115648_VV_AS020M_E039N021T3",
+      "n_new_downloads": 4
+    },
+    {
+      "event_id": "cand:2020-01",
+      "year": 2020,
+      "start": "2020-01-10",
+      "end": "2020-02-05",
+      "season": "winter",
+      "mechanism": "winter_or_early",
+      "n_stac_features": 57,
+      "n_orbit_candidates": 10,
+      "candidates": [
+        {
+          "id": "ENSEMBLE_FLOOD_20200115T120446_VV_AS020M_E039N021T3",
+          "datetime": "2020-01-15T12:04:46Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2020/01/15/ENSEMBLE_FLOOD_20200115T120446_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20200127T120446_VV_AS020M_E039N021T3",
+          "datetime": "2020-01-27T12:04:46Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2020/01/27/ENSEMBLE_FLOOD_20200127T120446_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20200117T235610_VV_AS020M_E039N021T3",
+          "datetime": "2020-01-17T23:56:10Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2020/01/17/ENSEMBLE_FLOOD_20200117T235610_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20200129T235609_VV_AS020M_E039N021T3",
+          "datetime": "2020-01-29T23:56:09Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2020/01/29/ENSEMBLE_FLOOD_20200129T235609_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20200110T115655_VV_AS020M_E039N021T3",
+          "datetime": "2020-01-10T11:56:55Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2020/01/10/ENSEMBLE_FLOOD_20200110T115655_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20200112T234818_VV_AS020M_E039N021T3",
+          "datetime": "2020-01-12T23:48:18Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2020/01/12/ENSEMBLE_FLOOD_20200112T234818_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20200122T115654_VV_AS020M_E039N021T3",
+          "datetime": "2020-01-22T11:56:54Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2020/01/22/ENSEMBLE_FLOOD_20200122T115654_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20200124T234817_VV_AS020M_E039N021T3",
+          "datetime": "2020-01-24T23:48:17Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2020/01/24/ENSEMBLE_FLOOD_20200124T234817_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20200203T115654_VV_AS020M_E039N021T3",
+          "datetime": "2020-02-03T11:56:54Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2020/02/03/ENSEMBLE_FLOOD_20200203T115654_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20200205T234817_VV_AS020M_E039N021T3",
+          "datetime": "2020-02-05T23:48:17Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2020/02/05/ENSEMBLE_FLOOD_20200205T234817_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3"
+        }
+      ],
+      "stac_empty": false,
+      "attempts": [
+        {
+          "id": "ENSEMBLE_FLOOD_20200115T120446_VV_AS020M_E039N021T3",
+          "datetime": "2020-01-15T12:04:46Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2020/01/15/ENSEMBLE_FLOOD_20200115T120446_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 197437
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20200127T120446_VV_AS020M_E039N021T3",
+          "datetime": "2020-01-27T12:04:46Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2020/01/27/ENSEMBLE_FLOOD_20200127T120446_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 173825
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20200117T235610_VV_AS020M_E039N021T3",
+          "datetime": "2020-01-17T23:56:10Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2020/01/17/ENSEMBLE_FLOOD_20200117T235610_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 166487
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20200129T235609_VV_AS020M_E039N021T3",
+          "datetime": "2020-01-29T23:56:09Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2020/01/29/ENSEMBLE_FLOOD_20200129T235609_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "skipped_existing",
+          "bytes": 159692
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20200110T115655_VV_AS020M_E039N021T3",
+          "datetime": "2020-01-10T11:56:55Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2020/01/10/ENSEMBLE_FLOOD_20200110T115655_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "downloaded",
+          "bytes": 133813,
+          "checksum": {
+            "bytes": 133813,
+            "sha256_ends": "feca6f1a0cac4a1f45a1e25c1ea65634727e94bc4db55fddb1a5f5b72a1bc4c7"
+          }
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20200112T234818_VV_AS020M_E039N021T3",
+          "datetime": "2020-01-12T23:48:18Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2020/01/12/ENSEMBLE_FLOOD_20200112T234818_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "downloaded",
+          "bytes": 135552,
+          "checksum": {
+            "bytes": 135552,
+            "sha256_ends": "6d3c49ec04f94d3d9a7da9d3ca29ba6b0f1d9aa939ae1880d44921b68b80c190"
+          }
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20200122T115654_VV_AS020M_E039N021T3",
+          "datetime": "2020-01-22T11:56:54Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2020/01/22/ENSEMBLE_FLOOD_20200122T115654_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "downloaded",
+          "bytes": 133345,
+          "checksum": {
+            "bytes": 133345,
+            "sha256_ends": "026ec30f084268bd134b36e4d25acc43d2b461eb7e90adc5f8711f33b2732e26"
+          }
+        },
+        {
+          "id": "ENSEMBLE_FLOOD_20200124T234817_VV_AS020M_E039N021T3",
+          "datetime": "2020-01-24T23:48:17Z",
+          "href": "https://data.eodc.eu/collections/GFM_ARCHIVE/flood_extent/AS020M/2020/01/24/ENSEMBLE_FLOOD_20200124T234817_VV_AS020M_E039N021T3.tif",
+          "tile": "E039N021T3",
+          "status": "downloaded",
+          "bytes": 134561,
+          "checksum": {
+            "bytes": 134561,
+            "sha256_ends": "37efecec643e82ef32692577766c3ed2b9221a02152b9bd9a1703cfc17eb83f1"
+          }
+        }
+      ],
+      "probe_scene_id": "ENSEMBLE_FLOOD_20200124T234817_VV_AS020M_E039N021T3",
+      "n_new_downloads": 4
+    }
+  ],
+  "gfm_index_n_kept": 81,
+  "duplicate_scenes": [],
+  "source_compatibility": {
+    "copernicus-gfm-ensemble-flood-extent": {
+      "decision": "A",
+      "role": "primary_label",
+      "observed_extent": true,
+      "spatial_resolution": "20 m Equi7",
+      "temporal_resolution": "S1 revisit ~6\u201312 d; 192 h scene slot",
+      "bangladesh": true,
+      "historical": "2015\u2013present (public STAC)",
+      "unknown": "uint8 255 nodata/exclusion, not optical cloud",
+      "license": "STAC proprietary; Copernicus attribution",
+      "compatible_with_gfm": true,
+      "note": "Headline OBSERVED label. Expand years/orbits, do not replace."
+    },
+    "opera-dswx-s1": {
+      "decision": "D",
+      "role": "incompatible_duplicate",
+      "observed_extent": true,
+      "note": "Same S1 revisit class as GFM. Do not train a second classifier or merge labels."
+    },
+    "viirs-modis-nrt": {
+      "decision": "D",
+      "role": "incompatible",
+      "observed_extent": true,
+      "note": "Optical, cloud-heavy, different flood definition and unknown process."
+    },
+    "global-flood-database": {
+      "decision": "C",
+      "role": "event_discovery_only",
+      "observed_extent": true,
+      "license": "CC BY-NC",
+      "note": "Event-max climatology, not t0\u2192t+192 h forecast labels. NC. Do not mix into headline metrics."
+    },
+    "giezendanner-bangladesh": {
+      "decision": "D",
+      "role": "incompatible",
+      "observed_extent": false,
+      "note": "DERIVED 8-day ~500 m. Never call OBSERVED. Do not mix with GFM."
+    },
+    "glofas-rapid-flood-mapping": {
+      "decision": "D",
+      "role": "incompatible",
+      "observed_extent": false,
+      "note": "MODELLED RP inundation. Comparison candidate, not training labels."
+    },
+    "emsr": {
+      "decision": "C",
+      "role": "event_discovery_only",
+      "note": "Phase 4 found 0 Bangladesh rows in the public list."
+    },
+    "worldfloods-sen1floods11": {
+      "decision": "D",
+      "role": "incompatible",
+      "note": "Same-time mapping / often NC. Wrong task for these AOIs."
+    }
+  }
+}

@@ -1,0 +1,573 @@
+{
+  "id": "ai-forecast",
+  "title": "AI Forecast",
+  "kind": "AI",
+  "status": "VALIDATED",
+  "accuracy_claim": null,
+  "model_id": "FLOOD-OCCURRENCE-GBDT-v0.1",
+  "run_id": "real-A-62e492594d5f5fa6",
+  "dataset_version": "phase4.5-openmeteo-glofas-v1",
+  "checkpoint": "src/floodlens/application/data/ml/real/checkpoint.json",
+  "validated_split_ids": {
+    "train": "issue_time < 2022-01-01",
+    "val": "2022 excluding 2022-05-09..2022-06-21",
+    "test": "2023-2024 plus named 2022 NE Bangladesh holdout",
+    "geographic_holdout": "sunamganj vs dhaka+sylhet"
+  },
+  "note": "Validated on held-out Open-Meteo GloFAS Q exceedance (MODELLED). Not in-situ flood maps. Persistence can outperform GBDT on AUPRC/F1 because labels are daily Q persistence. Do not quote accuracy %.",
+  "metrics": {
+    "val": {
+      "split": "val",
+      "track": "A",
+      "label_kind": "MODELLED",
+      "n": 2889,
+      "prevalence": 0.0,
+      "models": {
+        "persistence": {
+          "n": 2889,
+          "prevalence": 0.0,
+          "auprc": null,
+          "auroc": null,
+          "brier": 0.0,
+          "bss": 1.0,
+          "recall_at_precision_0.7": {
+            "recall": 0.0,
+            "threshold": 1.0,
+            "precision_target": 0.7
+          },
+          "operating_point": {
+            "tp": 0.0,
+            "fp": 0.0,
+            "fn": 0.0,
+            "tn": 2889.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "csi": 0.0,
+            "f1": 0.0,
+            "threshold": 0.15
+          },
+          "accuracy_claim": null
+        },
+        "climatology": {
+          "n": 2889,
+          "prevalence": 0.0,
+          "auprc": null,
+          "auroc": null,
+          "brier": 0.0017028861518591865,
+          "bss": -2.3071304466744094,
+          "recall_at_precision_0.7": {
+            "recall": 0.0,
+            "threshold": 1.0,
+            "precision_target": 0.7
+          },
+          "operating_point": {
+            "tp": 0.0,
+            "fp": 0.0,
+            "fn": 0.0,
+            "tn": 2889.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "csi": 0.0,
+            "f1": 0.0,
+            "threshold": 0.15
+          },
+          "accuracy_claim": null
+        },
+        "logistic": {
+          "n": 2889,
+          "prevalence": 0.0,
+          "auprc": null,
+          "auroc": null,
+          "brier": 0.0018685637163200857,
+          "bss": -2.628888490899089,
+          "recall_at_precision_0.7": {
+            "recall": 0.0,
+            "threshold": 1.0,
+            "precision_target": 0.7
+          },
+          "operating_point": {
+            "tp": 0.0,
+            "fp": 28.0,
+            "fn": 0.0,
+            "tn": 2861.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "csi": 0.0,
+            "f1": 0.0,
+            "threshold": 0.15
+          },
+          "accuracy_claim": null
+        },
+        "xgboost_class": {
+          "n": 2889,
+          "prevalence": 0.0,
+          "auprc": null,
+          "auroc": null,
+          "brier": 0.0003492065194019561,
+          "bss": 0.3218151952022542,
+          "recall_at_precision_0.7": {
+            "recall": 0.0,
+            "threshold": 1.0,
+            "precision_target": 0.7
+          },
+          "operating_point": {
+            "tp": 0.0,
+            "fp": 3.0,
+            "fn": 0.0,
+            "tn": 2886.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "csi": 0.0,
+            "f1": 0.0,
+            "threshold": 0.15
+          },
+          "accuracy_claim": null
+        }
+      },
+      "beats_persistence": {
+        "xgboost_class": false
+      },
+      "by_horizon": {
+        "24": {
+          "xgboost_class": {
+            "n": 963,
+            "prevalence": 0.0,
+            "auprc": null,
+            "auroc": null,
+            "brier": 0.0003492065194019561,
+            "bss": 0.3218151952022542,
+            "recall_at_precision_0.7": {
+              "recall": 0.0,
+              "threshold": 1.0,
+              "precision_target": 0.7
+            },
+            "operating_point": {
+              "tp": 0.0,
+              "fp": 1.0,
+              "fn": 0.0,
+              "tn": 962.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "csi": 0.0,
+              "f1": 0.0,
+              "threshold": 0.15
+            },
+            "accuracy_claim": null
+          },
+          "persistence": {
+            "n": 963,
+            "prevalence": 0.0,
+            "auprc": null,
+            "auroc": null,
+            "brier": 0.0,
+            "bss": 1.0,
+            "recall_at_precision_0.7": {
+              "recall": 0.0,
+              "threshold": 1.0,
+              "precision_target": 0.7
+            },
+            "operating_point": {
+              "tp": 0.0,
+              "fp": 0.0,
+              "fn": 0.0,
+              "tn": 963.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "csi": 0.0,
+              "f1": 0.0,
+              "threshold": 0.15
+            },
+            "accuracy_claim": null
+          }
+        },
+        "48": {
+          "xgboost_class": {
+            "n": 963,
+            "prevalence": 0.0,
+            "auprc": null,
+            "auroc": null,
+            "brier": 0.0003492065194019561,
+            "bss": 0.3218151952022542,
+            "recall_at_precision_0.7": {
+              "recall": 0.0,
+              "threshold": 1.0,
+              "precision_target": 0.7
+            },
+            "operating_point": {
+              "tp": 0.0,
+              "fp": 1.0,
+              "fn": 0.0,
+              "tn": 962.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "csi": 0.0,
+              "f1": 0.0,
+              "threshold": 0.15
+            },
+            "accuracy_claim": null
+          },
+          "persistence": {
+            "n": 963,
+            "prevalence": 0.0,
+            "auprc": null,
+            "auroc": null,
+            "brier": 0.0,
+            "bss": 1.0,
+            "recall_at_precision_0.7": {
+              "recall": 0.0,
+              "threshold": 1.0,
+              "precision_target": 0.7
+            },
+            "operating_point": {
+              "tp": 0.0,
+              "fp": 0.0,
+              "fn": 0.0,
+              "tn": 963.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "csi": 0.0,
+              "f1": 0.0,
+              "threshold": 0.15
+            },
+            "accuracy_claim": null
+          }
+        },
+        "72": {
+          "xgboost_class": {
+            "n": 963,
+            "prevalence": 0.0,
+            "auprc": null,
+            "auroc": null,
+            "brier": 0.0003492065194019561,
+            "bss": 0.3218151952022542,
+            "recall_at_precision_0.7": {
+              "recall": 0.0,
+              "threshold": 1.0,
+              "precision_target": 0.7
+            },
+            "operating_point": {
+              "tp": 0.0,
+              "fp": 1.0,
+              "fn": 0.0,
+              "tn": 962.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "csi": 0.0,
+              "f1": 0.0,
+              "threshold": 0.15
+            },
+            "accuracy_claim": null
+          },
+          "persistence": {
+            "n": 963,
+            "prevalence": 0.0,
+            "auprc": null,
+            "auroc": null,
+            "brier": 0.0,
+            "bss": 1.0,
+            "recall_at_precision_0.7": {
+              "recall": 0.0,
+              "threshold": 1.0,
+              "precision_target": 0.7
+            },
+            "operating_point": {
+              "tp": 0.0,
+              "fp": 0.0,
+              "fn": 0.0,
+              "tn": 963.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "csi": 0.0,
+              "f1": 0.0,
+              "threshold": 0.15
+            },
+            "accuracy_claim": null
+          }
+        }
+      },
+      "accuracy_claim": null,
+      "note": "2022 val excluding named holdout has prevalence 0 at the train-only AMS threshold; AUPRC/AUROC are undefined. Threshold and conformal used 2020\u20132021 train years. Tracks A and B must not be mixed. Accuracy is not reported.",
+      "threshold_source": "train_2020_2021_inner_tune (val 2022 has zero positives outside named holdout)"
+    },
+    "test": {
+      "split": "test",
+      "track": "A",
+      "label_kind": "MODELLED",
+      "n": 6957,
+      "prevalence": 0.0258732212160414,
+      "models": {
+        "persistence": {
+          "n": 6957,
+          "prevalence": 0.0258732212160414,
+          "auprc": 0.507320214734978,
+          "auroc": 0.8289065958388667,
+          "brier": 0.017248814144027597,
+          "bss": 0.31590112276477345,
+          "recall_at_precision_0.7": {
+            "recall": 0.6666666666666666,
+            "threshold": 1.0,
+            "precision_target": 0.7
+          },
+          "operating_point": {
+            "tp": 120.0,
+            "fp": 60.0,
+            "fn": 60.0,
+            "tn": 6717.0,
+            "precision": 0.6666666666666666,
+            "recall": 0.6666666666666666,
+            "csi": 0.5,
+            "f1": 0.6666666666666666,
+            "threshold": 0.15
+          },
+          "accuracy_claim": null
+        },
+        "climatology": {
+          "n": 6957,
+          "prevalence": 0.0258732212160414,
+          "auprc": 0.18144094847465858,
+          "auroc": 0.8615095174856131,
+          "brier": 0.023639052589068104,
+          "bss": 0.062460224798391084,
+          "recall_at_precision_0.7": {
+            "recall": 0.0,
+            "threshold": 1.0,
+            "precision_target": 0.7
+          },
+          "operating_point": {
+            "tp": 0.0,
+            "fp": 0.0,
+            "fn": 180.0,
+            "tn": 6777.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "csi": 0.0,
+            "f1": 0.0,
+            "threshold": 0.15
+          },
+          "accuracy_claim": null
+        },
+        "logistic": {
+          "n": 6957,
+          "prevalence": 0.0258732212160414,
+          "auprc": 0.18209894352183317,
+          "auroc": 0.9200195104356238,
+          "brier": 0.023539063829376566,
+          "bss": 0.06642584224142023,
+          "recall_at_precision_0.7": {
+            "recall": 0.0,
+            "threshold": 1.0,
+            "precision_target": 0.7
+          },
+          "operating_point": {
+            "tp": 41.0,
+            "fp": 158.0,
+            "fn": 139.0,
+            "tn": 6619.0,
+            "precision": 0.20603015075376885,
+            "recall": 0.22777777777777777,
+            "csi": 0.12130177514792899,
+            "f1": 0.21635883905013192,
+            "threshold": 0.15
+          },
+          "accuracy_claim": null
+        },
+        "xgboost_class": {
+          "n": 6957,
+          "prevalence": 0.0258732212160414,
+          "auprc": 0.27607645286220356,
+          "auroc": 0.940491121932025,
+          "brier": 0.022235355705641443,
+          "bss": 0.11813173090382723,
+          "recall_at_precision_0.7": {
+            "recall": 0.0,
+            "threshold": 1.0,
+            "precision_target": 0.7
+          },
+          "operating_point": {
+            "tp": 36.0,
+            "fp": 63.0,
+            "fn": 144.0,
+            "tn": 6714.0,
+            "precision": 0.36363636363636365,
+            "recall": 0.2,
+            "csi": 0.14814814814814814,
+            "f1": 0.25806451612903225,
+            "threshold": 0.15
+          },
+          "accuracy_claim": null
+        }
+      },
+      "beats_persistence": {
+        "xgboost_class": false
+      },
+      "by_horizon": {
+        "24": {
+          "xgboost_class": {
+            "n": 2322,
+            "prevalence": 0.025839793281653745,
+            "auprc": 0.2972497668982677,
+            "auroc": 0.9617300324196876,
+            "brier": 0.022034686371273034,
+            "bss": 0.12498297776534573,
+            "recall_at_precision_0.7": {
+              "recall": 0.0,
+              "threshold": 1.0,
+              "precision_target": 0.7
+            },
+            "operating_point": {
+              "tp": 11.0,
+              "fp": 22.0,
+              "fn": 49.0,
+              "tn": 2240.0,
+              "precision": 0.3333333333333333,
+              "recall": 0.18333333333333332,
+              "csi": 0.13414634146341464,
+              "f1": 0.23655913978494622,
+              "threshold": 0.15
+            },
+            "accuracy_claim": null
+          },
+          "persistence": {
+            "n": 2322,
+            "prevalence": 0.025839793281653745,
+            "auprc": 0.5452387049300979,
+            "auroc": 0.8460212201591512,
+            "brier": 0.015503875968992248,
+            "bss": 0.3843272758731242,
+            "recall_at_precision_0.7": {
+              "recall": 0.7,
+              "threshold": 1.0,
+              "precision_target": 0.7
+            },
+            "operating_point": {
+              "tp": 42.0,
+              "fp": 18.0,
+              "fn": 18.0,
+              "tn": 2244.0,
+              "precision": 0.7,
+              "recall": 0.7,
+              "csi": 0.5384615384615384,
+              "f1": 0.7,
+              "threshold": 0.15
+            },
+            "accuracy_claim": null
+          }
+        },
+        "48": {
+          "xgboost_class": {
+            "n": 2319,
+            "prevalence": 0.0258732212160414,
+            "auprc": 0.2893222990699383,
+            "auroc": 0.9433414490187398,
+            "brier": 0.022176286463713314,
+            "bss": 0.12047445439454096,
+            "recall_at_precision_0.7": {
+              "recall": 0.0,
+              "threshold": 1.0,
+              "precision_target": 0.7
+            },
+            "operating_point": {
+              "tp": 13.0,
+              "fp": 20.0,
+              "fn": 47.0,
+              "tn": 2239.0,
+              "precision": 0.3939393939393939,
+              "recall": 0.21666666666666667,
+              "csi": 0.1625,
+              "f1": 0.27956989247311825,
+              "threshold": 0.15
+            },
+            "accuracy_claim": null
+          },
+          "persistence": {
+            "n": 2319,
+            "prevalence": 0.0258732212160414,
+            "auprc": 0.5124414009778121,
+            "auroc": 0.8289065958388667,
+            "brier": 0.017248814144027597,
+            "bss": 0.31590112276477345,
+            "recall_at_precision_0.7": {
+              "recall": 0.6666666666666666,
+              "threshold": 1.0,
+              "precision_target": 0.7
+            },
+            "operating_point": {
+              "tp": 40.0,
+              "fp": 20.0,
+              "fn": 20.0,
+              "tn": 2239.0,
+              "precision": 0.6666666666666666,
+              "recall": 0.6666666666666666,
+              "csi": 0.5,
+              "f1": 0.6666666666666666,
+              "threshold": 0.15
+            },
+            "accuracy_claim": null
+          }
+        },
+        "72": {
+          "xgboost_class": {
+            "n": 2316,
+            "prevalence": 0.025906735751295335,
+            "auprc": 0.2578924427924086,
+            "auroc": 0.9163416075650118,
+            "brier": 0.022495690665241957,
+            "bss": 0.10893733664370131,
+            "recall_at_precision_0.7": {
+              "recall": 0.0,
+              "threshold": 1.0,
+              "precision_target": 0.7
+            },
+            "operating_point": {
+              "tp": 12.0,
+              "fp": 21.0,
+              "fn": 48.0,
+              "tn": 2235.0,
+              "precision": 0.36363636363636365,
+              "recall": 0.2,
+              "csi": 0.14814814814814814,
+              "f1": 0.25806451612903225,
+              "threshold": 0.15
+            },
+            "accuracy_claim": null
+          },
+          "persistence": {
+            "n": 2316,
+            "prevalence": 0.025906735751295335,
+            "auprc": 0.4803646534466115,
+            "auroc": 0.811790780141844,
+            "brier": 0.018998272884283247,
+            "bss": 0.24747135407602294,
+            "recall_at_precision_0.7": {
+              "recall": 0.6333333333333333,
+              "threshold": 1.0,
+              "precision_target": 0.7
+            },
+            "operating_point": {
+              "tp": 38.0,
+              "fp": 22.0,
+              "fn": 22.0,
+              "tn": 2234.0,
+              "precision": 0.6333333333333333,
+              "recall": 0.6333333333333333,
+              "csi": 0.4634146341463415,
+              "f1": 0.6333333333333333,
+              "threshold": 0.15
+            },
+            "accuracy_claim": null
+          }
+        }
+      },
+      "accuracy_claim": null,
+      "note": "Tracks A and B must not be mixed. Accuracy is not reported."
+    }
+  },
+  "version": "v0.1",
+  "training_run": "real-A-62e492594d5f5fa6",
+  "features": "precip lookback 24h + windows 1/3/6/12/24/48/72h + Q lookback 7d (t-7..t-1) + month + horizon",
+  "hyperparameters": {
+    "n_estimators": 30,
+    "learning_rate": 0.08
+  },
+  "label_kind": "MODELLED"
+}

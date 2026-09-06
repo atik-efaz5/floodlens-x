@@ -1,0 +1,91 @@
+{
+  "target": {
+    "name": "NEWLY_FLOODED",
+    "definition": "DRY->FLOODED on pixels valid in both consecutive GFM scenes of the same event and AOI",
+    "t0": "earlier.valid_at",
+    "t1": "later.valid_at",
+    "not": [
+      "24h flood map",
+      "48h flood map",
+      "72h flood map",
+      "truncated 10-day GFM window"
+    ],
+    "label_resolution_m": 20.0
+  },
+  "regrid": {
+    "source_resolution": "1.5\u00b0 (240\u00d7121 equiangular with poles)",
+    "target_resolution": "nearest GloFAS proxy point; GFM working grid 64\u00d764 is not the NWP grid",
+    "regridding_method": "nearest-neighbor point sample at proxy lat/lon; no 20 m downscale",
+    "high_resolution_forecast_claim": false
+  },
+  "channels": [
+    {
+      "name": "STATE_AT_T0",
+      "source": "GloFAS reanalysis Q (Open-Meteo Flood API, forecast_days=0)",
+      "timestamp": "end of last complete Q calendar day before t0",
+      "status": "MODELLED_STATE",
+      "units": "m3 s-1",
+      "resolution": "daily 0.05deg proxy cell",
+      "required": true,
+      "note": "Not forecast forcing. Freshness recorded; currently FRESH on 183/183."
+    },
+    {
+      "name": "FORECAST_FORCING",
+      "source": "WB2 IFS HRES total_precipitation_6hr (2016\u20132022); Open-Meteo Single Runs IFS (2024)",
+      "timestamp": "issue_time <= t0; valid_time in (t0,t1]",
+      "status": "FORECAST_VINTAGE",
+      "units": "mm (native accumulation window)",
+      "resolution": "1.5\u00b0 (240\u00d7121 equiangular with poles)",
+      "required": true,
+      "note": "Native steps only. No ERA5 in (t0,t1]. No interpolation of missing leads."
+    },
+    {
+      "name": "FORCING_MASK",
+      "source": "derived from vintage windows",
+      "timestamp": "same as FORECAST_FORCING valid_time",
+      "status": "MASK",
+      "units": "1 = genuine vintage hour; 0 = unavailable",
+      "resolution": "hourly coverage of native windows; not 20 m",
+      "required": true,
+      "note": "M=0 precipitation is None, never 0.0 fill."
+    },
+    {
+      "name": "STATIC_SPATIAL_FEATURES",
+      "source": "existing GFM working-grid statics (parent cube)",
+      "timestamp": "time-invariant",
+      "status": "STATIC",
+      "units": "channel-specific",
+      "resolution": "GFM working grid 64x64; native DEM/HAND as recorded in v2.1",
+      "required": true,
+      "note": "Unchanged. Not a substitute for vintage precipitation."
+    },
+    {
+      "name": "STATE_FRESHNESS_MASK",
+      "source": "GloFAS staleness class (FRESH/STALE/VERY_STALE)",
+      "timestamp": "glofas_state_time",
+      "status": "OPTIONAL",
+      "units": "categorical",
+      "resolution": "pair scalar",
+      "required": false,
+      "note": "Currently constant FRESH; keep for future stale days. Do not drop pairs today."
+    },
+    {
+      "name": "FORECAST_LEAD_FEATURES",
+      "source": "vintage issue/valid timestamps",
+      "timestamp": "issue_time",
+      "status": "OPTIONAL",
+      "units": "hours",
+      "resolution": "pair scalar (lead min/max)",
+      "required": false,
+      "note": "Already on Phase 6.9B pair rows."
+    }
+  ],
+  "forbidden": [
+    "ERA5-Land after t0 as FORECAST_FORCING",
+    "GloFAS Q after t0 as FORECAST_FORCING",
+    "zero-fill of M=0 hours",
+    "interpolation of missing vintage steps",
+    "current-day forecast used retroactively",
+    "issue_time > t0"
+  ]
+}
